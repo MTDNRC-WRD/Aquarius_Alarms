@@ -1,0 +1,138 @@
+﻿long,short
+GlobalID,globalid
+CreationDate,CreationDa
+Creator,Creator
+EditDate,EditDate
+Editor,Editor
+Last Name of Hydrographer,hydro_name
+Date & Time of Measurement,date_time
+Weather,weather
+Air Temperature (°F),air_temper
+Wind Speed (mph),wind_speed
+Wind Direction,wind_direc
+How familiar are you with this site?,how_famili
+Is this a discharge measurement at a DNRC stream gage? ,rt_gage_si
+Gage Site,gage_site_
+Sensor Stage Reading (ft),gage_readi
+Battery Reading (V),battery_re
+Gage Operational,maintenanc
+Data Downloaded,maintena_1
+Desiccant Changed,maintena_2
+Orifice Purged,maintena_3
+Site Name,site_name
+Is there a staff gage or wire weight associated with this site?,staff_gage
+Staff Gage/Wire Weight Reading (ft),staff_ga_1
+Was the gage/weight shifted?,gageweight
+Enter Shift Amount (ft),shift_amou
+Notes,location_n
+Initial Discharge Estimate (cfs),initial_di
+Channel Type,channel_ty
+Water Clarity,water_clar
+Surface Ice ,surface_ic
+Vegetation in Channel,vegetation
+Bank Vegetation,bank_veget
+Primary Bed Material,bed_materi
+Cross Section Morphology,cross_sect
+Left Bank,left_bank
+Right Bank,right_bank
+Cross Sectional Width (ft),cross_se_1
+Width Measurement Method,width_meas
+Average Depth (ft),average_de
+Depth Measurement Method,depth_meas
+Approximate Velocity (ft/s),approximat
+Velocity Measurement Method,velocity_m
+Refined Discharge Estimate,educated_d
+Measurement Type,measuremen
+Other - Measurement Type,measurem_1
+Sounding Weight (lbs),sounding_w
+Water Temperature (°F),water_temp
+Cross Section Width (ft),cross_se_2
+Number of Stations,number_of_
+Measurement Error,measurem_2
+Discharge Measurement (cfs),Measured_D
+ADCP Boat,adcp_boat
+Other - ADCP Boat,adcp_other
+RTK Used,gps_used
+ACDP Depth,acdp_depth
+Number of Transects,number_of1
+Flume Type,flume_type
+Other - Flume Type,flume_ty_o
+Flow Type,flow_type
+Throat Width (ft),throat_wid
+Primary Stage (ft),primary_st
+Secondary Stage (ft),secondary_
+Weir Type,weir_type
+Structure Condition,structure_
+Crest Type,crest_type
+Rectangular Weir Type,rectangula
+Total Angle (deg) ,total_angl
+Side Slope (L/h),side_slope
+Total Crest Length (ft),total_cres
+Water Depth (ft),water_dept
+Upper Weir Type,upper_weir
+Lower Weir Type,lower_weir
+Upper Crest Length (ft),upper_cres
+Upper Side Slope (L/h),upper_side
+Upper Water Depth (ft),upper_wate
+Lower Crest Length (ft),lower_cres
+Lower Side Slope (L/h),lower_side
+Lower Total Angle (deg),lower_tota
+Lower Water Depth (ft),lower_wate
+Measurement Notes,measurem_3
+Ave Velocity Measured (ft/s),ave_veloci
+Flow Regime,flow_regim
+Gage Temperature (°F),sensor_tem
+Date,measurem_4
+Time,visitation
+Party Initials,party_init
+Measured Temperature (°F),measured_t
+Gage Height Correction (ft),gage_heigh
+Checkbar Changed To (ft),checkbar_c
+Errors,errors
+Control,_control
+Other - Control,untitled_q
+Gage Reading Time (1),gage_rea_1
+Recording Gage (1),recording_
+Gage Reading Time (2),gage_rea_2
+Recording Gage (2),recording1
+Gage Reading Time (3),gage_rea_3
+Recording Gage (3),recordin_1
+Gage Reading Time (4),gage_rea_4
+Recording Gage (4),recordin_2
+Gage Reading Time (5),gage_rea_5
+Recording Gage (5),recordin_3
+Gage Reading Time (6),gage_rea_6
+Recording Gage (6),recordin_4
+Gage Reading Time (7),gage_rea_7
+Recording Gage (7),recordin_5
+Gage Reading Time (8),gage_rea_8
+Recording Gage (8),recordin_6
+Is there a staff gage associated with this site?,field_106
+Staff Gage Reading (ft),staff_ga_2
+Surface Ice,surface__1
+Time of Discharge Measurement,time_of_di
+Cross Section Area (ft^2),cross_se_3
+Ave Cross Section Depth (ft),ave_depth
+Other - Gage Site,gage_site1
+Photos Notes,photos_not
+Reference Gage Type,reference_
+Other - Reference Gage Type,refrence_g
+Measurement ID Number,measurem_5
+Reference Gage (1),reference1
+Add Another Gage Reading?,field_180
+Reference Gage (2),referenc_1
+Add Another Gage Reading?,field_181
+Reference Gage (3),referenc_2
+Add Another Gage Reading?,field_182
+Reference Gage (4),referenc_3
+Add Another Gage Reading?,field_183
+Reference Gage (5),referenc_4
+Add Another Gage Reading?,field_184
+Reference Gage (6) ,referenc_5
+Add Another Gage Reading?,field_185
+Reference Gage (7) ,referenc_6
+Add Another Gage Reading?,field_186
+Reference Gage (8),referenc_7
+Width Measurement Method,refined_wi
+Depth Measurement Method,refined_de
+Velocity Measurement Method,refined_ve

@@ -1,0 +1,2129 @@
+{
+    "currentVersion": 11.2,
+    "id": 0,
+    "name": "survey",
+    "type": "Feature Layer",
+    "serviceItemId": "809965cc90ec4bad92687e9cbf50865a",
+    "cacheMaxAge": 30,
+    "isView": true,
+    "isUpdatableView": true,
+    "sourceSchemaChangesAllowed": true,
+    "displayField": "",
+    "description": "",
+    "copyrightText": "",
+    "defaultVisibility": true,
+    "ownershipBasedAccessControlForFeatures": {
+        "allowOthersToQuery": true,
+        "allowOthersToDelete": false,
+        "allowOthersToUpdate": false,
+        "allowAnonymousToQuery": true,
+        "allowAnonymousToUpdate": false,
+        "allowAnonymousToDelete": false
+    },
+    "editFieldsInfo": {
+        "creationDateField": "CreationDate",
+        "creatorField": "Creator",
+        "editDateField": "EditDate",
+        "editorField": "Editor"
+    },
+    "editingInfo": {
+        "lastEditDate": 1709853697226,
+        "schemaLastEditDate": 1709853697226,
+        "dataLastEditDate": 1709853680577
+    },
+    "relationships": [],
+    "isDataVersioned": false,
+    "hasContingentValuesDefinition": false,
+    "supportsAppend": true,
+    "supportsCalculate": true,
+    "supportsASyncCalculate": true,
+    "supportsTruncate": false,
+    "supportsAttachmentsByUploadId": true,
+    "supportsAttachmentsResizing": true,
+    "supportsRollbackOnFailureParameter": true,
+    "supportsStatistics": true,
+    "supportsExceedsLimitStatistics": true,
+    "supportsAdvancedQueries": true,
+    "supportsValidateSql": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsLayerOverrides": true,
+    "supportsTilesAndBasicQueriesMode": true,
+    "supportsFieldDescriptionProperty": true,
+    "supportsQuantizationEditMode": true,
+    "supportsApplyEditsWithGlobalIds": true,
+    "supportsReturningQueryGeometry": true,
+    "supportsOBACForAnonymousUsers": true,
+    "advancedQueryCapabilities": {
+        "supportsPagination": true,
+        "supportsQueryAttachmentsCountOnly": true,
+        "supportsPaginationOnAggregatedQueries": true,
+        "supportsQueryRelatedPagination": true,
+        "supportsQueryWithDistance": true,
+        "supportsReturningQueryExtent": true,
+        "supportsStatistics": true,
+        "supportsOrderBy": true,
+        "supportsDistinct": true,
+        "supportsQueryWithResultType": true,
+        "supportsSqlExpression": true,
+        "supportsAdvancedQueryRelated": true,
+        "supportsCountDistinct": true,
+        "supportsPercentileStatistics": true,
+        "supportsSpatialAggregationStatistics": true,
+        "supportedSpatialAggregationStatistics": [
+            "EnvelopeAggregate",
+            "CentroidAggregate",
+            "ConvexHullAggregate"
+        ],
+        "supportsQueryAttachments": true,
+        "supportsLod": true,
+        "supportsQueryWithLodSR": false,
+        "supportedLodTypes": [
+            "geohash"
+        ],
+        "supportsReturningGeometryCentroid": false,
+        "supportsReturningGeometryEnvelope": true,
+        "supportsQueryWithDatumTransformation": true,
+        "supportsCurrentUserQueries": true,
+        "supportsHavingClause": true,
+        "supportsOutFieldSQLExpression": true,
+        "supportsMaxRecordCountFactor": true,
+        "supportsTopFeaturesQuery": true,
+        "supportsDisjointSpatialRel": true,
+        "supportsQueryWithCacheHint": true,
+        "supportedOperationsWithCacheHint": [
+            "query",
+            "queryTopFilter",
+            "queryAnalytics",
+            "queryAttachments",
+            "queryRelated",
+            "queryBins"
+        ],
+        "supportsQueryAttachmentsWithReturnUrl": true,
+        "supportsQueryAnalytic": true,
+        "supportsQueryBins": true,
+        "supportsDefaultSR": true,
+        "supportsFullTextSearch": true
+    },
+    "advancedQueryAnalyticCapabilities": {
+        "supportsLinearRegression": true,
+        "supportsAsync": true,
+        "supportsPercentileAnalytic": true
+    },
+    "queryBinsCapabilities": {
+        "supportsAsync": true,
+        "supportsAutoIntervalBin": true,
+        "supportsFixedIntervalBin": true,
+        "supportsFixedBoundariesBin": true,
+        "supportsDateBin": true,
+        "supportedStatisticTypes": [
+            "COUNT",
+            "SUM",
+            "AVG",
+            "VAR",
+            "STDDEV",
+            "MIN",
+            "MAX",
+            "PERCENTILE_CONT",
+            "PERCENTILE_DISC",
+            "CentroidAggregate",
+            "EnvelopeAggregate",
+            "ConvexHullAggregate"
+        ]
+    },
+    "advancedEditingCapabilities": {
+        "supportedSqlFormatsInCalculate": [
+            "standard"
+        ],
+        "supportsAsyncApplyEdits": true,
+        "supportsReturnEditResults": true,
+        "supportsApplyEditsbyUploadID": true,
+        "supportedApplyEditsUploadIDFormats": "JSON"
+    },
+    "infoInEstimates": [
+        "extent",
+        "count"
+    ],
+    "useStandardizedQueries": true,
+    "geometryType": "esriGeometryPoint",
+    "minScale": 0,
+    "maxScale": 0,
+    "extent": {
+        "xmin": -180,
+        "ymin": -90,
+        "xmax": 180,
+        "ymax": 90,
+        "spatialReference": {
+            "wkid": 4326,
+            "latestWkid": 4326
+        }
+    },
+    "drawingInfo": {
+        "labelingInfo": null,
+        "renderer": {
+            "label": "Survey Point",
+            "symbol": {
+                "angle": 0,
+                "color": [
+                    255,
+                    0,
+                    0,
+                    255
+                ],
+                "outline": {
+                    "color": [
+                        255,
+                        255,
+                        0,
+                        255
+                    ],
+                    "width": 1
+                },
+                "size": 8,
+                "style": "esriSMSCircle",
+                "type": "esriSMS",
+                "xoffset": 0,
+                "yoffset": 0
+            },
+            "type": "simple"
+        },
+        "transparency": 0
+    },
+    "allowGeometryUpdates": true,
+    "hasAttachments": true,
+    "propagateVisibleFields": true,
+    "viewSourceHasAttachments": true,
+    "attachmentProperties": [
+        {
+            "name": "id",
+            "fieldName": "ATTACHMENTID",
+            "isEnabled": true
+        },
+        {
+            "name": "globalId",
+            "fieldName": "AttachmentGlobalID",
+            "isEnabled": true
+        },
+        {
+            "name": "name",
+            "fieldName": "ATT_NAME",
+            "isEnabled": true
+        },
+        {
+            "name": "size",
+            "fieldName": "DATA_SIZE",
+            "isEnabled": true
+        },
+        {
+            "name": "contentType",
+            "fieldName": "CONTENT_TYPE",
+            "isEnabled": true
+        },
+        {
+            "name": "keywords",
+            "fieldName": "Keywords",
+            "isEnabled": true
+        },
+        {
+            "name": "exifInfo",
+            "fieldName": "ExifInfo",
+            "isEnabled": true
+        }
+    ],
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "hasM": false,
+    "hasZ": false,
+    "objectIdField": "objectid",
+    "uniqueIdField": {
+        "name": "objectid",
+        "isSystemMaintained": true
+    },
+    "globalIdField": "globalid",
+    "typeIdField": "",
+    "fields": [
+        {
+            "name": "objectid",
+            "type": "esriFieldTypeOID",
+            "alias": "ObjectID",
+            "sqlType": "sqlTypeOther",
+            "nullable": false,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "globalid",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "sqlType": "sqlTypeOther",
+            "length": 38,
+            "nullable": false,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "CreationDate",
+            "type": "esriFieldTypeDate",
+            "alias": "CreationDate",
+            "sqlType": "sqlTypeOther",
+            "length": 8,
+            "nullable": true,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null,
+            "precision": 1
+        },
+        {
+            "name": "Creator",
+            "type": "esriFieldTypeString",
+            "alias": "Creator",
+            "sqlType": "sqlTypeOther",
+            "length": 128,
+            "nullable": true,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "EditDate",
+            "type": "esriFieldTypeDate",
+            "alias": "EditDate",
+            "sqlType": "sqlTypeOther",
+            "length": 8,
+            "nullable": true,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null,
+            "precision": 1
+        },
+        {
+            "name": "Editor",
+            "type": "esriFieldTypeString",
+            "alias": "Editor",
+            "sqlType": "sqlTypeOther",
+            "length": 128,
+            "nullable": true,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "hydro_name",
+            "type": "esriFieldTypeString",
+            "alias": "Last Name of Hydrographer",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "date_time",
+            "type": "esriFieldTypeDate",
+            "alias": "Date & Time of Measurement",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null,
+            "precision": 1
+        },
+        {
+            "name": "weather_conditions",
+            "type": "esriFieldTypeString",
+            "alias": "Weather Conditions",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "familiarity",
+            "type": "esriFieldTypeString",
+            "alias": "How framiliar are you with this site?",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_familiarity",
+                "codedValues": [
+                    {
+                        "name": "Who Dis?",
+                        "code": "0"
+                    },
+                    {
+                        "name": "We Cool",
+                        "code": "1"
+                    },
+                    {
+                        "name": "BFF's",
+                        "code": "2"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "rt_gage_site",
+            "type": "esriFieldTypeString",
+            "alias": "Is this a discharge measurement at a DNRC stream gage? ",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_rt_gage_site",
+                "codedValues": [
+                    {
+                        "name": "Yes",
+                        "code": "Yes"
+                    },
+                    {
+                        "name": "No ",
+                        "code": "No"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "gage_site_id",
+            "type": "esriFieldTypeString",
+            "alias": "Gage Site",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_gage_site_id",
+                "codedValues": [
+                    {
+                        "name": "76LJ 09900\tAshley Creek at Kalispell WTP",
+                        "code": "76LJ_09900"
+                    },
+                    {
+                        "name": "40J 09100\tBeaver Cr blw Reservoir nr Havre, MT",
+                        "code": "40J_09100_blw"
+                    },
+                    {
+                        "name": "40J 09100\tBeaver Creek abv Reservoir nr Havre ",
+                        "code": "40J_09100_abv"
+                    },
+                    {
+                        "name": "41D 01000\tBig Hole River abv Jackson, MT",
+                        "code": "41D_01000"
+                    },
+                    {
+                        "name": "41D 02000\tBig Hole River abv Spring Cr ",
+                        "code": "41D_02000"
+                    },
+                    {
+                        "name": "41D 05000\tBig Hole River at Miner Creek nr ",
+                        "code": "41D_05000"
+                    },
+                    {
+                        "name": "41D 08000\tBig Hole River near Wise River, MT",
+                        "code": "41D_08000"
+                    },
+                    {
+                        "name": "76F 05300\tBlackfoot River nr Clearwater ",
+                        "code": "76F_05300"
+                    },
+                    {
+                        "name": "41H  08990\tBozeman, Creek at Bozeman, MT",
+                        "code": "41H_08990"
+                    },
+                    {
+                        "name": "43Q 05900\tCanyon Creek @ZooMontana",
+                        "code": "43Q_05900"
+                    },
+                    {
+                        "name": "76F 05200\tClearwater River nr Clearwater ",
+                        "code": "76F_05200"
+                    },
+                    {
+                        "name": "41O 04850\tDeep Creek near Choteau, MT",
+                        "code": "41O_04850"
+                    },
+                    {
+                        "name": "41I 03500\tDeep Creek near Townsend, MT",
+                        "code": "41I_03500"
+                    },
+                    {
+                        "name": "SR 004\tDuck Creek above Simms Ashuelot Rd ",
+                        "code": "SR_004"
+                    },
+                    {
+                        "name": "41H 08900\tEast Gallatin Rvr nr Manhattan",
+                        "code": "41H_08900"
+                    },
+                    {
+                        "name": "40B 06000\tFlatwillow Creek abv Petrolia Reservoir",
+                        "code": "40B_06000"
+                    },
+                    {
+                        "name": "40L-10050013   Frenchman Creek @ Mouth",
+                        "code": "40L_10050013"
+                    },
+                    {
+                        "name": "43B 10000\tLivingston Ditch below headgate",
+                        "code": "43B_10000"
+                    },
+                    {
+                        "name": "76HB 09500\tLolo Creek abv Sleeman Creek",
+                        "code": "76HB_09500"
+                    },
+                    {
+                        "name": "76HB 09600\tLolo Creek bleow Highway 93",
+                        "code": "76HB_09600"
+                    },
+                    {
+                        "name": "41K 09900\tMill Coulee Ck nr Sun River",
+                        "code": "41K_09900"
+                    },
+                    {
+                        "name": "76LJ 07500\tMill Creek below Creston Hatchery",
+                        "code": "76LJ_07500"
+                    },
+                    {
+                        "name": "76F 03500\tNorth Fork Blackfoot at Ryan Bridge",
+                        "code": "76F_03500"
+                    },
+                    {
+                        "name": "43B 05000\tParadise Canal below Yellowstone ",
+                        "code": "43B_05000"
+                    },
+                    {
+                        "name": "43B 04000\tPark Branch Canal below headgate",
+                        "code": "43B_04000"
+                    },
+                    {
+                        "name": "40I 10000\tPeoples Creek near Dodson, MT",
+                        "code": "40I_10000"
+                    },
+                    {
+                        "name": "76M 01000\tRattlesnake Cr nr Missoula, MT",
+                        "code": "76M_01000"
+                    },
+                    {
+                        "name": "41A 10000\tRed Rock River abv Clark Canyon Res",
+                        "code": "41A_10000"
+                    },
+                    {
+                        "name": "41C 08000\tRuby river at Harrington Bridge",
+                        "code": "41C_08000"
+                    },
+                    {
+                        "name": "41H 08950\tSourdough Creek above City Intake",
+                        "code": "41H_08950"
+                    },
+                    {
+                        "name": "43BV 02000\tSweet Grass Creek at Tronrud Bridge",
+                        "code": "43BV_02000"
+                    },
+                    {
+                        "name": "41O 05000\tTeton River above Hwy 221",
+                        "code": "41O_05000"
+                    },
+                    {
+                        "name": "41O 03000\tTeton River above Springhill",
+                        "code": "41O_03000"
+                    },
+                    {
+                        "name": "41O 09000\tTeton River below Buck Bridge",
+                        "code": "41O_09000"
+                    },
+                    {
+                        "name": "41S 08900\tWarm Springs Creek @ Sandrock Rd",
+                        "code": "41S_08900"
+                    },
+                    {
+                        "name": "43D 01900\tWF Rock Cr nr Red Lodge, MT",
+                        "code": "43D_01900"
+                    },
+                    {
+                        "name": "41D 07900\tWise River nr Mouth",
+                        "code": "41D_07900"
+                    },
+                    {
+                        "name": "40J 09000\tBeaver Creek Reservoir nr Havre, MT",
+                        "code": "40J_09000"
+                    },
+                    {
+                        "name": "42B 01900\tTongue River Reservoir",
+                        "code": "42B_01900"
+                    },
+                    {
+                        "name": "76LJ 09900-Ashley Creek at Kalispell WTP",
+                        "code": "76LJ 09900"
+                    },
+                    {
+                        "name": "40J 09100-Beaver Cr blw Reservoir nr Havre, MT",
+                        "code": "40J 09100_blw"
+                    },
+                    {
+                        "name": "40J 09100-Beaver Creek abv Reservoir nr Havre ",
+                        "code": "40J 09100_abv"
+                    },
+                    {
+                        "name": "41D 01000-Big Hole River abv Jackson, MT",
+                        "code": "41D 01000"
+                    },
+                    {
+                        "name": "41D 02000-Big Hole River abv Spring Cr ",
+                        "code": "41D 02000"
+                    },
+                    {
+                        "name": "41D 05000-Big Hole River at Miner Creek nr ",
+                        "code": "41D 05000"
+                    },
+                    {
+                        "name": "41D 08000-Big Hole River near Wise River, MT",
+                        "code": "41D 08000"
+                    },
+                    {
+                        "name": "76F 05300-Blackfoot River nr Clearwater ",
+                        "code": "76F 05300"
+                    },
+                    {
+                        "name": "41H  08990-Bozeman, Creek at Bozeman, MT",
+                        "code": "41H  08990"
+                    },
+                    {
+                        "name": "43Q 05900-Canyon Creek @ZooMontana",
+                        "code": "43Q 05900"
+                    },
+                    {
+                        "name": "76F 05200-Clearwater River nr Clearwater ",
+                        "code": "76F 05200"
+                    },
+                    {
+                        "name": "41O 04850-Deep Creek near Choteau, MT",
+                        "code": "41O 04850"
+                    },
+                    {
+                        "name": "41I 03500-Deep Creek near Townsend, MT",
+                        "code": "41I 03500"
+                    },
+                    {
+                        "name": "SR 004-Duck Creek above Simms Ashuelot Rd ",
+                        "code": "SR 004"
+                    },
+                    {
+                        "name": "41H 08900-East Gallatin Rvr nr Manhattan",
+                        "code": "41H 08900"
+                    },
+                    {
+                        "name": "40B 06000-Flatwillow Creek abv Petrolia Reservoir",
+                        "code": "40B 06000"
+                    },
+                    {
+                        "name": "40L-10050013-  Frenchman Creek @ Mouth",
+                        "code": "40L-10050013"
+                    },
+                    {
+                        "name": "43B 10000-Livingston Ditch below headgate",
+                        "code": "43B 10000"
+                    },
+                    {
+                        "name": "76HB 09500-Lolo Creek abv Sleeman Creek",
+                        "code": "76HB 09500"
+                    },
+                    {
+                        "name": "76HB 09600-Lolo Creek bleow Highway 93",
+                        "code": "76HB 09600"
+                    },
+                    {
+                        "name": "41K 09900-Mill Coulee Ck nr Sun River",
+                        "code": "41K 09900"
+                    },
+                    {
+                        "name": "76LJ 07500-Mill Creek below Creston Hatchery",
+                        "code": "76LJ 07500"
+                    },
+                    {
+                        "name": "76F 03500-North Fork Blackfoot at Ryan Bridge",
+                        "code": "76F 03500"
+                    },
+                    {
+                        "name": "43B 05000-Paradise Canal below Yellowstone ",
+                        "code": "43B 05000"
+                    },
+                    {
+                        "name": "43B 04000-Park Branch Canal below headgate",
+                        "code": "43B 04000"
+                    },
+                    {
+                        "name": "40I 10000-Peoples Creek near Dodson, MT",
+                        "code": "40I 10000"
+                    },
+                    {
+                        "name": "76M 01000-Rattlesnake Cr nr Missoula, MT",
+                        "code": "76M 01000"
+                    },
+                    {
+                        "name": "41A 10000-Red Rock River abv Clark Canyon Res",
+                        "code": "41A 10000"
+                    },
+                    {
+                        "name": "41C 08000-Ruby river at Harrington Bridge",
+                        "code": "41C 08000"
+                    },
+                    {
+                        "name": "41H 08950-Sourdough Creek above City Intake",
+                        "code": "41H 08950"
+                    },
+                    {
+                        "name": "43BV 02000-Sweet Grass Creek at Tronrud Bridge",
+                        "code": "43BV 02000"
+                    },
+                    {
+                        "name": "41O 05000-Teton River above Hwy 221",
+                        "code": "41O 05000"
+                    },
+                    {
+                        "name": "41O 03000-Teton River above Springhill",
+                        "code": "41O 03000"
+                    },
+                    {
+                        "name": "41O 09000-Teton River below Buck Bridge",
+                        "code": "41O 09000"
+                    },
+                    {
+                        "name": "41S 08900-Warm Springs Creek @ Sandrock Rd",
+                        "code": "41S 08900"
+                    },
+                    {
+                        "name": "43D 01900-WF Rock Cr nr Red Lodge, MT",
+                        "code": "43D 01900"
+                    },
+                    {
+                        "name": "41D 07900-Wise River nr Mouth",
+                        "code": "41D 07900"
+                    },
+                    {
+                        "name": "40J 09000-Beaver Creek Reservoir nr Havre, MT",
+                        "code": "40J 09000"
+                    },
+                    {
+                        "name": "42B 01900-Tongue River Reservoir",
+                        "code": "42B 01900"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "site_name",
+            "type": "esriFieldTypeString",
+            "alias": "Site Name",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "staff_gage",
+            "type": "esriFieldTypeString",
+            "alias": "Is there a staff gage or wire weight associated with this site?",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_staff_gage",
+                "codedValues": [
+                    {
+                        "name": "Yes",
+                        "code": "Yes"
+                    },
+                    {
+                        "name": "No ",
+                        "code": "No"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "staff_gage_height_ft",
+            "type": "esriFieldTypeDouble",
+            "alias": "Staff Gage/Wire Weight Reading (ft)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "initial_discharge_guess_cfs",
+            "type": "esriFieldTypeDouble",
+            "alias": "Initial Discharge Estimate (cfs)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "channel_type",
+            "type": "esriFieldTypeString",
+            "alias": "Channel Type",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_channel_type",
+                "codedValues": [
+                    {
+                        "name": "Canal",
+                        "code": "Canal"
+                    },
+                    {
+                        "name": "Straight",
+                        "code": "Straight"
+                    },
+                    {
+                        "name": "Meandering",
+                        "code": "Meandering"
+                    },
+                    {
+                        "name": "Braided",
+                        "code": "Braided"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "water_clarity",
+            "type": "esriFieldTypeString",
+            "alias": "Water Clarity",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_water_clarity",
+                "codedValues": [
+                    {
+                        "name": "Clear",
+                        "code": "Clear"
+                    },
+                    {
+                        "name": "Murky",
+                        "code": "Murky"
+                    },
+                    {
+                        "name": "Opaque",
+                        "code": "Opaque"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "water_surface",
+            "type": "esriFieldTypeString",
+            "alias": "Flow Regime",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_water_surface",
+                "codedValues": [
+                    {
+                        "name": "Laminar",
+                        "code": "Laminar"
+                    },
+                    {
+                        "name": "Turbulent",
+                        "code": "Turbulent"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "vegetation_in_channel",
+            "type": "esriFieldTypeString",
+            "alias": "Vegetation in Channel",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_vegetation_in_channel",
+                "codedValues": [
+                    {
+                        "name": "None",
+                        "code": "None"
+                    },
+                    {
+                        "name": "Sparse",
+                        "code": "Sparse"
+                    },
+                    {
+                        "name": "Moderate",
+                        "code": "Moderate"
+                    },
+                    {
+                        "name": "Dense",
+                        "code": "Dense"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "primary_bed_material",
+            "type": "esriFieldTypeString",
+            "alias": "Primary Bed Material",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_primary_bed_material",
+                "codedValues": [
+                    {
+                        "name": "Bedrock",
+                        "code": "Bedrock"
+                    },
+                    {
+                        "name": "Mud",
+                        "code": "Mud"
+                    },
+                    {
+                        "name": "Sand",
+                        "code": "Sand"
+                    },
+                    {
+                        "name": "Gravel",
+                        "code": "Gravel"
+                    },
+                    {
+                        "name": "Cobbles",
+                        "code": "Cobbles"
+                    },
+                    {
+                        "name": "Boulders",
+                        "code": "Boulders"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "cross_section_uniformity",
+            "type": "esriFieldTypeString",
+            "alias": "Cross Section Uniformity",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_cross_section_uniformity",
+                "codedValues": [
+                    {
+                        "name": "Very Uniform",
+                        "code": "Very Uniform"
+                    },
+                    {
+                        "name": "Shallow Pools",
+                        "code": "Shallow Pools"
+                    },
+                    {
+                        "name": "Deep Pools",
+                        "code": "Deep Pools"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "left_bank",
+            "type": "esriFieldTypeString",
+            "alias": "Left Bank",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_left_bank",
+                "codedValues": [
+                    {
+                        "name": "Gently Sloping",
+                        "code": "Gently Sloping"
+                    },
+                    {
+                        "name": "Steeply Sloping",
+                        "code": "Steeply Sloping"
+                    },
+                    {
+                        "name": "Undercut",
+                        "code": "Undercut"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "right_bank",
+            "type": "esriFieldTypeString",
+            "alias": "Right Bank",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_right_bank",
+                "codedValues": [
+                    {
+                        "name": "Gently Sloping",
+                        "code": "Gently Sloping"
+                    },
+                    {
+                        "name": "Steeply Sloping",
+                        "code": "Steeply Sloping"
+                    },
+                    {
+                        "name": "Undercut",
+                        "code": "Undercut"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "cross_sectional_width_ft",
+            "type": "esriFieldTypeDouble",
+            "alias": "Cross Sectional Width (ft)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "average_depth_ft",
+            "type": "esriFieldTypeDouble",
+            "alias": "Average Depth (ft)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "approximate_surface_velocity_ft",
+            "type": "esriFieldTypeDouble",
+            "alias": "Approximate Velocity (ft/s)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "educated_discharge_guess",
+            "type": "esriFieldTypeDouble",
+            "alias": "Refined Discharge Estimate",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "measurement_type",
+            "type": "esriFieldTypeString",
+            "alias": "Measurement Type",
+            "sqlType": "sqlTypeOther",
+            "length": 1000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "how_familiar_are_you_with_this_",
+            "type": "esriFieldTypeString",
+            "alias": "How familiar are you with this site?",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_how_familiar_are_you_with_this_",
+                "codedValues": [
+                    {
+                        "name": "Not Familiar",
+                        "code": "Not Familiar"
+                    },
+                    {
+                        "name": "Somewhat Familiar",
+                        "code": "Somewhat Familiar"
+                    },
+                    {
+                        "name": "Very Familiar",
+                        "code": "Very Familiar"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "location_notes",
+            "type": "esriFieldTypeString",
+            "alias": "Location Notes",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "gage_reading",
+            "type": "esriFieldTypeDouble",
+            "alias": "Gage Reading",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "battery_reading",
+            "type": "esriFieldTypeDouble",
+            "alias": "Battery Reading",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "maintenance_gage_operational",
+            "type": "esriFieldTypeString",
+            "alias": "Gage Operational",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_maintenance_gage_operational",
+                "codedValues": [
+                    {
+                        "name": "Yes",
+                        "code": "Yes"
+                    },
+                    {
+                        "name": "No",
+                        "code": "No"
+                    },
+                    {
+                        "name": "NA",
+                        "code": "NA"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "maintenance_data_downloaded",
+            "type": "esriFieldTypeString",
+            "alias": "Data Downloaded",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_maintenance_data_downloaded",
+                "codedValues": [
+                    {
+                        "name": "Yes",
+                        "code": "Yes"
+                    },
+                    {
+                        "name": "No",
+                        "code": "No"
+                    },
+                    {
+                        "name": "NA",
+                        "code": "NA"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "maintenance_desiccant_changed",
+            "type": "esriFieldTypeString",
+            "alias": "Desiccant Changed",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_maintenance_desiccant_changed",
+                "codedValues": [
+                    {
+                        "name": "Yes",
+                        "code": "Yes"
+                    },
+                    {
+                        "name": "No",
+                        "code": "No"
+                    },
+                    {
+                        "name": "NA",
+                        "code": "NA"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "maintenance_orifice_purged",
+            "type": "esriFieldTypeString",
+            "alias": "Orifice Purged",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_maintenance_orifice_purged",
+                "codedValues": [
+                    {
+                        "name": "Yes",
+                        "code": "Yes"
+                    },
+                    {
+                        "name": "No",
+                        "code": "No"
+                    },
+                    {
+                        "name": "NA",
+                        "code": "NA"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "gageweight_shifted",
+            "type": "esriFieldTypeString",
+            "alias": "Was the gage/weight shifted?",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_gageweight_shifted",
+                "codedValues": [
+                    {
+                        "name": "Yes",
+                        "code": "Yes"
+                    },
+                    {
+                        "name": "No",
+                        "code": "No"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "shift_amount_ft",
+            "type": "esriFieldTypeDouble",
+            "alias": "Enter Shift Amount (ft)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "surface_ice",
+            "type": "esriFieldTypeString",
+            "alias": "Surface Ice ",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_surface_ice",
+                "codedValues": [
+                    {
+                        "name": "None",
+                        "code": "None"
+                    },
+                    {
+                        "name": "Some",
+                        "code": "Some"
+                    },
+                    {
+                        "name": "Completely",
+                        "code": "Completely"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "water_temperature_f",
+            "type": "esriFieldTypeDouble",
+            "alias": "Water Temperature (F)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "cross_section_width",
+            "type": "esriFieldTypeDouble",
+            "alias": "Cross Section Width",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "field_52",
+            "type": "esriFieldTypeDouble",
+            "alias": "Discharge Measurement",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "measurement_error",
+            "type": "esriFieldTypeString",
+            "alias": "Measurement Error",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_measurement_error",
+                "codedValues": [
+                    {
+                        "name": "excellent (<2%)",
+                        "code": "excellent (<2%)"
+                    },
+                    {
+                        "name": "good (<5%)",
+                        "code": "good (<5%)"
+                    },
+                    {
+                        "name": "fair (<8%)",
+                        "code": "fair (<8%)"
+                    },
+                    {
+                        "name": "poor (>8%)",
+                        "code": "poor (>8%)"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "flume_type",
+            "type": "esriFieldTypeString",
+            "alias": "Flume Type",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_flume_type",
+                "codedValues": [
+                    {
+                        "name": "Parshall\u00a0",
+                        "code": "Parshall_"
+                    },
+                    {
+                        "name": "Montana",
+                        "code": "Montana"
+                    },
+                    {
+                        "name": "USGS Portable",
+                        "code": "USGS Portable"
+                    },
+                    {
+                        "name": "HS / H / HL",
+                        "code": "HS / H / HL"
+                    },
+                    {
+                        "name": "Trapezoidal",
+                        "code": "Trapezoidal"
+                    },
+                    {
+                        "name": "Cutthroat",
+                        "code": "Cutthroat"
+                    },
+                    {
+                        "name": "Other",
+                        "code": "other"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "flume_ty_other",
+            "type": "esriFieldTypeString",
+            "alias": "Other - Flume Type",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "flow_type",
+            "type": "esriFieldTypeString",
+            "alias": "Flow Type",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_flow_type",
+                "codedValues": [
+                    {
+                        "name": "Submerged Flow",
+                        "code": "Submerged Flow"
+                    },
+                    {
+                        "name": "Free Flow",
+                        "code": "Free Flow"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "measurement_notes",
+            "type": "esriFieldTypeString",
+            "alias": "Measurement Notes",
+            "sqlType": "sqlTypeOther",
+            "length": 1000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "field_70",
+            "type": "esriFieldTypeString",
+            "alias": "Location Notes",
+            "sqlType": "sqlTypeOther",
+            "length": 1000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "throat_width_ft",
+            "type": "esriFieldTypeDouble",
+            "alias": "Throat Width (ft)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "primary_stage_ft",
+            "type": "esriFieldTypeDouble",
+            "alias": "Primary Stage (ft)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "secondary_stage_ft",
+            "type": "esriFieldTypeDouble",
+            "alias": "Secondary Stage (ft)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "weir_type",
+            "type": "esriFieldTypeString",
+            "alias": "Weir Type",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_weir_type",
+                "codedValues": [
+                    {
+                        "name": "Rectangular",
+                        "code": "Rectangular"
+                    },
+                    {
+                        "name": "Trapezoidal",
+                        "code": "Trapezoidal"
+                    },
+                    {
+                        "name": "V-Notch",
+                        "code": "V-Notch"
+                    },
+                    {
+                        "name": "Compound",
+                        "code": "Compound"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "crest_type",
+            "type": "esriFieldTypeString",
+            "alias": "Crest Type",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_crest_type",
+                "codedValues": [
+                    {
+                        "name": "Broad Crested",
+                        "code": "Broad Crested"
+                    },
+                    {
+                        "name": "Sharp Crested",
+                        "code": "Sharp Crested"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "total_angle_deg",
+            "type": "esriFieldTypeDouble",
+            "alias": "Total Angle (deg) ",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "side_slope_lh",
+            "type": "esriFieldTypeDouble",
+            "alias": "Side Slope (L/h)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "total_crest_length_ft",
+            "type": "esriFieldTypeDouble",
+            "alias": "Total Crest Length (ft)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "lower_crest_length_ft",
+            "type": "esriFieldTypeDouble",
+            "alias": "Lower Crest Length (ft)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "water_depth_ft",
+            "type": "esriFieldTypeDouble",
+            "alias": "Water Depth (ft)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "upper_water_depth_ft",
+            "type": "esriFieldTypeDouble",
+            "alias": "Upper Water Depth (ft)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "lower_water_depth_ft",
+            "type": "esriFieldTypeDouble",
+            "alias": "Lower Water Depth (ft)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "structure_condition",
+            "type": "esriFieldTypeString",
+            "alias": "Structure Condition",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_structure_condition",
+                "codedValues": [
+                    {
+                        "name": "Poor",
+                        "code": "Poor"
+                    },
+                    {
+                        "name": "Fair",
+                        "code": "Fair"
+                    },
+                    {
+                        "name": "Good",
+                        "code": "Good"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "upper_weir_type",
+            "type": "esriFieldTypeString",
+            "alias": "Upper Weir Type",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_upper_weir_type",
+                "codedValues": [
+                    {
+                        "name": "Rectangular",
+                        "code": "Rectangular"
+                    },
+                    {
+                        "name": "Trapezoidal",
+                        "code": "Trapezoidal"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "lower_weir_type",
+            "type": "esriFieldTypeString",
+            "alias": "Lower Weir Type",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_lower_weir_type",
+                "codedValues": [
+                    {
+                        "name": "Rectangular",
+                        "code": "Rectangular"
+                    },
+                    {
+                        "name": "Trapezoidal",
+                        "code": "Trapezoidal"
+                    },
+                    {
+                        "name": "V-Notch",
+                        "code": "V-Notch"
+                    },
+                    {
+                        "name": "Compound",
+                        "code": "Compound"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "upper_crest_length_ft",
+            "type": "esriFieldTypeDouble",
+            "alias": "Upper Crest Length (ft)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "upper_side_slope_lh",
+            "type": "esriFieldTypeDouble",
+            "alias": "Upper Side Slope (L/h)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "lower_side_slope_lh",
+            "type": "esriFieldTypeDouble",
+            "alias": "Lower Side Slope (L/h)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "lower_total_angle_deg",
+            "type": "esriFieldTypeDouble",
+            "alias": "Lower Total Angle (deg)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "cross_section_morphology",
+            "type": "esriFieldTypeString",
+            "alias": "Cross Section Morphology",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_cross_section_morphology",
+                "codedValues": [
+                    {
+                        "name": "Left Channel Pool",
+                        "code": "Left Channel Pool"
+                    },
+                    {
+                        "name": "No Pools",
+                        "code": "No Pools"
+                    },
+                    {
+                        "name": "Right Channel Pool",
+                        "code": "Right Channel Pool"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "width_measurement_method",
+            "type": "esriFieldTypeString",
+            "alias": "Width Measurement Method",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_width_measurement_method",
+                "codedValues": [
+                    {
+                        "name": "Measured",
+                        "code": "Measured"
+                    },
+                    {
+                        "name": "Visual",
+                        "code": "Visual"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "depth_measurement_method",
+            "type": "esriFieldTypeString",
+            "alias": "Depth Measurement Method",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_depth_measurement_method",
+                "codedValues": [
+                    {
+                        "name": "Measured Multiple Points",
+                        "code": "Measured Multiple Points"
+                    },
+                    {
+                        "name": "Measured Single Point",
+                        "code": "Measured Single Point"
+                    },
+                    {
+                        "name": "Visual",
+                        "code": "Visual"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "velocity_measurement_method",
+            "type": "esriFieldTypeString",
+            "alias": "Velocity Measurement Method",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_velocity_measurement_method",
+                "codedValues": [
+                    {
+                        "name": "Timed Float",
+                        "code": "Timed Float"
+                    },
+                    {
+                        "name": "Measured Single Point",
+                        "code": "Measured Single Point"
+                    },
+                    {
+                        "name": "Visual",
+                        "code": "Visual"
+                    },
+                    {
+                        "name": "Timed Bucket",
+                        "code": "Timed Bucket"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "rectangular_weir_type",
+            "type": "esriFieldTypeString",
+            "alias": "Rectangular Weir Type",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_rectangular_weir_type",
+                "codedValues": [
+                    {
+                        "name": "Supressed",
+                        "code": "Supressed"
+                    },
+                    {
+                        "name": "Contracted",
+                        "code": "Contracted"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "flow_meter_serial_no",
+            "type": "esriFieldTypeString",
+            "alias": "Flow Meter Serial No.",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "sounding_weight_lbs",
+            "type": "esriFieldTypeDouble",
+            "alias": "Sounding Weight (lbs)",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "adcp_boat",
+            "type": "esriFieldTypeString",
+            "alias": "ADCP Boat",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_adcp_boat",
+                "codedValues": [
+                    {
+                        "name": "SonTek RS5",
+                        "code": "SonTek RS5"
+                    },
+                    {
+                        "name": "Son Tek M9",
+                        "code": "Son Tek M9"
+                    },
+                    {
+                        "name": "Other",
+                        "code": "other"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "adcp_other",
+            "type": "esriFieldTypeString",
+            "alias": "Other - ADCP Boat",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "gps_used",
+            "type": "esriFieldTypeString",
+            "alias": "GPS Used",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_gps_used",
+                "codedValues": [
+                    {
+                        "name": "Yes",
+                        "code": "Yes"
+                    },
+                    {
+                        "name": "No",
+                        "code": "No"
+                    }
+                ]
+            },
+            "defaultValue": null
+        },
+        {
+            "name": "acdp_depth",
+            "type": "esriFieldTypeDouble",
+            "alias": "ACDP Depth",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "number_of_transects",
+            "type": "esriFieldTypeDouble",
+            "alias": "Number of Transects",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "measurement_type_other",
+            "type": "esriFieldTypeString",
+            "alias": "Other - Measurement Type",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "bank_vegetation",
+            "type": "esriFieldTypeString",
+            "alias": "Bank Vegetation",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "nullable": true,
+            "editable": true,
+            "domain": {
+                "type": "codedValue",
+                "name": "cvd_bank_vegetation",
+                "codedValues": [
+                    {
+                        "name": "None",
+                        "code": "None"
+                    },
+                    {
+                        "name": "Sparse",
+                        "code": "Sparse"
+                    },
+                    {
+                        "name": "Moderate",
+                        "code": "Moderate"
+                    },
+                    {
+                        "name": "Dense",
+                        "code": "Dense"
+                    }
+                ]
+            },
+            "defaultValue": null
+        }
+    ],
+    "indexes": [
+        {
+            "name": "GlobalIDIndex",
+            "fields": "globalid",
+            "isAscending": false,
+            "isUnique": true,
+            "description": "GlobalID index",
+            "indexType": "Attribute"
+        },
+        {
+            "name": "survey123_623adfe2a40544d88de2477a6c3c0791_SURVEY_Shape_sidx",
+            "fields": "Shape",
+            "isAscending": true,
+            "isUnique": false,
+            "description": "Shape Index",
+            "indexType": "Spatial"
+        },
+        {
+            "name": "PK__survey12__5242E632180CEE2E",
+            "fields": "objectid",
+            "isAscending": true,
+            "isUnique": true,
+            "description": "clustered, unique, primary key",
+            "indexType": "Attribute"
+        },
+        {
+            "name": "CreationDateIndex",
+            "fields": "CreationDate",
+            "isAscending": true,
+            "isUnique": false,
+            "description": "CreationDate Field index",
+            "indexType": "Attribute"
+        },
+        {
+            "name": "CreatorIndex",
+            "fields": "Creator",
+            "isAscending": false,
+            "isUnique": false,
+            "description": "Creator Field index",
+            "indexType": "Attribute"
+        },
+        {
+            "name": "EditDateIndex",
+            "fields": "EditDate",
+            "isAscending": true,
+            "isUnique": false,
+            "description": "EditDate Field index",
+            "indexType": "Attribute"
+        },
+        {
+            "name": "EditorIndex",
+            "fields": "Editor",
+            "isAscending": false,
+            "isUnique": false,
+            "description": "Editor Field index",
+            "indexType": "Attribute"
+        }
+    ],
+    "dateFieldsTimeReference": {
+        "timeZone": "UTC",
+        "respectsDaylightSaving": false
+    },
+    "preferredTimeReference": null,
+    "types": [],
+    "templates": [
+        {
+            "name": "New Feature",
+            "description": "",
+            "drawingTool": "esriFeatureEditToolNone",
+            "prototype": {
+                "attributes": {}
+            }
+        }
+    ],
+    "supportedQueryFormats": "JSON, geoJSON, PBF",
+    "supportedAppendFormats": "sqlite,geoPackage,shapefile,filegdb,featureCollection,geojson,csv,excel,jsonl,featureService,imageCollection",
+    "supportedAppendSourceFilterFormats": "sqlite,geoPackage,shapefile,filegdb,featureService",
+    "supportedExportFormats": "csv,shapefile,sqlite,geoPackage,filegdb,featureCollection,geojson,excel",
+    "supportedSpatialRelationships": [
+        "esriSpatialRelIntersects",
+        "esriSpatialRelContains",
+        "esriSpatialRelCrosses",
+        "esriSpatialRelEnvelopeIntersects",
+        "esriSpatialRelIndexIntersects",
+        "esriSpatialRelOverlaps",
+        "esriSpatialRelTouches",
+        "esriSpatialRelWithin",
+        "esriSpatialRelDisjoint",
+        "esriSpatialRelRelation"
+    ],
+    "supportedContingentValuesFormats": "JSON, PBF",
+    "supportedSyncDataOptions": 4,
+    "hasStaticData": true,
+    "maxRecordCount": 1000,
+    "standardMaxRecordCount": 32000,
+    "standardMaxRecordCountNoGeometry": 32000,
+    "tileMaxRecordCount": 8000,
+    "maxRecordCountFactor": 1,
+    "capabilities": "Query,Extract"
+}

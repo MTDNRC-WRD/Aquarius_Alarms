@@ -1,0 +1,15 @@
+,UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Timestamp_min_1hr,Value_min_1hr,Timestamp_min_day,Value_min_day,Delta_Day,Unit,Alarm_Type,LowAlarm,HighAlarm,DeltaAlarm,Publish
+0,8efc886fb5364b46998d82168cb09504,40A 10000,Barber Canal,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+1,ad9340452c964165abe86957f46a7092,40A 3000,NF Musselshell Diversion Canal,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+2,f0f03c49f9944af39eb668a184c8c7d2,40A 4080,Martinsdale Supply Canal,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+3,c1f909c9847f459cacc46d3dbf7f3a29,40A 5000,Martinsdale Outlet Canal,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+4,ff80a2bd53644594b4e1885bd848bbf3,40A 7000,Two Dot Canal,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+5,6d5e953edb584ed799d810572e64d422,40A 8080,Deadman's Basin Supply Canal abv Drop to Res,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+6,6196528d99684286b84011601e8a4dcb,40A 8100,Barber Canal,Discharge,Oct-14 22:15,0,Oct-14 21:30,0,Oct-13 22:30,0,0,ft^3/s,HighAlarm,0.05,10000,100,True
+7,7c7b10a3025141db97c7038dfcf3f72d,40A 9000,Careless Canal,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+8,d3aa65872ebf4469b572b38044530c00,40B 06000,Flatwillow Creek abv Petrolia Reservoir,Discharge,Oct-14 22:15,0,Oct-14 21:30,0,Oct-13 22:30,0,0,ft^3/s,HighAlarm,0.05,275,100,True
+9,35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,50,5,True
+10,caa1a4fc3c214f8bae9d159f02058e38,41G 09000,"Willow Creek nr Willow, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+11,4b9b6c044ccc44ea90e191a3e76df0d5,41O 09000,Teton River below Buck Bridge,Discharge,null,null,null,null,null,null,0,ft^3/s,,20.0,400,40,True
+12,ccef46acfa11457fada830f3f284ca59,76E 1500,EF Rock Ck abv Reservoir,Discharge,Oct-14 22:00,0,Oct-14 21:15,0,Oct-13 22:15,0,0,ft^3/s,HighAlarm,0.05,10000,100,True
+13,29ec6656a3f54e40bd6451a3f85a986d,76F 2000,Nevada Ck blw Res,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True

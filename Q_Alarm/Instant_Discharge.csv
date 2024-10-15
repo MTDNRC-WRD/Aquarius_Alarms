@@ -1,0 +1,84 @@
+,UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Timestamp_min_1hr,Value_min_1hr,Timestamp_min_day,Value_min_day,Delta_Day,Unit,Alarm_Type,LowAlarm,HighAlarm,DeltaAlarm,Publish
+0,8efc886fb5364b46998d82168cb09504,40A 10000,Barber Canal,Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,True
+1,d3310b1c958446fe99a69e8997d848d8,40A 1500,NF Musselshell near Delphine,Discharge,Oct-14 22:15,5,Oct-14 21:30,5,Oct-13 22:30,5,,ft^3/s,,0.05,10000,100,True
+2,0f1ce86e86f841ae91996afb7ced5ac7,40A 2000,NF Musselshell blw Bair Reservoir,Discharge,Oct-14 22:15,6,Oct-14 21:30,6,Oct-13 22:30,6,,ft^3/s,,0.05,10000,100,True
+3,ad9340452c964165abe86957f46a7092,40A 3000,NF Musselshell Diversion Canal,Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,True
+4,f0f03c49f9944af39eb668a184c8c7d2,40A 4080,Martinsdale Supply Canal,Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,True
+5,c1f909c9847f459cacc46d3dbf7f3a29,40A 5000,Martinsdale Outlet Canal,Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,True
+6,ff80a2bd53644594b4e1885bd848bbf3,40A 7000,Two Dot Canal,Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,True
+7,6d5e953edb584ed799d810572e64d422,40A 8080,Deadman's Basin Supply Canal abv Drop to Res,Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,True
+8,6196528d99684286b84011601e8a4dcb,40A 8100,Barber Canal,Discharge,Oct-14 22:15,0,Oct-14 21:30,0,Oct-13 22:30,0,,ft^3/s,,0.05,10000,100,True
+9,7c7b10a3025141db97c7038dfcf3f72d,40A 9000,Careless Canal,Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,True
+10,d3aa65872ebf4469b572b38044530c00,40B 06000,Flatwillow Creek abv Petrolia Reservoir,Discharge,Oct-14 22:15,0,Oct-14 21:30,0,Oct-13 22:30,0,,ft^3/s,,0.05,275,100,True
+11,35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,50,5,True
+12,6de1da6485cb4f7a8349c9a7b3fe40f9,40I 10000,"Peoples Creek near Dodson, MT",Discharge,Oct-14 22:15,85,Oct-14 21:30,82,Oct-13 22:30,72,,ft^3/s,,0.05,10000,100,True
+13,887741d954bc4ca2a718e0735a4acc99,40J 08900,"Beaver Creek abv Reservoir nr Havre, MT",Discharge,Oct-14 22:15,16,Oct-14 21:30,17,Oct-13 22:30,15,,ft^3/s,,5.0,100,20,True
+14,21041bb563b44788a78c95a72086d48c,40J 09100,"Beaver Cr blw Reservoir nr Havre, MT",Discharge,Oct-14 22:15,7,Oct-14 21:30,7,Oct-13 22:30,7,,ft^3/s,,5.0,130,50,True
+15,8473d99f2b5249d0867cc90cc6ddd49b,40L-10050013,Frenchman Creek @ Mouth,Discharge,Oct-14 22:45,8,Oct-14 22:00,8,Oct-13 23:00,8,,ft^3/s,,0.05,10000,100,True
+16,a7124ecc7277485db5cafdc6db2acfc7,41A 10000,Red Rock River abv Clark Canyon Res,Discharge,Oct-14 22:15,123,Oct-14 21:30,127,Oct-13 22:30,130,,ft^3/s,,17.0,500,100,True
+17,f18e39e2ac5e4963a8267a71f799a5aa,41C 05000,Ruby River at Alder,Discharge,Oct-14 22:30,26,Oct-14 21:45,25,Oct-13 22:45,23,,ft^3/s,,0.05,10000,100,True
+18,601a1837a186496488d091c51eab44c2,41C 08000,Ruby River at Harrington Bridge,Discharge,Oct-14 22:00,139,Oct-14 21:15,139,Oct-13 22:15,150,,ft^3/s,,30.0,600,100,True
+19,d1bddfaf51db4dd2a7e7db5fbfacfcee,41D 01000,"Big Hole River abv Jackson, MT",Discharge,Oct-14 22:45,9,Oct-14 22:00,9,Oct-13 23:00,9,,ft^3/s,,0.05,10000,100,True
+20,a585edb7d40948febbfb1cba55475aa8,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Discharge,Oct-14 22:45,11,Oct-14 22:00,11,Oct-13 23:00,11,,ft^3/s,,0.05,10000,100,True
+21,612ec6eb18af48c4920fcd549fa91bae,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Discharge,Oct-14 22:45,31,Oct-14 22:00,31,Oct-13 23:00,31,,ft^3/s,,0.05,10000,100,True
+22,dd006b09768d45a8a6932dde13bd3e34,41D 07700,"Deep Creek nr Wise River, MT",Discharge,Oct-14 22:00,13,Oct-14 21:15,12,Oct-13 22:15,12,,ft^3/s,,40.0,150,30,True
+23,977102eda5fe4c0794f59bc236480d56,41D 07900,Wise River nr mouth,Discharge,Oct-14 22:15,7,Oct-14 21:30,7,Oct-13 22:30,7,,ft^3/s,,10.0,1700,100,True
+24,6990415da551431fa38ef66fa91fe5f8,41D 08000,"Big Hole River near Wise River, MT",Discharge,Oct-14 22:45,146,Oct-14 22:00,146,Oct-13 23:00,146,,ft^3/s,,0.05,10000,100,True
+25,a9062a54bb844002a100b99472f2eb5d,41E 10000,Boulder River Nr Cardwell,Discharge,Oct-14 22:30,38,Oct-14 21:45,38,Oct-13 22:45,38,,ft^3/s,,70.0,350,100,True
+26,caa1a4fc3c214f8bae9d159f02058e38,41G 09000,"Willow Creek nr Willow, MT",Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,True
+27,08667206d7624b5c8f4055bd74584b3b,41H 08900,East Gallatin Rvr nr Manhattan,Discharge,Oct-14 22:15,213,Oct-14 21:30,213,Oct-13 22:30,216,,ft^3/s,,125.0,1500,100,True
+28,d62cb40badda4ddaafc490e473404dfe,41H 08950,Sourdough Creek above City Intake,Discharge,Oct-14 22:00,8,Oct-14 21:15,8,Oct-13 22:15,9,,ft^3/s,,7.0,170,100,True
+29,71d0dd3f6c4a47188a2890833bcc6abc,41H 08990,"Bozeman Creek at Bozeman, MT",Discharge,Oct-14 22:15,12,Oct-14 21:30,12,Oct-13 22:30,14,,ft^3/s,,5.0,275,100,True
+30,095c0d42e78b4aa383b15373c69dad60,41H 1000,EF Hyalite Ck,Discharge,Oct-14 22:15,5,Oct-14 21:30,5,Oct-13 22:30,5,,ft^3/s,,0.05,10000,100,True
+31,8af7ac69fb77446db3ab13a44bccaf01,41H 1500,WF Hyalite Ck,Discharge,Oct-14 22:15,9,Oct-14 21:30,9,Oct-13 22:30,9,,ft^3/s,,0.05,10000,100,True
+32,4ce6bc2a90fd496cb6517a13ae898db8,41H 2000,Middle Creek blw Res,Discharge,Oct-14 22:45,16,Oct-14 22:00,16,Oct-13 23:00,16,,ft^3/s,,0.05,10000,100,True
+33,c7fa360046aa4acea374a93d00916409,41I 03500,"Deep Creek near Townsend, MT",Discharge,Oct-14 21:45,11,Oct-14 21:00,11,Oct-13 22:00,11,,ft^3/s,,0.05,10000,100,True
+34,96fa48de66b84b278f7a0e61a2336453,41I 1500,Broadwater Main Canal Below Head Gate,Discharge,Oct-14 21:30,104,Oct-14 20:45,103,Oct-13 21:45,144,,ft^3/s,,0.05,10000,100,True
+35,2e0fd79a9271434cbbcf7e2f0ceb9866,41I 2000,Broadwater East Canal Blw HG,Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,False
+36,636c4859536f47e4a84d3d51ef3d185e,41J 02000,"Sheep Creek nr Adams Creek Road, MT",Discharge,Oct-14 22:30,9,Oct-14 21:45,9,Oct-13 22:45,9,,ft^3/s,,0.05,10000,100,False
+37,3403b764293b40c0a8c116ddbe1e4489,41J 04900,"Moose Creek nr White Sulphur Springs, MT",Discharge,Oct-14 22:30,4,Oct-14 21:45,4,Oct-13 22:45,4,,ft^3/s,,0.05,10000,100,False
+38,159748adcec84f5a9adc63ecc0682aeb,41J 06000,"Sheep Creek nr White Sulphur Springs, MT",Discharge,Oct-14 22:30,12,Oct-14 21:45,12,Oct-13 22:45,12,,ft^3/s,,0.05,10000,100,False
+39,2239244e29044d1f83e7f903ed209de7,41K 09900,Mill Coulee Ck nr Sun River,Discharge,Oct-14 22:15,8,Oct-14 21:30,8,Oct-13 22:30,8,,ft^3/s,,0.05,10000,100,True
+40,93a2769ed5c24ff3bf55d75cbc8dc2cd,41K 4000,Nilan East Canal blw Reservoir,Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,False
+41,f2c670cec91745718ecffcd5f7d3631f,41M 09990,"Dupuyer Creek nr Dupuyer, MT",Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,False
+42,dc80d464e281436c99c2616e7e567763,41O 02000,Teton River at Bynum Diversion nr Choteau MT,Discharge,Oct-14 22:00,54,Oct-14 21:15,49,Oct-13 22:15,54,,ft^3/s,,0.05,160,20,True
+43,a81b273b22fa4de0bd0954a39dd2ada4,41O 03000,Teton River above Springhill,Discharge,Oct-14 22:15,24,Oct-14 21:30,24,Oct-13 22:30,25,,ft^3/s,,10.0,50,20,True
+44,0f04fa4dd4f1465487ff3e8ad17965d0,41O 04850,"Deep Creek near Choteau, MT",Discharge,Oct-14 22:15,10,Oct-14 21:30,10,Oct-13 22:30,11,,ft^3/s,,7.0,50,20,True
+45,df316d8b54804fb7beac850dc7ffc597,41O 05000,Teton River above Hwy 221 bridge,Discharge,Oct-14 22:00,25,Oct-14 21:15,25,Oct-13 22:15,25,,ft^3/s,,10.0,100,30,True
+46,4b9b6c044ccc44ea90e191a3e76df0d5,41O 09000,Teton River below Buck Bridge,Discharge,null,null,null,null,null,null,,ft^3/s,,20.0,400,40,True
+47,3c9913572d71435b8fcfd39d86f42e96,41Q 06000,"Belt Creek nr Belt, MT",Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,False
+48,32cead50a454441d9e3d3aa4985fe27b,41Q 08000,"Highwood Creek nr Highwood, MT",Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,False
+49,903c36bbe85b45f5810cc64c92403e6f,41S 08900,Warm Springs Creek @ Sandrock Road,Discharge,Oct-14 22:15,123,Oct-14 21:30,123,Oct-13 22:30,123,,ft^3/s,,80.0,400,100,True
+50,4e3f6333761e406e849b77fb783f52da,43B 04000,Park Branch Canal below headgate,Discharge,Oct-14 22:30,50,Oct-14 21:45,49,Oct-13 22:45,90,,ft^3/s,,0.05,10000,100,True
+51,a984d1e543e24cf6a673bff9e3e0cf1f,43B 05000,Paradise Canal below Yellowstone siphon,Discharge,Oct-14 22:15,32,Oct-14 21:30,32,Oct-13 22:15,47,,ft^3/s,,0.05,10000,100,False
+52,db654d70d25741b0909815a8d24744f2,43B 05990,"Mill Creek near Emigrant, MT",Discharge,Oct-14 22:15,19,Oct-14 21:30,19,Oct-13 22:30,19,,ft^3/s,,0.05,10000,100,True
+53,d7ee9ede030e4aedb8d1ada7062b1c9e,43B 10000,Livingston Ditch below headgate,Discharge,Oct-14 22:30,11,Oct-14 21:45,11,Oct-13 22:45,11,,ft^3/s,,0.05,10000,100,True
+54,f00442261b034fa988d928684fb594c3,43BV 02000,Sweet Grass Creek at Tronrud Bridge,Discharge,Oct-14 21:00,44,Oct-14 20:15,44,Oct-13 21:15,46,,ft^3/s,,8.0,700,100,True
+55,020d0c16d5044839a0170b0bd64cfd19,43BV 09000,Sweet Grass Creek nr Big Timber,Discharge,Oct-14 21:00,49,Oct-14 20:15,50,Oct-13 21:15,11,,ft^3/s,,10.0,350,100,True
+56,1bc60a18f2de40caa8de0d042b6f0227,43C 04600,"East Rosebud Cr nr Roscoe, MT",Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,False
+57,1662da412180418ea98e583965253d9a,43D 01900,"WF Rock Ck nr Red Lodge, MT",Discharge,Oct-14 22:15,28,Oct-14 21:30,29,Oct-13 22:30,29,,ft^3/s,,15.0,600,100,True
+58,0636050579a04c9cb8a8267029b74b06,43E 09000,Pryor Cr at Huntley,Discharge,Oct-14 22:00,35,Oct-14 21:15,35,Oct-13 22:15,33,,ft^3/s,,30.0,600,100,True
+59,d255f7a88f6a4c4a83f505c7752873a9,43Q 05900,Canyon Creek @ ZooMontana,Discharge,Oct-14 22:00,112,Oct-14 21:15,112,Oct-13 22:15,93,,ft^3/s,,5.0,300,100,True
+60,ccef46acfa11457fada830f3f284ca59,76E 1500,EF Rock Ck abv Reservoir,Discharge,Oct-14 22:00,0,Oct-14 21:15,0,Oct-13 22:15,0,,ft^3/s,,0.05,10000,100,True
+61,adf5a87a4867405e88b7f17a2a948839,76E 2100,EF Rock Ck blw Reservoir,Discharge,Oct-14 22:00,4,Oct-14 21:15,4,Oct-13 22:15,4,,ft^3/s,,0.05,10000,100,True
+62,ca975822eaae44df9c0cf90eb7d0e890,76E 2200,EF Main Canal blw Fish Screen,Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,False
+63,5aa425c8876c409e9be687133929d63d,76F 03500,North Fork Blackfoot at Ryan Bridge,Discharge,Oct-14 22:15,2,Oct-14 21:30,1,Oct-13 22:30,2,,ft^3/s,,15.0,1800,100,True
+64,6f894ab99fa94acb9e2e5f8eea23535a,76F 04900,"Monture Creek nr Ovando, MT",Discharge,Oct-14 22:30,31,Oct-14 21:45,31,Oct-13 22:45,31,,ft^3/s,,100.0,250,100,True
+65,1654933d997b4207b4c9429005a74569,76F 05200,"Clearwater River nr Clearwater Junction, MT",Discharge,Oct-14 22:30,31,Oct-14 21:45,32,Oct-13 22:45,31,,ft^3/s,,50.0,1000,100,True
+66,05aeabe35a554edb824f42ae1bca3621,76F 05300,"Blackfoot River nr Clearwater Junction, MT",Discharge,Oct-14 22:30,275,Oct-14 21:45,280,Oct-13 22:45,280,,ft^3/s,,360.0,2500,100,True
+67,29ec6656a3f54e40bd6451a3f85a986d,76F 2000,Nevada Ck blw Res,Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,True
+68,4487d3a414294a45a90acb3f3f542fea,76F 2100,Douglas Canal,Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,False
+69,32303e36a41241c693a2ebe55c3eb8e9,76F 2200,Nevada Ck blw Douglas Canal,Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,False
+70,a5832dc4ad884d70b5618c672afb5ac3,76G 03100,"Racetrack Creek nr Racetrack, MT",Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,False
+71,5c8a07db52e341b8afb303f5a8e18b42,76G 04000,"Cottonwood Cr at Deer Lodge, MT",Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,False
+72,9c276f5ebcdf4a758e1a9dc93f891f87,76G 05850,"Gold Creek near Gold Creek, MT",Discharge,Oct-14 22:30,16,Oct-14 21:45,16,Oct-13 22:45,16,,ft^3/s,,0.05,10000,100,True
+73,1d75152accea47aeb99257c2ff4d17b4,76H 1200,West Fork of Bitterroot Abv Painted Rocks,Discharge,Oct-14 22:15,32,Oct-14 21:30,32,Oct-13 22:30,32,,ft^3/s,,0.05,10000,100,True
+74,42491bbfee69406a932a79f21984d7ca,76H 1500,Blue Joint Creek above Painted Rocks Reservoir,Discharge,Oct-14 22:15,9,Oct-14 21:30,9,Oct-13 22:30,9,,ft^3/s,,0.05,10000,100,True
+75,07281036fcc3416fa57b60bb2cbb898d,76HA 06100,"Burnt Fork Creek nr Stevensville, MT",Discharge,null,null,null,null,null,null,,ft^3/s,,0.05,10000,100,False
+76,acde038609584b77be2986f7814cb6fa,76HB 09500,Lolo Creek abv Sleeman Creek,Discharge,Oct-14 22:15,40,Oct-14 21:30,40,Oct-13 22:30,40,,ft^3/s,,40.0,500,100,True
+77,f39914040614436bb5e1c28cc9fb2601,76HB 09600,Lolo Creek below Highway 93,Discharge,Oct-14 22:00,21,Oct-14 21:15,21,Oct-13 22:15,21,,ft^3/s,,10.0,1000,100,True
+78,792018186bd54e658f93b901dd418fa7,76HE 09000,"EF Bitterroot River nr Connor, MT",Discharge,Oct-14 21:00,58,Oct-14 20:15,58,Oct-13 21:15,55,,ft^3/s,,70.0,800,100,True
+79,c5e3175a726e4d648889f62e0f466f6c,76LJ 07500,Mill Creek below Creston Hatchery,Discharge,Oct-14 22:15,24,Oct-14 21:30,24,Oct-13 22:30,23,,ft^3/s,,15.0,60,100,True
+80,39ae21df076c49638602b56c881bae2a,76LJ 09900,Ashley Creek at Kalispell WTP,Discharge,Oct-14 22:00,5,Oct-14 21:15,5,Oct-13 22:15,5,,ft^3/s,,3.0,300,100,True
+81,07978901d2d54d6e9ec5e448f7309422,76M 01100,"Rattlesnake Cr nr Missoula, MT",Discharge,Oct-14 22:15,16,Oct-14 21:30,16,Oct-13 22:30,16,,ft^3/s,,18.0,650,100,True
+82,74d3c6d8ce074d2fa569eb7b1a469a07,SR 004,Duck Creek above Simms Ashuelot Rd Bridge,Discharge,Oct-14 22:45,10,Oct-14 22:00,10,Oct-13 23:00,10,,ft^3/s,,5.0,40,15,True
