@@ -16,7 +16,7 @@ PASSWORD = 'DNRC'
 DIRECTORY = Path(r"\\DNRHLN6386.state.mt.ads\Fileshare$\Aquarius_Alarms\Q_Alarm")
 RECIPIENTS = "David.Saba@mt.gov, TLechman@mt.gov, MNorberg@mt.gov, diane.wagner@mt.gov, Ryan.Koehnlein2@mt.gov," \
              "Christopher.Basden@mt.gov, b.grigsby@mt.gov, Ashley.Peterson@mt.gov, raeya.gordon@mt.gov"
-# RECIPIENTS = "David.Saba@mt.gov" # dnrcstage@mt.gov
+# RECIPIENTS = "David.Saba@mt.gov"  # dnrcstage@mt.gov
 
 
 def format_timestamp(time):
@@ -115,7 +115,7 @@ for index, row in today_df.iterrows():
     if row["Publish"] is True:
         if row["Timestamp"] == 'null':
             error_list.append(row)
-        elif row["Value"] > row["HighAlarm"] or row["Value"] == 0:
+        elif row["Value"] > row["HighAlarm"]:  # or row["Value"] == 0:    above rating reporting as null not zero, could pull stage data to verify if zero
             row["Alarm_Type"] = 'HighAlarm'
             error_list.append(row)
             pass

@@ -1,14 +1,14 @@
 ﻿UniqueId,LocationIdentifier,SiteName,Parameter,Unit,Label,LowAlarm,HighAlarm,Delta,Publish
-8efc886fb5364b46998d82168cb09504,40A 10000,Barber Canal,Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
+8efc886fb5364b46998d82168cb09504,40A 10000,Barber Canal,Discharge,ft^3/s,discharge,0.05,10000,100,FALSE
 d3310b1c958446fe99a69e8997d848d8,40A 1500,NF Musselshell near Delphine,Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
 0f1ce86e86f841ae91996afb7ced5ac7,40A 2000,NF Musselshell blw Bair Reservoir,Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
-ad9340452c964165abe86957f46a7092,40A 3000,NF Musselshell Diversion Canal,Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
-f0f03c49f9944af39eb668a184c8c7d2,40A 4080,Martinsdale Supply Canal,Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
-c1f909c9847f459cacc46d3dbf7f3a29,40A 5000,Martinsdale Outlet Canal,Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
-ff80a2bd53644594b4e1885bd848bbf3,40A 7000,Two Dot Canal,Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
-6d5e953edb584ed799d810572e64d422,40A 8080,Deadman's Basin Supply Canal abv Drop to Res,Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
-6196528d99684286b84011601e8a4dcb,40A 8100,Barber Canal,Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
-7c7b10a3025141db97c7038dfcf3f72d,40A 9000,Careless Canal,Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
+ad9340452c964165abe86957f46a7092,40A 3000,NF Musselshell Diversion Canal,Discharge,ft^3/s,discharge,0.05,10000,100,FALSE
+f0f03c49f9944af39eb668a184c8c7d2,40A 4080,Martinsdale Supply Canal,Discharge,ft^3/s,discharge,0.05,10000,100,FALSE
+c1f909c9847f459cacc46d3dbf7f3a29,40A 5000,Martinsdale Outlet Canal,Discharge,ft^3/s,discharge,0.05,10000,100,FALSE
+ff80a2bd53644594b4e1885bd848bbf3,40A 7000,Two Dot Canal,Discharge,ft^3/s,discharge,0.05,10000,100,FALSE
+6d5e953edb584ed799d810572e64d422,40A 8080,Deadman's Basin Supply Canal abv Drop to Res,Discharge,ft^3/s,discharge,0.05,10000,100,FALSE
+6196528d99684286b84011601e8a4dcb,40A 8100,Barber Canal,Discharge,ft^3/s,discharge,0.05,10000,100,FALSE
+7c7b10a3025141db97c7038dfcf3f72d,40A 9000,Careless Canal,Discharge,ft^3/s,discharge,0.05,10000,100,FALSE
 d3aa65872ebf4469b572b38044530c00,40B 06000,Flatwillow Creek abv Petrolia Reservoir,Discharge,ft^3/s,discharge,0.05,275,100,TRUE
 35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,ft^3/s,discharge,0.05,50,5,TRUE
 6de1da6485cb4f7a8349c9a7b3fe40f9,40I 10000,"Peoples Creek near Dodson, MT",Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
