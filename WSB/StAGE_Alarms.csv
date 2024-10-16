@@ -1,0 +1,20 @@
+,UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Unit,LowAlarm,HighAlarm,Publish
+0,a514eec166d34d1d93077364ef00b58a,40G 10000,Sage Creek Nr Box Elder,Stage,Oct-16 00:30,2.46,ft,3.0,4.0,True
+1,9a91d19701bb4c2eb63fcb7728f71538,40G 10000,Sage Creek Nr Box Elder,Stage,Oct-16 00:30,2.46,ft,3.0,4.0,True
+2,01487f13cf4b4f6fbdea1b61a11e1140,41G 09000,"Willow Creek nr Willow Creek, MT",Stage,Oct-16 00:30,2.53,ft,1.3,1.8,True
+3,30848c8208e7405db5566597de84090f,41G 09000,"Willow Creek nr Willow Creek, MT",Stage,Oct-16 00:30,2.53,ft,1.3,1.8,True
+4,b0d517ec27484c9085efeb1619d1efba,41H 08950,Sourdough Creek above City Intake,Stage,Oct-15 18:00,0.9710416666666667,ft,1.0,1.8,True
+5,cdb66eb487574b6aa649c64b78c380e2,41H 08950,Sourdough Creek above City Intake,Stage,Oct-16 01:00,0.97,ft,1.0,1.8,True
+6,f5d2fbd3c9544f83a4005333cf7db9b0,41H 08950,Sourdough Creek above City Intake,Stage,Oct-16 01:00,0.97,ft,1.0,1.8,True
+7,38a790a6548d4fabaccc774ba38624a2,41J 02000,"Sheep Creek nr Adams Creek Road, MT",Stage,Oct-16 00:30,1.18,ft,1.25,1.83,True
+8,9870577bdeb0435488ebf76b43351482,41J 02000,"Sheep Creek nr Adams Creek Road, MT",Stage,Oct-16 00:30,1.18,ft,1.25,1.83,True
+9,bc8707aa56d54486bd4f89936c6d1063,41J 04900,"Moose Creek nr White Sulphur Springs, MT",Stage,Oct-16 00:30,1.19,ft,1.26,1.8,True
+10,edbb13fbcd444907a12f4ff01a6193ba,41J 04900,"Moose Creek nr White Sulphur Springs, MT",Stage,Oct-16 00:30,1.19,ft,1.26,1.8,True
+11,40c51d944904414a9841e4d2d43b4323,41O 09000,Teton River below Buck Bridge,Stage,0,0.0,ft,2.7,4.4,True
+12,73f2a24c154b4b9c82d8690ce5818c8c,76F 03500,North Fork Blackfoot at Ryan Bridge,Stage,Oct-15 18:00,0.4156770833333333,ft,0.65,5.25,True
+13,8d352a78f88042a889e0b7b31ee70335,76F 03500,North Fork Blackfoot at Ryan Bridge,Stage,Oct-16 01:15,0.42,ft,0.65,5.25,True
+14,c037704d5cf04b4f9efec14e9951e615,76F 03500,North Fork Blackfoot at Ryan Bridge,Stage,Oct-16 01:15,0.42,ft,0.65,5.25,True
+15,a725c3f195964d81ae4b0e6bb834efed,76F 03500,North Fork Blackfoot at Ryan Bridge,Water Temp,Oct-16 01:15,0.81,degC,1.0,30.0,True
+16,404cd6b292194b60813229260b50f9c6,SR 004,Duck Creek above Simms Ashuelot Rd Bridge,Stage,Oct-16 00:45,0.61,ft,0.8,1.8,True
+17,4c56d50f31454372ae75688acab59400,SR 004,Duck Creek above Simms Ashuelot Rd Bridge,Stage,Oct-16 00:45,0.61,ft,0.8,1.8,True
+18,95d92e535bfb4995b48608d3480c8019,SR 004,Duck Creek above Simms Ashuelot Rd Bridge,Stage,Oct-15 18:00,0.5348958333333333,ft,0.8,1.8,True
