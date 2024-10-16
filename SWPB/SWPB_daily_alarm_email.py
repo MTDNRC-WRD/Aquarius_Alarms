@@ -126,7 +126,7 @@ format_irreg_v = str(irreg_v).replace(', MT', '').replace(',', '\n').replace("'"
 format_irreg_data = str(irreg_data).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
     .replace("]", '').replace('{', '-').replace('}', '')
 
-attachment = 'STAGE_Alarms.csv'
+attachment = str(Path.joinpath(DIRECTORY, 'STAGE_Alarms.csv'))
 msg = MIMEMultipart()
 msg['Subject'] = f"StAGE Alarms {t_now_format}"
 msg['From'] = 'StAGE_Alarm@dnrc.mt.gov'

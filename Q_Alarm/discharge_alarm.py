@@ -153,7 +153,7 @@ format_high_data = str(high_data).replace(', MT', '').replace(',', '\n').replace
 format_delta_day = str(delta_day).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
     .replace("]", '').replace('{', '-').replace('}', '')
 
-attachment = 'Instant_Discharge_Alarms.csv'
+attachment = str(Path.joinpath(DIRECTORY, 'Instant_Discharge_Alarms.csv'))
 msg = MIMEMultipart()
 msg['Subject'] = f"StAGE Discharge {t_now_format}"
 msg['From'] = 'StAGE_Alarm@dnrc.mt.gov'
