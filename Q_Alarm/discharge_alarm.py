@@ -16,7 +16,7 @@ PASSWORD = 'DNRC'
 DIRECTORY = Path(r"\\DNRHLN6386.state.mt.ads\Fileshare$\Aquarius_Alarms\Q_Alarm")
 RECIPIENTS = "David.Saba@mt.gov, TLechman@mt.gov, MNorberg@mt.gov, diane.wagner@mt.gov, Ryan.Koehnlein2@mt.gov," \
              "Christopher.Basden@mt.gov, b.grigsby@mt.gov, Ashley.Peterson@mt.gov, raeya.gordon@mt.gov"
-# RECIPIENTS = "David.Saba@mt.gov"  # dnrcstage@mt.gov
+# RECIPIENTS = "David.Saba@mt.gov, Christopher.Basden@mt.gov"  # dnrcstage@mt.gov
 
 
 def format_timestamp(time):
@@ -146,12 +146,23 @@ for index, row in error_df.iterrows():
 print(f"{len(high_data)} sites reporting high flow")
 print(f"{len(delta_day)} other sites reporting substantial increases in flow")
 
-format_no_report = str(no_report_inst).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
-    .replace("]", '').replace('{', '-').replace('}', '')
-format_high_data = str(high_data).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
-    .replace("]", '').replace('{', '-').replace('}', '')
-format_delta_day = str(delta_day).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
-    .replace("]", '').replace('{', '-').replace('}', '')
+if len(no_report_inst) > 0:
+    format_no_report = str(no_report_inst).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
+        .replace("]", '').replace('{', '-').replace('}', '')
+else:
+    format_no_report = "[]"
+
+if len(high_data) > 0:
+    format_high_data = str(high_data).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
+        .replace("]", '').replace('{', '-').replace('}', '')
+else:
+    format_high_data = "[]"
+
+if len(delta_day) > 0:
+    format_delta_day = str(delta_day).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
+        .replace("]", '').replace('{', '-').replace('}', '')
+else:
+    format_delta_day = "[]"
 
 attachment = str(Path.joinpath(DIRECTORY, 'Instant_Discharge_Alarms.csv'))
 msg = MIMEMultipart()
@@ -159,7 +170,7 @@ msg['Subject'] = f"StAGE Discharge {t_now_format}"
 msg['From'] = 'StAGE_Alarm@dnrc.mt.gov'
 msg['To'] = RECIPIENTS
 
-body = MIMEText(f"Discharge Alarm:\n\n"
+body = MIMEText(f"Discharge Alarm\n\n"
                 "Missing Instantaneous Discharge:\n"
                 f"{format_no_report}\n\n"
                 "Sites Reporting High Discharge:\n"
