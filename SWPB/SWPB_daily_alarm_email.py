@@ -119,25 +119,33 @@ for index, row in error_df.iterrows():
 
 print(f"{len(no_report) + len(irreg_v) + len(irreg_data)} sites reporting anomalies")
 
-attachment = str(Path.joinpath(DIRECTORY, 'STAGE_Alarms.csv'))
+format_no_report = str(no_report).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
+    .replace("]", '').replace('{', '-').replace('}', '')
+format_irreg_v = str(irreg_v).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
+    .replace("]", '').replace('{', '-').replace('}', '')
+format_irreg_data = str(irreg_data).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
+    .replace("]", '').replace('{', '-').replace('}', '')
+
+attachment = 'STAGE_Alarms.csv'
 msg = MIMEMultipart()
 msg['Subject'] = f"StAGE Alarms {t_now_format}"
 msg['From'] = 'StAGE_Alarm@dnrc.mt.gov'
 msg['To'] = RECIPIENTS
 
 body = MIMEText(f"Daily alarm summary for SWPB maintained gauges:\n\n"
-                f"Sites not reporting: {no_report}\n\n"
-                f"Sites reporting irregular voltage: {irreg_v}\n\n"
-                f"Sites reporting irregular data: {irreg_data}")
-
-msg.attach(body)
+                "Sites not reporting: \n"
+                f"{format_no_report}\n\n"
+                "Sites reporting irregular voltage: \n"
+                f"{format_irreg_v}\n\n"
+                "Sites reporting irregular data: \n"
+                f"{format_irreg_data}\n\n")
 
 part = MIMEBase('application', "octet-stream")
 part.set_payload(open(attachment, "rb").read())
 encoders.encode_base64(part)
-
 part.add_header('Content-Disposition', 'attachment', filename=attachment)
 
+msg.attach(body)
 msg.attach(part)
 
 with smtplib.SMTP('mail.mt.gov', 25) as server:

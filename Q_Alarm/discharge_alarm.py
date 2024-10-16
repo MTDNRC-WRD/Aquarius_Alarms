@@ -146,27 +146,35 @@ for index, row in error_df.iterrows():
 print(f"{len(high_data)} sites reporting high flow")
 print(f"{len(delta_day)} other sites reporting substantial increases in flow")
 
+format_no_report = str(no_report_inst).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
+    .replace("]", '').replace('{', '-').replace('}', '')
+format_high_data = str(high_data).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
+    .replace("]", '').replace('{', '-').replace('}', '')
+format_delta_day = str(delta_day).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
+    .replace("]", '').replace('{', '-').replace('}', '')
 
-attachment = str(Path.joinpath(DIRECTORY, 'Instant_Discharge_Alarms.csv'))
+attachment = 'Instant_Discharge_Alarms.csv'
 msg = MIMEMultipart()
 msg['Subject'] = f"StAGE Discharge {t_now_format}"
 msg['From'] = 'StAGE_Alarm@dnrc.mt.gov'
 msg['To'] = RECIPIENTS
 
 body = MIMEText(f"Discharge Alarm:\n\n"
-                f"Missing Instantaneous Discharge: {no_report_inst}\n\n"
-                f"Sites Reporting High Discharge: {high_data}\n\n"
-                f"Sites Reporting Significant 24hr Discharge Increase: {delta_day}")
-
-msg.attach(body)
+                "Missing Instantaneous Discharge:\n"
+                f"{format_no_report}\n\n"
+                "Sites Reporting High Discharge:\n"
+                f"{format_high_data}\n\n"
+                "Sites Reporting Significant 24hr Discharge Increase:\n"
+                f"{delta_day}\n\n")
 
 part = MIMEBase('application', "octet-stream")
 part.set_payload(open(attachment, "rb").read())
 encoders.encode_base64(part)
-
 part.add_header('Content-Disposition', 'attachment', filename=attachment)
 
+msg.attach(body)
 msg.attach(part)
+
 
 with smtplib.SMTP('mail.mt.gov', 25) as server:
     server.ehlo()
