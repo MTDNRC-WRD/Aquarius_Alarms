@@ -1,0 +1,5 @@
+﻿UniqueId,LocationIdentifier,SiteName,Parameter,Unit,Publish,Notes
+1accf6b1de42458babada4091be35e53,76G 05851,Gold Creek Weather Station,Air Temp,degF,TRUE,Air Temperature Fahrenheit
+61797a9976984776a8ff0c77e1f10f33,76G 05851,Gold Creek Weather Station,Precip Cumul,mm,TRUE,Culumative Precipitation
+34039f56a1804aa7bc6929c27ae14ffb,76G 05851,Gold Creek Weather Station,Wind Dir,deg,TRUE,Wind Direction
+68ee611132744830991fc96891bbe7cd,76G 05851,Gold Creek Weather Station,Wind Vel,mph,TRUE,Wind Speed

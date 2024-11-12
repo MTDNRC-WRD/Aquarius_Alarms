@@ -1,6 +1,7 @@
 import requests
 import json
 import time
+import random
 from pathlib import Path
 import pandas as pd
 import datetime as dt
@@ -121,12 +122,139 @@ for index, row in error_df.iterrows():
 
 print(f"{len(no_report) + len(irreg_v) + len(irreg_data)} sites reporting anomalies")
 
-format_no_report = str(no_report).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
-    .replace("]", '').replace('{', '-').replace('}', '')
-format_irreg_v = str(irreg_v).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
-    .replace("]", '').replace('{', '-').replace('}', '')
-format_irreg_data = str(irreg_data).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
-    .replace("]", '').replace('{', '-').replace('}', '')
+if len(no_report) > 0:
+    format_no_report = str(no_report).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
+        .replace("]", '').replace('{', '-').replace('}', '')
+else:
+    format_no_report = "[]"
+
+if len(irreg_v) > 0:
+    format_irreg_v = str(irreg_v).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
+        .replace("]", '').replace('{', '-').replace('}', '')
+else:
+    format_irreg_v = "[]"
+
+if len(irreg_data) > 0:
+    format_irreg_data = str(irreg_data).replace(', MT', '').replace(',', '\n').replace("'", ' ').replace("[", ' ')\
+        .replace("]", '').replace('{', '-').replace('}', '')
+else:
+    format_irreg_data = "[]"
+
+pleasantries = ['agreeable',
+                'amiable',
+                'amusing',
+                'sublime',
+                'charming',
+                'cheerful',
+                'congenial',
+                'cool',
+                'cordial',
+                'delightful',
+                'engaging',
+                'enjoyable',
+                'fun',
+                'homey',
+                'likable',
+                'lovely',
+                'mild',
+                'pleasing',
+                'pleasurable',
+                'refreshing',
+                'satisfying',
+                'sweet',
+                'affable',
+                'civil',
+                'civilized',
+                'copacetic',
+                'delectable',
+                'diplomatic',
+                'enchanting',
+                'fine',
+                'fine and dandy',
+                'admissible',
+                'all right',
+                'average',
+                'big',
+                'cooking with gas',
+                'cool',
+                'delightful',
+                'hep',
+                'hip',
+                'hunky-dory',
+                'in the swim',
+                'kosher',
+                'large',
+                'okay',
+                'on the ball',
+                'passable',
+                'peachy keen',
+                'pleasing',
+                'right on',
+                'standard',
+                'swell',
+                'trendy',
+                'unexceptional',
+                'unobjectionable',
+                'up to code',
+                'up to snuff',
+                'A-OK',
+                'dandy',
+                'genial',
+                'good - humored',
+                'gratifying',
+                'jolly',
+                'jovial',
+                'kindly',
+                'mild - mannered',
+                'nice',
+                'obliging',
+                'social',
+                'urbane',
+                'cultured',
+                'suave',
+                'cosmopolitan',
+                'elegant',
+                'genteel'
+                'obliging',
+                'metropolitan',
+                'mannerly',
+                'astonishing',
+                'astounding',
+                'breathtaking',
+                'colossal',
+                'dynamite',
+                'fab',
+                'fabulous',
+                'fantastic',
+                'fat',
+                'gigantic',
+                'great',
+                'huge',
+                'marvelous',
+                'mind-blowing',
+                'mind-boggling',
+                'miraculous',
+                'monster',
+                'monumental',
+                'phenomenal',
+                'prodigious',
+                'radical',
+                'smashing',
+                'spectacular',
+                'staggering',
+                'stunning',
+                'super',
+                'superb',
+                'surprising',
+                'terrific',
+                'titantic',
+                'tremendous',
+                'unreal',
+                'utmost',
+                'wondrous'
+                ]
+adj = pleasantries[random.randint(0, len(pleasantries))]
+valediction = f"Have a {adj} day!"
 
 attachment = str(Path.joinpath(DIRECTORY, 'STAGE_Alarms.csv'))
 msg = MIMEMultipart()
@@ -134,13 +262,14 @@ msg['Subject'] = f"StAGE Alarms {t_now_format}"
 msg['From'] = 'StAGE_Alarm@dnrc.mt.gov'
 msg['To'] = RECIPIENTS
 
-body = MIMEText(f"Daily Alarm summary:\n\n"
+body = MIMEText(f"Daily Alarm summary\n\n"
                 "Sites not reporting: \n"
                 f"{format_no_report}\n\n"
                 "Sites reporting irregular voltage: \n"
                 f"{format_irreg_v}\n\n"
                 "Sites reporting irregular data: \n"
-                f"{format_irreg_data}\n\n")
+                f"{format_irreg_data}\n\n"
+                f"Have a {valediction} day!")
 
 part = MIMEBase('application', "octet-stream")
 part.set_payload(open(attachment, "rb").read())
@@ -197,3 +326,4 @@ for site in paradise_list:
                 break
     else:
         break
+

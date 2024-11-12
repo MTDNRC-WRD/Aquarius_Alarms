@@ -1,4 +1,2 @@
 ,UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Unit,LowAlarm,HighAlarm,Publish
-0,325dedf37ae0445ba8da4df7c3c742ae,76F 2100,Douglas Canal,Stage,Oct-16 01:30,-0.1,ft,0.01,12,True
-1,95b3f7e2994c42978646724880c3d709,76F 2100,Douglas Canal,Stage,Oct-16 01:30,-0.1,ft,0.01,12,True
-2,8e37593d5df04f9bb805d7d43cdf5ed3,42B 01900,Tongue River Reservoir,Lake res elevation,0,0.0,ft,1000.0,4000,True
+0,8e37593d5df04f9bb805d7d43cdf5ed3,42B 01900,Tongue River Reservoir,Lake res elevation,0,0.0,ft,1000.0,4000,True

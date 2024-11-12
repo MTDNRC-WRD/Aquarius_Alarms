@@ -6,6 +6,11 @@ from win32com import client
 import os
 import shutil
 from pathlib import Path
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.base import MIMEBase
+from email import encoders
+from email.mime.text import MIMEText
 from id_fix.id_fix import dict_dict, other_dict_dict
 from id_fix.id_fix import gage_read_dict
 
@@ -95,8 +100,10 @@ if __name__ == '__main__':
         if row['rt_gage_si'] == 'Yes' and row['globalid'] not in up_id_list:
             df_g = pd.concat([df_g, df_s.loc[[idx]]], ignore_index=True)
             df_u = pd.concat([df_u, df_s.loc[[idx]]], ignore_index=True)
-    df_u.to_csv('uploaded_data.csv')
+    # df_u.to_csv('uploaded_data.csv')
     # print(df_g)
+
+    save_count = 0
 
     # assigns values to excell cell keys and calls the write to file functions
     for idx, row in df_g.iterrows():
@@ -140,6 +147,7 @@ if __name__ == '__main__':
                 temp_dict[key] = ''
         # print(temp_dict)
         write_data_to_excel(temp_dict)
+        save_count += 1
 
         meas_date = temp_dict['F5']
         reform_date = format_date(meas_date)
@@ -149,4 +157,24 @@ if __name__ == '__main__':
         excel_to_pdf(reform_date, reform_id)
 
         push_data_to_aq()
+    # Save sites that have been uploaded to csv last (if crash won't save)
+    df_u.to_csv(UPLOADED_FILES)
 
+    t_now_format = dt.datetime.now()
+    t_now_format = t_now_format.strftime(f"%b %d, %Y")
+    msg = MIMEMultipart()
+    msg['Subject'] = f"E-Field Forms {t_now_format}"
+    msg['From'] = 'StAGE_Alarm@dnrc.mt.gov'
+    msg['To'] = RECIPIENTS
+
+    body = MIMEText(f"{save_count} files saved")
+
+    msg.attach(body)
+
+    with smtplib.SMTP('mail.mt.gov', 25) as server:
+        server.ehlo()
+        server.starttls()
+        server.ehlo()
+        server.send_message(msg)
+        server.quit()
+    print("email sent")

@@ -1,4 +1,13 @@
 ,UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Timestamp_min_1hr,Value_min_1hr,Timestamp_min_day,Value_min_day,Delta_Day,Unit,Alarm_Type,LowAlarm,HighAlarm,DeltaAlarm,Publish
-0,35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,50,5,True
-1,caa1a4fc3c214f8bae9d159f02058e38,41G 09000,"Willow Creek nr Willow, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
-2,29ec6656a3f54e40bd6451a3f85a986d,76F 2000,Nevada Ck blw Res,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+0,35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,Nov-11 23:30,0,Nov-11 22:45,0,Nov-10 23:45,0,0,ft^3/s,,0.05,50,5,True
+1,f18e39e2ac5e4963a8267a71f799a5aa,41C 05000,Ruby River at Alder,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+2,d1bddfaf51db4dd2a7e7db5fbfacfcee,41D 01000,"Big Hole River abv Jackson, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+3,a585edb7d40948febbfb1cba55475aa8,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+4,612ec6eb18af48c4920fcd549fa91bae,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+5,dd006b09768d45a8a6932dde13bd3e34,41D 07700,"Deep Creek nr Wise River, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,40.0,150,30,True
+6,6990415da551431fa38ef66fa91fe5f8,41D 08000,"Big Hole River near Wise River, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+7,caa1a4fc3c214f8bae9d159f02058e38,41G 09000,"Willow Creek nr Willow, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+8,96fa48de66b84b278f7a0e61a2336453,41I 1500,Broadwater Main Canal Below Head Gate,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+9,4e3f6333761e406e849b77fb783f52da,43B 04000,Park Branch Canal below headgate,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+10,d7ee9ede030e4aedb8d1ada7062b1c9e,43B 10000,Livingston Ditch below headgate,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+11,ccef46acfa11457fada830f3f284ca59,76E 1500,EF Rock Ck abv Reservoir,Discharge,Nov-11 23:00,0,Nov-11 22:15,0,Nov-10 23:15,0,0,ft^3/s,,0.05,10000,100,True

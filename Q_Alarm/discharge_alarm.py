@@ -1,5 +1,6 @@
 import requests
 import json
+import random
 from pathlib import Path
 import pandas as pd
 import datetime as dt
@@ -113,7 +114,7 @@ error_list = []
 for index, row in today_df.iterrows():
     row["Delta_Day"] = value_diff(row['Value'], row["Value_min_day"])
     if row["Publish"] is True:
-        if row["Timestamp"] == 'null':
+        if row["Timestamp"] == 'null' or row["Value"] == 0:
             error_list.append(row)
         elif row["Value"] > row["HighAlarm"]:  # or row["Value"] == 0:    above rating reporting as null not zero, could pull stage data to verify if zero
             row["Alarm_Type"] = 'HighAlarm'

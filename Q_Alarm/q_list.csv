@@ -16,7 +16,7 @@ d3aa65872ebf4469b572b38044530c00,40B 06000,Flatwillow Creek abv Petrolia Reservo
 21041bb563b44788a78c95a72086d48c,40J 09100,"Beaver Cr blw Reservoir nr Havre, MT",Discharge,ft^3/s,discharge,5,130,50,TRUE
 8473d99f2b5249d0867cc90cc6ddd49b,40L-10050013,Frenchman Creek @ Mouth,Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
 a7124ecc7277485db5cafdc6db2acfc7,41A 10000,Red Rock River abv Clark Canyon Res,Discharge,ft^3/s,discharge,17,500,100,TRUE
-f18e39e2ac5e4963a8267a71f799a5aa,41C 05000,Ruby River at Alder,Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
+f18e39e2ac5e4963a8267a71f799a5aa,41C 05000,Ruby River at Alder,Discharge,ft^3/s,discharge,0.05,10000,100,FALSE
 601a1837a186496488d091c51eab44c2,41C 08000,Ruby River at Harrington Bridge,Discharge,ft^3/s,discharge,30,600,100,TRUE
 d1bddfaf51db4dd2a7e7db5fbfacfcee,41D 01000,"Big Hole River abv Jackson, MT",Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
 a585edb7d40948febbfb1cba55475aa8,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
@@ -25,7 +25,7 @@ dd006b09768d45a8a6932dde13bd3e34,41D 07700,"Deep Creek nr Wise River, MT",Discha
 977102eda5fe4c0794f59bc236480d56,41D 07900,Wise River nr mouth,Discharge,ft^3/s,discharge,10,1700,100,TRUE
 6990415da551431fa38ef66fa91fe5f8,41D 08000,"Big Hole River near Wise River, MT",Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
 a9062a54bb844002a100b99472f2eb5d,41E 10000,Boulder River Nr Cardwell,Discharge,ft^3/s,discharge,70,350,100,TRUE
-caa1a4fc3c214f8bae9d159f02058e38,41G 09000,"Willow Creek nr Willow, MT",Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
+caa1a4fc3c214f8bae9d159f02058e38,41G 09000,"Willow Creek nr Willow, MT",Discharge,ft^3/s,discharge,0.05,10000,100,FALSE
 08667206d7624b5c8f4055bd74584b3b,41H 08900,East Gallatin Rvr nr Manhattan,Discharge,ft^3/s,discharge,125,1500,100,TRUE
 d62cb40badda4ddaafc490e473404dfe,41H 08950,Sourdough Creek above City Intake,Discharge,ft^3/s,discharge,7,170,100,TRUE
 71d0dd3f6c4a47188a2890833bcc6abc,41H 08990,"Bozeman Creek at Bozeman, MT",Discharge,ft^3/s,discharge,5,275,100,TRUE
@@ -62,11 +62,11 @@ d255f7a88f6a4c4a83f505c7752873a9,43Q 05900,Canyon Creek @ ZooMontana,Discharge,f
 ccef46acfa11457fada830f3f284ca59,76E 1500,EF Rock Ck abv Reservoir,Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
 adf5a87a4867405e88b7f17a2a948839,76E 2100,EF Rock Ck blw Reservoir,Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
 ca975822eaae44df9c0cf90eb7d0e890,76E 2200,EF Main Canal blw Fish Screen,Discharge,ft^3/s,discharge,0.05,10000,100,FALSE
-5aa425c8876c409e9be687133929d63d,76F 03500,North Fork Blackfoot at Ryan Bridge,Discharge,ft^3/s,discharge,15,1800,100,TRUE
+5aa425c8876c409e9be687133929d63d,76F 03500,North Fork Blackfoot at Ryan Bridge,Discharge,ft^3/s,discharge,15,1800,100,FALSE
 6f894ab99fa94acb9e2e5f8eea23535a,76F 04900,"Monture Creek nr Ovando, MT",Discharge,ft^3/s,discharge,100,250,100,TRUE
 1654933d997b4207b4c9429005a74569,76F 05200,"Clearwater River nr Clearwater Junction, MT",Discharge,ft^3/s,discharge,50,1000,100,TRUE
 05aeabe35a554edb824f42ae1bca3621,76F 05300,"Blackfoot River nr Clearwater Junction, MT",Discharge,ft^3/s,discharge,360,2500,100,TRUE
-29ec6656a3f54e40bd6451a3f85a986d,76F 2000,Nevada Ck blw Res,Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
+29ec6656a3f54e40bd6451a3f85a986d,76F 2000,Nevada Ck blw Res,Discharge,ft^3/s,discharge,0.05,10000,100,FALSE
 4487d3a414294a45a90acb3f3f542fea,76F 2100,Douglas Canal,Discharge,ft^3/s,discharge,0.05,10000,100,FALSE
 32303e36a41241c693a2ebe55c3eb8e9,76F 2200,Nevada Ck blw Douglas Canal,Discharge,ft^3/s,discharge,0.05,10000,100,FALSE
 a5832dc4ad884d70b5618c672afb5ac3,76G 03100,"Racetrack Creek nr Racetrack, MT",Discharge,ft^3/s,discharge,0.05,10000,100,FALSE
@@ -81,4 +81,4 @@ f39914040614436bb5e1c28cc9fb2601,76HB 09600,Lolo Creek below Highway 93,Discharg
 c5e3175a726e4d648889f62e0f466f6c,76LJ 07500,Mill Creek below Creston Hatchery,Discharge,ft^3/s,discharge,15,60,100,TRUE
 39ae21df076c49638602b56c881bae2a,76LJ 09900,Ashley Creek at Kalispell WTP,Discharge,ft^3/s,discharge,3,300,100,TRUE
 07978901d2d54d6e9ec5e448f7309422,76M 01100,"Rattlesnake Cr nr Missoula, MT",Discharge,ft^3/s,discharge,18,650,100,TRUE
-74d3c6d8ce074d2fa569eb7b1a469a07,SR 004,Duck Creek above Simms Ashuelot Rd Bridge,Discharge,ft^3/s,discharge,5,40,15,TRUE
+74d3c6d8ce074d2fa569eb7b1a469a07,SR 004,Duck Creek above Simms Ashuelot Rd Bridge,Discharge,ft^3/s,discharge,5,40,15,FALSE
