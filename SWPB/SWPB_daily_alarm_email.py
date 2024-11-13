@@ -249,7 +249,13 @@ pleasantries = ['agreeable',
                 'tremendous',
                 'unreal',
                 'utmost',
-                'wondrous'
+                'wondrous',
+                'punctual',
+                'scrupulous',
+                'heedful',
+                'upright',
+                'meticulous',
+                'punctilious'
                 ]
 adj = pleasantries[random.randint(0, len(pleasantries))]
 valediction = f"Have a {adj} day!"
@@ -267,7 +273,7 @@ body = MIMEText(f"Daily alarm summary for SWPB maintained gauges\n\n"
                 f"{format_irreg_v}\n\n"
                 "Sites reporting irregular data: \n"
                 f"{format_irreg_data}\n\n"
-                f"Have a {valediction} day!")
+                f"{valediction}!")
 
 part = MIMEBase('application', "octet-stream")
 part.set_payload(open(attachment, "rb").read())

@@ -17,7 +17,7 @@ USER_NAME = 'DNRC'
 PASSWORD = 'DNRC'
 DIRECTORY = Path(r"\\DNRHLN6386.state.mt.ads\Fileshare$\Aquarius_Alarms\WSB")
 RECIPIENTS = "David.Saba@mt.gov, TLechman@mt.gov, MNorberg@mt.gov, Ryan.Koehnlein2@mt.gov," \
-             " Christopher.Basden@mt.gov, b.grigsby@mt.gov, Ashley.Peterson@mt.gov"
+             " Christopher.Basden@mt.gov, b.grigsby@mt.gov, Ashley.Peterson@mt.gov, Kaitlin.Boren@mt.gov"
 PARADISE_RECIPIENTS = "John.Lunzer@mt.gov, Raeya.Gordon@mt.gov, Madeline.McKeefry@mt.gov, David.Saba@mt.gov"
 # RECIPIENTS = "David.Saba@mt.gov, dnrcstage@mt.gov"
 # PARADISE_RECIPIENTS = "David.Saba@mt.gov"
@@ -251,7 +251,13 @@ pleasantries = ['agreeable',
                 'tremendous',
                 'unreal',
                 'utmost',
-                'wondrous'
+                'wondrous',
+                'punctual',
+                'scrupulous',
+                'heedful',
+                'upright',
+                'meticulous',
+                'punctilious'
                 ]
 adj = pleasantries[random.randint(0, len(pleasantries))]
 valediction = f"Have a {adj} day!"
@@ -305,7 +311,8 @@ for site in paradise_list:
                                 "Sites reporting irregular voltage: \n"
                                 f"{format_irreg_v}\n\n"
                                 "Sites reporting irregular data: \n"
-                                f"{format_irreg_data}\n\n")
+                                f"{format_irreg_data}\n\n"
+                                f"{valediction}")
 
                 part = MIMEBase('application', "octet-stream")
                 part.set_payload(open(attachment, "rb").read())

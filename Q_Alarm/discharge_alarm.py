@@ -16,7 +16,8 @@ USER_NAME = 'DNRC'
 PASSWORD = 'DNRC'
 DIRECTORY = Path(r"\\DNRHLN6386.state.mt.ads\Fileshare$\Aquarius_Alarms\Q_Alarm")
 RECIPIENTS = "David.Saba@mt.gov, TLechman@mt.gov, MNorberg@mt.gov, diane.wagner@mt.gov, Ryan.Koehnlein2@mt.gov," \
-             "Christopher.Basden@mt.gov, b.grigsby@mt.gov, Ashley.Peterson@mt.gov, raeya.gordon@mt.gov"
+             "Christopher.Basden@mt.gov, b.grigsby@mt.gov, Ashley.Peterson@mt.gov, Kaitlin.Boren@mt.gov, " \
+             "raeya.gordon@mt.gov"
 # RECIPIENTS = "David.Saba@mt.gov, Christopher.Basden@mt.gov"  # dnrcstage@mt.gov
 
 

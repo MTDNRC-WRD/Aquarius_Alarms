@@ -1,68 +1,68 @@
 ,UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Unit,LowAlarm,HighAlarm,Publish
-0,0c4b823eccf2488997b4db678d63b05d,40A 10000,Barber Canal,Stage,Nov-11 23:15,0.26,ft,0.01,12,True
-1,61a4027a2aed499dad67f39a68f274aa,40A 10000,Barber Canal,Stage,Nov-11 23:15,0.26,ft,0.01,12,True
-2,c536155e184d464a97022ab50e4919d6,40A 10000,Barber Canal,Stage,Nov-11 23:15,0.26,ft,0.01,12,True
-3,7d44ad5aed2243ff94b47c7cd740d53c,40A 10000,Barber Canal,Voltage,Nov-11 23:00,12.53,V,11.5,15,True
-4,0eb83ea5e91f4456a3322ef6e9902f78,40A 1500,NF Musselshell near Delphine,Stage,Nov-11 18:00,0.77646875,ft,0.01,12,False
-5,3fe1fb16cd974f2ba92a0b011ba8f903,40A 1500,NF Musselshell near Delphine,Stage,Nov-11 23:15,0.79,ft,0.01,12,True
-6,650125de347f4ff5b617d6dd995cd4e7,40A 1500,NF Musselshell near Delphine,Stage,Nov-11 23:15,0.79,ft,0.01,12,True
-7,c7f1234463bc4316bf299da2de75ccd9,40A 1500,NF Musselshell near Delphine,Stage,Nov-11 18:00,0.77646875,ft,0.01,12,True
-8,c7f1234463bc4316bf299da2de75ccd9,40A 1500,NF Musselshell near Delphine,Stage,Nov-11 18:00,0.77646875,ft,0.01,12,True
-9,94664635d58f42c4afad73ab0094a396,40A 2000,NF Musselshell blw Bair Reservoir,Stage,Nov-11 23:15,0.63,ft,0.01,12,True
-10,e69d90a04b20431185074fcf925cb53c,40A 2000,NF Musselshell blw Bair Reservoir,Stage,Nov-11 23:15,0.63,ft,0.01,12,True
-11,67b35c8c38e040cd8984b696e97ff839,40A 2000,NF Musselshell blw Bair Reservoir,Voltage,Nov-12 06:00,12.49,V,11.5,15,True
-12,686df953f4a64ae7937f2d1fada65670,40A 3000,NF Musselshell Diversion Canal,Stage,Nov-11 23:15,0.27,ft,0.01,12,True
-13,942d002cc1c3463db5992f804ae8c5a7,40A 3000,NF Musselshell Diversion Canal,Stage,Nov-11 23:15,0.27,ft,0.01,12,True
-14,2503838c61174dafb21d93433d6b9c95,40A 3000,NF Musselshell Diversion Canal,Voltage,Nov-11 23:00,12.46,V,11.5,15,True
-15,80da33761fa143259291723c6681deb5,40A 4080,Martinsdale Supply Canal,Stage,Nov-11 23:00,0.04,ft,0.01,12,True
-16,d34b9c223d8e49218418040615a97615,40A 4080,Martinsdale Supply Canal,Stage,Nov-11 23:00,0.04,ft,0.01,12,True
-17,f7b60769d72440bca9884c6781f9c020,40A 4080,Martinsdale Supply Canal,Voltage,Nov-12 06:00,12.5,V,11.5,15,True
-18,4e5686e1b8d042deb9b159b9a68a5552,40A 5000,Martinsdale Outlet Canal,Stage,Nov-11 23:15,0.83,ft,0.01,12,True
-19,9a3e512f0aba46de8e0d0380e2a24913,40A 5000,Martinsdale Outlet Canal,Stage,Nov-11 23:15,0.83,ft,0.01,12,True
-20,c3eb3c865cd8489eac81bdb0dfb69371,40A 5000,Martinsdale Outlet Canal,Voltage,Nov-11 23:00,12.65,V,11.5,15,True
-21,646bf7b261514ac19439b59990f3de9e,40A 8080,Deadman's Basin Supply Canal abv Drop to Res,Stage,Nov-11 23:00,2.82,ft,0.01,12,True
-22,6823414c0eb1401fbbacbf3cef42c13e,40A 8080,Deadman's Basin Supply Canal abv Drop to Res,Stage,Nov-11 23:00,2.82,ft,0.01,12,True
-23,6823414c0eb1401fbbacbf3cef42c13e,40A 8080,Deadman's Basin Supply Canal abv Drop to Res,Stage,Nov-11 23:00,2.82,ft,0.01,12,True
-24,2d0a3ef982674209b1498b0d4eaf8a43,40A 9000,Careless Canal,Stage,Nov-11 23:15,-0.02,ft,0.01,12,False
-25,c6bbf5784fb148398a8fd0d507f8f081,40A 9000,Careless Canal,Stage,Nov-11 23:15,-0.02,ft,0.01,12,False
-26,6f335cdbc02c42f4b8938b2fdf427894,40A 9000,Careless Canal,Voltage,Nov-11 23:00,12.17,V,11.5,15,False
-27,728c3521bdad40bc8a16cf227b1043e6,41H 1000,EF Hyalite Ck,Internal Temp (DCP),Nov-11 23:00,0.59,degC,-40.0,140,True
-28,9238a1539d79465a90659b50efa288cd,41H 1000,EF Hyalite Ck,Stage,Nov-11 23:15,0.44,ft,0.01,12,True
-29,ed97e3f58c344128996ed269bced5c31,41H 1000,EF Hyalite Ck,Stage,Nov-11 23:15,0.44,ft,0.01,12,True
-30,98488372e33c4449b20c1be24080abab,41H 1000,EF Hyalite Ck,Voltage,Nov-11 23:00,12.57,V,11.5,15,True
+0,0c4b823eccf2488997b4db678d63b05d,40A 10000,Barber Canal,Stage,Nov-12 23:15,0.26,ft,0.01,12,True
+1,61a4027a2aed499dad67f39a68f274aa,40A 10000,Barber Canal,Stage,Nov-12 23:15,0.26,ft,0.01,12,True
+2,c536155e184d464a97022ab50e4919d6,40A 10000,Barber Canal,Stage,Nov-12 23:15,0.26,ft,0.01,12,True
+3,7d44ad5aed2243ff94b47c7cd740d53c,40A 10000,Barber Canal,Voltage,Nov-12 23:00,12.44,V,11.5,15,True
+4,0eb83ea5e91f4456a3322ef6e9902f78,40A 1500,NF Musselshell near Delphine,Stage,0,0.0,ft,0.01,12,False
+5,3fe1fb16cd974f2ba92a0b011ba8f903,40A 1500,NF Musselshell near Delphine,Stage,Nov-12 23:15,0.78,ft,0.01,12,True
+6,650125de347f4ff5b617d6dd995cd4e7,40A 1500,NF Musselshell near Delphine,Stage,Nov-12 23:15,0.78,ft,0.01,12,True
+7,c7f1234463bc4316bf299da2de75ccd9,40A 1500,NF Musselshell near Delphine,Stage,Nov-12 18:00,0.7873076923076923,ft,0.01,12,True
+8,c7f1234463bc4316bf299da2de75ccd9,40A 1500,NF Musselshell near Delphine,Stage,Nov-12 18:00,0.7873076923076923,ft,0.01,12,True
+9,94664635d58f42c4afad73ab0094a396,40A 2000,NF Musselshell blw Bair Reservoir,Stage,Nov-12 23:15,0.63,ft,0.01,12,True
+10,e69d90a04b20431185074fcf925cb53c,40A 2000,NF Musselshell blw Bair Reservoir,Stage,Nov-12 23:15,0.63,ft,0.01,12,True
+11,67b35c8c38e040cd8984b696e97ff839,40A 2000,NF Musselshell blw Bair Reservoir,Voltage,Nov-13 06:00,12.49,V,11.5,15,True
+12,686df953f4a64ae7937f2d1fada65670,40A 3000,NF Musselshell Diversion Canal,Stage,Nov-12 23:15,0.27,ft,0.01,12,True
+13,942d002cc1c3463db5992f804ae8c5a7,40A 3000,NF Musselshell Diversion Canal,Stage,Nov-12 23:15,0.27,ft,0.01,12,True
+14,2503838c61174dafb21d93433d6b9c95,40A 3000,NF Musselshell Diversion Canal,Voltage,Nov-12 23:00,12.44,V,11.5,15,True
+15,80da33761fa143259291723c6681deb5,40A 4080,Martinsdale Supply Canal,Stage,Nov-12 23:00,0.03,ft,0.01,12,True
+16,d34b9c223d8e49218418040615a97615,40A 4080,Martinsdale Supply Canal,Stage,Nov-12 23:00,0.03,ft,0.01,12,True
+17,f7b60769d72440bca9884c6781f9c020,40A 4080,Martinsdale Supply Canal,Voltage,Nov-13 06:00,12.48,V,11.5,15,True
+18,4e5686e1b8d042deb9b159b9a68a5552,40A 5000,Martinsdale Outlet Canal,Stage,Nov-12 23:15,0.83,ft,0.01,12,True
+19,9a3e512f0aba46de8e0d0380e2a24913,40A 5000,Martinsdale Outlet Canal,Stage,Nov-12 23:15,0.83,ft,0.01,12,True
+20,c3eb3c865cd8489eac81bdb0dfb69371,40A 5000,Martinsdale Outlet Canal,Voltage,Nov-12 23:00,12.57,V,11.5,15,True
+21,646bf7b261514ac19439b59990f3de9e,40A 8080,Deadman's Basin Supply Canal abv Drop to Res,Stage,Nov-12 23:00,2.82,ft,0.01,12,True
+22,6823414c0eb1401fbbacbf3cef42c13e,40A 8080,Deadman's Basin Supply Canal abv Drop to Res,Stage,Nov-12 23:00,2.82,ft,0.01,12,True
+23,6823414c0eb1401fbbacbf3cef42c13e,40A 8080,Deadman's Basin Supply Canal abv Drop to Res,Stage,Nov-12 23:00,2.82,ft,0.01,12,True
+24,2d0a3ef982674209b1498b0d4eaf8a43,40A 9000,Careless Canal,Stage,Nov-12 23:15,-0.02,ft,0.01,12,False
+25,c6bbf5784fb148398a8fd0d507f8f081,40A 9000,Careless Canal,Stage,Nov-12 23:15,-0.02,ft,0.01,12,False
+26,6f335cdbc02c42f4b8938b2fdf427894,40A 9000,Careless Canal,Voltage,Nov-12 23:00,12.09,V,11.5,15,False
+27,728c3521bdad40bc8a16cf227b1043e6,41H 1000,EF Hyalite Ck,Internal Temp (DCP),Nov-12 23:00,-5.92,degC,-40.0,140,True
+28,9238a1539d79465a90659b50efa288cd,41H 1000,EF Hyalite Ck,Stage,Nov-12 23:15,0.44,ft,0.01,12,True
+29,ed97e3f58c344128996ed269bced5c31,41H 1000,EF Hyalite Ck,Stage,Nov-12 23:15,0.44,ft,0.01,12,True
+30,98488372e33c4449b20c1be24080abab,41H 1000,EF Hyalite Ck,Voltage,Nov-12 23:00,12.41,V,11.5,15,True
 31,3e9f3b91a2fb4508befa903fdb0a36f9,41H 1500,WF Hyalite Ck,Internal Temp (DCP),0,0.0,degC,-40.0,140,False
-32,6fd2b38df81548dc964e567a16e6b2cb,41H 1500,WF Hyalite Ck,Stage,Nov-11 23:15,0.92,ft,0.01,12,True
-33,9b45f0d165fe4dbe8bf4b105be6105fa,41H 1500,WF Hyalite Ck,Stage,Nov-11 23:15,0.92,ft,0.01,12,True
+32,6fd2b38df81548dc964e567a16e6b2cb,41H 1500,WF Hyalite Ck,Stage,Nov-12 23:15,0.9,ft,0.01,12,True
+33,9b45f0d165fe4dbe8bf4b105be6105fa,41H 1500,WF Hyalite Ck,Stage,Nov-12 23:15,0.9,ft,0.01,12,True
 34,3ebf4c20f65d4e75bc00ac9277d1c8fb,41H 1500,WF Hyalite Ck,Voltage,0,0.0,V,11.5,15,False
-35,4a944178e14f4b618ec50911f616fd6f,41H 2000,Middle Creek blw Res,Internal Temp (DCP),Nov-11 23:00,-1.96,degC,-40.0,140,True
-36,84fd8605b5ad4ad781aa803f07de088e,41H 2000,Middle Creek blw Res,Stage,Nov-11 23:45,0.84,ft,0.01,12,True
-37,96bb4ce89b574d918aadd66c74e3c867,41H 2000,Middle Creek blw Res,Stage,Nov-11 23:45,0.84,ft,0.01,12,True
-38,9b61c5ded8374cffbe14a3ae9e6a090b,41H 2000,Middle Creek blw Res,Stage,Nov-11 23:45,0.84,ft,0.01,12,True
-39,649dc88c18d2449c8cae6f37855251b2,41H 2000,Middle Creek blw Res,Voltage,Nov-11 23:00,12.48,V,11.5,15,True
-40,97e5ec76200d4087870519cf47a533e1,41I 1500,Broadwater Main Canal Below Head Gate,Stage,Nov-11 22:30,1.18,ft,0.01,12,True
-41,c26f05887c864cf5b5017d82127ef29f,41I 1500,Broadwater Main Canal Below Head Gate,Stage,Nov-11 22:30,1.18,ft,0.01,12,True
-42,db05aa93574a4d6d8fc5b4b34980f4e4,41I 1500,Broadwater Main Canal Below Head Gate,Voltage,Nov-11 22:00,12.46,V,11.5,15,True
-43,0832f8aedd5d4d11b56a42a59818e347,41I 2000,Broadwater East Canal Blw HG,Stage,Nov-11 23:15,1.15,ft,0.01,12,True
-44,ce64d4ecf7704167b0c06504e8362a3c,41I 2000,Broadwater East Canal Blw HG,Stage,Nov-11 23:15,1.15,ft,0.01,12,True
-45,52b54629a4ce48a791d4bbb91451a3a8,41I 2000,Broadwater East Canal Blw HG,Voltage,Nov-12 06:00,12.57,V,11.5,15,True
-46,5ba899971ba6499ebc5e01ff59756005,41K 4000,Nilan East Canal blw Reservoir,Stage,Nov-11 23:00,0.14,ft,0.01,12,True
-47,852a3866ea794657aed9e03e1ccd04f4,41K 4000,Nilan East Canal blw Reservoir,Stage,Nov-11 23:00,0.14,ft,0.01,12,True
-48,672958afe30f48b0a80f72a73a037aef,76E 1500,EF Rock Ck abv Reservoir,Stage,Nov-11 23:00,0.89,ft,0.01,12,True
-49,9676c35f332b47c3ba8ffb691d8ce64d,76E 1500,EF Rock Ck abv Reservoir,Stage,Nov-11 23:00,0.89,ft,0.01,12,True
-50,b2785dd8855945898d14a49272699324,76E 1500,EF Rock Ck abv Reservoir,Voltage,Nov-11 23:00,11.53,V,11.5,15,True
-51,97cefaa76d6d4730ae60d18142b89fa1,76E 2100,EF Rock Ck blw Reservoir,Stage,Nov-11 23:00,1.18,ft,0.01,12,True
-52,f32c3a6eb4a249e6813f587a7b255a8d,76E 2100,EF Rock Ck blw Reservoir,Stage,Nov-11 23:00,1.18,ft,0.01,12,True
-53,231edb29e9ca4e7da6ab4722117b7a2a,76F 2000,Nevada Ck blw Res,Internal Temp (DCP),Nov-11 23:00,2.77,degC,-40.0,140,True
-54,6910314433014115abe3f84d6bee762a,76F 2000,Nevada Ck blw Res,Stage,Nov-11 23:15,0.59,ft,0.01,12,True
-55,7fd2eca8150541f18e038bfe660af400,76F 2000,Nevada Ck blw Res,Stage,Nov-11 23:15,0.59,ft,0.01,12,True
-56,1641b266bf2b42fd806727dbc63d8b05,76F 2000,Nevada Ck blw Res,Voltage,Nov-11 23:00,12.33,V,11.5,15,True
-57,325dedf37ae0445ba8da4df7c3c742ae,76F 2100,Douglas Canal,Stage,Nov-11 23:30,0.11,ft,0.01,12,True
-58,95b3f7e2994c42978646724880c3d709,76F 2100,Douglas Canal,Stage,Nov-11 23:30,0.11,ft,0.01,12,True
-59,675def2b46d64a1e8125a213e7960711,76F 2200,Nevada Ck blw Douglas Canal,Stage,Nov-11 23:30,0.78,ft,0.01,12,True
-60,dac6bbb6ea594f3488db904cd9719393,76F 2200,Nevada Ck blw Douglas Canal,Stage,Nov-11 23:30,0.78,ft,0.01,12,True
-61,148da59597da4a1eb46a419ff16826c0,76H 1200,West Fork of Bitterroot Abv Painted Rocks,Stage,Nov-11 23:15,1.95,ft,0.01,12,True
-62,828db9d58e37453c8fa8ce4f2bc17ab7,76H 1200,West Fork of Bitterroot Abv Painted Rocks,Stage,Nov-11 23:15,1.95,ft,0.01,12,True
-63,52ce0aa4ecb94ca4840bcc53f3610590,76H 1200,West Fork of Bitterroot Abv Painted Rocks,Voltage,Nov-11 23:00,12.7,V,11.5,15,True
-64,6255e13a3f924218bb4a58a541b6d15f,76H 1500,Blue Joint Creek above Painted Rocks Reservoir,Stage,Nov-11 23:15,0.37,ft,0.01,12,True
-65,746123f9a541413b973d4917823d969b,76H 1500,Blue Joint Creek above Painted Rocks Reservoir,Stage,Nov-11 23:15,0.37,ft,0.01,12,True
+35,4a944178e14f4b618ec50911f616fd6f,41H 2000,Middle Creek blw Res,Internal Temp (DCP),Nov-12 23:00,-6.17,degC,-40.0,140,True
+36,84fd8605b5ad4ad781aa803f07de088e,41H 2000,Middle Creek blw Res,Stage,Nov-12 23:45,0.84,ft,0.01,12,True
+37,96bb4ce89b574d918aadd66c74e3c867,41H 2000,Middle Creek blw Res,Stage,Nov-12 23:45,0.84,ft,0.01,12,True
+38,9b61c5ded8374cffbe14a3ae9e6a090b,41H 2000,Middle Creek blw Res,Stage,Nov-12 23:45,0.84,ft,0.01,12,True
+39,649dc88c18d2449c8cae6f37855251b2,41H 2000,Middle Creek blw Res,Voltage,Nov-12 23:00,12.36,V,11.5,15,True
+40,97e5ec76200d4087870519cf47a533e1,41I 1500,Broadwater Main Canal Below Head Gate,Stage,Nov-12 22:30,1.17,ft,0.01,12,True
+41,c26f05887c864cf5b5017d82127ef29f,41I 1500,Broadwater Main Canal Below Head Gate,Stage,Nov-12 22:30,1.17,ft,0.01,12,True
+42,db05aa93574a4d6d8fc5b4b34980f4e4,41I 1500,Broadwater Main Canal Below Head Gate,Voltage,Nov-12 22:00,12.29,V,11.5,15,True
+43,0832f8aedd5d4d11b56a42a59818e347,41I 2000,Broadwater East Canal Blw HG,Stage,Nov-12 23:15,1.14,ft,0.01,12,True
+44,ce64d4ecf7704167b0c06504e8362a3c,41I 2000,Broadwater East Canal Blw HG,Stage,Nov-12 23:15,1.14,ft,0.01,12,True
+45,52b54629a4ce48a791d4bbb91451a3a8,41I 2000,Broadwater East Canal Blw HG,Voltage,Nov-13 06:00,12.41,V,11.5,15,True
+46,5ba899971ba6499ebc5e01ff59756005,41K 4000,Nilan East Canal blw Reservoir,Stage,Nov-12 23:00,0.14,ft,0.01,12,True
+47,852a3866ea794657aed9e03e1ccd04f4,41K 4000,Nilan East Canal blw Reservoir,Stage,Nov-12 23:00,0.14,ft,0.01,12,True
+48,672958afe30f48b0a80f72a73a037aef,76E 1500,EF Rock Ck abv Reservoir,Stage,Nov-12 23:00,0.89,ft,0.01,12,True
+49,9676c35f332b47c3ba8ffb691d8ce64d,76E 1500,EF Rock Ck abv Reservoir,Stage,Nov-12 23:00,0.89,ft,0.01,12,True
+50,b2785dd8855945898d14a49272699324,76E 1500,EF Rock Ck abv Reservoir,Voltage,Nov-12 23:00,11.46,V,11.5,15,True
+51,97cefaa76d6d4730ae60d18142b89fa1,76E 2100,EF Rock Ck blw Reservoir,Stage,Nov-12 23:00,1.18,ft,0.01,12,True
+52,f32c3a6eb4a249e6813f587a7b255a8d,76E 2100,EF Rock Ck blw Reservoir,Stage,Nov-12 23:00,1.18,ft,0.01,12,True
+53,231edb29e9ca4e7da6ab4722117b7a2a,76F 2000,Nevada Ck blw Res,Internal Temp (DCP),Nov-12 23:00,0.97,degC,-40.0,140,True
+54,6910314433014115abe3f84d6bee762a,76F 2000,Nevada Ck blw Res,Stage,Nov-12 23:15,0.56,ft,0.01,12,True
+55,7fd2eca8150541f18e038bfe660af400,76F 2000,Nevada Ck blw Res,Stage,Nov-12 23:15,0.56,ft,0.01,12,True
+56,1641b266bf2b42fd806727dbc63d8b05,76F 2000,Nevada Ck blw Res,Voltage,Nov-12 23:00,12.25,V,11.5,15,True
+57,325dedf37ae0445ba8da4df7c3c742ae,76F 2100,Douglas Canal,Stage,Nov-12 23:30,0.05,ft,0.01,12,True
+58,95b3f7e2994c42978646724880c3d709,76F 2100,Douglas Canal,Stage,Nov-12 23:30,0.05,ft,0.01,12,True
+59,675def2b46d64a1e8125a213e7960711,76F 2200,Nevada Ck blw Douglas Canal,Stage,Nov-12 23:30,0.68,ft,0.01,12,True
+60,dac6bbb6ea594f3488db904cd9719393,76F 2200,Nevada Ck blw Douglas Canal,Stage,Nov-12 23:30,0.68,ft,0.01,12,True
+61,148da59597da4a1eb46a419ff16826c0,76H 1200,West Fork of Bitterroot Abv Painted Rocks,Stage,Nov-12 23:15,1.94,ft,0.01,12,True
+62,828db9d58e37453c8fa8ce4f2bc17ab7,76H 1200,West Fork of Bitterroot Abv Painted Rocks,Stage,Nov-12 23:15,1.94,ft,0.01,12,True
+63,52ce0aa4ecb94ca4840bcc53f3610590,76H 1200,West Fork of Bitterroot Abv Painted Rocks,Voltage,Nov-12 23:00,12.58,V,11.5,15,True
+64,6255e13a3f924218bb4a58a541b6d15f,76H 1500,Blue Joint Creek above Painted Rocks Reservoir,Stage,Nov-12 23:15,0.34,ft,0.01,12,True
+65,746123f9a541413b973d4917823d969b,76H 1500,Blue Joint Creek above Painted Rocks Reservoir,Stage,Nov-12 23:15,0.34,ft,0.01,12,True
 66,8e37593d5df04f9bb805d7d43cdf5ed3,42B 01900,Tongue River Reservoir,Lake res elevation,0,0.0,ft,1000.0,4000,True

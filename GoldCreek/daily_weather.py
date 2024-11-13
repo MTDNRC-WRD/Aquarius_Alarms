@@ -36,6 +36,26 @@ def format_timestamp(time):
             tf = tf.strftime("%b-%d  %H:%M")
             return tf
 
+def format_windspeed(deg):
+    if 337 > deg < 23:
+        wd = 'North'
+    if 22 < deg < 68:
+        wd = 'NorthEast'
+    if 67 < deg < 113:
+        wd = 'East'
+    if 112 < deg < 158:
+        wd = 'SouthEast'
+    if 157 < deg < 203:
+        wd = 'South'
+    if 202 < deg < 248:
+        wd = 'SouthWest'
+    if 247 < deg < 293:
+        wd = 'West'
+    if 292 < deg < 338:
+        wd = 'NorthWest'
+    else:
+        wd = "Hmmmmm, somethings broken"
+    return wd
 
 df = None
 
@@ -128,6 +148,15 @@ current_temp = airtemp_data.iloc[:, -1].tolist()[0]
 current_temp_time = airtemp_data.columns[-1]
 current_temp_text = f"Current Temperature: {current_temp} {airtemp_unit} ({current_temp_time})\n"
 
+current_windvel = windvel_data.iloc[:, -1].tolist()[0]
+current_windvel_time = windvel_data.columns[-1]
+current_windvel_text = f"Current Wind Speed: {current_windvel} {windvel_unit} ({current_windvel_time})\n"
+
+current_winddir = winddir_data.iloc[:, -1].tolist()[0]
+current_winddir_time = winddir_data.columns[-1]
+wd = format_windspeed(current_winddir)
+current_winddir_text = f"Current Wind Direction: {wd}  ({current_winddir} {winddir_unit})\n"
+
 morning_temps = airtemp_data.filter(regex=today, axis=1)
 over_low = morning_temps.min().min()
 over_low_time = morning_temps.min().idxmin()
@@ -142,7 +171,10 @@ over_precip_text = f"Overnight Precipitation: {over_precip} {new_precip_unit}\n"
 
 over_windvel = windvel_data.filter(regex=today, axis=1)
 over_ave_windvel = round(over_windvel.mean(axis=1).tolist()[-1])
-over_ave_windvel_text = f"Average Wind Speed: {over_ave_windvel} {windvel_unit}\n"
+over_ave_windvel_text = f"Overnight Average Wind Speed: {over_ave_windvel} {windvel_unit}\n"
+over_max_windvel = over_windvel.max().max()
+over_max_windvel_time = over_windvel.max().idxmax()
+over_max_windvel_text = f"Overnight Max Wind Speed: {over_max_windvel} {windvel_unit} ({over_max_windvel_time})\n"
 
 print(current_temp_text, over_low_text, over_precip_text, over_ave_windvel_text)
 
@@ -164,23 +196,7 @@ yes_min_temp_text = f"Minimum Temperature: {yes_min_temp} {airtemp_unit} ({yes_m
 
 yes_windir = winddir_data.filter(regex=yesterday, axis=1)
 ave_winddir = round(yes_windir.mean(axis=1).tolist()[-1])
-wd = "Hmmmmm, something isn't working right"
-if 337 > ave_winddir < 23:
-    wd = 'North'
-if 22 < ave_winddir < 68:
-    wd = 'NorthEast'
-if 67 < ave_winddir < 113:
-    wd = 'East'
-if 112 < ave_winddir < 158:
-    wd = 'SouthEast'
-if 157 < ave_winddir < 203:
-    wd = 'South'
-if 202 < ave_winddir < 248:
-    wd = 'SouthWest'
-if 247 < ave_winddir < 293:
-    wd = 'West'
-if 292 < ave_winddir < 338:
-    wd = 'NorthWest'
+wd = format_windspeed(ave_winddir)
 yes_ave_winddir_text = f"Average Wind Direction: {wd}  ({ave_winddir} {winddir_unit})\n"
 
 yes_windvel = windvel_data.filter(regex=yesterday, axis=1)
@@ -306,16 +322,20 @@ pleasantries = ['agreeable',
                 'tremendous',
                 'unreal',
                 'utmost',
-                'wondrous'
+                'wondrous',
+                'punctual',
+                'scrupulous',
+                'heedful',
+                'upright',
+                'meticulous',
+                'punctilious'
                 ]
 adj = pleasantries[random.randint(0, len(pleasantries))]
 valediction = f"Have a {adj} day!"
 ps = ''
 if current_temp < 0:
     ps = "Don't Forget to Put Your Long Johns On!"
-if yes_max_temp <= 20:
-    ps = "Stay Warm Out There!"
-if yes_max_temp >= 90:
+if yes_max_temp >= 92:
     ps = "WOOOOOOEEEEEE It's Hot. Them Cows Need a Mistin'"
 if daily_precip >= 1:
     ps = "Don't Forget to Blow Dry The Cows"
@@ -327,14 +347,17 @@ msg['Subject'] = f"Daily Weather Summary {t_now_format}"
 msg['From'] = 'GoldCreekWeatherStation@dnrc.mt.gov'
 msg['To'] = RECIPIENTS
 
-body = MIMEText(f"Overnight Conditions ({today_format}):\n\n"              
+body = MIMEText(f"Morning Conditions ({today_format}):\n\n"              
                 f"-{current_temp_text}\n"
                 f"-{over_low_text}\n"
                 f"-{over_precip_text}\n"
-                f"-{over_ave_windvel_text}\n\n"
+                f"-{current_windvel_text}\n"
+                f"-{current_winddir_text}\n"
+                f"-{over_max_windvel_text}\n\n"
                 f"Yesterday's Conditions ({yesterday_format}):\n\n"                
                 f"-{yes_max_temp_text}\n"
                 f"-{yes_min_temp_text}\n"
+                f"-{yes_precip_text}\n"
                 f"-{yes_max_windvel_text}\n"
                 f"-{yes_ave_windvel_text}\n"              
                 f"-{yes_ave_winddir_text}\n\n"        
