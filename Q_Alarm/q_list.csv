@@ -22,7 +22,7 @@ d1bddfaf51db4dd2a7e7db5fbfacfcee,41D 01000,"Big Hole River abv Jackson, MT",Disc
 a585edb7d40948febbfb1cba55475aa8,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
 612ec6eb18af48c4920fcd549fa91bae,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
 dd006b09768d45a8a6932dde13bd3e34,41D 07700,"Deep Creek nr Wise River, MT",Discharge,ft^3/s,discharge,40,150,30,TRUE
-977102eda5fe4c0794f59bc236480d56,41D 07900,Wise River nr mouth,Discharge,ft^3/s,discharge,10,1700,100,TRUE
+977102eda5fe4c0794f59bc236480d56,41D 07900,Wise River nr mouth,Discharge,ft^3/s,discharge,10,1700,100,FALSE
 6990415da551431fa38ef66fa91fe5f8,41D 08000,"Big Hole River near Wise River, MT",Discharge,ft^3/s,discharge,0.05,10000,100,TRUE
 a9062a54bb844002a100b99472f2eb5d,41E 10000,Boulder River Nr Cardwell,Discharge,ft^3/s,discharge,70,350,100,TRUE
 caa1a4fc3c214f8bae9d159f02058e38,41G 09000,"Willow Creek nr Willow, MT",Discharge,ft^3/s,discharge,0.05,10000,100,FALSE

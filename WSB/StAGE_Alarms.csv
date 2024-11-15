@@ -1,13 +1,10 @@
 ,UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Unit,LowAlarm,HighAlarm,Publish
-0,a514eec166d34d1d93077364ef00b58a,40G 10000,Sage Creek Nr Box Elder,Stage,Nov-12 23:30,2.48,ft,3.0,4.0,True
-1,9a91d19701bb4c2eb63fcb7728f71538,40G 10000,Sage Creek Nr Box Elder,Stage,Nov-12 23:30,2.48,ft,3.0,4.0,True
-2,01487f13cf4b4f6fbdea1b61a11e1140,41G 09000,"Willow Creek nr Willow Creek, MT",Stage,Nov-12 23:30,2.06,ft,1.3,1.8,True
-3,30848c8208e7405db5566597de84090f,41G 09000,"Willow Creek nr Willow Creek, MT",Stage,Nov-12 23:30,2.06,ft,1.3,1.8,True
-4,b0d517ec27484c9085efeb1619d1efba,41H 08950,Sourdough Creek above City Intake,Stage,0,0.0,ft,1.0,1.8,True
-5,cdb66eb487574b6aa649c64b78c380e2,41H 08950,Sourdough Creek above City Intake,Stage,Nov-12 23:00,0.98,ft,1.0,1.8,True
-6,f5d2fbd3c9544f83a4005333cf7db9b0,41H 08950,Sourdough Creek above City Intake,Stage,Nov-12 23:00,0.98,ft,1.0,1.8,True
-7,d7b0a539941f44df9a3d050e525e6fb0,41J 03000,Sheep Cr at Strawberry Butte,Stage,Nov-12 23:45,2.02,ft,1.2,1.8,True
-8,a4600d8024ab435f9de6f21657de2908,41J 03000,Sheep Cr at Strawberry Butte,Stage,Nov-12 23:45,2.02,ft,1.2,1.8,True
-9,38a790a6548d4fabaccc774ba38624a2,41J 02000,"Sheep Creek nr Adams Creek Road, MT",Stage,Nov-12 23:30,1.15,ft,1.25,1.83,True
-10,9870577bdeb0435488ebf76b43351482,41J 02000,"Sheep Creek nr Adams Creek Road, MT",Stage,Nov-12 23:30,1.15,ft,1.25,1.83,True
-11,a725c3f195964d81ae4b0e6bb834efed,76F 03500,North Fork Blackfoot at Ryan Bridge,Water Temp,Nov-12 23:15,-0.13,degC,0.0,30.0,True
+0,a514eec166d34d1d93077364ef00b58a,40G 10000,Sage Creek Nr Box Elder,Stage,Nov-14 23:30,2.47,ft,3.0,4.0,True
+1,9a91d19701bb4c2eb63fcb7728f71538,40G 10000,Sage Creek Nr Box Elder,Stage,Nov-14 23:30,2.47,ft,3.0,4.0,True
+2,01487f13cf4b4f6fbdea1b61a11e1140,41G 09000,"Willow Creek nr Willow Creek, MT",Stage,Nov-14 23:30,2.12,ft,1.3,1.8,True
+3,30848c8208e7405db5566597de84090f,41G 09000,"Willow Creek nr Willow Creek, MT",Stage,Nov-14 23:30,2.12,ft,1.3,1.8,True
+4,b0d517ec27484c9085efeb1619d1efba,41H 08950,Sourdough Creek above City Intake,Stage,Nov-14 18:00,0.97171875,ft,1.0,1.8,True
+5,cdb66eb487574b6aa649c64b78c380e2,41H 08950,Sourdough Creek above City Intake,Stage,Nov-14 23:00,0.97,ft,1.0,1.8,True
+6,f5d2fbd3c9544f83a4005333cf7db9b0,41H 08950,Sourdough Creek above City Intake,Stage,Nov-14 23:00,0.97,ft,1.0,1.8,True
+7,d7b0a539941f44df9a3d050e525e6fb0,41J 03000,Sheep Cr at Strawberry Butte,Stage,Nov-14 23:45,2.08,ft,1.2,1.8,True
+8,a4600d8024ab435f9de6f21657de2908,41J 03000,Sheep Cr at Strawberry Butte,Stage,Nov-14 23:45,2.08,ft,1.2,1.8,True

@@ -1,3 +1,3 @@
 ,UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Unit,LowAlarm,HighAlarm,Publish
-0,b2785dd8855945898d14a49272699324,76E 1500,EF Rock Ck abv Reservoir,Voltage,Nov-12 23:00,11.46,V,11.5,15,True
+0,b2785dd8855945898d14a49272699324,76E 1500,EF Rock Ck abv Reservoir,Voltage,Nov-14 23:00,11.37,V,11.5,15,True
 1,8e37593d5df04f9bb805d7d43cdf5ed3,42B 01900,Tongue River Reservoir,Lake res elevation,0,0.0,ft,1000.0,4000,True

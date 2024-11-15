@@ -275,7 +275,7 @@ body = MIMEText(f"Daily Alarm summary\n\n"
                 f"{format_irreg_v}\n\n"
                 "Sites reporting irregular data: \n"
                 f"{format_irreg_data}\n\n"
-                f"Have a {valediction} day!")
+                f"{valediction}")
 
 part = MIMEBase('application', "octet-stream")
 part.set_payload(open(attachment, "rb").read())
