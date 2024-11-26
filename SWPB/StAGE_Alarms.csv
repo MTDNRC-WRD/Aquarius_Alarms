@@ -1,3 +1,7 @@
 ,UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Unit,LowAlarm,HighAlarm,Publish
-0,b2785dd8855945898d14a49272699324,76E 1500,EF Rock Ck abv Reservoir,Voltage,Nov-14 23:00,11.37,V,11.5,15,True
-1,8e37593d5df04f9bb805d7d43cdf5ed3,42B 01900,Tongue River Reservoir,Lake res elevation,0,0.0,ft,1000.0,4000,True
+0,672958afe30f48b0a80f72a73a037aef,76E 1500,EF Rock Ck abv Reservoir,Stage,0,0.0,ft,0.01,12,True
+1,9676c35f332b47c3ba8ffb691d8ce64d,76E 1500,EF Rock Ck abv Reservoir,Stage,0,0.0,ft,0.01,12,True
+2,b2785dd8855945898d14a49272699324,76E 1500,EF Rock Ck abv Reservoir,Voltage,0,0.0,V,11.5,15,True
+3,325dedf37ae0445ba8da4df7c3c742ae,76F 2100,Douglas Canal,Stage,Nov-25 23:30,-0.08,ft,0.01,12,True
+4,95b3f7e2994c42978646724880c3d709,76F 2100,Douglas Canal,Stage,Nov-25 23:30,-0.08,ft,0.01,12,True
+5,8e37593d5df04f9bb805d7d43cdf5ed3,42B 01900,Tongue River Reservoir,Lake res elevation,0,0.0,ft,1000.0,4000,True

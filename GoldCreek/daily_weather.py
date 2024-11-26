@@ -36,26 +36,28 @@ def format_timestamp(time):
             tf = tf.strftime("%b-%d  %H:%M")
             return tf
 
+
 def format_windspeed(deg):
     if 337 > deg < 23:
         wd = 'North'
-    if 22 < deg < 68:
+    elif 22 < deg < 68:
         wd = 'NorthEast'
-    if 67 < deg < 113:
+    elif 67 < deg < 113:
         wd = 'East'
-    if 112 < deg < 158:
+    elif 112 < deg < 158:
         wd = 'SouthEast'
-    if 157 < deg < 203:
+    elif 157 < deg < 203:
         wd = 'South'
-    if 202 < deg < 248:
+    elif 202 < deg < 248:
         wd = 'SouthWest'
-    if 247 < deg < 293:
+    elif 247 < deg < 293:
         wd = 'West'
-    if 292 < deg < 338:
+    elif 292 < deg < 338:
         wd = 'NorthWest'
     else:
         wd = "Hmmmmm, somethings broken"
     return wd
+
 
 df = None
 
@@ -154,8 +156,8 @@ current_windvel_text = f"Current Wind Speed: {current_windvel} {windvel_unit} ({
 
 current_winddir = winddir_data.iloc[:, -1].tolist()[0]
 current_winddir_time = winddir_data.columns[-1]
-wd = format_windspeed(current_winddir)
-current_winddir_text = f"Current Wind Direction: {wd}  ({current_winddir} {winddir_unit})\n"
+cwd = format_windspeed(int(current_winddir))
+current_winddir_text = f"Current Wind Direction: {cwd}  ({current_winddir} {winddir_unit})\n"
 
 morning_temps = airtemp_data.filter(regex=today, axis=1)
 over_low = morning_temps.min().min()
@@ -165,7 +167,7 @@ over_low_text = f"Overnight Low: {over_low} {airtemp_unit} ({over_low_time})\n"
 over_precip = precip_data.filter(regex=today, axis=1)
 start_overprecip = int(over_precip.iloc[:, 0].tolist()[0])
 end_overprecip = int(over_precip.iloc[:, -1].tolist()[0])
-over_precip = round((start_overprecip - end_overprecip) * 0.0393701, 2)
+over_precip = round((end_overprecip - start_overprecip) * 0.0393701, 2)
 new_precip_unit = 'in'
 over_precip_text = f"Overnight Precipitation: {over_precip} {new_precip_unit}\n"
 
@@ -182,7 +184,7 @@ print(current_temp_text, over_low_text, over_precip_text, over_ave_windvel_text)
 yes_precip = precip_data.filter(regex=yesterday, axis=1)
 start_yesprecip = int(yes_precip.iloc[:, 0].tolist()[0])
 end_yesprecip = int(yes_precip.iloc[:, -1].tolist()[0])
-daily_precip = round((start_yesprecip - end_yesprecip) * 0.0393701, 2)
+daily_precip = round((end_yesprecip - start_yesprecip) * 0.0393701, 2)
 yes_precip_text = f"Precipitation: {daily_precip} {new_precip_unit}\n"
 
 yes_airtemp = airtemp_data.filter(regex=yesterday, axis=1)
@@ -196,8 +198,8 @@ yes_min_temp_text = f"Minimum Temperature: {yes_min_temp} {airtemp_unit} ({yes_m
 
 yes_windir = winddir_data.filter(regex=yesterday, axis=1)
 ave_winddir = round(yes_windir.mean(axis=1).tolist()[-1])
-wd = format_windspeed(ave_winddir)
-yes_ave_winddir_text = f"Average Wind Direction: {wd}  ({ave_winddir} {winddir_unit})\n"
+ywd = format_windspeed(int(ave_winddir))
+yes_ave_winddir_text = f"Average Wind Direction: {ywd}  ({ave_winddir} {winddir_unit})\n"
 
 yes_windvel = windvel_data.filter(regex=yesterday, axis=1)
 ave_windvel = round(yes_windvel.mean(axis=1).tolist()[-1])
@@ -335,7 +337,7 @@ valediction = f"Have a {adj} day!"
 ps = ''
 if current_temp < 0:
     ps = "Don't Forget to Put Your Long Johns On!"
-if yes_max_temp >= 92:
+if yes_max_temp >= 95:
     ps = "WOOOOOOEEEEEE It's Hot. Them Cows Need a Mistin'"
 if daily_precip >= 1:
     ps = "Don't Forget to Blow Dry The Cows"

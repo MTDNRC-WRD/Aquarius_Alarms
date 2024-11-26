@@ -1,7 +1,6 @@
 ﻿id,name
 39E 09000,Box Elder Cr nr Ekalaka
 39FJ 09000,Little Beaver Cr nr Webster
-40A 10000,Barber Canal
 40A 1500,NF Musselshell near Delphine
 40A 2000,NF Musselshell blw Bair Reservoir
 40A 3000,NF Musselshell Diversion Canal
@@ -11,6 +10,8 @@
 40A 8080,Deadman's Basin Supply Canal abv Drop
 40A 8100,Deadman's Basin Supply Canal
 40A 9000,Careless Canal
+40A 10000,Barber Canal
+40A 14000,"Careless Cr nr Ryegate, MT"
 40B 06000,Flatwillow Creek abv Petrolia Reservoir
 40G 10000,Sage Creek Nr Box Elder
 40I 10000,"Peoples Creek near Dodson, MT"
@@ -18,8 +19,9 @@
 40J 09000,"Beaver Crk Reservoir nr Havre, MT"
 40J 09100,"Beaver Cr blw Reservoir nr Havre, MT"
 40L 10050 013,Frenchman Creek @ Mouth
+41A 01000,Red Rock River abv Lime Reservoir
 41A 10000,Red Rock River abv Clark Canyon Res
-41C 05000, Ruby River at Alder
+41C 05000,Ruby River at Alder
 41C 08000,Ruby River at Harrington Bridge
 41D 01000,"Big Hole River abv Jackson, MT"
 41D 02000,Big Hole River abv Spring Cr nr Jackson
@@ -76,6 +78,7 @@
 76F 2000,Nevada Ck blw Res
 76F 2100,Douglas Canal
 76F 2200,Nevada Ck blw Douglas Canal
+76F 02900,"Nevada Cr nr Helmville, MT"
 76G 03100,Racetrack Creek nr Racetrack
 76G 04000,"Cottonwood Cr at Deer Lodge, MT"
 76G 05980,"Gold Creek near Gold Creek, MT"
