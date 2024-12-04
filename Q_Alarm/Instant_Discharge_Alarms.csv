@@ -1,11 +1,15 @@
 ,UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Timestamp_min_1hr,Value_min_1hr,Timestamp_min_day,Value_min_day,Delta_Day,Unit,Alarm_Type,LowAlarm,HighAlarm,DeltaAlarm,Publish
-0,35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,50,3,True
+0,35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,Dec-03 23:30,0,Dec-03 22:45,0,Dec-02 23:45,0,0,ft^3/s,,0.05,50,3,True
 1,6de1da6485cb4f7a8349c9a7b3fe40f9,40I 10000,"Peoples Creek near Dodson, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
 2,8473d99f2b5249d0867cc90cc6ddd49b,40L-10050013,Frenchman Creek @ Mouth,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
 3,a585edb7d40948febbfb1cba55475aa8,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
 4,612ec6eb18af48c4920fcd549fa91bae,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
 5,dd006b09768d45a8a6932dde13bd3e34,41D 07700,"Deep Creek nr Wise River, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,40.0,150,30,True
 6,6990415da551431fa38ef66fa91fe5f8,41D 08000,"Big Hole River near Wise River, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
-7,4e3f6333761e406e849b77fb783f52da,43B 04000,Park Branch Canal below headgate,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
-8,d7ee9ede030e4aedb8d1ada7062b1c9e,43B 10000,Livingston Ditch below headgate,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
-9,dd978f882d364cfc9e490652ba357133,76F 02900,"Nevada Cr nr Helmville, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+7,a9062a54bb844002a100b99472f2eb5d,41E 10000,Boulder River Nr Cardwell,Discharge,null,null,null,null,null,null,0,ft^3/s,,70.0,350,100,True
+8,d62cb40badda4ddaafc490e473404dfe,41H 08950,Sourdough Creek above City Intake,Discharge,null,null,null,null,null,null,0,ft^3/s,,7.0,170,100,True
+9,c7fa360046aa4acea374a93d00916409,41I 03500,"Deep Creek near Townsend, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+10,4e3f6333761e406e849b77fb783f52da,43B 04000,Park Branch Canal below headgate,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+11,db654d70d25741b0909815a8d24744f2,43B 05990,"Mill Creek near Emigrant, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+12,d7ee9ede030e4aedb8d1ada7062b1c9e,43B 10000,Livingston Ditch below headgate,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+13,dd978f882d364cfc9e490652ba357133,76F 02900,"Nevada Cr nr Helmville, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True

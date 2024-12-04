@@ -260,7 +260,13 @@ pleasantries = ['agreeable',
                 'punctilious'
                 ]
 adj = pleasantries[random.randint(0, len(pleasantries))]
-valediction = f"Have a {adj} day!"
+letter = adj[0]
+vowels = ['a', 'e', 'i', 'o', 'u']
+if letter in vowels:
+    art = 'an'
+else:
+    art = 'a'
+valediction = f"Have {art} {adj} day!"
 
 attachment = str(Path.joinpath(DIRECTORY, 'STAGE_Alarms.csv'))
 msg = MIMEMultipart()

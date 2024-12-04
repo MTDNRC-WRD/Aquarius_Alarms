@@ -16,8 +16,7 @@ SERVER_NAME = 'dnrhln6386.state.mt.ads'
 USER_NAME = 'DNRC'
 PASSWORD = 'DNRC'
 DIRECTORY = Path(r"\\DNRHLN6386.state.mt.ads\Fileshare$\Aquarius_Alarms\GoldCreek")
-RECIPIENTS = "bruce@thomasherefords.com, John.Lunzer@mt.gov, David.Saba@mt.gov"
-# RECIPIENTS = "geodj7907@gmail.com"
+RECIPIENTS = "bruce@thomasherefords.com, John.Lunzer@mt.gov, David.Saba@mt.gov, Hannah.Haugen@mt.gov"
 
 
 def format_timestamp(time):
@@ -333,12 +332,18 @@ pleasantries = ['agreeable',
                 'punctilious'
                 ]
 adj = pleasantries[random.randint(0, len(pleasantries))]
-valediction = f"Have a {adj} day!"
+letter = adj[0]
+vowels = ['a', 'e', 'i', 'o', 'u']
+if letter in vowels:
+    art = 'an'
+else:
+    art = 'a'
+valediction = f"Have {art} {adj} day!"
 ps = ''
 if current_temp < 0:
     ps = "Don't Forget to Put Your Long Johns On!"
 if yes_max_temp >= 95:
-    ps = "WOOOOOOEEEEEE It's Hot. Them Cows Need a Mistin'"
+    ps = "WOOOOOOEEEEEE It's Hot"
 if daily_precip >= 1:
     ps = "Don't Forget to Blow Dry The Cows"
 
