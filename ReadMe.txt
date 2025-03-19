@@ -1,8 +1,8 @@
 
 
-conda create -n Aq_Alarms python=3.9
+conda create -n AqAlarms python=3.9
 
-conda activate Aq_Alarms
+conda activate AqAlarms
 
 conda install pandas, geopandas, requests, openpyxl, pywin32
 

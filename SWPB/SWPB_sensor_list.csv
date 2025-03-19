@@ -1,4 +1,4 @@
-UniqueId,LocationIdentifier,SiteName,Parameter,Unit,LowAlarm,HighAlarm,Publish,Notes
+﻿UniqueId,LocationIdentifier,SiteName,Parameter,Unit,LowAlarm,HighAlarm,Publish,Notes
 0c4b823eccf2488997b4db678d63b05d,40A 10000,Barber Canal,Stage,ft,0.01,12,TRUE,
 61a4027a2aed499dad67f39a68f274aa,40A 10000,Barber Canal,Stage,ft,0.01,12,TRUE,
 c536155e184d464a97022ab50e4919d6,40A 10000,Barber Canal,Stage,ft,0.01,12,TRUE,
@@ -52,6 +52,8 @@ ce64d4ecf7704167b0c06504e8362a3c,41I 2000,Broadwater East Canal Blw HG,Stage,ft,
 b2785dd8855945898d14a49272699324,76E 1500,EF Rock Ck abv Reservoir,Voltage,V,11.5,15,TRUE,
 97cefaa76d6d4730ae60d18142b89fa1,76E 2100,EF Rock Ck blw Reservoir,Stage,ft,0.01,12,TRUE,
 f32c3a6eb4a249e6813f587a7b255a8d,76E 2100,EF Rock Ck blw Reservoir,Stage,ft,0.01,12,TRUE,
+3f7cefc52ce04cf281d3bda10abd6827,76E 2200,EF Main Canal blw Fish Screen,Stage,ft,0.01,12,TRUE,
+a584ea8e24e54fd2ba7419a9cd0cda00,76E 2200,EF Main Canal blw Fish Screen,Stage,ft,0.01,12,TRUE,
 231edb29e9ca4e7da6ab4722117b7a2a,76F 2000,Nevada Ck blw Res,Internal Temp (DCP),degC,-40,140,TRUE,
 6910314433014115abe3f84d6bee762a,76F 2000,Nevada Ck blw Res,Stage,ft,0.01,12,TRUE,
 7fd2eca8150541f18e038bfe660af400,76F 2000,Nevada Ck blw Res,Stage,ft,0.01,12,TRUE,

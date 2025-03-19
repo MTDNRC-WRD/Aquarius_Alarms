@@ -25,7 +25,7 @@ UPLOADED_FILES = Path.joinpath(DIRECTORY, 'uploaded_data.csv')
 GAGE_LIST = Path.joinpath(DIRECTORY, 'gage_list.csv')
 XLSX_FILE = Path.joinpath(DIRECTORY, 'DNRC_Qm_Form_live.xlsx')
 XLSX_TEMP = Path.joinpath(DIRECTORY, 'temp_form.xlsx')
-RECIPIENTS = 'David.Saba@mt.gov'
+RECIPIENTS = 'David.Saba@mt.gov, Ryan.Koehnlein2@mt.gov'
 
 
 def write_data_to_excel(cell_dict):
@@ -159,6 +159,8 @@ if __name__ == '__main__':
         push_data_to_aq()
     # Save sites that have been uploaded to csv last (if crash won't save)
     df_u.to_csv(UPLOADED_FILES)
+
+    print(f"{save_count} files saved")
 
     t_now_format = dt.datetime.now()
     t_now_format = t_now_format.strftime(f"%b %d, %Y")
