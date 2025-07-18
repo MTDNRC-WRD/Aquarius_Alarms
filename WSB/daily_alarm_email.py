@@ -15,9 +15,9 @@ from email.mime.text import MIMEText
 SERVER_NAME = 'dnrhln6386.state.mt.ads'
 USER_NAME = 'DNRC'
 PASSWORD = 'DNRC'
-DIRECTORY = Path(r"\\DNRHLN6386.state.mt.ads\Fileshare$\Aquarius_Alarms\WSB")
-RECIPIENTS = "David.Saba@mt.gov, TLechman@mt.gov, MNorberg@mt.gov, Ryan.Koehnlein2@mt.gov," \
-             " Christopher.Basden@mt.gov, b.grigsby@mt.gov, Ashley.Peterson@mt.gov, Kaitlin.Boren@mt.gov"
+DIRECTORY = Path(r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\Aquarius_Alarms\WSB')
+RECIPIENTS = "TLechman@mt.gov, MNorberg@mt.gov, Ryan.Koehnlein2@mt.gov, luke.lutz2@mt.gov, " \
+             "Christopher.Basden@mt.gov, b.grigsby@mt.gov, Ashley.Peterson@mt.gov, David.Saba@mt.gov"
 PARADISE_RECIPIENTS = "John.Lunzer@mt.gov, Raeya.Gordon@mt.gov, Madeline.McKeefry@mt.gov, David.Saba@mt.gov"
 # RECIPIENTS = "David.Saba@mt.gov, dnrcstage@mt.gov"
 # PARADISE_RECIPIENTS = "David.Saba@mt.gov"
@@ -62,9 +62,12 @@ for i in sl_df.index:
         url=f'http://{SERVER_NAME}/AQUARIUS/Publish/v2/GetTimeSeriesCorrectedData',
         auth=(USER_NAME, PASSWORD),
         params=aq_params)
-    response.raise_for_status()
-    series_data = response.json()
-    # print(json.dumps(series_data, indent=4))
+    try:
+        response.raise_for_status()
+        series_data = response.json()
+        # print(json.dumps(series_data, indent=4))
+    except requests.exceptions.HTTPError:
+        print(f"{i} not found...")
     try:
         timestamp = series_data["Points"][-1]["Timestamp"]
     except IndexError:
@@ -309,7 +312,7 @@ for site in paradise_list:
                 msg = MIMEMultipart()
                 msg['Subject'] = f"StAGE Alarms {t_now_format}"
                 msg['From'] = 'StAGE_Alarm@dnrc.mt.gov'
-                msg['To'] = RECIPIENTS
+                msg['To'] = PARADISE_RECIPIENTS
 
                 body = MIMEText(f"Daily Alarm summary:\n\n"
                                 "Sites not reporting: \n"

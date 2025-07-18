@@ -1,26 +1,24 @@
-import pandas as pd
-import geopandas as gpd
 import datetime as dt
-import openpyxl
-from win32com import client
 import os
 import shutil
-from pathlib import Path
 import smtplib
 from email.mime.multipart import MIMEMultipart
-from email.mime.base import MIMEBase
-from email import encoders
 from email.mime.text import MIMEText
+from pathlib import Path
+
+import geopandas as gpd
+import openpyxl
+import pandas as pd
+from win32com import client
+
 from id_fix.id_fix import dict_dict, other_dict_dict
-from id_fix.id_fix import gage_read_dict
 
-
-SERVER_NAME = 'dnrhln6385.state.mt.ads'  # 65 is test, 63 is live
-USER_NAME = ''
-PASSWORD = ''
-DIRECTORY = Path(r'\\DNRHLN6386.state.mt.ads\Fileshare$\Aquarius_Alarms\AGOL_to_Aq')
-PDF_DIRECTORY = Path(r'\\DNRHLN6386.state.mt.ads\Fileshare$\Water_Management\Electronic Field Forms')
-AGOL_FILE = Path(r'\\DNRHLN6386.state.mt.ads\Fileshare$\GIS\AGOL\Discharge_Form_Data\WSB_Discharge_Measurement_Form_Data.shp')
+# SERVER_NAME = 'dnrhln6385.state.mt.ads'  # 65 is test, 63 is live
+# USER_NAME = ''
+# PASSWORD = ''
+DIRECTORY = Path(r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\Aquarius_Alarms\AGOL_to_Aq')
+PDF_DIRECTORY = Path(r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\Water_Management\Electronic Field Forms')
+AGOL_FILE = Path(r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\GIS\AGOL\Discharge_Form_Data\WSB_Discharge_Measurement_Form_Data.shp')
 UPLOADED_FILES = Path.joinpath(DIRECTORY, 'uploaded_data.csv')
 GAGE_LIST = Path.joinpath(DIRECTORY, 'gage_list.csv')
 XLSX_FILE = Path.joinpath(DIRECTORY, 'DNRC_Qm_Form_live.xlsx')
@@ -153,6 +151,8 @@ if __name__ == '__main__':
         reform_date = format_date(meas_date)
         site_id = temp_dict['A2']
         reform_id = site_id.replace(' ', '')
+        if reform_id == '':
+            reform_id = temp_dict['F4']
         # save_excel_to_folder(reform_date, reform_id)
         excel_to_pdf(reform_date, reform_id)
 

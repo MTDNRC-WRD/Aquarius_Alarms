@@ -1,3 +1,2 @@
 ,UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Timestamp_min_1hr,Value_min_1hr,Timestamp_min_day,Value_min_day,Delta_Day,Unit,Alarm_Type,LowAlarm,HighAlarm,DeltaAlarm,Publish
-0,095c0d42e78b4aa383b15373c69dad60,41H 1000,EF Hyalite Ck,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
-1,d255f7a88f6a4c4a83f505c7752873a9,43Q 05900,Canyon Creek @ ZooMontana,Discharge,null,null,null,null,null,null,0,ft^3/s,,5.0,300,100,True
+0,35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,Jul-16 22:30,0,Jul-16 21:45,0,Jul-15 22:45,0,0,ft^3/s,,0.05,50,3,True

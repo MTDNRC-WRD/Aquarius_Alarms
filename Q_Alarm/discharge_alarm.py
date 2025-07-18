@@ -14,9 +14,9 @@ from email.mime.text import MIMEText
 SERVER_NAME = 'dnrhln6386.state.mt.ads'
 USER_NAME = 'DNRC'
 PASSWORD = 'DNRC'
-DIRECTORY = Path(r"\\DNRHLN6386.state.mt.ads\Fileshare$\Aquarius_Alarms\Q_Alarm")
-RECIPIENTS = "David.Saba@mt.gov, TLechman@mt.gov, MNorberg@mt.gov, diane.wagner@mt.gov, Ryan.Koehnlein2@mt.gov," \
-             "Christopher.Basden@mt.gov, b.grigsby@mt.gov, Ashley.Peterson@mt.gov, Kaitlin.Boren@mt.gov, " \
+DIRECTORY = Path(r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\Aquarius_Alarms\Q_Alarm')
+RECIPIENTS = "David.Saba@mt.gov, TLechman@mt.gov, MNorberg@mt.gov, diane.wagner@mt.gov, Ryan.Koehnlein2@mt.gov, " \
+             "Christopher.Basden@mt.gov, b.grigsby@mt.gov, Ashley.Peterson@mt.gov, luke.lutz2@mt.gov, " \
              "raeya.gordon@mt.gov"
 # RECIPIENTS = "David.Saba@mt.gov, Christopher.Basden@mt.gov"  # dnrcstage@mt.gov
 
@@ -67,9 +67,12 @@ for i in sl_df.index:
         url=f'http://{SERVER_NAME}/AQUARIUS/Publish/v2/GetTimeSeriesCorrectedData',
         auth=(USER_NAME, PASSWORD),
         params=aq_params)
-    response.raise_for_status()
-    series_data = response.json()
-    # print(json.dumps(series_data, indent=4))
+    try:
+        response.raise_for_status()
+        series_data = response.json()
+        # print(json.dumps(series_data, indent=4))
+    except requests.exceptions.HTTPError:
+        print(f"{i} not found...")
     try:
         timestamp = series_data["Points"][-1]["Timestamp"]
         timestamp_min_one = series_data["Points"][-4]["Timestamp"]
@@ -166,6 +169,8 @@ if len(delta_day) > 0:
 else:
     format_delta_day = "[]"
 
+print(format_delta_day)
+
 attachment = str(Path.joinpath(DIRECTORY, 'Instant_Discharge_Alarms.csv'))
 msg = MIMEMultipart()
 msg['Subject'] = f"StAGE Discharge {t_now_format}"
@@ -178,7 +183,7 @@ body = MIMEText(f"Discharge Alarm\n\n"
                 "Sites Reporting High Discharge:\n"
                 f"{format_high_data}\n\n"
                 "Sites Reporting Significant 24hr Discharge Increase:\n"
-                f"{delta_day}\n\n")
+                f"{format_delta_day}\n\n")
 
 part = MIMEBase('application', "octet-stream")
 part.set_payload(open(attachment, "rb").read())

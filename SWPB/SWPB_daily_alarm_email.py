@@ -14,7 +14,7 @@ from email.mime.text import MIMEText
 SERVER_NAME = 'dnrhln6386.state.mt.ads'
 USER_NAME = 'DNRC'
 PASSWORD = 'DNRC'
-DIRECTORY = Path(r"\\DNRHLN6386.state.mt.ads\Fileshare$\Aquarius_Alarms\SWPB")
+DIRECTORY = Path(r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\Aquarius_Alarms\SWPB')
 RECIPIENTS = "David.Saba@mt.gov, RLaskowski@mt.gov"
 
 
