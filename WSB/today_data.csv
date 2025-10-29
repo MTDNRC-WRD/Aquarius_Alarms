@@ -1,328 +1,336 @@
 ,UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Unit,LowAlarm,HighAlarm,Publish
-0,92172b8860ff403ea80b135d9b9688d5,39E 09000,"Box Elder Cr nr Ekalaka, MT",Stage,Jul-16 22:45,3.72,ft,3.75,4.8,True
-1,b54cac9c055b4f3093ec0ed8bf4f9126,39E 09000,"Box Elder Cr nr Ekalaka, MT",Voltage,Jul-16 22:00,12.238,V,11.5,15.0,True
-2,a4f67481440646ee990051b6da4565a1,39E 09000,"Box Elder Cr nr Ekalaka, MT",Stage,Jul-16 22:45,3.72,ft,3.75,4.8,True
-3,7319bd5d024f46e1bc78eeee0bbbc2c4,39FJ 09000,"Little Beaver Cr nr Webster, MT",Stage,Jul-16 22:45,3.56,ft,3.5,4.6,True
-4,9a77066e59fe4ef6a8f6ecad9b070763,39FJ 09000,"Little Beaver Cr nr Webster, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-5,783218304ea54ce78e230786139b289b,39FJ 09000,"Little Beaver Cr nr Webster, MT",Stage,Jul-16 22:45,3.56,ft,3.5,4.6,True
-6,c2620ca0d9a841d3afc76960e8a1d657,40A 7000,Two Dot Canal,Stage,Jul-16 22:15,2.65,ft,0.01,12.0,True
-7,c297cb74981547e9955804d2f856555b,40A 7000,Two Dot Canal,Stage,Jul-16 22:15,2.65,ft,0.01,12.0,True
-8,7ecdcd9477734d609091754061dd9bf4,40A 7000,Two Dot Canal,Voltage,Jul-16 22:00,12.7,V,11.5,15.0,True
-9,4b619be1d24344d4ba124a2e1242d0e7,40A 14000,"Careless Cr nr Ryegate, MT",Stage,Jul-16 22:45,3.07,ft,0.01,12.0,True
-10,765ad05b96ed41318a03872e2b4151b7,40A 14000,"Careless Cr nr Ryegate, MT",Voltage,Jul-16 22:00,12.706,V,-60.0,100.0,True
-11,a0643afca0d54a07a77fd5f506f4dc5c,40A 14000,"Careless Cr nr Ryegate, MT",Stage,Jul-16 22:45,3.07,ft,0.01,12.0,True
-12,6519c2feb48d491d8defa33bd5c71dd3,40B 06000,Flatwillow Creek abv Petrolia Reservoir,Stage,Jul-16 22:15,1.92,ft,0.01,12.0,True
-13,afea2992153e4073b2f455935708cf07,40B 06000,Flatwillow Creek abv Petrolia Reservoir,Stage,Jul-16 22:15,1.92,ft,0.01,12.0,True
-14,cf3aeb81e6cc4250bf1ada830cacaccb,40B 06000,Flatwillow Creek abv Petrolia Reservoir,Stage,Jul-16 18:00,1.8809375,ft,0.01,12.0,True
-15,0429059065454dbca059ab4e64f075a0,40B 06000,Flatwillow Creek abv Petrolia Reservoir,Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-16,bd808cb3dce040ce86cd70584a2bdd24,40B 06000,Flatwillow Creek abv Petrolia Reservoir,Water Temp,Jul-16 22:15,16.94,degC,-60.0,100.0,True
-17,f98ce4260de743199ee25eaf9b9754ef,40B 06000,Flatwillow Creek abv Petrolia Reservoir,Water Temp,Jul-16 18:00,17.4034375,degC,-60.0,100.0,True
-18,a514eec166d34d1d93077364ef00b58a,40G 10000,Sage Creek Nr Box Elder,Stage,Jul-16 22:30,2.43,ft,3.0,4.0,True
-19,d4ae9b3290a94a4c9d2365b976748424,40G 10000,Sage Creek Nr Box Elder,Voltage,Jul-16 22:00,12.472,V,11.5,15.0,True
-20,9a91d19701bb4c2eb63fcb7728f71538,40G 10000,Sage Creek Nr Box Elder,Stage,Jul-16 22:30,2.43,ft,3.0,4.0,True
-21,3e17c8e23dbd48698fc884493af19f38,40I 10000,"Peoples Creek near Dodson, MT",Stage,Jul-16 18:00,10.467447916666666,ft,8.47,21.09,True
-22,730039c02398405eab9f6ee77c59c460,40I 10000,"Peoples Creek near Dodson, MT",Stage,Jul-16 22:15,10.51,ft,8.47,21.09,True
-23,a17700d272a04a098f638d216a117346,40I 10000,"Peoples Creek near Dodson, MT",Stage,Jul-16 22:15,10.51,ft,8.47,21.09,True
-24,54e50f6fa9f94db1bea030a30a1bc15c,40I 10000,"Peoples Creek near Dodson, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-25,6b57426a2d3b435ca422a179aa707b58,40J 08900,"Beaver Creek abv Reservoir nr Havre, MT",Stage,Jul-16 22:15,0.62,ft,0.5,2.0,True
-26,7120e28e1ae4496f97b202fef11c2e5c,40J 08900,"Beaver Creek abv Reservoir nr Havre, MT",Stage,Jul-16 22:15,0.62,ft,0.5,2.0,True
-27,f580e8f2f5174f10aa257c58147f74e1,40J 08900,"Beaver Creek abv Reservoir nr Havre, MT",Stage,Jul-16 18:00,0.66671875,ft,0.5,2.0,True
-28,c70cd139c53b46c5b6f518a20bac0e07,40J 08900,"Beaver Creek abv Reservoir nr Havre, MT",Voltage,Jul-16 22:00,12.004,V,11.5,15.0,True
-29,139c45bdea134a238577a76105606a42,40J 09000,"Beaver Crk Reservoir nr Havre, MT",Lake res elevation,Jul-16 22:15,86.49,ft,20.0,120.0,True
-30,14be5e24d76c4dfabde3918755637a32,40J 09000,"Beaver Crk Reservoir nr Havre, MT",Lake res elevation,Jul-16 22:15,3086.49,ft,1000.0,4000.0,True
-31,097fe67404d34b0284da0e5e81c71f68,40J 09000,"Beaver Crk Reservoir nr Havre, MT",Voltage,Jul-16 22:00,12.472,V,11.5,15.0,True
-32,0d834f335293408ab95e88dc61914a4c,40J 09100,"Beaver Cr blw Reservoir nr Havre, MT",Stage,Jul-16 18:00,0.9668229166666666,ft,0.1,3.5,True
-33,4ec5c85e8de04b018418a2e77b840604,40J 09100,"Beaver Cr blw Reservoir nr Havre, MT",Stage,Jul-16 22:15,0.97,ft,0.1,3.5,True
-34,7b253ddef5bf42c3b8edde3cc47ffaf2,40J 09100,"Beaver Cr blw Reservoir nr Havre, MT",Stage,Jul-16 22:15,0.97,ft,0.1,3.5,True
-35,1a09f2a1db654358b2934e70c4de0435,40J 09100,"Beaver Cr blw Reservoir nr Havre, MT",Voltage,Jul-16 22:00,12.472,V,11.5,15.0,True
-36,10bebde2866247ec8dcb2d04232fbeaf,40L-10050013,Frenchman Creek @ Mouth,Internal Temp (DCP),Jul-16 22:00,10.5,degC,-40.0,140.0,True
-37,04b3d946bab641c4bd83098d5d3ca142,40L-10050013,Frenchman Creek @ Mouth,Stage,Jul-16 22:45,2.22,ft,2.16,16.67,True
-38,73e10521ae2846b8b696427d588a2a44,40L-10050013,Frenchman Creek @ Mouth,Stage,Jul-16 22:45,2.22,ft,2.16,16.67,True
-39,f2b735bf8150409684d92b45a28c6d4f,40L-10050013,Frenchman Creek @ Mouth,Voltage,Jul-16 22:00,12.57,V,11.5,15.0,True
-40,1e2ede6c6e1a4ce38480e3f628796385,41A 01000,Red Rock River abv Lime Reservoir,Stage,Jul-16 22:45,2.11,ft,1.6,5.1,True
-41,3b39aa9ced6b4aa99427da2a1da2e218,41A 01000,Red Rock River abv Lime Reservoir,Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-42,a1d669d84e094022b3995d506381709d,41A 01000,Red Rock River abv Lime Reservoir,Water Temp,Jul-16 22:45,17.99,degC,0.0,30.0,True
-43,b374dbd97d84429e8f926ee2cd6c8a4a,41A 01000,Red Rock River abv Lime Reservoir,Stage,Jul-16 22:45,2.11,ft,1.6,5.1,True
-44,1c970d75d4ce45dbad46b95bd3c12c45,41A 10000,Red Rock River abv Clark Canyon Res,Stage,Jul-16 22:15,3.48,ft,3.0,4.5,True
-45,c9bac1b0bcdf46b08204f2f112de17c6,41A 10000,Red Rock River abv Clark Canyon Res,Stage,Jul-16 18:00,3.46859375,ft,3.0,4.5,True
-46,fe81e3acbe5a4b88aa7539c90e6a3757,41A 10000,Red Rock River abv Clark Canyon Res,Stage,Jul-16 22:15,3.48,ft,3.0,4.5,True
-47,e1dd8034dfcc443bb01883bd3c115e17,41A 10000,Red Rock River abv Clark Canyon Res,Voltage,0,0.0,V,11.5,15.0,False
-48,576a10a5a5594ff8a9ce2d978e470384,41A 10000,Red Rock River abv Clark Canyon Res,Water Temp,0,0.0,degC,1.0,30.0,False
-49,96d57b73ebf941eb95a1c69617bc5ad9,41A 10000,Red Rock River abv Clark Canyon Res,Water Temp,0,0.0,degC,1.0,30.0,False
-50,b2c47ea2049d478a93495062287c3020,41C 05000,Ruby River at Alder,Stage,Jul-16 22:30,1.21,ft,0.8,4.1,True
-51,376f2745dfbe4ff39f5f1873b7310623,41C 05000,Ruby River at Alder,Stage,Jul-16 22:30,1.21,ft,0.8,4.1,True
-52,66aad97bcd7a4a6ba797ea2bf4f5dfe9,41C 08000,Ruby River at Harrington Bridge,Stage,Jul-16 22:00,2.4,ft,2.25,4.6,True
-53,a2a90c48222c4a50a4f699f5da0889aa,41C 08000,Ruby River at Harrington Bridge,Stage,Jul-16 18:00,2.4106770833333333,ft,2.25,4.6,True
-54,b1305fdd295d4bb2adda4598aacfef95,41C 08000,Ruby River at Harrington Bridge,Stage,Jul-16 22:00,2.4,ft,2.25,4.6,True
-55,e195a05c40e34b4cb1f5d023c27f6232,41C 08000,Ruby River at Harrington Bridge,Voltage,Jul-16 22:00,12.472,V,11.5,15.0,True
-56,3e57257de27a41b1880d835d0637da04,41C 08000,Ruby River at Harrington Bridge,Water Temp,Jul-16 18:00,18.921822916666667,degC,1.0,30.0,True
-57,3f8bac95b54d425e8c817efe93c808bb,41C 08000,Ruby River at Harrington Bridge,Water Temp,Jul-16 22:00,19.06,degC,1.0,30.0,True
-58,332dad5f46bc42008bc1aeb4f6f7db83,41D 01000,"Big Hole River abv Jackson, MT",Stage,Jul-16 22:45,1.14,ft,0.01,12.0,True
-59,981c215ea02a4524889414fa094f6a59,41D 01000,"Big Hole River abv Jackson, MT",Stage,Jul-16 23:45,1.14,ft,0.01,12.0,True
-60,aefd35ebf5ee4f5b81916d110c20a13b,41D 01000,"Big Hole River abv Jackson, MT",Stage,Jul-16 19:00,1.1618229166666667,ft,0.01,12.0,True
-61,fb3ad83308eb4083ae8f5f70d9327492,41D 01000,"Big Hole River abv Jackson, MT",Voltage,Jul-16 23:00,12.004,V,11.5,15.0,True
-62,3ce9ddccdc0844e39f1272cc8936fb36,41D 01000,"Big Hole River abv Jackson, MT",Water Temp,Jul-16 22:45,12.01,degC,-60.0,100.0,True
-63,d75706e1781d494aa052c444512fa836,41D 01000,"Big Hole River abv Jackson, MT",Water Temp,Jul-16 18:00,15.013645833333333,degC,-60.0,100.0,True
-64,4cd0c3b786064e7c96e6760399f158ff,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Stage,Jul-16 22:45,1.75,ft,0.01,12.0,True
-65,56ee6862087c43b29c26a76f63309a12,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Stage,Jul-16 22:45,1.75,ft,0.01,12.0,True
-66,46fb37a3b75d47319077bec21a036a09,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-67,3bcd491d4bed46d280ef2b4600ae3578,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Water Temp,Jul-16 22:45,18.35,degC,-60.0,100.0,True
-68,3dc184509cfd40aabf77a7b7082c286e,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Water Temp,Jul-16 18:00,22.04109375,degC,-60.0,100.0,True
-69,2752f722c4f64cbaa50df97a1fb752bb,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Stage,Jul-16 23:45,1.1,ft,0.01,12.0,True
-70,d92675de2372485db8750fb7c2ccd36c,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Stage,Jul-16 22:45,1.1,ft,0.01,12.0,True
-71,d9b04c187bef41989c789be020bdeb75,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Voltage,Jul-16 23:00,12.706,V,11.5,15.0,True
-72,c45ad9fb02aa42b7a7320e06c64eeb68,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Water Temp,Jul-16 22:45,14.34,degC,-60.0,100.0,True
-73,ed79e1ea507a4afc94f2212d4af90816,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Water Temp,Jul-16 19:00,17.6209375,degC,-60.0,100.0,True
-74,07432df7bd00438db43e960fde663704,41D 07700,"Deep Creek nr Wise River, MT",Stage,Jul-16 22:00,1.21,ft,0.01,12.0,True
-75,7d430f2bde1c4fe5b5b23dd4aa82ca1e,41D 07700,"Deep Creek nr Wise River, MT",Water Temp,Jul-16 22:00,13.63,degC,-60.0,100.0,True
-76,b08b894e64144a93953baa52615b1530,41D 07700,"Deep Creek nr Wise River, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-77,e7958ec2eade499b867d5489cdfca195,41D 07700,"Deep Creek nr Wise River, MT",Stage,Jul-16 22:00,1.21,ft,0.01,12.0,True
-78,18fa503680ba4af7b08ebde6386f3caa,41D 07900,Wise River nr mouth,Stage,Jul-16 18:00,0.6576041666666667,ft,0.5,3.25,True
-79,2bba5b4b7c1d425d982820b37c4ed3e0,41D 07900,Wise River nr mouth,Stage,Jul-16 22:15,0.66,ft,0.5,3.25,True
-80,a767a4889abe449fbcd9d9c7aa321d72,41D 07900,Wise River nr mouth,Stage,Jul-16 22:15,0.66,ft,0.5,3.25,True
-81,3d6599e4487244eb882af510348634c6,41D 07900,Wise River nr mouth,Voltage,Jul-16 22:00,12.472,V,11.5,15.0,True
-82,33efcd9805514637a810f1d87bc71616,41D 07900,Wise River nr mouth,Water Temp,Jul-16 22:15,10.93,degC,0.0,30.0,True
-83,d1a9eae6e8d9497fb9de6490180e21ba,41D 07900,Wise River nr mouth,Water Temp,Jul-16 18:00,14.668802083333333,degC,0.0,30.0,True
-84,ef72f1c2fd404dcd830e2c6d72de115f,41D 07900,Wise River nr mouth,Water Temp,Jul-16 23:00,10.99,degC,0.0,30.0,True
-85,45c73a2a71824f8b8e5f483573d23b58,41D 08000,"Big Hole River near Wise River, MT",Stage,Jul-16 18:00,2.6323684210526315,ft,0.01,12.0,True
-86,93fe06279dd8418b9bc1506f450dc191,41D 08000,"Big Hole River near Wise River, MT",Stage,Jul-16 22:45,2.63,ft,0.01,12.0,True
-87,bd0fd45dd1214e498a24e9bb4622853d,41D 08000,"Big Hole River near Wise River, MT",Stage,Jul-16 22:45,2.63,ft,0.01,12.0,True
-88,5adc59fc9ffa4be1b96f22b83487f366,41D 08000,"Big Hole River near Wise River, MT",Water Temp,Jul-16 22:45,14.65,degC,-60.0,100.0,True
-89,c4ceaae5168343d38f3acc85b7d3e46a,41E 10000,Boulder River Nr Cardwell,Stage,Jul-16 22:30,2.76,ft,2.55,4.3,True
-90,de7d6aba2f494c9dbc622d5144a950f8,41E 10000,Boulder River Nr Cardwell,Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-91,a26c41407d224fd4a7a030bb5a78172f,41E 10000,Boulder River Nr Cardwell,Water Temp,Jul-16 22:30,17.46,degC,1.0,30.0,True
-92,653a416f7c76425aa630f06a929d62e6,41E 10000,Boulder River Nr Cardwell,Stage,Jul-16 22:30,2.76,ft,2.55,4.3,True
-93,a8f4851dd8764c9ea3aff6fe8c8f8d0b,41G 09000,"Willow Creek nr Willow Creek, MT",Stage,Jul-16 22:30,2.67,ft,1.3,1.8,True
-94,81af11132f584c7f892ab15a1500ded2,41G 09000,"Willow Creek nr Willow Creek, MT",Stage,Jul-16 22:30,2.67,ft,1.3,1.8,True
-95,07e41a9d407d4ad4bc8650ecaca37eb4,41G 09000,"Willow Creek nr Willow Creek, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-96,7440733292bc42d2b6c9b1685467b093,41G 09000,"Willow Creek nr Willow Creek, MT",Water Temp,Jul-16 22:30,20.08,degC,0.0,100.0,True
-97,50d77d3631e74cd0bee35c87f080f893,41H 08900,East Gallatin Rvr nr Manhattan,Stage,Jul-16 22:15,2.82,ft,2.5,5.0,True
-98,d2f0410596244d9b99ac6350d13cf95e,41H 08900,East Gallatin Rvr nr Manhattan,Stage,Jul-16 18:00,2.8421875,ft,2.5,5.0,True
-99,e468e94ba4cc483d9871c1dc2ce5c864,41H 08900,East Gallatin Rvr nr Manhattan,Stage,Jul-16 22:15,2.82,ft,2.5,5.0,True
-100,9fc0983cbc084eebae3fd43eab773271,41H 08900,East Gallatin Rvr nr Manhattan,Voltage,Jul-16 22:00,12.472,V,11.5,15.0,True
-101,35fb2c5ac3444dd0be3eea28cb56393a,41H 08900,East Gallatin Rvr nr Manhattan,Water Temp,Jul-16 18:00,17.624270833333334,degC,-60.0,100.0,True
-102,9e04094997d748819ea54e80022e3abd,41H 08900,East Gallatin Rvr nr Manhattan,Water Temp,Jul-16 22:15,17.23,degC,-60.0,100.0,True
-103,1e1b0fa137594b9a9aee1910b41f2b7a,41H 08950,Sourdough Creek above City Intake,Battery Voltage Under Load,Jul-16 22:00,12.94,V,11.5,15.0,True
-104,b0d517ec27484c9085efeb1619d1efba,41H 08950,Sourdough Creek above City Intake,Stage,Jul-16 18:00,1.1809375,ft,1.0,1.8,True
-105,cdb66eb487574b6aa649c64b78c380e2,41H 08950,Sourdough Creek above City Intake,Stage,Jul-16 22:00,1.18,ft,1.0,1.8,True
-106,f5d2fbd3c9544f83a4005333cf7db9b0,41H 08950,Sourdough Creek above City Intake,Stage,Jul-16 22:00,1.18,ft,1.0,1.8,True
-107,8e8e53be266143f4a323af9b3f803c13,41H 08990,"Bozeman Creek at Bozeman, MT",Stage,Jul-16 22:15,4.17,ft,4.1,5.5,True
-108,b2b588bdbec745ee89d2571cb2011968,41H 08990,"Bozeman Creek at Bozeman, MT",Stage,Jul-16 18:00,4.19328125,ft,4.1,5.5,True
-109,bf1a0527d5ec4bd4975d41d242384b03,41H 08990,"Bozeman Creek at Bozeman, MT",Stage,Jul-16 22:15,4.17,ft,4.1,5.5,True
-110,34e8d7d9d1cc477494bfa1987efc1499,41H 08990,"Bozeman Creek at Bozeman, MT",Water Temp,Jul-16 18:00,12.7990625,degC,-60.0,100.0,True
-111,b95087775e2049f8a95ce31fbfbae150,41H 08990,"Bozeman Creek at Bozeman, MT",Water Temp,Jul-16 22:15,12.64,degC,-60.0,100.0,True
-112,d7b0a539941f44df9a3d050e525e6fb0,41J 03000,Sheep Cr at Strawberry Butte,Stage,Jul-16 22:45,1.84,ft,1.2,1.8,True
-113,af2515d3056347ec93057165f894c142,41J 03000,Sheep Cr at Strawberry Butte,Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-114,a4600d8024ab435f9de6f21657de2908,41J 03000,Sheep Cr at Strawberry Butte,Stage,Jul-16 22:45,1.84,ft,1.2,1.8,True
-115,1c565b4ce60f4486a0b70683bc044861,41I 03500,"Deep Creek near Townsend, MT",Stage,Jul-16 21:45,0.61,ft,0.12,2.6,True
-116,8aad5c7cd39c47d8be3d83c37b97b7d3,41I 03500,"Deep Creek near Townsend, MT",Stage,Jul-16 18:00,0.6254166666666666,ft,0.12,2.6,True
-117,e7daf1e40a904def992a7fd280ce420e,41I 03500,"Deep Creek near Townsend, MT",Stage,Jul-16 21:45,0.61,ft,0.12,2.6,True
-118,8052ee3fcfd94763b89a79dfe79e242a,41I 03500,"Deep Creek near Townsend, MT",Voltage,Jul-16 21:00,11.77,V,11.5,15.0,True
-119,b899e73346b446379bed2ee73a7f7d11,41I 03500,"Deep Creek near Townsend, MT",Water Temp,Jul-16 18:00,15.4365625,degC,0.0,100.0,True
-120,b9f794b7aef143108e94de44e0a78dd1,41I 03500,"Deep Creek near Townsend, MT",Water Temp,Jul-16 21:45,13.97,degC,0.0,100.0,True
-121,38a790a6548d4fabaccc774ba38624a2,41J 02000,"Sheep Creek nr Adams Creek Road, MT",Stage,Jul-16 22:30,1.41,ft,1.25,1.83,True
-122,79c341214c7140e3889836a52a6995e3,41J 02000,"Sheep Creek nr Adams Creek Road, MT",Voltage,Jul-16 22:00,12.472,V,11.5,15.0,True
-123,9870577bdeb0435488ebf76b43351482,41J 02000,"Sheep Creek nr Adams Creek Road, MT",Stage,Jul-16 22:30,1.41,ft,1.25,1.83,True
-124,76bff6ce86da4f81af8741b53fe413b0,41J 04900,"Moose Creek nr White Sulphur Springs, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-125,bc8707aa56d54486bd4f89936c6d1063,41J 04900,"Moose Creek nr White Sulphur Springs, MT",Stage,Jul-16 22:30,1.38,ft,1.26,1.8,True
-126,edbb13fbcd444907a12f4ff01a6193ba,41J 04900,"Moose Creek nr White Sulphur Springs, MT",Stage,Jul-16 22:30,1.38,ft,1.26,1.8,True
-127,c976ffe229dc47cd8aa9b7982cd2c1a4,41K 05100,Elk Creek nr Haystack Butte,Stage,Jul-16 22:45,2.72,ft,3.25,3.5,True
-128,a669cfcf03f54faeb51a9bce0a6bb6d6,41K 05100,Elk Creek nr Haystack Butte,Voltage,Jul-16 22:00,12.706,V,11.5,14.5,True
-129,810e0d66595740f1bf3b67d8c2b5330e,41K 05100,Elk Creek nr Haystack Butte,Stage,Jul-16 22:45,2.72,ft,3.25,3.5,True
-130,18db27493efa42968383d06670e05abf,41J 06000,"Sheep Creek nr White Sulphur Springs, MT",Stage,Jul-16 22:30,0.95,ft,0.63,2.2,True
-131,b2c874ad5ceb4481b1dff46a7916d3c5,41J 06000,"Sheep Creek nr White Sulphur Springs, MT",Stage,Jul-16 22:30,0.95,ft,0.63,2.2,True
-132,abf605b0340b45319e75af6f29183abc,41J 06000,"Sheep Creek nr White Sulphur Springs, MT",Water Temp,Jul-16 22:30,10.51,degC,-60.0,100.0,True
-133,c8a7f04dd6514af991e5bc50236aff1d,41J 06000,"Sheep Creek nr White Sulphur Springs, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-134,327c94896d3b49309dba9bf6d6471a2b,41K 09900,Mill Coulee Ck nr Sun River,Stage,Jul-16 22:15,2.23,ft,1.1,2.0,True
-135,3cf026e01fee4972af209f0164ce2789,41K 09900,Mill Coulee Ck nr Sun River,Stage,Jul-16 18:00,2.03265625,ft,1.1,2.0,True
-136,8aa2944a3f974589bf098a9fd7edd638,41K 09900,Mill Coulee Ck nr Sun River,Stage,Jul-16 22:15,2.23,ft,1.1,2.0,True
-137,2525b135e97e49eebc96cd884ad14d83,41K 09900,Mill Coulee Ck nr Sun River,Voltage,Jul-16 22:00,12.238,V,11.5,15.0,True
-138,9cc5a97b2394445b98c57b2f2848d328,41K 09900,Mill Coulee Ck nr Sun River,Water Temp,Jul-16 18:00,15.706927083333333,degC,-60.0,100.0,True
-139,f8be21f86c8845618aea9bd64a5f8d54,41K 09900,Mill Coulee Ck nr Sun River,Water Temp,Jul-16 22:15,15.07,degC,-60.0,100.0,True
-140,1cedf233a2e347679540855095f996b9,41M 09990,"Dupuyer Creek nr Dupuyer, MT",Stage,Jul-16 22:45,1.6,ft,1.2,1.65,True
-141,3d5d28d216c74c5584da5111c1097991,41M 09990,"Dupuyer Creek nr Dupuyer, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-142,dbbeec04e28d46459b357b0bba95defa,41M 09990,"Dupuyer Creek nr Dupuyer, MT",Stage,Jul-16 22:45,1.6,ft,1.2,1.65,True
-143,591aca8c8361444da9fc059b4b625281,41O 02000,Teton River at Bynum Diversion nr Choteau MT,Stage,Jul-16 22:00,0.22,ft,0.01,2.0,False
-144,8a9be4e1ff3149b4ba3ca405e20f044e,41O 02000,Teton River at Bynum Diversion nr Choteau MT,Stage,0,0.0,ft,0.01,2.0,True
-145,d237ce4445754d47b35ab45e2129ede1,41O 02000,Teton River at Bynum Diversion nr Choteau MT,Stage,Jul-16 22:00,0.22,ft,0.01,2.0,False
-146,7332073e8adf47e287fc547f1bc7d79d,41O 02000,Teton River at Bynum Diversion nr Choteau MT,Voltage,Jul-16 22:00,12.94,V,11.5,15.0,True
-147,2c8357b6898f4bc4a4caf712dd2332f2,41O 03000,Teton River above Springhill,Stage,Jul-16 18:00,3.9989583333333334,ft,3.5,4.0,True
-148,496aab34bacf49a49d246fb90e87b8f2,41O 03000,Teton River above Springhill,Stage,Jul-16 22:15,3.9,ft,3.5,4.0,True
-149,b35e861cb30b48518990a2306d0f3f0b,41O 03000,Teton River above Springhill,Stage,Jul-16 22:15,3.9,ft,3.5,4.0,True
-150,2086a798e1684d41984858b1d2d83ec9,41O 03000,Teton River above Springhill,Voltage,Jul-16 22:00,12.472,V,11.5,15.0,True
-151,45b57c171de94f68ad67685345c38f6a,41O 03000,Teton River above Springhill,Water Temp,Jul-16 18:00,16.934322916666666,degC,-60.0,100.0,True
-152,ac605eb825b04ed7959e743efe3282c0,41O 03000,Teton River above Springhill,Water Temp,Jul-16 22:15,15.59,degC,-60.0,100.0,True
-153,3e47b9e7c5cf4f919678657d74bbd7d5,41O 04850,"Deep Creek near Choteau, MT",Stage,Jul-16 22:15,3.16,ft,3.0,4.0,True
-154,e860647c6ece41c08895b1a7ddd20da6,41O 04850,"Deep Creek near Choteau, MT",Stage,Jul-16 22:15,3.16,ft,3.0,4.0,True
-155,e1cac42eb2834a4e9afb47552dc71522,41O 04850,"Deep Creek near Choteau, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-156,80c9484f033249e7a4b71e883f40071f,41O 04850,"Deep Creek near Choteau, MT",Water Temp,Jul-16 22:15,14.95,degC,-60.0,100.0,True
-157,152b38a05081471da3bd8c5acd05cb1d,41O 05000,Teton River above Hwy 221 bridge,Stage,Jul-16 22:00,1.89,ft,1.8,2.5,True
-158,bbf4c95f97aa4814a716081fb38f2da5,41O 05000,Teton River above Hwy 221 bridge,Stage,Jul-16 22:00,1.89,ft,1.8,2.5,True
-159,ebaf10a0d0ec47bd936d72f00f5aae4e,41O 05000,Teton River above Hwy 221 bridge,Voltage,Jul-16 22:00,12.94,V,11.5,15.0,True
-160,b57c9ac181854132aaf125fd003e9fae,41O 07900,"Teton River nr Dutton, MT",Stage,Jul-16 22:45,1.64,ft,1.5,2.0,True
-161,b76fb1f96df245628c1af5c02924f178,41O 07900,"Teton River nr Dutton, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-162,96058ffb6bb14415909e4f89f023339f,41O 07900,"Teton River nr Dutton, MT",Stage,Jul-16 22:45,1.64,ft,1.5,2.0,True
-163,40c51d944904414a9841e4d2d43b4323,41O 09000,Teton River below Buck Bridge,Stage,Jul-16 18:00,2.7161458333333335,ft,2.7,4.4,True
-164,6a21e02a368b437d8b00da72d6cdc847,41O 09000,Teton River below Buck Bridge,Stage,Jul-16 22:15,2.73,ft,2.7,4.4,True
-165,6c31f4096dbf4b0c9c11bc09cad2783f,41O 09000,Teton River below Buck Bridge,Stage,Jul-16 22:15,2.73,ft,2.7,4.4,True
-166,d18d4a599cab438a837a9f13650274a3,41O 09000,Teton River below Buck Bridge,Voltage,Jul-16 22:00,12.472,V,11.5,15.0,True
-167,0535ac550b9142c4a3ecf1157041a5b4,41Q 06000,"Belt Creek nr Belt, MT",Stage,Jul-16 22:30,2.31,ft,1.6,4.2,True
-168,1986982d8548442ea727999269d8229e,41Q 06000,"Belt Creek nr Belt, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-169,c78c83cccc6b4cda8b8ad952ec0a3f23,41Q 06000,"Belt Creek nr Belt, MT",Stage,Jul-16 22:30,2.31,ft,1.6,4.2,True
-170,9be97f170f44470c8845080568f3a25a,41Q 08000,"Highwood Creek nr Highwood, MT",Stage,Jul-16 22:30,3.03,ft,3.2,4.0,True
-171,d51352a0b8d5475aa1eb22e12791dce2,41Q 08000,"Highwood Creek nr Highwood, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-172,516d7b31420b4eda8067a22c968578c9,41Q 08000,"Highwood Creek nr Highwood, MT",Stage,Jul-16 22:30,3.03,ft,3.2,4.0,True
-173,1a9a2ad26fc14400b7a4be264f249709,41S 08900,Warm Springs Creek @ Sandrock Road,Stage,Jul-16 18:00,1.9436979166666666,ft,0.01,12.0,True
-174,1be1eed23a0c4dd099521eb4c244ec10,41S 08900,Warm Springs Creek @ Sandrock Road,Stage,Jul-16 22:15,1.93,ft,0.01,12.0,True
-175,e45cf8b39e5540c7a75ecbd5bcd9ca8b,41S 08900,Warm Springs Creek @ Sandrock Road,Stage,Jul-16 22:15,1.93,ft,0.01,12.0,True
-176,4ee29e0fe14a4c2a961a7297d79832bb,41S 08900,Warm Springs Creek @ Sandrock Road,Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-177,7413dcb55fa041ec8eb79073ceafa6e2,41S 08900,Warm Springs Creek @ Sandrock Road,Water Temp,Jul-16 18:00,17.22546875,degC,-60.0,100.0,True
-178,7ef3867a1e424712a04fdfa2718c4d75,41S 08900,Warm Springs Creek @ Sandrock Road,Water Temp,Jul-16 22:15,16.25,degC,-60.0,100.0,True
-179,6d58000e976f49ec9f972b3ddbe1505f,42C 08190,"Pumpkin Creek nr Miles City, MT",Stage,Jul-16 22:45,2.76,ft,3.3,3.9,True
-180,91a78673709148398cf83a7246d68dc8,42C 08190,"Pumpkin Creek nr Miles City, MT",Voltage,Jul-16 22:00,12.472,V,11.5,15.0,True
-181,66b21e4cf4114ef3912855056c3a79bd,42C 08190,"Pumpkin Creek nr Miles City, MT",Stage,Jul-16 22:45,2.76,ft,3.3,3.9,True
-182,857c0134f04c46df9a13454bc759042e,42M 273796,Pust Well nr Midway,Battery Voltage Under Load,Jul-16 22:00,12.706,V,11.5,15.0,True
-183,9ff6ed554dcf4a70ad4cabdbf8cacc06,42M 273796,Pust Well nr Midway,Water Level,Jul-16 22:00,-150.06,ft,-300.0,0.0,True
-184,f1dc47aba92a42689628bf852c6ea0d2,42M 273796,Pust Well nr Midway,Water Temp,Jul-16 22:00,4.96,degC,-60.0,100.0,True
-185,2e5b7973bf6f4377b7fff60b647fe2ab,43B 04000,Park Branch Canal below headgate,Stage,Jul-16 22:30,2.7,ft,0.01,12.0,True
-186,1db4c0249a5e4ab4bb74ee0c39f8f33a,43B 04000,Park Branch Canal below headgate,Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-187,481919b60e69408487dd8943bb270103,43B 04000,Park Branch Canal below headgate,Water Temp,Jul-16 22:30,16.69,degC,-60.0,100.0,True
-188,a4dd3310c2304d589a744560959ad155,43B 04000,Park Branch Canal below headgate,Stage,Jul-16 22:30,2.7,ft,0.01,12.0,True
-189,924c2134db07408e9b64ccbd55f99011,43B 05000,Paradise Canal below Yellowstone siphon,Stage,Jul-16 18:00,2.5829411764705887,ft,0.01,12.0,True
-190,92e95590e3944999b70d30f0d95a3504,43B 05000,Paradise Canal below Yellowstone siphon,Stage,Jul-16 22:15,2.41,ft,0.01,12.0,True
-191,ea08a2f30c7e4db2bd965a2b615df150,43B 05000,Paradise Canal below Yellowstone siphon,Stage,Jul-16 22:15,2.5900000000000003,ft,0.01,12.0,True
-192,028c97ba24694f919da3a436155b4b97,43B 05990,"Mill Creek near Emigrant, MT",Stage,Jul-16 22:15,1.54,ft,0.01,12.0,True
-193,5140a6f08146470683859888a3f955ed,43B 05990,"Mill Creek near Emigrant, MT",Stage,Jul-16 22:15,1.54,ft,0.01,12.0,True
-194,6e5b948b9ad64ee3a4ed4981afb06341,43B 05990,"Mill Creek near Emigrant, MT",Stage,Jul-16 18:00,1.5429411764705883,ft,0.01,12.0,True
-195,0cb438f1651547d9a43e1b43d2c9de43,43B 05990,"Mill Creek near Emigrant, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-196,ae862f61a7fb4a96bcd81574a8ee6f10,43B 05990,"Mill Creek near Emigrant, MT",Water Level,Jul-16 22:15,4839.05,ft,2000.0,6000.0,True
-197,9b6e80a6bf4b45a0b57717e42d2d5d5f,43B 05990,"Mill Creek near Emigrant, MT",Water Temp,Jul-16 18:00,12.108529411764707,degC,-60.0,100.0,True
-198,ed1db32077fa4c39b89c4ad70a10c462,43B 05990,"Mill Creek near Emigrant, MT",Water Temp,Jul-16 22:15,11.52,degC,-60.0,100.0,True
-199,052305ec475b4eedb26e6ac820ba237d,43B 10000,Livingston Ditch below headgate,Stage,Jul-16 22:30,2.84,ft,0.01,12.0,True
-200,57912e936ba4404f87865eaa0b6a10ed,43B 10000,Livingston Ditch below headgate,Stage,Jul-16 18:00,2.8590625,ft,0.01,12.0,True
-201,faa14502d4024ff0a5697682c4703269,43B 10000,Livingston Ditch below headgate,Stage,Jul-16 22:30,2.81,ft,0.01,12.0,True
-202,d40ebd2fe4024bb78a318ef3243dace9,43BJ 03800,Boudler River Below Natural Bridge,Stage,Jul-16 22:45,4.32,ft,1.0,12.0,True
-203,95faafabe11a4e77864635f7a2ba8bf1,43BJ 03800,Boudler River Below Natural Bridge,Voltage,Jul-16 22:00,12.238,V,11.5,15.0,True
-204,348702fe8e444d308de5d6f4b5ff4562,43BJ 03800,Boudler River Below Natural Bridge,Water Temp,Jul-16 22:45,12.38,degC,0.0,30.0,True
-205,11e0dd05e36e4246ac40faa1ee3b937f,43BV 02000,Sweet Grass Creek at Tronrud Bridge,Stage,Jul-16 21:00,1.49,ft,0.01,12.0,True
-206,64ac6a51d8f949059c31c5ebbcf9fa9b,43BV 02000,Sweet Grass Creek at Tronrud Bridge,Stage,Jul-16 21:00,1.49,ft,0.01,12.0,True
-207,9efad8b621df47d5873d0ccd7827e9ad,43BV 02000,Sweet Grass Creek at Tronrud Bridge,Stage,Jul-16 18:00,1.4845833333333334,ft,0.01,12.0,True
-208,eb7d49ae2a4f4d318d7751b3c4e49040,43BV 02000,Sweet Grass Creek at Tronrud Bridge,Voltage,Jul-16 21:00,12.472,V,11.5,15.0,True
-209,32f90c11ccc24f0d815296eb5cf8e3e5,43BV 02000,Sweet Grass Creek at Tronrud Bridge,Water Temp,Jul-16 21:00,8.9,degC,-60.0,100.0,True
-210,8c3a929f073f4e54843c023481ba0935,43BV 02000,Sweet Grass Creek at Tronrud Bridge,Water Temp,Jul-16 18:00,9.819479166666667,degC,-60.0,100.0,True
-211,10a4e043e99e405ab440c70ee35762b2,43BV 09000,Sweet Grass Creek near Big Timber,Stage,Jul-16 21:00,4.32,ft,0.01,12.0,True
-212,5ddcc463d3c14e989af50613388a40c5,43BV 09000,Sweet Grass Creek near Big Timber,Voltage,Jul-16 21:00,12.706,V,11.5,15.0,True
-213,a2422791570c4853bc0d2f12ca94c391,43BV 09000,Sweet Grass Creek near Big Timber,Water Temp,Jul-16 21:00,16.27,degC,-60.0,100.0,True
-214,49b5636d6c414c85af862cbc56e1e46b,43BV 09000,Sweet Grass Creek near Big Timber,Stage,Jul-16 21:00,4.32,ft,0.01,12.0,True
-215,c95153133bc845c19894bde74ddef85c,43C 04600,"East Rosebud Cr nr Roscoe, MT",Stage,Jul-16 22:30,5.23,ft,0.01,12.0,True
-216,8f480cc105fc4959895954d886f6fc83,43C 04600,"East Rosebud Cr nr Roscoe, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-217,87e204927e4a4bf7854121829b73bfcf,43C 04600,"East Rosebud Cr nr Roscoe, MT",Stage,Jul-16 22:30,5.23,ft,0.01,12.0,True
-218,181011f1c66545d896ca6463a70b16af,43D 01900,"WF Rock Ck nr Red Lodge, MT",Stage,Jul-16 22:15,1.78,ft,0.01,12.0,True
-219,72acb06770e944e5aee70c4ec15db941,43D 01900,"WF Rock Ck nr Red Lodge, MT",Stage,Jul-16 18:00,1.8167708333333332,ft,0.01,12.0,True
-220,e94d4e7b3700492a9270cbadae9e9817,43D 01900,"WF Rock Ck nr Red Lodge, MT",Stage,Jul-16 22:15,1.78,ft,0.01,12.0,True
-221,9fec41892e01460197148530ed12f0d4,43D 01900,"WF Rock Ck nr Red Lodge, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-222,51027f09d91540c6aba458ca94db4e24,43D 01900,"WF Rock Ck nr Red Lodge, MT",Water Temp,Jul-16 18:00,13.684583333333334,degC,-60.0,100.0,True
-223,e5189e165733458c9fe65ec79bac8988,43D 01900,"WF Rock Ck nr Red Lodge, MT",Water Temp,Jul-16 22:15,12.76,degC,-60.0,100.0,True
-224,2316cd649139480c9ddd30f4670ed395,43E 09000,Pryor Cr at Huntley,Stage,Jul-16 22:00,3.57,ft,0.01,12.0,True
-225,71b8541ed8fb4f7e8a8ea8d5e8be1f50,43E 09000,Pryor Cr at Huntley,Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-226,d3d68614e16e4047b77b62deaff45021,43E 09000,Pryor Cr at Huntley,Stage,Jul-16 22:00,3.57,ft,0.01,12.0,True
-227,39d1f021d78148618da6e540e8930134,43Q 05900,Canyon Creek @ ZooMontana,Stage,Jul-16 22:00,2.54,ft,0.01,12.0,True
-228,6fe27b1fc1784de39fc978ee0adc849b,43Q 05900,Canyon Creek @ ZooMontana,Stage,Jul-16 22:00,2.54,ft,0.01,12.0,True
-229,7dc38718740d4213920f5be684981377,43Q 05900,Canyon Creek @ ZooMontana,Stage,Jul-16 18:00,2.3344791666666667,ft,0.01,12.0,True
-230,1de017bfd922470e94c0e0d791e7c2fc,43Q 05900,Canyon Creek @ ZooMontana,Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-231,5a841c1916234ae691cea1b2be111867,43Q 05900,Canyon Creek @ ZooMontana,Water Temp,Jul-16 22:00,10.05,degC,-60.0,100.0,True
-232,d4e34684c10c425e8ea44475efb7dcfa,43Q 05900,Canyon Creek @ ZooMontana,Water Temp,Jul-16 18:00,10.25625,degC,-60.0,100.0,True
-233,44760338ade1441faeb7c7cd2e2f5db8,76E 05000,"Rock Creek nr Philipsburg, MT",Stage,Jul-16 22:45,2.62,ft,3.0,3.7,True
-234,b022e83a12f6433eae0608c284741d76,76E 05000,"Rock Creek nr Philipsburg, MT",Water Temp,Jul-16 22:45,11.96,degC,1.0,30.0,True
-235,28cae22c13bb4f27b036172577dd3f07,76E 05000,"Rock Creek nr Philipsburg, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-236,874e1029283742ad97ca0bfde0087c7a,76F 02900,"Nevada Cr nr Helmville, MT",Stage,Jul-16 22:45,3.98,ft,0.01,12.0,True
-237,46a4a80157fa45caa1fa49cee03b1338,76F 02900,"Nevada Cr nr Helmville, MT",Voltage,Jul-16 22:00,12.472,V,11.5,15.0,True
-238,f1f3efd9fd8249618e0e4f24db557e22,76F 02900,"Nevada Cr nr Helmville, MT",Water Temp,Jul-16 22:45,18.02,degC,-60.0,100.0,True
-239,13e88ab0c91540b188714edbe619f7b2,76F 02900,"Nevada Cr nr Helmville, MT",Stage,Jul-16 22:45,3.98,ft,0.01,12.0,True
-240,73f2a24c154b4b9c82d8690ce5818c8c,76F 03500,North Fork Blackfoot at Ryan Bridge,Stage,Jul-16 18:00,1.2577604166666667,ft,0.4,5.25,True
-241,8d352a78f88042a889e0b7b31ee70335,76F 03500,North Fork Blackfoot at Ryan Bridge,Stage,Jul-16 22:15,1.23,ft,0.4,5.25,True
-242,c037704d5cf04b4f9efec14e9951e615,76F 03500,North Fork Blackfoot at Ryan Bridge,Stage,Jul-16 22:15,1.23,ft,0.4,5.25,True
-243,697e2cf4eafe47ebb1feb6d2c40e2d8b,76F 03500,North Fork Blackfoot at Ryan Bridge,Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-244,19fd89061f5e491584c57c455828da52,76F 03500,North Fork Blackfoot at Ryan Bridge,Water Temp,Jul-16 18:00,12.46,degC,0.0,30.0,True
-245,46562d691bdc4ef683c74057fe6cef2c,76F 03500,North Fork Blackfoot at Ryan Bridge,Water Temp,Jul-16 18:00,11.918802083333333,degC,0.0,30.0,True
-246,a725c3f195964d81ae4b0e6bb834efed,76F 03500,North Fork Blackfoot at Ryan Bridge,Water Temp,Jul-16 22:15,10.18,degC,0.0,30.0,True
-247,f7d03a8e784e4b1abc4b689032a8398e,76F 04900,"Monture Creek nr Ovando, MT",Stage,Jul-16 22:30,3.8,ft,3.45,6.3,True
-248,84744cc3631145eba2a966ecce59f185,76F 04900,"Monture Creek nr Ovando, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-249,0f9c787a60604c9486fbcc7d2cd60937,76F 04900,"Monture Creek nr Ovando, MT",Water Temp,Jul-16 22:30,14.77,degC,0.0,30.0,True
-250,be78127328e84deda88143b7245e7b17,76F 04900,"Monture Creek nr Ovando, MT",Stage,Jul-16 22:30,3.8,ft,3.45,6.3,True
-251,517b2bddd7b54974948d4c7f5ea344e0,76F 05200,"Clearwater River nr Clearwater Junction, MT",Stage,Jul-16 22:30,1.42,ft,1.15,4.75,True
-252,7c15d3957f2844519b87e12f287b5432,76F 05200,"Clearwater River nr Clearwater Junction, MT",Stage,Jul-16 18:00,1.5166666666666666,ft,1.15,4.75,True
-253,a3a4bc9c168548b0afa12a58a251ac47,76F 05200,"Clearwater River nr Clearwater Junction, MT",Stage,Jul-16 22:30,1.42,ft,1.15,4.75,True
-254,1a3eb18d61914cc29bde2fb07c8b63cf,76F 05200,"Clearwater River nr Clearwater Junction, MT",Voltage,Jul-16 22:00,12.238,V,11.5,15.0,True
-255,18ca4a0778ad4c54b0adb1ebe57dde16,76F 05200,"Clearwater River nr Clearwater Junction, MT",Water Temp,Jul-16 22:30,14.66,degC,0.0,30.0,True
-256,de1c3d6f89944f00b8d79aa530d8fd41,76F 05200,"Clearwater River nr Clearwater Junction, MT",Water Temp,Jul-16 18:00,15.397239583333333,degC,0.0,30.0,True
-257,67a0064b62b447e4967a878396db81d0,76F 05300,"Blackfoot River nr Clearwater Junction, MT",Stage,Jul-16 22:30,0.85,ft,0.5,4.25,True
-258,eaca59480d97454383056543b987e8df,76F 05300,"Blackfoot River nr Clearwater Junction, MT",Stage,Jul-16 18:00,0.8603645833333333,ft,0.5,4.25,True
-259,fd6b8a555e5c40478be196c0c190c710,76F 05300,"Blackfoot River nr Clearwater Junction, MT",Stage,Jul-16 22:30,0.85,ft,0.5,4.25,True
-260,e7eef3f9488347b298a4d9ae70e781e7,76F 05300,"Blackfoot River nr Clearwater Junction, MT",Voltage,Jul-16 22:00,12.472,V,11.5,15.0,True
-261,7e6c01dd786442cf828f9211521072dd,76F 05300,"Blackfoot River nr Clearwater Junction, MT",Water Temp,Jul-16 22:30,16.24,degC,0.0,30.0,True
-262,e27a4ef1588840178508cf1e76d9d643,76F 05300,"Blackfoot River nr Clearwater Junction, MT",Water Temp,Jul-16 18:00,15.554114583333334,degC,0.0,30.0,True
-263,acb4e07d689d45a59b727e9cbc3ad9b3,76G 03100,"Racetrack Creek nr Racetrack, MT",Stage,Jul-16 22:30,4.3,ft,3.5,5.0,True
-264,31119bbde6cc46279fb603a3b82b0746,76G 03100,"Racetrack Creek nr Racetrack, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-265,64fedaeba0bf4ca4993b09a127bfb1eb,76G 03100,"Racetrack Creek nr Racetrack, MT",Water Temp,Jul-16 22:30,10.94,degC,1.0,30.0,True
-266,2acedb77bd974dcfbd06653be1759e1e,76G 03100,"Racetrack Creek nr Racetrack, MT",Stage,Jul-16 22:30,4.3,ft,3.5,5.0,True
-267,300a3136f4554c8380c06bd383c5e5d4,76G 04000,"Cottonwood Cr at Deer Lodge, MT",Stage,Jul-16 22:45,0.95,ft,0.05,12.0,True
-268,63d9818ac1eb4462b44cb96398306352,76G 04000,"Cottonwood Cr at Deer Lodge, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-269,2b7abbd1c1534d43af0ce05871a422c2,76G 04000,"Cottonwood Cr at Deer Lodge, MT",Water Temp,Jul-16 22:45,11.49,degC,1.0,30.0,True
-270,bec32a9054484095985be18ba4198f4b,76G 04000,"Cottonwood Cr at Deer Lodge, MT",Stage,Jul-16 22:45,0.95,ft,0.05,12.0,True
-271,b10c4361ca79416b87edf36d0bf23344,76G 05850,Gold Cr nr Gold Cr,Stage,Jul-16 18:00,0.5002777777777778,ft,0.01,12.0,True
-272,cc6e515f8e9f4ecc8bc34a137cff6257,76G 05850,Gold Cr nr Gold Cr,Water Temp,Jul-16 18:00,10.995,degC,-60.0,100.0,True
-273,a0b88eb8b36d4403889aafc54e06fd4f,76G 05850,Gold Cr nr Gold Cr,Water Temp,Jul-16 22:30,10.1,degC,-60.0,100.0,True
-274,34b6c9d736924230b60bfc77f803146f,76G 05850,Gold Cr nr Gold Cr,Stage,Jul-16 22:30,0.51,ft,0.01,12.0,True
-275,87979d9180854c47a9b962b0cb336532,76G 05850,Gold Cr nr Gold Cr,Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-276,c4f1becb2afb419cbf4d822dfe6c3a30,76H 01100,Lost Horse Creek abv Lost Horse Ditch,Stage,Jul-16 22:45,0.87,ft,0.3,4.2,True
-277,5d15b530630e4c86b9282ba8e0fa4aba,76H 01100,Lost Horse Creek abv Lost Horse Ditch,Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-278,7ed352d2c29b4d069be15c3179187576,76H 01100,Lost Horse Creek abv Lost Horse Ditch,Water Temp,Jul-16 22:45,13.58,degC,0.0,30.0,True
-279,44e96760d76b4cf7aa79372eb52042c3,76H 01100,Lost Horse Creek abv Lost Horse Ditch,Stage,Jul-16 22:45,0.87,ft,0.3,4.2,True
-280,4c61ccf750c44876be621ee68236c708,76HA 06100,"Burnt Fork Creek nr Stevensville, MT",Stage,Jul-16 22:30,2.84,ft,2.62,3.7,True
-281,110c85ec3b344ae7b3fc5377586308a7,76HA 06100,"Burnt Fork Creek nr Stevensville, MT",Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-282,1497a9a96d244b5093fb8df8b78c935f,76HA 06100,"Burnt Fork Creek nr Stevensville, MT",Stage,Jul-16 22:30,2.84,ft,2.62,3.7,True
-283,3eb10e00101649b89d9d872b20c83fcf,76HB 09500,Lolo Creek abv Sleeman Creek,Stage,Jul-16 22:15,4.3,ft,4.0,6.4,True
-284,b4b884b83c544845a9acc791a104aa47,76HB 09500,Lolo Creek abv Sleeman Creek,Stage,Jul-16 22:15,3306.3390000000004,ft,4.0,6.4,False
-285,d4cb07c61f08492c934758a30b4bf9d3,76HB 09500,Lolo Creek abv Sleeman Creek,Stage,Jul-16 22:15,4.3,ft,4.0,6.4,True
-286,f95c5546962e43c1aa6fdd2de7bf9311,76HB 09500,Lolo Creek abv Sleeman Creek,Stage,Jul-16 18:00,4.3203125,ft,4.0,12.0,True
-287,1c128f091b8d466c8d8011bfe37db796,76HB 09500,Lolo Creek abv Sleeman Creek,Voltage,Jul-16 22:00,12.472,V,11.5,15.0,True
-288,f3f8ccdb753943f8aa07ed8d30704a2f,76HB 09500,Lolo Creek abv Sleeman Creek,Water Temp,Jul-16 22:15,14.2,degC,0.0,30.0,True
-289,f2b4a2832815484cb8ed68e891dd2be0,76HB 09600,Lolo Creek below Highway 93,Battery Voltage Under Load,Jul-16 22:00,12.238,V,11.5,15.0,True
-290,7529da10706f4ac08c23ed859f049ad4,76HB 09600,Lolo Creek below Highway 93,Sp Cond,Jul-16 22:00,106.0,uS/cm,10.0,500.0,True
-291,69e924f05aba43878353243b8965a2ec,76HB 09600,Lolo Creek below Highway 93,Stage,Jul-16 22:00,1.73,ft,1.5,4.25,True
-292,7b1741b80c2740ed8e4b1a7330fa4c64,76HB 09600,Lolo Creek below Highway 93,Stage,Jul-16 18:00,1.7383854166666666,ft,1.5,4.25,True
-293,ab2a7a4d36e44db181b4336b015d867d,76HB 09600,Lolo Creek below Highway 93,Stage,Jul-16 22:00,3175.589,ft,1.5,4.25,False
-294,ee34bffd9d5a41858261dd2644d242ee,76HB 09600,Lolo Creek below Highway 93,Stage,Jul-16 22:00,1.73,ft,1.5,4.25,True
-295,00e18ea013a94f4dac8a2700112abc31,76HB 09600,Lolo Creek below Highway 93,Water Level,Jul-16 22:00,3170.728,ft,2000.0,5000.0,True
-296,3183056ba8894eee93659d30a273c93e,76HB 09600,Lolo Creek below Highway 93,Water Level,Jul-16 22:00,3170.728,ft,2000.0,5000.0,True
-297,f1f1c64b96f54b47ab81a7c744cbafa7,76HB 09600,Lolo Creek below Highway 93,Water Level,Jul-16 22:00,13.58,ft,-300.0,100.0,True
-298,148f0fb35e1a4dd3a4da8a313a0d93b0,76HB 09600,Lolo Creek below Highway 93,Water Temp,Jul-16 18:00,16.9878125,degC,0.0,30.0,True
-299,5074811df5f740b0bd19bb2abe1a4d3f,76HB 09600,Lolo Creek below Highway 93,Water Temp,Jul-16 22:00,6.86,degC,0.0,30.0,True
-300,ec35f8fd979d4ae29a85c6ce3cf65586,76HB 09600,Lolo Creek below Highway 93,Water Temp,Jul-16 22:00,16.75,degC,0.0,30.0,True
-301,bb44ef8e151f437fb81fbdb98cd381a9,76HE 09000,"EF Bitterroot River nr Connor, MT",Stage,Jul-16 21:00,2.87,ft,2.6,4.6,True
-302,337dd1aba0ac42c7b3ff17ccc2c05c31,76HE 09000,"EF Bitterroot River nr Connor, MT",Water Temp,Jul-16 21:00,16.27,degC,0.0,30.0,True
-303,800495bae4c24022aefbd5dbc61a70d8,76HE 09000,"EF Bitterroot River nr Connor, MT",Stage,Jul-16 21:00,2.87,ft,2.6,4.6,True
-304,84cdeac214f44994a62694c2b8820084,76HE 09000,"EF Bitterroot River nr Connor, MT",Voltage,Jul-16 21:00,12.706,V,11.5,15.0,True
-305,0aab906058a3416fb030b5c828b7d6b5,76LJ 07500,Mill Creek below Creston Hatchery,Stage,Jul-16 22:15,1.01,ft,0.01,12.0,True
-306,618dc19d7ff74c879e6c6e3e1020f8f0,76LJ 07500,Mill Creek below Creston Hatchery,Stage,Jul-16 22:15,1.01,ft,0.01,12.0,True
-307,945093c2caaf42b58b1f79fc42e2582b,76LJ 07500,Mill Creek below Creston Hatchery,Stage,Jul-16 18:00,1.0142708333333332,ft,0.01,12.0,True
-308,133d15c298194b9a9d7c67e404721a8d,76LJ 07500,Mill Creek below Creston Hatchery,Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-309,094f042fb0b04b91837f8cba9b938595,76LJ 07500,Mill Creek below Creston Hatchery,Water Temp,Jul-16 22:15,12.48,degC,-60.0,100.0,True
-310,fd882b6475004641957d602842553b79,76LJ 07500,Mill Creek below Creston Hatchery,Water Temp,Jul-16 18:00,12.061197916666666,degC,-60.0,100.0,True
-311,60c6c2f91fff4cfdae78b20ca1371773,76LJ 09900,Ashley Creek at Kalispell WTP,Stage,Jul-16 22:00,1.05,ft,0.01,12.0,True
-312,6ed8765327354227ba7ef96aee37660c,76LJ 09900,Ashley Creek at Kalispell WTP,Stage,Jul-16 22:00,1.05,ft,0.01,12.0,True
-313,bc86eb45d3814d92997bc88a40b7afb9,76LJ 09900,Ashley Creek at Kalispell WTP,Stage,Jul-16 18:00,1.18265625,ft,0.01,12.0,True
-314,53a080e0e4c84679ab4445c0d9060302,76LJ 09900,Ashley Creek at Kalispell WTP,Voltage,Jul-16 22:00,12.706,V,11.5,15.0,True
-315,32be18635be945bba88bbadc395be56a,76LJ 09900,Ashley Creek at Kalispell WTP,Water Temp,Jul-16 18:00,18.81854166666667,degC,-60.0,100.0,True
-316,37897aa5ba584477a8e89d0e92380d46,76LJ 09900,Ashley Creek at Kalispell WTP,Water Temp,Jul-16 22:00,18.89,degC,-60.0,100.0,True
-317,5b4234cb0a2446efb83040a9aaae71fc,76M 01100,"Rattlesnake Cr nr Missoula, MT",Stage,Jul-16 22:15,2.57,ft,2.2,4.75,True
-318,6893fc7bc154402a9ab23dae1745f692,76M 01100,"Rattlesnake Cr nr Missoula, MT",Stage,Jul-16 18:00,2.57984375,ft,2.2,4.75,True
-319,a7082930386e42c486621759163c228d,76M 01100,"Rattlesnake Cr nr Missoula, MT",Stage,Jul-16 22:15,2.57,ft,2.2,4.75,True
-320,aef61378f61d4dbbbcfe15c8ec24008f,76M 01100,"Rattlesnake Cr nr Missoula, MT",Voltage,Jul-16 22:00,12.472,V,11.5,15.0,True
-321,15dacbfeda8a4d779f586e5a3fc7f59c,76M 01100,"Rattlesnake Cr nr Missoula, MT",Water Temp,Jul-16 22:15,12.08,degC,0.0,30.0,True
-322,30dbf0e416f74798abcc4f4df793bab6,76M 01100,"Rattlesnake Cr nr Missoula, MT",Water Temp,Jul-16 18:00,13.34140625,degC,0.0,30.0,True
-323,99fc683509d04f47aa0138ba4d9efb99,SR 004,Duck Creek above Simms Ashuelot Rd Bridge,Battery Voltage Under Load,Jul-16 22:00,12.472,V,11.5,15.0,True
-324,404cd6b292194b60813229260b50f9c6,SR 004,Duck Creek above Simms Ashuelot Rd Bridge,Stage,Jul-16 22:45,1.17,ft,0.8,1.8,True
-325,4c56d50f31454372ae75688acab59400,SR 004,Duck Creek above Simms Ashuelot Rd Bridge,Stage,Jul-16 22:45,1.17,ft,0.8,1.8,True
-326,95d92e535bfb4995b48608d3480c8019,SR 004,Duck Creek above Simms Ashuelot Rd Bridge,Stage,Jul-16 18:00,1.3740625,ft,0.8,1.8,True
+0,92172b8860ff403ea80b135d9b9688d5,39E 09000,"Box Elder Cr nr Ekalaka, MT",Stage,Oct-28 21:45,4.23,ft,3.75,4.8,True
+1,b54cac9c055b4f3093ec0ed8bf4f9126,39E 09000,"Box Elder Cr nr Ekalaka, MT",Voltage,Oct-28 21:00,11.77,V,11.5,15.0,True
+2,a4f67481440646ee990051b6da4565a1,39E 09000,"Box Elder Cr nr Ekalaka, MT",Stage,Oct-28 21:45,4.23,ft,3.75,4.8,True
+3,7319bd5d024f46e1bc78eeee0bbbc2c4,39FJ 09000,"Little Beaver Cr nr Webster, MT",Stage,Oct-28 21:45,3.49,ft,3.5,4.6,True
+4,9a77066e59fe4ef6a8f6ecad9b070763,39FJ 09000,"Little Beaver Cr nr Webster, MT",Voltage,Oct-28 21:00,12.472,V,11.5,15.0,True
+5,783218304ea54ce78e230786139b289b,39FJ 09000,"Little Beaver Cr nr Webster, MT",Stage,Oct-28 21:45,3.49,ft,3.5,4.6,True
+6,c2620ca0d9a841d3afc76960e8a1d657,40A 7000,Two Dot Canal,Stage,Oct-28 22:15,0.19,ft,0.01,12.0,True
+7,c297cb74981547e9955804d2f856555b,40A 7000,Two Dot Canal,Stage,Oct-28 22:15,0.19,ft,0.01,12.0,True
+8,7ecdcd9477734d609091754061dd9bf4,40A 7000,Two Dot Canal,Voltage,Oct-28 22:00,12.62,V,11.5,15.0,True
+9,4b619be1d24344d4ba124a2e1242d0e7,40A 14000,"Careless Cr nr Ryegate, MT",Stage,Oct-28 21:45,2.37,ft,0.01,12.0,True
+10,765ad05b96ed41318a03872e2b4151b7,40A 14000,"Careless Cr nr Ryegate, MT",Voltage,Oct-28 21:00,12.472,V,-60.0,100.0,True
+11,a0643afca0d54a07a77fd5f506f4dc5c,40A 14000,"Careless Cr nr Ryegate, MT",Stage,Oct-28 21:45,2.37,ft,0.01,12.0,True
+12,6519c2feb48d491d8defa33bd5c71dd3,40B 06000,Flatwillow Creek abv Petrolia Reservoir,Stage,Oct-28 22:15,2.18,ft,0.01,12.0,True
+13,afea2992153e4073b2f455935708cf07,40B 06000,Flatwillow Creek abv Petrolia Reservoir,Stage,Oct-28 22:15,2.18,ft,0.01,12.0,True
+14,cf3aeb81e6cc4250bf1ada830cacaccb,40B 06000,Flatwillow Creek abv Petrolia Reservoir,Stage,Oct-28 18:00,2.177395833333333,ft,0.01,12.0,True
+15,0429059065454dbca059ab4e64f075a0,40B 06000,Flatwillow Creek abv Petrolia Reservoir,Voltage,Oct-28 22:00,12.472,V,11.5,15.0,True
+16,bd808cb3dce040ce86cd70584a2bdd24,40B 06000,Flatwillow Creek abv Petrolia Reservoir,Water Temp,Oct-28 22:15,6.79,degC,-60.0,100.0,True
+17,f98ce4260de743199ee25eaf9b9754ef,40B 06000,Flatwillow Creek abv Petrolia Reservoir,Water Temp,Oct-28 18:00,7.272291666666667,degC,-60.0,100.0,True
+18,a514eec166d34d1d93077364ef00b58a,40G 10000,Sage Creek Nr Box Elder,Stage,Oct-28 21:30,1310.71,ft,3.0,4.0,True
+19,d4ae9b3290a94a4c9d2365b976748424,40G 10000,Sage Creek Nr Box Elder,Voltage,Oct-28 21:00,12.472,V,11.5,15.0,True
+20,9a91d19701bb4c2eb63fcb7728f71538,40G 10000,Sage Creek Nr Box Elder,Stage,0,0.0,ft,3.0,4.0,True
+21,3e17c8e23dbd48698fc884493af19f38,40I 10000,"Peoples Creek near Dodson, MT",Stage,Oct-28 18:00,11.41890625,ft,8.47,21.09,True
+22,730039c02398405eab9f6ee77c59c460,40I 10000,"Peoples Creek near Dodson, MT",Stage,Oct-28 22:15,11.43,ft,8.47,21.09,True
+23,a17700d272a04a098f638d216a117346,40I 10000,"Peoples Creek near Dodson, MT",Stage,Oct-28 22:15,11.43,ft,8.47,21.09,True
+24,54e50f6fa9f94db1bea030a30a1bc15c,40I 10000,"Peoples Creek near Dodson, MT",Voltage,Oct-28 22:00,12.706,V,11.5,15.0,True
+25,6b57426a2d3b435ca422a179aa707b58,40J 08900,"Beaver Creek abv Reservoir nr Havre, MT",Stage,Oct-28 22:15,0.34,ft,0.5,2.0,True
+26,7120e28e1ae4496f97b202fef11c2e5c,40J 08900,"Beaver Creek abv Reservoir nr Havre, MT",Stage,Oct-28 22:15,0.34,ft,0.5,2.0,True
+27,f580e8f2f5174f10aa257c58147f74e1,40J 08900,"Beaver Creek abv Reservoir nr Havre, MT",Stage,Oct-28 18:00,0.33447916666666666,ft,0.5,2.0,True
+28,c70cd139c53b46c5b6f518a20bac0e07,40J 08900,"Beaver Creek abv Reservoir nr Havre, MT",Voltage,Oct-28 22:00,12.004,V,11.5,15.0,True
+29,139c45bdea134a238577a76105606a42,40J 09000,"Beaver Crk Reservoir nr Havre, MT",Lake res elevation,Oct-28 22:15,82.49,ft,20.0,120.0,True
+30,14be5e24d76c4dfabde3918755637a32,40J 09000,"Beaver Crk Reservoir nr Havre, MT",Lake res elevation,Oct-28 22:15,3082.49,ft,1000.0,4000.0,True
+31,097fe67404d34b0284da0e5e81c71f68,40J 09000,"Beaver Crk Reservoir nr Havre, MT",Voltage,Oct-28 22:00,12.472,V,11.5,15.0,True
+32,0d834f335293408ab95e88dc61914a4c,40J 09100,"Beaver Cr blw Reservoir nr Havre, MT",Stage,Oct-28 18:00,0.09416666666666666,ft,0.1,3.5,True
+33,4ec5c85e8de04b018418a2e77b840604,40J 09100,"Beaver Cr blw Reservoir nr Havre, MT",Stage,Oct-28 22:15,0.09,ft,0.1,3.5,True
+34,7b253ddef5bf42c3b8edde3cc47ffaf2,40J 09100,"Beaver Cr blw Reservoir nr Havre, MT",Stage,Oct-28 22:15,0.09,ft,0.1,3.5,True
+35,1a09f2a1db654358b2934e70c4de0435,40J 09100,"Beaver Cr blw Reservoir nr Havre, MT",Voltage,Oct-28 22:00,12.472,V,11.5,15.0,True
+36,10bebde2866247ec8dcb2d04232fbeaf,40L-10050013,Frenchman Creek @ Mouth,Internal Temp (DCP),Oct-28 21:00,-5.75,degC,-40.0,140.0,True
+37,04b3d946bab641c4bd83098d5d3ca142,40L-10050013,Frenchman Creek @ Mouth,Stage,Oct-28 21:45,2.36,ft,2.16,16.67,True
+38,73e10521ae2846b8b696427d588a2a44,40L-10050013,Frenchman Creek @ Mouth,Stage,Oct-28 21:45,2.36,ft,2.16,16.67,True
+39,f2b735bf8150409684d92b45a28c6d4f,40L-10050013,Frenchman Creek @ Mouth,Voltage,Oct-28 21:00,12.63,V,11.5,15.0,True
+40,1e2ede6c6e1a4ce38480e3f628796385,41A 01000,Red Rock River abv Lime Reservoir,Stage,Oct-28 21:45,1.97,ft,1.6,5.1,True
+41,3b39aa9ced6b4aa99427da2a1da2e218,41A 01000,Red Rock River abv Lime Reservoir,Voltage,Oct-28 21:00,12.706,V,11.5,15.0,True
+42,a1d669d84e094022b3995d506381709d,41A 01000,Red Rock River abv Lime Reservoir,Water Temp,Oct-28 21:45,0.21,degC,0.0,30.0,True
+43,b374dbd97d84429e8f926ee2cd6c8a4a,41A 01000,Red Rock River abv Lime Reservoir,Stage,Oct-28 21:45,1.97,ft,1.6,5.1,True
+44,1c970d75d4ce45dbad46b95bd3c12c45,41A 10000,Red Rock River abv Clark Canyon Res,Stage,Oct-28 22:15,3.87,ft,3.0,4.5,True
+45,c9bac1b0bcdf46b08204f2f112de17c6,41A 10000,Red Rock River abv Clark Canyon Res,Stage,Oct-28 18:00,3.8583854166666667,ft,3.0,4.5,True
+46,fe81e3acbe5a4b88aa7539c90e6a3757,41A 10000,Red Rock River abv Clark Canyon Res,Stage,Oct-28 22:15,3.87,ft,3.0,4.5,True
+47,e1dd8034dfcc443bb01883bd3c115e17,41A 10000,Red Rock River abv Clark Canyon Res,Voltage,Oct-28 22:00,12.472,V,11.5,15.0,True
+48,576a10a5a5594ff8a9ce2d978e470384,41A 10000,Red Rock River abv Clark Canyon Res,Water Temp,Oct-28 22:15,3.95,degC,1.0,30.0,True
+49,96d57b73ebf941eb95a1c69617bc5ad9,41A 10000,Red Rock River abv Clark Canyon Res,Water Temp,Oct-28 18:00,4.894583333333333,degC,1.0,30.0,True
+50,3050f1452f884e43b10cc90131f4a3b2,41C 05000,Ruby River at Alder,Voltage,0,0.0,V,11.5,15.0,True
+51,b2c47ea2049d478a93495062287c3020,41C 05000,Ruby River at Alder,Stage,0,0.0,ft,0.8,4.1,True
+52,376f2745dfbe4ff39f5f1873b7310623,41C 05000,Ruby River at Alder,Stage,0,0.0,ft,0.8,4.1,True
+53,66aad97bcd7a4a6ba797ea2bf4f5dfe9,41C 08000,Ruby River at Harrington Bridge,Stage,Oct-28 22:00,2.5,ft,2.25,4.6,True
+54,a2a90c48222c4a50a4f699f5da0889aa,41C 08000,Ruby River at Harrington Bridge,Stage,Oct-28 18:00,2.50796875,ft,2.25,4.6,True
+55,b1305fdd295d4bb2adda4598aacfef95,41C 08000,Ruby River at Harrington Bridge,Stage,Oct-28 22:00,2.5,ft,2.25,4.6,True
+56,e195a05c40e34b4cb1f5d023c27f6232,41C 08000,Ruby River at Harrington Bridge,Voltage,Oct-28 22:00,12.472,V,11.5,15.0,True
+57,3e57257de27a41b1880d835d0637da04,41C 08000,Ruby River at Harrington Bridge,Water Temp,Oct-28 18:00,7.078229166666667,degC,1.0,30.0,True
+58,3f8bac95b54d425e8c817efe93c808bb,41C 08000,Ruby River at Harrington Bridge,Water Temp,Oct-28 22:00,6.85,degC,1.0,30.0,True
+59,332dad5f46bc42008bc1aeb4f6f7db83,41D 01000,"Big Hole River abv Jackson, MT",Stage,Oct-28 21:45,1.01,ft,0.01,12.0,True
+60,981c215ea02a4524889414fa094f6a59,41D 01000,"Big Hole River abv Jackson, MT",Stage,Oct-28 22:45,1.01,ft,0.01,12.0,True
+61,aefd35ebf5ee4f5b81916d110c20a13b,41D 01000,"Big Hole River abv Jackson, MT",Stage,Oct-28 19:00,0.99921875,ft,0.01,12.0,True
+62,fb3ad83308eb4083ae8f5f70d9327492,41D 01000,"Big Hole River abv Jackson, MT",Voltage,Oct-28 22:00,12.004,V,11.5,15.0,True
+63,3ce9ddccdc0844e39f1272cc8936fb36,41D 01000,"Big Hole River abv Jackson, MT",Water Temp,Oct-28 21:45,1.58,degC,-60.0,100.0,True
+64,d75706e1781d494aa052c444512fa836,41D 01000,"Big Hole River abv Jackson, MT",Water Temp,Oct-28 18:00,1.4486979166666667,degC,-60.0,100.0,True
+65,4cd0c3b786064e7c96e6760399f158ff,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Stage,Oct-28 21:45,1.64,ft,0.01,12.0,True
+66,56ee6862087c43b29c26a76f63309a12,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Stage,Oct-28 21:45,1.64,ft,0.01,12.0,True
+67,46fb37a3b75d47319077bec21a036a09,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Voltage,Oct-28 21:00,12.706,V,11.5,15.0,True
+68,3bcd491d4bed46d280ef2b4600ae3578,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Water Temp,0,0.0,degC,-60.0,100.0,True
+69,3dc184509cfd40aabf77a7b7082c286e,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Water Temp,0,0.0,degC,-60.0,100.0,True
+70,2752f722c4f64cbaa50df97a1fb752bb,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Stage,Oct-28 22:45,1.08,ft,0.01,12.0,True
+71,d92675de2372485db8750fb7c2ccd36c,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Stage,Oct-28 21:45,1.08,ft,0.01,12.0,True
+72,d9b04c187bef41989c789be020bdeb75,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Voltage,Oct-28 22:00,12.706,V,11.5,15.0,True
+73,c45ad9fb02aa42b7a7320e06c64eeb68,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Water Temp,Oct-28 21:45,2.43,degC,-60.0,100.0,True
+74,ed79e1ea507a4afc94f2212d4af90816,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Water Temp,Oct-28 19:00,2.426458333333333,degC,-60.0,100.0,True
+75,08ce82df47cc4219be9ca7155bdf87c3,41D 07150,North Fork Big Hole River at Battlefield,Stage,Oct-28 21:15,2.24,ft,2.0,4.0,True
+76,d0668a1af3c0453fad5919e0e76cf77f,41D 07150,North Fork Big Hole River at Battlefield,Stage,Oct-28 21:15,2.24,ft,2.0,4.0,True
+77,7d7db16ef5c04af094ecfbd9ba6a4fdc,41D 07150,North Fork Big Hole River at Battlefield,Voltage,Oct-28 21:00,12.238,V,11.5,15.0,True
+78,07432df7bd00438db43e960fde663704,41D 07700,"Deep Creek nr Wise River, MT",Stage,Oct-28 22:00,1.11,ft,0.01,12.0,True
+79,7d430f2bde1c4fe5b5b23dd4aa82ca1e,41D 07700,"Deep Creek nr Wise River, MT",Water Temp,Oct-28 22:00,1.19,degC,-60.0,100.0,True
+80,b08b894e64144a93953baa52615b1530,41D 07700,"Deep Creek nr Wise River, MT",Voltage,Oct-28 22:00,12.472,V,11.5,15.0,True
+81,e7958ec2eade499b867d5489cdfca195,41D 07700,"Deep Creek nr Wise River, MT",Stage,Oct-28 22:00,1.11,ft,0.01,12.0,True
+82,18fa503680ba4af7b08ebde6386f3caa,41D 07900,Wise River nr mouth,Stage,Oct-28 18:00,0.5972395833333334,ft,0.3,3.25,True
+83,2bba5b4b7c1d425d982820b37c4ed3e0,41D 07900,Wise River nr mouth,Stage,Oct-28 22:15,0.6000000000000001,ft,0.3,3.25,True
+84,a767a4889abe449fbcd9d9c7aa321d72,41D 07900,Wise River nr mouth,Stage,Oct-28 22:15,0.53,ft,0.3,3.25,True
+85,3d6599e4487244eb882af510348634c6,41D 07900,Wise River nr mouth,Voltage,Oct-28 22:00,12.472,V,11.5,15.0,True
+86,33efcd9805514637a810f1d87bc71616,41D 07900,Wise River nr mouth,Water Temp,Oct-28 22:15,2.71,degC,0.0,30.0,True
+87,d1a9eae6e8d9497fb9de6490180e21ba,41D 07900,Wise River nr mouth,Water Temp,Oct-28 18:00,3.1823958333333335,degC,0.0,30.0,True
+88,ef72f1c2fd404dcd830e2c6d72de115f,41D 07900,Wise River nr mouth,Water Temp,Oct-28 23:00,2.74,degC,0.0,30.0,True
+89,45c73a2a71824f8b8e5f483573d23b58,41D 08000,"Big Hole River near Wise River, MT",Stage,Oct-28 18:00,2.703333333333333,ft,0.01,12.0,True
+90,93fe06279dd8418b9bc1506f450dc191,41D 08000,"Big Hole River near Wise River, MT",Stage,Oct-28 21:45,2.71,ft,0.01,12.0,True
+91,bd0fd45dd1214e498a24e9bb4622853d,41D 08000,"Big Hole River near Wise River, MT",Stage,Oct-28 21:45,2.71,ft,0.01,12.0,True
+92,5adc59fc9ffa4be1b96f22b83487f366,41D 08000,"Big Hole River near Wise River, MT",Water Temp,Oct-28 21:45,1.41,degC,-60.0,100.0,True
+93,c4ceaae5168343d38f3acc85b7d3e46a,41E 10000,Boulder River Nr Cardwell,Stage,Oct-28 22:30,2.9,ft,2.55,4.3,True
+94,de7d6aba2f494c9dbc622d5144a950f8,41E 10000,Boulder River Nr Cardwell,Voltage,Oct-28 22:00,12.472,V,11.5,15.0,True
+95,a26c41407d224fd4a7a030bb5a78172f,41E 10000,Boulder River Nr Cardwell,Water Temp,Oct-28 22:30,6.45,degC,1.0,30.0,True
+96,653a416f7c76425aa630f06a929d62e6,41E 10000,Boulder River Nr Cardwell,Stage,Oct-28 22:30,2.9,ft,2.55,4.3,True
+97,a8f4851dd8764c9ea3aff6fe8c8f8d0b,41G 09000,"Willow Creek nr Willow Creek, MT",Stage,Oct-28 21:30,1.51,ft,1.3,1.8,True
+98,81af11132f584c7f892ab15a1500ded2,41G 09000,"Willow Creek nr Willow Creek, MT",Stage,Oct-28 21:30,1.51,ft,1.3,1.8,True
+99,07e41a9d407d4ad4bc8650ecaca37eb4,41G 09000,"Willow Creek nr Willow Creek, MT",Voltage,Oct-28 21:00,12.472,V,11.5,15.0,True
+100,7440733292bc42d2b6c9b1685467b093,41G 09000,"Willow Creek nr Willow Creek, MT",Water Temp,Oct-28 21:30,6.95,degC,0.0,100.0,True
+101,50d77d3631e74cd0bee35c87f080f893,41H 08900,East Gallatin Rvr nr Manhattan,Stage,Oct-28 22:15,3.09,ft,2.5,5.0,True
+102,d2f0410596244d9b99ac6350d13cf95e,41H 08900,East Gallatin Rvr nr Manhattan,Stage,Oct-28 18:00,3.0938020833333333,ft,2.5,5.0,True
+103,e468e94ba4cc483d9871c1dc2ce5c864,41H 08900,East Gallatin Rvr nr Manhattan,Stage,Oct-28 22:15,3.09,ft,2.5,5.0,True
+104,9fc0983cbc084eebae3fd43eab773271,41H 08900,East Gallatin Rvr nr Manhattan,Voltage,Oct-28 22:00,12.472,V,11.5,15.0,True
+105,35fb2c5ac3444dd0be3eea28cb56393a,41H 08900,East Gallatin Rvr nr Manhattan,Water Temp,Oct-28 18:00,5.434375,degC,-60.0,100.0,True
+106,9e04094997d748819ea54e80022e3abd,41H 08900,East Gallatin Rvr nr Manhattan,Water Temp,Oct-28 22:15,5.56,degC,-60.0,100.0,True
+107,1e1b0fa137594b9a9aee1910b41f2b7a,41H 08950,Sourdough Creek above City Intake,Battery Voltage Under Load,Oct-28 22:00,12.472,V,11.5,15.0,True
+108,b0d517ec27484c9085efeb1619d1efba,41H 08950,Sourdough Creek above City Intake,Stage,Oct-28 18:00,1.0606770833333334,ft,1.0,1.8,True
+109,cdb66eb487574b6aa649c64b78c380e2,41H 08950,Sourdough Creek above City Intake,Stage,Oct-28 22:00,1.06,ft,1.0,1.8,True
+110,f5d2fbd3c9544f83a4005333cf7db9b0,41H 08950,Sourdough Creek above City Intake,Stage,Oct-28 22:00,1.06,ft,1.0,1.8,True
+111,8e8e53be266143f4a323af9b3f803c13,41H 08990,"Bozeman Creek at Bozeman, MT",Stage,Oct-28 22:15,4.29,ft,4.1,5.5,True
+112,b2b588bdbec745ee89d2571cb2011968,41H 08990,"Bozeman Creek at Bozeman, MT",Stage,Oct-28 18:00,4.1788541666666665,ft,4.1,5.5,True
+113,bf1a0527d5ec4bd4975d41d242384b03,41H 08990,"Bozeman Creek at Bozeman, MT",Stage,Oct-28 22:15,4.29,ft,4.1,5.5,True
+114,34e8d7d9d1cc477494bfa1987efc1499,41H 08990,"Bozeman Creek at Bozeman, MT",Water Temp,Oct-28 18:00,5.235729166666666,degC,-60.0,100.0,True
+115,b95087775e2049f8a95ce31fbfbae150,41H 08990,"Bozeman Creek at Bozeman, MT",Water Temp,Oct-28 22:15,5.18,degC,-60.0,100.0,True
+116,d7b0a539941f44df9a3d050e525e6fb0,41J 03000,Sheep Cr at Strawberry Butte,Stage,Oct-28 21:45,1.61,ft,1.2,1.8,True
+117,af2515d3056347ec93057165f894c142,41J 03000,Sheep Cr at Strawberry Butte,Voltage,Oct-28 21:00,12.472,V,11.5,15.0,True
+118,a4600d8024ab435f9de6f21657de2908,41J 03000,Sheep Cr at Strawberry Butte,Stage,Oct-28 21:45,1.61,ft,1.2,1.8,True
+119,1c565b4ce60f4486a0b70683bc044861,41I 03500,"Deep Creek near Townsend, MT",Stage,Oct-28 21:45,0.41,ft,0.12,2.6,True
+120,8aad5c7cd39c47d8be3d83c37b97b7d3,41I 03500,"Deep Creek near Townsend, MT",Stage,Oct-28 18:00,0.41765625,ft,0.12,2.6,True
+121,e7daf1e40a904def992a7fd280ce420e,41I 03500,"Deep Creek near Townsend, MT",Stage,Oct-28 21:45,0.41,ft,0.12,2.6,True
+122,8052ee3fcfd94763b89a79dfe79e242a,41I 03500,"Deep Creek near Townsend, MT",Voltage,Oct-28 21:00,11.77,V,11.5,15.0,True
+123,b899e73346b446379bed2ee73a7f7d11,41I 03500,"Deep Creek near Townsend, MT",Water Temp,Oct-28 18:00,3.866875,degC,0.0,100.0,True
+124,b9f794b7aef143108e94de44e0a78dd1,41I 03500,"Deep Creek near Townsend, MT",Water Temp,Oct-28 21:45,3.34,degC,0.0,100.0,True
+125,38a790a6548d4fabaccc774ba38624a2,41J 02000,"Sheep Creek nr Adams Creek Road, MT",Stage,Oct-28 21:30,1.11,ft,1.25,1.83,True
+126,79c341214c7140e3889836a52a6995e3,41J 02000,"Sheep Creek nr Adams Creek Road, MT",Voltage,Oct-28 21:00,12.472,V,11.5,15.0,True
+127,9870577bdeb0435488ebf76b43351482,41J 02000,"Sheep Creek nr Adams Creek Road, MT",Stage,Oct-28 21:30,1.11,ft,1.25,1.83,True
+128,76bff6ce86da4f81af8741b53fe413b0,41J 04900,"Moose Creek nr White Sulphur Springs, MT",Voltage,Oct-28 21:00,12.472,V,11.5,15.0,True
+129,bc8707aa56d54486bd4f89936c6d1063,41J 04900,"Moose Creek nr White Sulphur Springs, MT",Stage,Oct-28 21:30,1.14,ft,1.26,1.8,True
+130,edbb13fbcd444907a12f4ff01a6193ba,41J 04900,"Moose Creek nr White Sulphur Springs, MT",Stage,Oct-28 21:30,1.14,ft,1.26,1.8,True
+131,c976ffe229dc47cd8aa9b7982cd2c1a4,41K 05100,Elk Creek nr Haystack Butte,Stage,Oct-28 21:45,2.65,ft,3.25,3.5,True
+132,a669cfcf03f54faeb51a9bce0a6bb6d6,41K 05100,Elk Creek nr Haystack Butte,Voltage,Oct-28 21:00,12.472,V,11.5,14.5,True
+133,810e0d66595740f1bf3b67d8c2b5330e,41K 05100,Elk Creek nr Haystack Butte,Stage,Oct-28 21:45,2.65,ft,3.25,3.5,True
+134,18db27493efa42968383d06670e05abf,41J 06000,"Sheep Creek nr White Sulphur Springs, MT",Stage,Oct-28 21:30,0.53,ft,0.63,2.2,True
+135,b2c874ad5ceb4481b1dff46a7916d3c5,41J 06000,"Sheep Creek nr White Sulphur Springs, MT",Stage,Oct-28 21:30,0.53,ft,0.63,2.2,True
+136,abf605b0340b45319e75af6f29183abc,41J 06000,"Sheep Creek nr White Sulphur Springs, MT",Water Temp,Oct-28 21:30,-0.15,degC,-60.0,100.0,True
+137,c8a7f04dd6514af991e5bc50236aff1d,41J 06000,"Sheep Creek nr White Sulphur Springs, MT",Voltage,Oct-28 21:00,12.472,V,11.5,15.0,True
+138,327c94896d3b49309dba9bf6d6471a2b,41K 09900,Mill Coulee Ck nr Sun River,Stage,Oct-28 22:15,1.43,ft,1.1,2.0,True
+139,3cf026e01fee4972af209f0164ce2789,41K 09900,Mill Coulee Ck nr Sun River,Stage,Oct-28 18:00,1.41828125,ft,1.1,2.0,True
+140,8aa2944a3f974589bf098a9fd7edd638,41K 09900,Mill Coulee Ck nr Sun River,Stage,Oct-28 22:15,1.43,ft,1.1,2.0,True
+141,2525b135e97e49eebc96cd884ad14d83,41K 09900,Mill Coulee Ck nr Sun River,Voltage,Oct-28 22:00,12.004,V,11.5,15.0,True
+142,9cc5a97b2394445b98c57b2f2848d328,41K 09900,Mill Coulee Ck nr Sun River,Water Temp,Oct-28 18:00,3.943125,degC,-60.0,100.0,True
+143,f8be21f86c8845618aea9bd64a5f8d54,41K 09900,Mill Coulee Ck nr Sun River,Water Temp,Oct-28 22:15,4.41,degC,-60.0,100.0,True
+144,1cedf233a2e347679540855095f996b9,41M 09990,"Dupuyer Creek nr Dupuyer, MT",Stage,Oct-28 21:45,1.39,ft,1.2,1.65,True
+145,3d5d28d216c74c5584da5111c1097991,41M 09990,"Dupuyer Creek nr Dupuyer, MT",Voltage,Oct-28 21:00,12.706,V,11.5,15.0,True
+146,dbbeec04e28d46459b357b0bba95defa,41M 09990,"Dupuyer Creek nr Dupuyer, MT",Stage,Oct-28 21:45,1.39,ft,1.2,1.65,True
+147,591aca8c8361444da9fc059b4b625281,41O 02000,Teton River at Bynum Diversion nr Choteau MT,Stage,Oct-28 22:00,0.13,ft,0.01,2.0,False
+148,8a9be4e1ff3149b4ba3ca405e20f044e,41O 02000,Teton River at Bynum Diversion nr Choteau MT,Stage,0,0.0,ft,0.01,2.0,True
+149,d237ce4445754d47b35ab45e2129ede1,41O 02000,Teton River at Bynum Diversion nr Choteau MT,Stage,Oct-28 22:00,0.13,ft,0.01,2.0,False
+150,7332073e8adf47e287fc547f1bc7d79d,41O 02000,Teton River at Bynum Diversion nr Choteau MT,Voltage,Oct-28 22:00,12.94,V,11.5,15.0,True
+151,2c8357b6898f4bc4a4caf712dd2332f2,41O 03000,Teton River above Springhill,Stage,Oct-28 18:00,3.6188541666666665,ft,3.5,4.0,True
+152,496aab34bacf49a49d246fb90e87b8f2,41O 03000,Teton River above Springhill,Stage,Oct-28 22:15,3.61,ft,3.5,4.0,True
+153,b35e861cb30b48518990a2306d0f3f0b,41O 03000,Teton River above Springhill,Stage,Oct-28 22:15,3.61,ft,3.5,4.0,True
+154,2086a798e1684d41984858b1d2d83ec9,41O 03000,Teton River above Springhill,Voltage,Oct-28 22:00,12.472,V,11.5,15.0,True
+155,45b57c171de94f68ad67685345c38f6a,41O 03000,Teton River above Springhill,Water Temp,Oct-28 18:00,10.0334375,degC,-60.0,100.0,True
+156,ac605eb825b04ed7959e743efe3282c0,41O 03000,Teton River above Springhill,Water Temp,Oct-28 22:15,10.09,degC,-60.0,100.0,True
+157,3e47b9e7c5cf4f919678657d74bbd7d5,41O 04850,"Deep Creek near Choteau, MT",Stage,Oct-28 22:15,3.03,ft,3.0,4.0,True
+158,e860647c6ece41c08895b1a7ddd20da6,41O 04850,"Deep Creek near Choteau, MT",Stage,Oct-28 22:15,3.03,ft,3.0,4.0,True
+159,e1cac42eb2834a4e9afb47552dc71522,41O 04850,"Deep Creek near Choteau, MT",Voltage,Oct-28 22:00,12.706,V,11.5,15.0,True
+160,80c9484f033249e7a4b71e883f40071f,41O 04850,"Deep Creek near Choteau, MT",Water Temp,0,0.0,degC,-60.0,100.0,True
+161,152b38a05081471da3bd8c5acd05cb1d,41O 05000,Teton River above Hwy 221 bridge,Stage,Oct-28 22:00,1.86,ft,1.8,2.5,True
+162,bbf4c95f97aa4814a716081fb38f2da5,41O 05000,Teton River above Hwy 221 bridge,Stage,Oct-28 22:00,1.86,ft,1.8,2.5,True
+163,ebaf10a0d0ec47bd936d72f00f5aae4e,41O 05000,Teton River above Hwy 221 bridge,Voltage,Oct-28 22:00,12.706,V,11.5,15.0,True
+164,b57c9ac181854132aaf125fd003e9fae,41O 07900,"Teton River nr Dutton, MT",Stage,Oct-28 21:45,1.75,ft,1.5,2.0,True
+165,b76fb1f96df245628c1af5c02924f178,41O 07900,"Teton River nr Dutton, MT",Voltage,Oct-28 21:00,12.472,V,11.5,15.0,True
+166,96058ffb6bb14415909e4f89f023339f,41O 07900,"Teton River nr Dutton, MT",Stage,Oct-28 21:45,1.75,ft,1.5,2.0,True
+167,40c51d944904414a9841e4d2d43b4323,41O 09000,Teton River below Buck Bridge,Stage,Oct-28 18:00,2.9871875,ft,2.7,4.4,True
+168,6a21e02a368b437d8b00da72d6cdc847,41O 09000,Teton River below Buck Bridge,Stage,Oct-28 22:15,3.0,ft,2.7,4.4,True
+169,6c31f4096dbf4b0c9c11bc09cad2783f,41O 09000,Teton River below Buck Bridge,Stage,Oct-28 22:15,3.0,ft,2.7,4.4,True
+170,d18d4a599cab438a837a9f13650274a3,41O 09000,Teton River below Buck Bridge,Voltage,Oct-28 22:00,12.472,V,11.5,15.0,True
+171,0535ac550b9142c4a3ecf1157041a5b4,41Q 06000,"Belt Creek nr Belt, MT",Stage,Oct-28 21:30,1.76,ft,1.6,4.2,True
+172,1986982d8548442ea727999269d8229e,41Q 06000,"Belt Creek nr Belt, MT",Voltage,Oct-28 21:00,12.472,V,11.5,15.0,True
+173,c78c83cccc6b4cda8b8ad952ec0a3f23,41Q 06000,"Belt Creek nr Belt, MT",Stage,Oct-28 21:30,1.76,ft,1.6,4.2,True
+174,9be97f170f44470c8845080568f3a25a,41Q 08000,"Highwood Creek nr Highwood, MT",Stage,Oct-28 21:30,2.83,ft,3.2,4.0,True
+175,d51352a0b8d5475aa1eb22e12791dce2,41Q 08000,"Highwood Creek nr Highwood, MT",Voltage,Oct-28 21:00,12.706,V,11.5,15.0,True
+176,516d7b31420b4eda8067a22c968578c9,41Q 08000,"Highwood Creek nr Highwood, MT",Stage,Oct-28 21:30,2.83,ft,3.2,4.0,True
+177,1a9a2ad26fc14400b7a4be264f249709,41S 08900,Warm Springs Creek @ Sandrock Road,Stage,Oct-28 18:00,2.0298958333333332,ft,0.01,12.0,True
+178,1be1eed23a0c4dd099521eb4c244ec10,41S 08900,Warm Springs Creek @ Sandrock Road,Stage,Oct-28 22:15,2.03,ft,0.01,12.0,True
+179,e45cf8b39e5540c7a75ecbd5bcd9ca8b,41S 08900,Warm Springs Creek @ Sandrock Road,Stage,Oct-28 22:15,2.03,ft,0.01,12.0,True
+180,4ee29e0fe14a4c2a961a7297d79832bb,41S 08900,Warm Springs Creek @ Sandrock Road,Voltage,Oct-28 22:00,12.706,V,11.5,15.0,True
+181,7413dcb55fa041ec8eb79073ceafa6e2,41S 08900,Warm Springs Creek @ Sandrock Road,Water Temp,Oct-28 18:00,10.858229166666666,degC,-60.0,100.0,True
+182,7ef3867a1e424712a04fdfa2718c4d75,41S 08900,Warm Springs Creek @ Sandrock Road,Water Temp,Oct-28 22:15,10.96,degC,-60.0,100.0,True
+183,6d58000e976f49ec9f972b3ddbe1505f,42C 08190,"Pumpkin Creek nr Miles City, MT",Stage,Oct-28 21:45,2.73,ft,3.3,3.9,True
+184,91a78673709148398cf83a7246d68dc8,42C 08190,"Pumpkin Creek nr Miles City, MT",Voltage,Oct-28 21:00,12.238,V,11.5,15.0,True
+185,66b21e4cf4114ef3912855056c3a79bd,42C 08190,"Pumpkin Creek nr Miles City, MT",Stage,Oct-28 21:45,2.73,ft,3.3,3.9,True
+186,857c0134f04c46df9a13454bc759042e,42M 273796,Pust Well nr Midway,Battery Voltage Under Load,Oct-28 22:00,12.472,V,11.5,15.0,True
+187,9ff6ed554dcf4a70ad4cabdbf8cacc06,42M 273796,Pust Well nr Midway,Water Level,Oct-28 22:00,37.16,ft,34.0,39.0,True
+188,f1dc47aba92a42689628bf852c6ea0d2,42M 273796,Pust Well nr Midway,Water Temp,Oct-28 22:00,4.96,degC,-60.0,100.0,True
+189,2e5b7973bf6f4377b7fff60b647fe2ab,43B 04000,Park Branch Canal below headgate,Stage,Oct-28 22:30,0.63,ft,0.01,12.0,True
+190,1db4c0249a5e4ab4bb74ee0c39f8f33a,43B 04000,Park Branch Canal below headgate,Voltage,Oct-28 22:00,12.472,V,11.5,15.0,True
+191,481919b60e69408487dd8943bb270103,43B 04000,Park Branch Canal below headgate,Water Temp,Oct-28 22:30,3.34,degC,-60.0,100.0,True
+192,a4dd3310c2304d589a744560959ad155,43B 04000,Park Branch Canal below headgate,Stage,Oct-28 22:30,0.63,ft,0.01,12.0,True
+193,924c2134db07408e9b64ccbd55f99011,43B 05000,Paradise Canal below Yellowstone siphon,Stage,Oct-28 18:00,0.716764705882353,ft,0.01,12.0,True
+194,92e95590e3944999b70d30f0d95a3504,43B 05000,Paradise Canal below Yellowstone siphon,Stage,Oct-28 22:15,0.71,ft,0.01,12.0,True
+195,ea08a2f30c7e4db2bd965a2b615df150,43B 05000,Paradise Canal below Yellowstone siphon,Stage,Oct-28 22:15,0.71,ft,0.01,12.0,True
+196,028c97ba24694f919da3a436155b4b97,43B 05990,"Mill Creek near Emigrant, MT",Stage,Oct-28 22:15,1.75,ft,0.01,12.0,True
+197,5140a6f08146470683859888a3f955ed,43B 05990,"Mill Creek near Emigrant, MT",Stage,Oct-28 22:15,1.75,ft,0.01,12.0,True
+198,6e5b948b9ad64ee3a4ed4981afb06341,43B 05990,"Mill Creek near Emigrant, MT",Stage,Oct-28 18:00,1.7523529411764707,ft,0.01,12.0,True
+199,0cb438f1651547d9a43e1b43d2c9de43,43B 05990,"Mill Creek near Emigrant, MT",Voltage,Oct-28 22:00,12.706,V,11.5,15.0,True
+200,ae862f61a7fb4a96bcd81574a8ee6f10,43B 05990,"Mill Creek near Emigrant, MT",Water Level,Oct-28 22:15,4838.84,ft,2000.0,6000.0,True
+201,9b6e80a6bf4b45a0b57717e42d2d5d5f,43B 05990,"Mill Creek near Emigrant, MT",Water Temp,Oct-28 18:00,1.6364705882352941,degC,-60.0,100.0,True
+202,ed1db32077fa4c39b89c4ad70a10c462,43B 05990,"Mill Creek near Emigrant, MT",Water Temp,Oct-28 22:15,1.49,degC,-60.0,100.0,True
+203,052305ec475b4eedb26e6ac820ba237d,43B 10000,Livingston Ditch below headgate,Stage,Oct-28 22:30,1.37,ft,0.01,12.0,True
+204,57912e936ba4404f87865eaa0b6a10ed,43B 10000,Livingston Ditch below headgate,Stage,Oct-28 18:00,1.37,ft,0.01,12.0,True
+205,faa14502d4024ff0a5697682c4703269,43B 10000,Livingston Ditch below headgate,Stage,Oct-28 22:30,1.09,ft,0.01,12.0,True
+206,d40ebd2fe4024bb78a318ef3243dace9,43BJ 03800,Boudler River Below Natural Bridge,Stage,Oct-28 21:45,3.78,ft,1.0,12.0,True
+207,95faafabe11a4e77864635f7a2ba8bf1,43BJ 03800,Boudler River Below Natural Bridge,Voltage,Oct-28 21:00,12.238,V,11.5,15.0,True
+208,348702fe8e444d308de5d6f4b5ff4562,43BJ 03800,Boudler River Below Natural Bridge,Water Temp,Oct-28 21:45,2.6,degC,0.0,30.0,True
+209,11e0dd05e36e4246ac40faa1ee3b937f,43BV 02000,Sweet Grass Creek at Tronrud Bridge,Stage,Oct-28 21:00,1.19,ft,0.01,12.0,True
+210,64ac6a51d8f949059c31c5ebbcf9fa9b,43BV 02000,Sweet Grass Creek at Tronrud Bridge,Stage,Oct-28 21:00,1.19,ft,0.01,12.0,True
+211,9efad8b621df47d5873d0ccd7827e9ad,43BV 02000,Sweet Grass Creek at Tronrud Bridge,Stage,Oct-28 18:00,1.1895833333333334,ft,0.01,12.0,True
+212,eb7d49ae2a4f4d318d7751b3c4e49040,43BV 02000,Sweet Grass Creek at Tronrud Bridge,Voltage,Oct-28 21:00,12.238,V,11.5,15.0,True
+213,32f90c11ccc24f0d815296eb5cf8e3e5,43BV 02000,Sweet Grass Creek at Tronrud Bridge,Water Temp,Oct-28 21:00,3.1,degC,-60.0,100.0,True
+214,8c3a929f073f4e54843c023481ba0935,43BV 02000,Sweet Grass Creek at Tronrud Bridge,Water Temp,Oct-28 18:00,2.9305729166666667,degC,-60.0,100.0,True
+215,10a4e043e99e405ab440c70ee35762b2,43BV 09000,Sweet Grass Creek near Big Timber,Stage,Oct-28 21:00,4.01,ft,0.01,12.0,True
+216,5ddcc463d3c14e989af50613388a40c5,43BV 09000,Sweet Grass Creek near Big Timber,Voltage,Oct-28 21:00,12.472,V,11.5,15.0,True
+217,a2422791570c4853bc0d2f12ca94c391,43BV 09000,Sweet Grass Creek near Big Timber,Water Temp,Oct-28 21:00,2.82,degC,-60.0,100.0,True
+218,49b5636d6c414c85af862cbc56e1e46b,43BV 09000,Sweet Grass Creek near Big Timber,Stage,Oct-28 21:00,4.01,ft,0.01,12.0,True
+219,c95153133bc845c19894bde74ddef85c,43C 04600,"East Rosebud Cr nr Roscoe, MT",Stage,Oct-28 21:30,4.06,ft,0.01,12.0,True
+220,8f480cc105fc4959895954d886f6fc83,43C 04600,"East Rosebud Cr nr Roscoe, MT",Voltage,Oct-28 21:00,12.472,V,11.5,15.0,True
+221,87e204927e4a4bf7854121829b73bfcf,43C 04600,"East Rosebud Cr nr Roscoe, MT",Stage,Oct-28 21:30,4.06,ft,0.01,12.0,True
+222,181011f1c66545d896ca6463a70b16af,43D 01900,"West Fork Rock Ck nr Red Lodge, MT",Stage,Oct-28 22:15,0.77,ft,0.01,12.0,True
+223,72acb06770e944e5aee70c4ec15db941,43D 01900,"West Fork Rock Ck nr Red Lodge, MT",Stage,Oct-28 18:00,0.7552083333333334,ft,0.01,12.0,True
+224,e94d4e7b3700492a9270cbadae9e9817,43D 01900,"West Fork Rock Ck nr Red Lodge, MT",Stage,Oct-28 22:15,0.77,ft,0.01,12.0,True
+225,9fec41892e01460197148530ed12f0d4,43D 01900,"West Fork Rock Ck nr Red Lodge, MT",Voltage,Oct-28 22:00,12.472,V,11.5,15.0,True
+226,51027f09d91540c6aba458ca94db4e24,43D 01900,"West Fork Rock Ck nr Red Lodge, MT",Water Temp,Oct-28 18:00,5.601458333333333,degC,-60.0,100.0,True
+227,e5189e165733458c9fe65ec79bac8988,43D 01900,"West Fork Rock Ck nr Red Lodge, MT",Water Temp,Oct-28 22:15,5.49,degC,-60.0,100.0,True
+228,2316cd649139480c9ddd30f4670ed395,43E 09000,Pryor Cr at Huntley,Stage,Oct-28 22:00,3.82,ft,0.01,12.0,True
+229,71b8541ed8fb4f7e8a8ea8d5e8be1f50,43E 09000,Pryor Cr at Huntley,Voltage,Oct-28 22:00,12.472,V,11.5,15.0,True
+230,d3d68614e16e4047b77b62deaff45021,43E 09000,Pryor Cr at Huntley,Stage,Oct-28 22:00,3.82,ft,0.01,12.0,True
+231,39d1f021d78148618da6e540e8930134,43Q 05900,Canyon Creek @ ZooMontana,Stage,Oct-28 22:00,2.53,ft,0.01,12.0,True
+232,6fe27b1fc1784de39fc978ee0adc849b,43Q 05900,Canyon Creek @ ZooMontana,Stage,Oct-28 22:00,2.53,ft,0.01,12.0,True
+233,7dc38718740d4213920f5be684981377,43Q 05900,Canyon Creek @ ZooMontana,Stage,Oct-28 18:00,2.53015625,ft,0.01,12.0,True
+234,1de017bfd922470e94c0e0d791e7c2fc,43Q 05900,Canyon Creek @ ZooMontana,Voltage,Oct-28 22:00,12.472,V,11.5,15.0,True
+235,5a841c1916234ae691cea1b2be111867,43Q 05900,Canyon Creek @ ZooMontana,Water Temp,Oct-28 22:00,5.91,degC,-60.0,100.0,True
+236,d4e34684c10c425e8ea44475efb7dcfa,43Q 05900,Canyon Creek @ ZooMontana,Water Temp,Oct-28 18:00,-18.270833333333332,degC,-60.0,100.0,True
+237,44760338ade1441faeb7c7cd2e2f5db8,76E 05000,"Rock Creek nr Philipsburg, MT",Stage,Oct-28 21:45,2.53,ft,2.4,3.7,True
+238,b022e83a12f6433eae0608c284741d76,76E 05000,"Rock Creek nr Philipsburg, MT",Water Temp,Oct-28 21:45,2.03,degC,1.0,30.0,True
+239,28cae22c13bb4f27b036172577dd3f07,76E 05000,"Rock Creek nr Philipsburg, MT",Voltage,Oct-28 21:00,12.706,V,11.5,15.0,True
+240,874e1029283742ad97ca0bfde0087c7a,76F 02900,"Nevada Cr nr Helmville, MT",Stage,Oct-28 21:45,3.78,ft,0.01,12.0,True
+241,46a4a80157fa45caa1fa49cee03b1338,76F 02900,"Nevada Cr nr Helmville, MT",Voltage,Oct-28 21:00,12.472,V,11.5,15.0,True
+242,f1f3efd9fd8249618e0e4f24db557e22,76F 02900,"Nevada Cr nr Helmville, MT",Water Temp,Oct-28 21:45,4.55,degC,-60.0,100.0,True
+243,13e88ab0c91540b188714edbe619f7b2,76F 02900,"Nevada Cr nr Helmville, MT",Stage,Oct-28 21:45,3.78,ft,0.01,12.0,True
+244,73f2a24c154b4b9c82d8690ce5818c8c,76F 03500,North Fork Blackfoot at Ryan Bridge,Stage,Oct-28 18:00,0.5124479166666667,ft,0.2,5.25,True
+245,8d352a78f88042a889e0b7b31ee70335,76F 03500,North Fork Blackfoot at Ryan Bridge,Stage,Oct-28 22:15,0.51,ft,0.2,5.25,True
+246,c037704d5cf04b4f9efec14e9951e615,76F 03500,North Fork Blackfoot at Ryan Bridge,Stage,Oct-28 22:15,0.51,ft,0.2,5.25,True
+247,697e2cf4eafe47ebb1feb6d2c40e2d8b,76F 03500,North Fork Blackfoot at Ryan Bridge,Voltage,Oct-28 22:00,12.472,V,11.5,15.0,True
+248,19fd89061f5e491584c57c455828da52,76F 03500,North Fork Blackfoot at Ryan Bridge,Water Temp,Oct-28 18:00,0.62,degC,0.0,30.0,True
+249,46562d691bdc4ef683c74057fe6cef2c,76F 03500,North Fork Blackfoot at Ryan Bridge,Water Temp,Oct-28 18:00,2.0836979166666665,degC,0.0,30.0,True
+250,a725c3f195964d81ae4b0e6bb834efed,76F 03500,North Fork Blackfoot at Ryan Bridge,Water Temp,Oct-28 22:15,-0.1,degC,0.0,30.0,True
+251,f7d03a8e784e4b1abc4b689032a8398e,76F 04900,"Monture Creek nr Ovando, MT",Stage,Oct-28 21:30,3.48,ft,3.4,6.3,True
+252,84744cc3631145eba2a966ecce59f185,76F 04900,"Monture Creek nr Ovando, MT",Voltage,Oct-28 21:00,12.706,V,11.5,15.0,True
+253,0f9c787a60604c9486fbcc7d2cd60937,76F 04900,"Monture Creek nr Ovando, MT",Water Temp,Oct-28 21:30,3.78,degC,0.0,30.0,True
+254,be78127328e84deda88143b7245e7b17,76F 04900,"Monture Creek nr Ovando, MT",Stage,Oct-28 21:30,3.48,ft,3.4,6.3,True
+255,517b2bddd7b54974948d4c7f5ea344e0,76F 05200,"Clearwater River nr Clearwater Junction, MT",Stage,Oct-28 22:30,1.34,ft,1.05,4.75,True
+256,7c15d3957f2844519b87e12f287b5432,76F 05200,"Clearwater River nr Clearwater Junction, MT",Stage,Oct-28 18:00,1.3431770833333334,ft,1.05,4.75,True
+257,a3a4bc9c168548b0afa12a58a251ac47,76F 05200,"Clearwater River nr Clearwater Junction, MT",Stage,Oct-28 22:30,1.34,ft,1.05,4.75,True
+258,1a3eb18d61914cc29bde2fb07c8b63cf,76F 05200,"Clearwater River nr Clearwater Junction, MT",Voltage,Oct-28 22:00,12.238,V,11.5,15.0,True
+259,18ca4a0778ad4c54b0adb1ebe57dde16,76F 05200,"Clearwater River nr Clearwater Junction, MT",Water Temp,Oct-28 22:30,6.99,degC,0.0,30.0,True
+260,de1c3d6f89944f00b8d79aa530d8fd41,76F 05200,"Clearwater River nr Clearwater Junction, MT",Water Temp,Oct-28 18:00,7.313072916666667,degC,0.0,30.0,True
+261,67a0064b62b447e4967a878396db81d0,76F 05300,"Blackfoot River nr Clearwater Junction, MT",Stage,Oct-28 22:30,0.62,ft,0.5,4.25,True
+262,eaca59480d97454383056543b987e8df,76F 05300,"Blackfoot River nr Clearwater Junction, MT",Stage,Oct-28 18:00,0.62578125,ft,0.5,4.25,True
+263,fd6b8a555e5c40478be196c0c190c710,76F 05300,"Blackfoot River nr Clearwater Junction, MT",Stage,Oct-28 22:30,0.62,ft,0.5,4.25,True
+264,e7eef3f9488347b298a4d9ae70e781e7,76F 05300,"Blackfoot River nr Clearwater Junction, MT",Voltage,Oct-28 22:00,12.472,V,11.5,15.0,True
+265,7e6c01dd786442cf828f9211521072dd,76F 05300,"Blackfoot River nr Clearwater Junction, MT",Water Temp,Oct-28 22:30,3.96,degC,0.0,30.0,True
+266,e27a4ef1588840178508cf1e76d9d643,76F 05300,"Blackfoot River nr Clearwater Junction, MT",Water Temp,Oct-28 18:00,4.004479166666667,degC,0.0,30.0,True
+267,acb4e07d689d45a59b727e9cbc3ad9b3,76G 03100,"Racetrack Creek nr Racetrack, MT",Stage,Oct-28 21:30,3.58,ft,3.5,5.0,True
+268,31119bbde6cc46279fb603a3b82b0746,76G 03100,"Racetrack Creek nr Racetrack, MT",Voltage,Oct-28 21:15,10.0,V,11.5,15.0,True
+269,64fedaeba0bf4ca4993b09a127bfb1eb,76G 03100,"Racetrack Creek nr Racetrack, MT",Water Temp,Oct-28 21:30,2.52,degC,1.0,30.0,True
+270,2acedb77bd974dcfbd06653be1759e1e,76G 03100,"Racetrack Creek nr Racetrack, MT",Stage,Oct-28 21:30,3.58,ft,3.5,5.0,True
+271,300a3136f4554c8380c06bd383c5e5d4,76G 04000,"Cottonwood Cr at Deer Lodge, MT",Stage,Oct-28 21:45,0.91,ft,0.05,12.0,True
+272,63d9818ac1eb4462b44cb96398306352,76G 04000,"Cottonwood Cr at Deer Lodge, MT",Voltage,Oct-28 21:00,12.706,V,11.5,15.0,True
+273,2b7abbd1c1534d43af0ce05871a422c2,76G 04000,"Cottonwood Cr at Deer Lodge, MT",Water Temp,Oct-28 21:45,4.13,degC,1.0,30.0,True
+274,bec32a9054484095985be18ba4198f4b,76G 04000,"Cottonwood Cr at Deer Lodge, MT",Stage,Oct-28 21:45,0.91,ft,0.05,12.0,True
+275,b10c4361ca79416b87edf36d0bf23344,76G 05850,Gold Cr nr Gold Cr,Stage,Oct-28 18:00,0.5,ft,0.01,12.0,True
+276,cc6e515f8e9f4ecc8bc34a137cff6257,76G 05850,Gold Cr nr Gold Cr,Water Temp,Oct-28 18:00,5.438571428571429,degC,-60.0,100.0,True
+277,a0b88eb8b36d4403889aafc54e06fd4f,76G 05850,Gold Cr nr Gold Cr,Water Temp,Oct-28 21:30,5.2,degC,-60.0,100.0,True
+278,34b6c9d736924230b60bfc77f803146f,76G 05850,Gold Cr nr Gold Cr,Stage,Oct-28 21:30,0.5,ft,0.01,12.0,True
+279,87979d9180854c47a9b962b0cb336532,76G 05850,Gold Cr nr Gold Cr,Voltage,Oct-28 21:00,12.472,V,11.5,15.0,True
+280,dc7a181f1e3d46368cb6e05ca1ea3b75,76GJ 07100,North Fork Flint Creek nr Mouth,Stage,Oct-28 21:00,0.59,ft,0.6,1.3,True
+281,047564edd3594f93877b05afc657212e,76GJ 07100,North Fork Flint Creek nr Mouth,Stage,Oct-28 21:00,0.59,ft,0.6,1.3,True
+282,2f4719da98d14a09b8758af58ec968e5,76GJ 07100,North Fork Flint Creek nr Mouth,Water Temp,Oct-28 21:00,-0.12,degC,0.0,30.0,True
+283,6f60a27d4d6543aaafd4cb53214427d4,76GJ 07100,North Fork Flint Creek nr Mouth,Voltage,Oct-28 21:00,12.472,V,11.5,15.0,True
+284,c4f1becb2afb419cbf4d822dfe6c3a30,76H 01100,Lost Horse Creek abv Lost Horse Ditch,Stage,Oct-28 21:45,0.77,ft,0.2,4.2,True
+285,5d15b530630e4c86b9282ba8e0fa4aba,76H 01100,Lost Horse Creek abv Lost Horse Ditch,Voltage,Oct-28 21:00,12.706,V,11.5,15.0,True
+286,7ed352d2c29b4d069be15c3179187576,76H 01100,Lost Horse Creek abv Lost Horse Ditch,Water Temp,Oct-28 21:45,2.71,degC,0.0,30.0,True
+287,44e96760d76b4cf7aa79372eb52042c3,76H 01100,Lost Horse Creek abv Lost Horse Ditch,Stage,Oct-28 21:45,0.77,ft,0.2,4.2,True
+288,4c61ccf750c44876be621ee68236c708,76HA 06100,"Burnt Fork Creek nr Stevensville, MT",Stage,Oct-28 21:30,2.72,ft,2.62,3.7,True
+289,110c85ec3b344ae7b3fc5377586308a7,76HA 06100,"Burnt Fork Creek nr Stevensville, MT",Voltage,Oct-28 21:00,12.706,V,11.5,15.0,True
+290,1497a9a96d244b5093fb8df8b78c935f,76HA 06100,"Burnt Fork Creek nr Stevensville, MT",Stage,Oct-28 21:30,2.72,ft,2.62,3.7,True
+291,3eb10e00101649b89d9d872b20c83fcf,76HB 09500,Lolo Creek abv Sleeman Creek,Stage,Oct-28 22:15,4.19,ft,3.9,6.4,True
+292,b4b884b83c544845a9acc791a104aa47,76HB 09500,Lolo Creek abv Sleeman Creek,Stage,Oct-28 22:15,3306.2290000000003,ft,3.9,6.4,False
+293,d4cb07c61f08492c934758a30b4bf9d3,76HB 09500,Lolo Creek abv Sleeman Creek,Stage,Oct-28 22:15,4.19,ft,3.9,6.4,True
+294,f95c5546962e43c1aa6fdd2de7bf9311,76HB 09500,Lolo Creek abv Sleeman Creek,Stage,Oct-28 18:00,4.207604166666667,ft,3.9,12.0,True
+295,1c128f091b8d466c8d8011bfe37db796,76HB 09500,Lolo Creek abv Sleeman Creek,Voltage,Oct-28 22:00,12.472,V,11.5,15.0,True
+296,f3f8ccdb753943f8aa07ed8d30704a2f,76HB 09500,Lolo Creek abv Sleeman Creek,Water Temp,Oct-28 22:15,3.56,degC,0.0,30.0,True
+297,f2b4a2832815484cb8ed68e891dd2be0,76HB 09600,Lolo Creek below Highway 93,Battery Voltage Under Load,Oct-28 22:00,12.238,V,11.5,15.0,True
+298,7529da10706f4ac08c23ed859f049ad4,76HB 09600,Lolo Creek below Highway 93,Sp Cond,Oct-28 22:00,107.0,uS/cm,10.0,500.0,True
+299,69e924f05aba43878353243b8965a2ec,76HB 09600,Lolo Creek below Highway 93,Stage,Oct-28 22:00,1.69,ft,1.0,4.25,True
+300,7b1741b80c2740ed8e4b1a7330fa4c64,76HB 09600,Lolo Creek below Highway 93,Stage,Oct-28 18:00,1.7110416666666666,ft,1.0,4.25,True
+301,ab2a7a4d36e44db181b4336b015d867d,76HB 09600,Lolo Creek below Highway 93,Stage,Oct-28 22:00,3175.549,ft,1.0,4.25,False
+302,ee34bffd9d5a41858261dd2644d242ee,76HB 09600,Lolo Creek below Highway 93,Stage,Oct-28 22:00,1.69,ft,1.0,4.25,True
+303,00e18ea013a94f4dac8a2700112abc31,76HB 09600,Lolo Creek below Highway 93,Water Level,Oct-28 22:00,3171.138,ft,3165.0,3173.0,True
+304,3183056ba8894eee93659d30a273c93e,76HB 09600,Lolo Creek below Highway 93,Water Level,Oct-28 22:00,3171.138,ft,3165.0,3173.0,True
+305,f1f1c64b96f54b47ab81a7c744cbafa7,76HB 09600,Lolo Creek below Highway 93,Water Level,Oct-28 22:00,13.17,ft,0.0,16.0,True
+306,148f0fb35e1a4dd3a4da8a313a0d93b0,76HB 09600,Lolo Creek below Highway 93,Water Temp,Oct-28 18:00,4.15578125,degC,0.0,30.0,True
+307,5074811df5f740b0bd19bb2abe1a4d3f,76HB 09600,Lolo Creek below Highway 93,Water Temp,Oct-28 22:00,10.76,degC,0.0,30.0,True
+308,ec35f8fd979d4ae29a85c6ce3cf65586,76HB 09600,Lolo Creek below Highway 93,Water Temp,Oct-28 22:00,4.53,degC,0.0,30.0,True
+309,bb44ef8e151f437fb81fbdb98cd381a9,76HE 09000,"East Fork Bitterroot River nr Connor, MT",Stage,Oct-28 21:00,2.72,ft,2.5,4.6,True
+310,337dd1aba0ac42c7b3ff17ccc2c05c31,76HE 09000,"East Fork Bitterroot River nr Connor, MT",Water Temp,Oct-28 21:00,3.8,degC,0.0,30.0,True
+311,800495bae4c24022aefbd5dbc61a70d8,76HE 09000,"East Fork Bitterroot River nr Connor, MT",Stage,Oct-28 21:00,2.72,ft,2.5,4.6,True
+312,84cdeac214f44994a62694c2b8820084,76HE 09000,"East Fork Bitterroot River nr Connor, MT",Voltage,Oct-28 21:00,12.472,V,11.5,15.0,True
+313,0aab906058a3416fb030b5c828b7d6b5,76LJ 07500,Mill Creek below Creston Hatchery,Stage,Oct-28 22:15,1.05,ft,0.01,12.0,True
+314,618dc19d7ff74c879e6c6e3e1020f8f0,76LJ 07500,Mill Creek below Creston Hatchery,Stage,Oct-28 22:15,1.05,ft,0.01,12.0,True
+315,945093c2caaf42b58b1f79fc42e2582b,76LJ 07500,Mill Creek below Creston Hatchery,Stage,Oct-28 18:00,1.0475,ft,0.01,12.0,True
+316,133d15c298194b9a9d7c67e404721a8d,76LJ 07500,Mill Creek below Creston Hatchery,Voltage,Oct-28 22:00,12.706,V,11.5,15.0,True
+317,094f042fb0b04b91837f8cba9b938595,76LJ 07500,Mill Creek below Creston Hatchery,Water Temp,Oct-28 22:15,7.36,degC,-60.0,100.0,True
+318,fd882b6475004641957d602842553b79,76LJ 07500,Mill Creek below Creston Hatchery,Water Temp,Oct-28 18:00,7.441875,degC,-60.0,100.0,True
+319,60c6c2f91fff4cfdae78b20ca1371773,76LJ 09900,Ashley Creek at Kalispell WTP,Stage,Oct-28 22:00,1.15,ft,0.01,12.0,True
+320,6ed8765327354227ba7ef96aee37660c,76LJ 09900,Ashley Creek at Kalispell WTP,Stage,Oct-28 22:00,1.15,ft,0.01,12.0,True
+321,bc86eb45d3814d92997bc88a40b7afb9,76LJ 09900,Ashley Creek at Kalispell WTP,Stage,Oct-28 18:00,1.1475520833333333,ft,0.01,12.0,True
+322,53a080e0e4c84679ab4445c0d9060302,76LJ 09900,Ashley Creek at Kalispell WTP,Voltage,Oct-28 22:00,12.706,V,11.5,15.0,True
+323,32be18635be945bba88bbadc395be56a,76LJ 09900,Ashley Creek at Kalispell WTP,Water Temp,Oct-28 18:00,10.356979166666667,degC,-60.0,100.0,True
+324,37897aa5ba584477a8e89d0e92380d46,76LJ 09900,Ashley Creek at Kalispell WTP,Water Temp,Oct-28 22:00,10.22,degC,-60.0,100.0,True
+325,5b4234cb0a2446efb83040a9aaae71fc,76M 01100,"Rattlesnake Cr nr Missoula, MT",Stage,Oct-28 22:15,2.29,ft,2.1,4.75,True
+326,6893fc7bc154402a9ab23dae1745f692,76M 01100,"Rattlesnake Cr nr Missoula, MT",Stage,Oct-28 18:00,-6.8328645833333335,ft,2.1,4.75,True
+327,a7082930386e42c486621759163c228d,76M 01100,"Rattlesnake Cr nr Missoula, MT",Stage,Oct-28 22:15,2.29,ft,2.1,4.75,True
+328,aef61378f61d4dbbbcfe15c8ec24008f,76M 01100,"Rattlesnake Cr nr Missoula, MT",Voltage,Oct-28 22:00,12.238,V,11.5,15.0,True
+329,15dacbfeda8a4d779f586e5a3fc7f59c,76M 01100,"Rattlesnake Cr nr Missoula, MT",Water Temp,Oct-28 22:15,4.46,degC,0.0,30.0,True
+330,30dbf0e416f74798abcc4f4df793bab6,76M 01100,"Rattlesnake Cr nr Missoula, MT",Water Temp,Oct-28 18:00,-4.764166666666667,degC,0.0,30.0,True
+331,99fc683509d04f47aa0138ba4d9efb99,SR 004,Duck Creek above Simms Ashuelot Rd Bridge,Battery Voltage Under Load,Oct-28 21:00,12.472,V,11.5,15.0,True
+332,404cd6b292194b60813229260b50f9c6,SR 004,Duck Creek above Simms Ashuelot Rd Bridge,Stage,Oct-28 21:45,1.17,ft,0.8,1.8,True
+333,4c56d50f31454372ae75688acab59400,SR 004,Duck Creek above Simms Ashuelot Rd Bridge,Stage,Oct-28 21:45,1.17,ft,0.8,1.8,True
+334,95d92e535bfb4995b48608d3480c8019,SR 004,Duck Creek above Simms Ashuelot Rd Bridge,Stage,Oct-28 18:00,1.1547916666666667,ft,0.8,1.8,True

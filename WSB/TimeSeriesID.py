@@ -24,7 +24,7 @@ t_now_format = dt.datetime.now()
 t_now_format = t_now_format.strftime(f"%b %d, %Y")
 
 # Gets times series id's for everything transmitted during last day, when adding new site search by loc id # #
-location_id_list = ['43BJ 03800', '76E 05000']
+location_id_list = ['40B 07000', '41B 09000']
 
 df_columns = ['UniqueId', 'LocationIdentifier', 'SiteName', 'Parameter', 'Timestamp', 'Value', 'Unit', 'Publish']
 out_df = pd.DataFrame(columns=df_columns)

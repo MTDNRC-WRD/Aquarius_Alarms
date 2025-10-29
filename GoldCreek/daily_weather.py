@@ -383,7 +383,6 @@ with smtplib.SMTP('mail.mt.gov', 25) as server:
     server.ehlo()
     server.starttls()
     server.ehlo()
-
     server.send_message(msg)
 print("email sent")
 

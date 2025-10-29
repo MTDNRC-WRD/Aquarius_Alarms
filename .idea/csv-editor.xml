@@ -10,6 +10,34 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\GoldCreek\am_i_broken.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\GoldCreek\last_Q_alarm.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\GoldCreek\output_tsid.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Q_Alarm\q_list.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\WSB\StAGE_Alarms.csv">
           <value>
             <Attribute>
@@ -18,6 +46,13 @@
           </value>
         </entry>
         <entry key="\WSB\output_tsid.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\WSB\today_data.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

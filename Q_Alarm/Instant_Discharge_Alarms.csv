@@ -1,2 +1,5 @@
 ,UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Timestamp_min_1hr,Value_min_1hr,Timestamp_min_day,Value_min_day,Delta_Day,Unit,Alarm_Type,LowAlarm,HighAlarm,DeltaAlarm,Publish
-0,35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,Jul-16 22:30,0,Jul-16 21:45,0,Jul-15 22:45,0,0,ft^3/s,,0.05,50,3,True
+0,35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,50,3,True
+1,21041bb563b44788a78c95a72086d48c,40J 09100,"Beaver Cr blw Reservoir nr Havre, MT",Discharge,Oct-28 22:15,0,Oct-28 21:30,0,Oct-27 22:30,0,0,ft^3/s,,5.0,130,50,True
+2,f18e39e2ac5e4963a8267a71f799a5aa,41C 05000,Ruby River at Alder,Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+3,59c948db413146439674f1d56217d019,76GJ 07100,North Fork Flint Creek nr Mouth,Discharge,null,null,null,null,null,null,0,ft^3/s,,1.0,25,100,True

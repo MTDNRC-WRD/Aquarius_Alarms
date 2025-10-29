@@ -1,4 +1,4 @@
 @echo off
-"D:\ProgramData\Miniconda3\envs\aquarius\python.exe" "\\DNRHLN6386.state.mt.ads\Fileshare$\Aquarius_Alarms\AGOL_to_Aq\main.py"
+"D:\ProgramData\Miniconda3\envs\aquarius\python.exe" "\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\Aquarius_Alarms\AGOL_to_Aq\form_filer.py"
 Pause
 exit

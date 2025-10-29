@@ -41,7 +41,11 @@ def write_data_to_excel(cell_dict):
 def save_excel_to_folder(date, _id):  # Temp solution, saves Excel file to folder rather than pdf
     save_file = f"{_id}_{date}.xlsx"
     save_filepath = os.path.join(PDF_DIRECTORY, save_file)
-    shutil.copy(XLSX_TEMP, save_filepath)
+    if not os.path.exists(save_filepath):
+        shutil.copy(XLSX_TEMP, save_filepath)
+    else:
+        for i in range(1,10):
+            pass
 
 
 def excel_to_pdf(date, _id):

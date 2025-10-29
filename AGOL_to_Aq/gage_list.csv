@@ -12,6 +12,7 @@
 40A 9000,Careless Canal
 40A 10000,Barber Canal
 40A 14000,"Careless Cr nr Ryegate, MT"
+40B 07000,"Petrolia Reservoir nr Winnett, MT"
 40B 06000,Flatwillow Creek abv Petrolia Reservoir
 40G 10000,Sage Creek Nr Box Elder
 40I 10000,"Peoples Creek near Dodson, MT"
@@ -21,15 +22,19 @@
 40L 10050 013,Frenchman Creek @ Mouth
 41A 01000,Red Rock River abv Lima Reservoir
 41A 10000,Red Rock River abv Clark Canyon Res
+41B 09000,"Beaverhead River at Silverbow Lane nr Twin Bridges, MT"
+42A 10000,"Rosebud Cr nr Rosebud, MT"
 41C 05000,Ruby River at Alder
 41C 08000,Ruby River at Harrington Bridge
 41D 01000,"Big Hole River abv Jackson, MT"
 41D 02000,Big Hole River abv Spring Cr nr Jackson
 41D 05000,Big Hole River at Miner Cr nr Jackson
+41D 07150,NF Big Hole River at Battlefield
 41D 07700,Deep Creek nr Wise River
 41D 07900,Wise River nr mouth
 41D 08000,"Big Hole River near Wise River, MT"
 41E 10000,Boulder River Nr Cardwell
+41F 05000,"Blaine Spring Creek nr Varney, MT"
 41G 09000, Willow Cr nr Willow Cr
 41H 08900,East Gallatin Rvr nr Manhattan
 41H 08950,Sourdough Creek above City Intake
@@ -85,6 +90,7 @@
 76G 03100,Racetrack Creek nr Racetrack
 76G 04000,"Cottonwood Cr at Deer Lodge, MT"
 76G 05850,"Gold Creek near Gold Creek, MT"
+76GJ 07100,North Fork Flint Cr nr Mouth
 76H 01100,Lost Horse Creek abv Lost Horse Ditch
 76H 1200,West Fork of Bitterroot Abv Painted Rks
 76H 1500,Blue Joint Creek above Painted Rocks
