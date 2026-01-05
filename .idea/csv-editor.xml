@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\AGOL_to_Aq\uploaded_data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\GoldCreek\am_i_broken.csv">
           <value>
             <Attribute>
@@ -25,6 +32,20 @@
           </value>
         </entry>
         <entry key="\GoldCreek\output_tsid.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\GoldCreek\sensor_list.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\GoldCreek\today_data.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

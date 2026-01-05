@@ -1,37 +1,21 @@
 ,UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Unit,LowAlarm,HighAlarm,Publish
-0,7319bd5d024f46e1bc78eeee0bbbc2c4,39FJ 09000,"Little Beaver Cr nr Webster, MT",Stage,Oct-28 21:45,3.49,ft,3.5,4.6,True
-1,783218304ea54ce78e230786139b289b,39FJ 09000,"Little Beaver Cr nr Webster, MT",Stage,Oct-28 21:45,3.49,ft,3.5,4.6,True
-2,a514eec166d34d1d93077364ef00b58a,40G 10000,Sage Creek Nr Box Elder,Stage,Oct-28 21:30,1310.71,ft,3.0,4.0,True
-3,9a91d19701bb4c2eb63fcb7728f71538,40G 10000,Sage Creek Nr Box Elder,Stage,0,0.0,ft,3.0,4.0,True
-4,6b57426a2d3b435ca422a179aa707b58,40J 08900,"Beaver Creek abv Reservoir nr Havre, MT",Stage,Oct-28 22:15,0.34,ft,0.5,2.0,True
-5,7120e28e1ae4496f97b202fef11c2e5c,40J 08900,"Beaver Creek abv Reservoir nr Havre, MT",Stage,Oct-28 22:15,0.34,ft,0.5,2.0,True
-6,f580e8f2f5174f10aa257c58147f74e1,40J 08900,"Beaver Creek abv Reservoir nr Havre, MT",Stage,Oct-28 18:00,0.33447916666666666,ft,0.5,2.0,True
-7,0d834f335293408ab95e88dc61914a4c,40J 09100,"Beaver Cr blw Reservoir nr Havre, MT",Stage,Oct-28 18:00,0.09416666666666666,ft,0.1,3.5,True
-8,4ec5c85e8de04b018418a2e77b840604,40J 09100,"Beaver Cr blw Reservoir nr Havre, MT",Stage,Oct-28 22:15,0.09,ft,0.1,3.5,True
-9,7b253ddef5bf42c3b8edde3cc47ffaf2,40J 09100,"Beaver Cr blw Reservoir nr Havre, MT",Stage,Oct-28 22:15,0.09,ft,0.1,3.5,True
-10,3050f1452f884e43b10cc90131f4a3b2,41C 05000,Ruby River at Alder,Voltage,0,0.0,V,11.5,15.0,True
-11,b2c47ea2049d478a93495062287c3020,41C 05000,Ruby River at Alder,Stage,0,0.0,ft,0.8,4.1,True
-12,376f2745dfbe4ff39f5f1873b7310623,41C 05000,Ruby River at Alder,Stage,0,0.0,ft,0.8,4.1,True
-13,3bcd491d4bed46d280ef2b4600ae3578,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Water Temp,0,0.0,degC,-60.0,100.0,True
-14,3dc184509cfd40aabf77a7b7082c286e,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Water Temp,0,0.0,degC,-60.0,100.0,True
-15,38a790a6548d4fabaccc774ba38624a2,41J 02000,"Sheep Creek nr Adams Creek Road, MT",Stage,Oct-28 21:30,1.11,ft,1.25,1.83,True
-16,9870577bdeb0435488ebf76b43351482,41J 02000,"Sheep Creek nr Adams Creek Road, MT",Stage,Oct-28 21:30,1.11,ft,1.25,1.83,True
-17,bc8707aa56d54486bd4f89936c6d1063,41J 04900,"Moose Creek nr White Sulphur Springs, MT",Stage,Oct-28 21:30,1.14,ft,1.26,1.8,True
-18,edbb13fbcd444907a12f4ff01a6193ba,41J 04900,"Moose Creek nr White Sulphur Springs, MT",Stage,Oct-28 21:30,1.14,ft,1.26,1.8,True
-19,c976ffe229dc47cd8aa9b7982cd2c1a4,41K 05100,Elk Creek nr Haystack Butte,Stage,Oct-28 21:45,2.65,ft,3.25,3.5,True
-20,810e0d66595740f1bf3b67d8c2b5330e,41K 05100,Elk Creek nr Haystack Butte,Stage,Oct-28 21:45,2.65,ft,3.25,3.5,True
-21,18db27493efa42968383d06670e05abf,41J 06000,"Sheep Creek nr White Sulphur Springs, MT",Stage,Oct-28 21:30,0.53,ft,0.63,2.2,True
-22,b2c874ad5ceb4481b1dff46a7916d3c5,41J 06000,"Sheep Creek nr White Sulphur Springs, MT",Stage,Oct-28 21:30,0.53,ft,0.63,2.2,True
-23,8a9be4e1ff3149b4ba3ca405e20f044e,41O 02000,Teton River at Bynum Diversion nr Choteau MT,Stage,0,0.0,ft,0.01,2.0,True
-24,80c9484f033249e7a4b71e883f40071f,41O 04850,"Deep Creek near Choteau, MT",Water Temp,0,0.0,degC,-60.0,100.0,True
-25,9be97f170f44470c8845080568f3a25a,41Q 08000,"Highwood Creek nr Highwood, MT",Stage,Oct-28 21:30,2.83,ft,3.2,4.0,True
-26,516d7b31420b4eda8067a22c968578c9,41Q 08000,"Highwood Creek nr Highwood, MT",Stage,Oct-28 21:30,2.83,ft,3.2,4.0,True
-27,6d58000e976f49ec9f972b3ddbe1505f,42C 08190,"Pumpkin Creek nr Miles City, MT",Stage,Oct-28 21:45,2.73,ft,3.3,3.9,True
-28,66b21e4cf4114ef3912855056c3a79bd,42C 08190,"Pumpkin Creek nr Miles City, MT",Stage,Oct-28 21:45,2.73,ft,3.3,3.9,True
-29,a725c3f195964d81ae4b0e6bb834efed,76F 03500,North Fork Blackfoot at Ryan Bridge,Water Temp,Oct-28 22:15,-0.1,degC,0.0,30.0,True
-30,31119bbde6cc46279fb603a3b82b0746,76G 03100,"Racetrack Creek nr Racetrack, MT",Voltage,Oct-28 21:15,10.0,V,11.5,15.0,True
-31,dc7a181f1e3d46368cb6e05ca1ea3b75,76GJ 07100,North Fork Flint Creek nr Mouth,Stage,Oct-28 21:00,0.59,ft,0.6,1.3,True
-32,047564edd3594f93877b05afc657212e,76GJ 07100,North Fork Flint Creek nr Mouth,Stage,Oct-28 21:00,0.59,ft,0.6,1.3,True
-33,2f4719da98d14a09b8758af58ec968e5,76GJ 07100,North Fork Flint Creek nr Mouth,Water Temp,Oct-28 21:00,-0.12,degC,0.0,30.0,True
-34,6893fc7bc154402a9ab23dae1745f692,76M 01100,"Rattlesnake Cr nr Missoula, MT",Stage,Oct-28 18:00,-6.8328645833333335,ft,2.1,4.75,True
-35,30dbf0e416f74798abcc4f4df793bab6,76M 01100,"Rattlesnake Cr nr Missoula, MT",Water Temp,Oct-28 18:00,-4.764166666666667,degC,0.0,30.0,True
+0,3e17c8e23dbd48698fc884493af19f38,40I 10000,"Peoples Creek near Dodson, MT",Stage,0,0.0,ft,8.47,21.09,True
+1,46fb37a3b75d47319077bec21a036a09,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Voltage,0,0.0,V,11.5,15.0,True
+2,3bcd491d4bed46d280ef2b4600ae3578,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Water Temp,0,0.0,degC,-60.0,100.0,True
+3,3dc184509cfd40aabf77a7b7082c286e,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Water Temp,0,0.0,degC,-60.0,100.0,True
+4,07432df7bd00438db43e960fde663704,41D 07700,"Deep Creek nr Wise River, MT",Stage,0,0.0,ft,0.01,12.0,True
+5,7d430f2bde1c4fe5b5b23dd4aa82ca1e,41D 07700,"Deep Creek nr Wise River, MT",Water Temp,0,0.0,degC,-60.0,100.0,True
+6,b08b894e64144a93953baa52615b1530,41D 07700,"Deep Creek nr Wise River, MT",Voltage,0,0.0,V,11.5,15.0,True
+7,e7958ec2eade499b867d5489cdfca195,41D 07700,"Deep Creek nr Wise River, MT",Stage,0,0.0,ft,0.01,12.0,True
+8,c976ffe229dc47cd8aa9b7982cd2c1a4,41K 05100,Elk Creek nr Haystack Butte,Stage,Jan-04 23:45,2.65,ft,3.25,3.5,True
+9,810e0d66595740f1bf3b67d8c2b5330e,41K 05100,Elk Creek nr Haystack Butte,Stage,Jan-04 23:45,2.65,ft,3.25,3.5,True
+10,1cedf233a2e347679540855095f996b9,41M 09990,"Dupuyer Creek nr Dupuyer, MT",Stage,Jan-04 23:45,1.82,ft,1.2,1.65,True
+11,dbbeec04e28d46459b357b0bba95defa,41M 09990,"Dupuyer Creek nr Dupuyer, MT",Stage,Jan-04 23:45,1.82,ft,1.2,1.65,True
+12,b57c9ac181854132aaf125fd003e9fae,41O 07900,"Teton River nr Dutton, MT",Stage,Jan-04 23:45,2.04,ft,1.5,2.0,True
+13,96058ffb6bb14415909e4f89f023339f,41O 07900,"Teton River nr Dutton, MT",Stage,Jan-04 23:45,2.04,ft,1.5,2.0,True
+14,9be97f170f44470c8845080568f3a25a,41Q 08000,"Highwood Creek nr Highwood, MT",Stage,Jan-04 23:30,2.95,ft,3.2,4.0,True
+15,516d7b31420b4eda8067a22c968578c9,41Q 08000,"Highwood Creek nr Highwood, MT",Stage,Jan-04 23:30,2.95,ft,3.2,4.0,True
+16,6d58000e976f49ec9f972b3ddbe1505f,42C 08190,"Pumpkin Creek nr Miles City, MT",Stage,Jan-04 23:45,2.64,ft,3.3,3.9,True
+17,66b21e4cf4114ef3912855056c3a79bd,42C 08190,"Pumpkin Creek nr Miles City, MT",Stage,Jan-04 23:45,2.64,ft,3.3,3.9,True
+18,46a4a80157fa45caa1fa49cee03b1338,76F 02900,"Nevada Cr nr Helmville, MT",Voltage,0,0.0,V,11.5,15.0,True
+19,31119bbde6cc46279fb603a3b82b0746,76G 03100,"Racetrack Creek nr Racetrack, MT",Voltage,Jan-04 23:15,1.0,V,11.5,15.0,True

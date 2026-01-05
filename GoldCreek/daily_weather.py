@@ -16,8 +16,9 @@ SERVER_NAME = 'dnrhln6386.state.mt.ads'
 USER_NAME = 'DNRC'
 PASSWORD = 'DNRC'
 DIRECTORY = Path(r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\Aquarius_Alarms\GoldCreek')
-RECIPIENTS = "bruce@thomasherefords.com, John.Lunzer@mt.gov, David.Saba@mt.gov, Hannah.Haugen@mt.gov"
-
+# RECIPIENTS = "bruce@thomasherefords.com, John.Lunzer@mt.gov, David.Saba@mt.gov, Hannah.Haugen@mt.gov"
+RECIPIENTS = "bruce@thomasherefords.com, David.Saba@mt.gov"
+# RECIPIENTS = "David.Saba@mt.gov"
 
 def format_timestamp(time):
     if time == 0 or time == 'null':
@@ -69,6 +70,10 @@ t_now = t_now.strftime(f"%Y-%m-%dT%H:%M:%SZ")
 t_now_format = dt.datetime.now()
 t_now_format = t_now_format.strftime(f"%b %d, %Y")
 
+# year = dt.date.today().year
+# new_years = dt.date(year, 1, 1)
+# new_years = new_years.strftime(f"%Y-%m-%dT%H:%M:%SZ")
+
 yesterday = dt.datetime.utcnow() - dt.timedelta(minutes=1440)
 yesterday_format = yesterday.strftime(f"%a, %b-%d")
 yesterday = yesterday.strftime(f"%b-%d")
@@ -78,11 +83,12 @@ today_format = today.strftime(f"%a, %b-%d")
 today = today.strftime(f"%b-%d")
 
 # # Outputs csv of sensor data anomalies based on reference to master sensor list csv # #
-sl_df = pd.read_csv(Path.joinpath(DIRECTORY, 'sensor_list.csv'), index_col=[0])
+sl_df = pd.read_csv(Path.joinpath(DIRECTORY, 'sensor_list.csv'))
+to_pull_df = sl_df[sl_df['Publish'] == True]
 print("Acquiring StAGE data...")
 site_data = []
-for i in sl_df.index:
-    aq_params = {'TimeSeriesUniqueId': i,
+for uid in to_pull_df['UniqueId']:
+    aq_params = {'TimeSeriesUniqueId': uid,
                  'QueryFrom': tmin_day,
                  'QueryTo': t_now}
     response = requests.get(
@@ -103,7 +109,7 @@ for i in sl_df.index:
     values = []
     try:
         for v in range(len(series_data["Points"])):
-            value = int(series_data["Points"][v]["Value"]["Numeric"])
+            value = float(series_data["Points"][v]["Value"]["Numeric"])
             values.append(value)
     except IndexError:
         values.append('null')
@@ -163,10 +169,10 @@ over_low = morning_temps.min().min()
 over_low_time = morning_temps.min().idxmin()
 over_low_text = f"Overnight Low: {over_low} {airtemp_unit} ({over_low_time})\n"
 
-over_precip = precip_data.filter(regex=today, axis=1)
-start_overprecip = int(over_precip.iloc[:, 0].tolist()[0])
-end_overprecip = int(over_precip.iloc[:, -1].tolist()[0])
-over_precip = round((end_overprecip - start_overprecip) * 0.0393701, 2)
+over_precip_data = precip_data.filter(regex=today, axis=1)
+start_overprecip = float(over_precip_data.iloc[:, 0].tolist()[0])
+end_overprecip = float(over_precip_data.iloc[:, -1].tolist()[0])
+over_precip = round((end_overprecip - start_overprecip), 2)
 new_precip_unit = 'in'
 over_precip_text = f"Overnight Precipitation: {over_precip} {new_precip_unit}\n"
 
@@ -180,10 +186,10 @@ over_max_windvel_text = f"Overnight Max Wind Speed: {over_max_windvel} {windvel_
 print(current_temp_text, over_low_text, over_precip_text, over_ave_windvel_text)
 
 # yesterday's data
-yes_precip = precip_data.filter(regex=yesterday, axis=1)
-start_yesprecip = int(yes_precip.iloc[:, 0].tolist()[0])
-end_yesprecip = int(yes_precip.iloc[:, -1].tolist()[0])
-daily_precip = round((end_yesprecip - start_yesprecip) * 0.0393701, 2)
+yes_precip_data = precip_data.filter(regex=yesterday, axis=1)
+start_yesprecip = float(yes_precip_data.iloc[:, 0].tolist()[0])
+end_yesprecip = float(yes_precip_data.iloc[:, -1].tolist()[0])
+daily_precip = round((end_yesprecip - start_yesprecip), 2)
 yes_precip_text = f"Precipitation: {daily_precip} {new_precip_unit}\n"
 
 yes_airtemp = airtemp_data.filter(regex=yesterday, axis=1)
@@ -211,6 +217,15 @@ yes_max_windvel_text = f"Maximum Wind Speed: {max_windvel} {windvel_unit} ({max_
 
 print(yes_max_temp_text, yes_min_temp_text, yes_precip_text, yes_ave_windvel_text, yes_max_windvel_text,
       yes_ave_winddir_text)
+
+#YTD data
+today_precip = precip_data.filter(regex=today, axis=1)
+ytd_precip_raw = float(today_precip.iloc[:, -1].tolist()[0])
+ytd_precip = round(ytd_precip_raw, 2)
+new_precip_unit = 'in'
+ytd_precip_text = f"YTD Precipitation: {ytd_precip} {new_precip_unit}\n"
+
+print(ytd_precip_text)
 
 pleasantries = ['agreeable',
                 'amiable',
@@ -367,7 +382,8 @@ body = MIMEText(f"Morning Conditions ({today_format}):\n\n"
                 f"-{yes_precip_text}\n"
                 f"-{yes_max_windvel_text}\n"
                 f"-{yes_ave_windvel_text}\n"              
-                f"-{yes_ave_winddir_text}\n\n"        
+                f"-{yes_ave_winddir_text}\n\n"  
+                f"-{ytd_precip_text}\n\n"    
                 f"{valediction}\n"
                 f"{ps}")
 

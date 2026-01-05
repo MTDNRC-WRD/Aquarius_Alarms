@@ -9,7 +9,7 @@ from pathlib import Path
 
 FILE = r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\GIS\AGOL\Discharge_Form_Data\WSB_Discharge_Measurement_Form_Data.shp'
 HOUR_WINDOW = 12
-RECIPIENTS = 'david.saba@mt.gov'
+RECIPIENTS = 'david.saba@mt.gov, nyoungstrom@mt.gov'
 
 email = True
 
@@ -27,7 +27,7 @@ try:
 
     # Compare times
     if last_modified_time < time_threshold:
-        txt = f"UPDATE FAILED: Survey123 shapefile was last updated on {last_modified_time.strftime('%Y-%m-%d %H:%M:%S')}"
+        txt = f"UPDATE FAILED: WSB's Survey123 shapefile was last updated on {last_modified_time.strftime('%Y-%m-%d %H:%M:%S')}"
         print(txt)
         email = True
     else:
@@ -42,7 +42,7 @@ except Exception as e:
 if email:
     msg = MIMEMultipart()
     msg['Subject'] = f"Survey123 Field Forms Issue"
-    msg['From'] = 'Checker_Daemon@dnrc.mt.gov'
+    msg['From'] = 'Form_Checker_Daemon@dnrc.mt.gov'
     msg['To'] = RECIPIENTS
 
     body = MIMEText(txt)
