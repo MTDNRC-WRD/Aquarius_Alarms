@@ -151,7 +151,7 @@ windvel_data = df.loc[df['Parameter'] == 'Wind Vel'].drop(df.columns[:2], axis=1
 
 
 # today's data
-current_temp = airtemp_data.iloc[:, -1].tolist()[0]
+current_temp = int(airtemp_data.iloc[:, -1].tolist()[0])
 current_temp_time = airtemp_data.columns[-1]
 current_temp_text = f"Current Temperature: {current_temp} {airtemp_unit} ({current_temp_time})\n"
 
@@ -165,7 +165,7 @@ cwd = format_windspeed(int(current_winddir))
 current_winddir_text = f"Current Wind Direction: {cwd}  ({current_winddir} {winddir_unit})\n"
 
 morning_temps = airtemp_data.filter(regex=today, axis=1)
-over_low = morning_temps.min().min()
+over_low = int(morning_temps.min().min())
 over_low_time = morning_temps.min().idxmin()
 over_low_text = f"Overnight Low: {over_low} {airtemp_unit} ({over_low_time})\n"
 
@@ -193,11 +193,11 @@ daily_precip = round((end_yesprecip - start_yesprecip), 2)
 yes_precip_text = f"Precipitation: {daily_precip} {new_precip_unit}\n"
 
 yes_airtemp = airtemp_data.filter(regex=yesterday, axis=1)
-yes_max_temp = yes_airtemp.max().max()
+yes_max_temp = int(yes_airtemp.max().max())
 yes_max_temp_time = yes_airtemp.max().idxmax()
 yes_max_temp_text = f"Maximum Temperature: {yes_max_temp} {airtemp_unit} ({yes_max_temp_time})\n"
 
-yes_min_temp = yes_airtemp.min().min()
+yes_min_temp = int(yes_airtemp.min().min())
 yes_min_temp_time = yes_airtemp.min().idxmin()
 yes_min_temp_text = f"Minimum Temperature: {yes_min_temp} {airtemp_unit} ({yes_min_temp_time})\n"
 
