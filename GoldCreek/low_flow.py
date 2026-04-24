@@ -7,7 +7,8 @@ from pathlib import Path
 import pandas as pd
 import requests
 
-SERVER_NAME = 'dnrhln6386.state.mt.ads'
+# SERVER_NAME = 'dnrhln6386.state.mt.ads'
+SERVER_NAME = 'dnrc-mt-prod.aquaticinformatics.net'
 USER_NAME = 'DNRC'
 PASSWORD = 'DNRC'
 DIRECTORY = Path(r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\Aquarius_Alarms\GoldCreek')

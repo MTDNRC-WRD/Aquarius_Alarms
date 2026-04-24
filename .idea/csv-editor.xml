@@ -73,6 +73,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\WSB\sensor_list.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\WSB\today_data.csv">
           <value>
             <Attribute>

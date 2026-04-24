@@ -9,7 +9,8 @@ from email import encoders
 from email.mime.text import MIMEText
 
 
-SERVER_NAME = 'dnrhln6386.state.mt.ads'
+# SERVER_NAME = 'dnrhln6386.state.mt.ads'
+SERVER_NAME = 'dnrc-mt-prod.aquaticinformatics.net'
 USER_NAME = 'DNRC'
 PASSWORD = 'DNRC'
 

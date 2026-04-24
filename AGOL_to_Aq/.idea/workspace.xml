@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5d121a55-dd85-4b76-9150-ba6a77d4bcca" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/csv-editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/csv-editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp_form.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/temp_form.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploaded_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/uploaded_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GoldCreek/TimeSeriesID.py" beforeDir="false" afterPath="$PROJECT_DIR$/../GoldCreek/TimeSeriesID.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GoldCreek/daily_weather.py" beforeDir="false" afterPath="$PROJECT_DIR$/../GoldCreek/daily_weather.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GoldCreek/low_flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/../GoldCreek/low_flow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GoldCreek/today_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../GoldCreek/today_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q_Alarm/Instant_Discharge.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Q_Alarm/Instant_Discharge.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q_Alarm/Instant_Discharge_Alarms.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Q_Alarm/Instant_Discharge_Alarms.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q_Alarm/discharge_alarm.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Q_Alarm/discharge_alarm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q_Alarm/edit_q_list.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../Q_Alarm/edit_q_list.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q_Alarm/q_list.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Q_Alarm/q_list.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WSB/StAGE_Alarms.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../WSB/StAGE_Alarms.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WSB/TimeSeriesID.py" beforeDir="false" afterPath="$PROJECT_DIR$/../WSB/TimeSeriesID.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WSB/daily_alarm_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/../WSB/daily_alarm_email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WSB/edit_sensor_list.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../WSB/edit_sensor_list.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WSB/output_tsid.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../WSB/output_tsid.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WSB/sensor_list.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../WSB/sensor_list.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WSB/today_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../WSB/today_data.csv" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Dsab9"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/MTDNRC-WRD/Aquarius_Alarms.git",
+    "accountId": "5b896859-761c-4925-93b4-c6afa66fcef2"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="3CipMrkPlJB8J8nxAKooe9PGJZE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "S:/Aquarius_Alarms/AGOL_to_Aq",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-b63d5a1f7c97-b61e75351b1f-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.22158.340" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d121a55-dd85-4b76-9150-ba6a77d4bcca" name="Changes" comment="" />
+      <created>1776878200951</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776878200951</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

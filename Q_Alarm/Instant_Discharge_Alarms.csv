@@ -1,4 +1,7 @@
-,UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Timestamp_min_1hr,Value_min_1hr,Timestamp_min_day,Value_min_day,Delta_Day,Unit,Alarm_Type,LowAlarm,HighAlarm,DeltaAlarm,Publish
-0,9c276f5ebcdf4a758e1a9dc93f891f87,76G 05850,"Gold Creek near Gold Creek, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
-1,db654d70d25741b0909815a8d24744f2,43B 05990,"Mill Creek near Emigrant, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
-2,6de1da6485cb4f7a8349c9a7b3fe40f9,40I 10000,"Peoples Creek near Dodson, MT",Discharge,null,null,null,null,null,null,0,ft^3/s,,0.05,10000,100,True
+UniqueId,LocationIdentifier,SiteName,Parameter,Unit,Timestamp,Value,Timestamp_1hr,Value_1hr,Timestamp_day,Value_day,Delta_Day,Alarm_Type,LowAlarm,HighAlarm,DeltaAlarm,Publish
+35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,ft^3/s,Apr-24 07:15,0,Apr-23 13:45,0,null,null,0,NoData,0.05,50,3,True
+dc80d464e281436c99c2616e7e567763,41O 02000,Teton River at Bynum Diversion nr Choteau MT,Discharge,ft^3/s,Apr-24 01:00,170,Apr-24 00:15,170,null,null,0,HighAlarm,0.05,160,20,True
+3c9913572d71435b8fcfd39d86f42e96,41Q 06000,"Belt Creek nr Belt, MT",Discharge,ft^3/s,Apr-24 07:30,186,Apr-24 06:45,186,Apr-23 07:45,82,104,DeltaAlarm,0.05,10000,100,True
+2a6d5853f1c14342a766414cbcfc61da,76E 05000,"Rock Creek nr Philipsburg, MT",Discharge,ft^3/s,Apr-24 07:45,954,Apr-24 07:00,942,Apr-23 08:00,1124,-170,HighAlarm,65.0,750,100,True
+dd978f882d364cfc9e490652ba357133,76F 02900,"Nevada Cr nr Helmville, MT",Discharge,ft^3/s,Apr-24 07:45,267,Apr-24 07:00,265,Apr-23 08:00,219,48,HighAlarm,0.05,180,25,True
+05aeabe35a554edb824f42ae1bca3621,76F 05300,"Blackfoot River nr Clearwater Junction, MT",Discharge,ft^3/s,Apr-24 07:30,3318,Apr-24 06:45,3332,Apr-23 07:45,3404,-86,HighAlarm,250.0,2500,100,True

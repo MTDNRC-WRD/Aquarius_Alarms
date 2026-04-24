@@ -1,21 +1,15 @@
-,UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Unit,LowAlarm,HighAlarm,Publish
-0,3e17c8e23dbd48698fc884493af19f38,40I 10000,"Peoples Creek near Dodson, MT",Stage,0,0.0,ft,8.47,21.09,True
-1,46fb37a3b75d47319077bec21a036a09,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Voltage,0,0.0,V,11.5,15.0,True
-2,3bcd491d4bed46d280ef2b4600ae3578,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Water Temp,0,0.0,degC,-60.0,100.0,True
-3,3dc184509cfd40aabf77a7b7082c286e,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Water Temp,0,0.0,degC,-60.0,100.0,True
-4,07432df7bd00438db43e960fde663704,41D 07700,"Deep Creek nr Wise River, MT",Stage,0,0.0,ft,0.01,12.0,True
-5,7d430f2bde1c4fe5b5b23dd4aa82ca1e,41D 07700,"Deep Creek nr Wise River, MT",Water Temp,0,0.0,degC,-60.0,100.0,True
-6,b08b894e64144a93953baa52615b1530,41D 07700,"Deep Creek nr Wise River, MT",Voltage,0,0.0,V,11.5,15.0,True
-7,e7958ec2eade499b867d5489cdfca195,41D 07700,"Deep Creek nr Wise River, MT",Stage,0,0.0,ft,0.01,12.0,True
-8,c976ffe229dc47cd8aa9b7982cd2c1a4,41K 05100,Elk Creek nr Haystack Butte,Stage,Jan-04 23:45,2.65,ft,3.25,3.5,True
-9,810e0d66595740f1bf3b67d8c2b5330e,41K 05100,Elk Creek nr Haystack Butte,Stage,Jan-04 23:45,2.65,ft,3.25,3.5,True
-10,1cedf233a2e347679540855095f996b9,41M 09990,"Dupuyer Creek nr Dupuyer, MT",Stage,Jan-04 23:45,1.82,ft,1.2,1.65,True
-11,dbbeec04e28d46459b357b0bba95defa,41M 09990,"Dupuyer Creek nr Dupuyer, MT",Stage,Jan-04 23:45,1.82,ft,1.2,1.65,True
-12,b57c9ac181854132aaf125fd003e9fae,41O 07900,"Teton River nr Dutton, MT",Stage,Jan-04 23:45,2.04,ft,1.5,2.0,True
-13,96058ffb6bb14415909e4f89f023339f,41O 07900,"Teton River nr Dutton, MT",Stage,Jan-04 23:45,2.04,ft,1.5,2.0,True
-14,9be97f170f44470c8845080568f3a25a,41Q 08000,"Highwood Creek nr Highwood, MT",Stage,Jan-04 23:30,2.95,ft,3.2,4.0,True
-15,516d7b31420b4eda8067a22c968578c9,41Q 08000,"Highwood Creek nr Highwood, MT",Stage,Jan-04 23:30,2.95,ft,3.2,4.0,True
-16,6d58000e976f49ec9f972b3ddbe1505f,42C 08190,"Pumpkin Creek nr Miles City, MT",Stage,Jan-04 23:45,2.64,ft,3.3,3.9,True
-17,66b21e4cf4114ef3912855056c3a79bd,42C 08190,"Pumpkin Creek nr Miles City, MT",Stage,Jan-04 23:45,2.64,ft,3.3,3.9,True
-18,46a4a80157fa45caa1fa49cee03b1338,76F 02900,"Nevada Cr nr Helmville, MT",Voltage,0,0.0,V,11.5,15.0,True
-19,31119bbde6cc46279fb603a3b82b0746,76G 03100,"Racetrack Creek nr Racetrack, MT",Voltage,Jan-04 23:15,1.0,V,11.5,15.0,True
+UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Unit,LowAlarm,HighAlarm,Publish
+e100da75a998463e8286950d399fc8a9,40B 07000,"Petrolia Reservoir nr Winnett, MT",Lake res elevation,Apr-24 08:15,36.345,ft,2880.0,2902.1,True
+6b57426a2d3b435ca422a179aa707b58,40J 08900,"Beaver Creek abv Reservoir nr Havre, MT",Stage,Apr-24 08:15,0.38,ft,0.5,2.0,True
+7da656317654483b8a624ea5069bf53d,41B 09000,"Beaverhead River at Silverbow Lane nr Twin Bridges, MT",Stage,Apr-24 08:15,4.14,ft,4.2,5.0,True
+46fb37a3b75d47319077bec21a036a09,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Voltage,Apr-24 07:30,4.0,V,11.5,15.0,True
+d9b04c187bef41989c789be020bdeb75,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Voltage,Apr-24 08:30,4.0,V,11.5,15.0,True
+ed79e1ea507a4afc94f2212d4af90816,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Water Temp,0,0.0,degC,-60.0,100.0,True
+771524d915114f8a8d4d9b398a0b4c8d,41D 09000,"Big Hole River nr Dewey, MT",Water Temp,0,0.0,degC,-60.0,100.0,True
+bc8707aa56d54486bd4f89936c6d1063,41J 04900,"Moose Creek nr White Sulphur Springs, MT",Stage,Apr-24 07:30,2.12,ft,1.2,2.0,True
+1cedf233a2e347679540855095f996b9,41M 09990,"Dupuyer Creek nr Dupuyer, MT",Stage,Apr-24 07:45,2.03,ft,1.1,1.7,True
+8e182acf4635469ca880839ad8918554,42I 09000,"Little Powder River nr Broadus, MT",Stage,Apr-24 08:15,3.53,ft,3.65,4.25,True
+44760338ade1441faeb7c7cd2e2f5db8,76E 05000,"Rock Creek nr Philipsburg, MT",Stage,Apr-24 07:45,3.78,ft,2.4,3.7,True
+874e1029283742ad97ca0bfde0087c7a,76F 02900,"Nevada Cr nr Helmville, MT",Stage,Apr-24 07:45,5.38,ft,1.0,5.37,True
+64fedaeba0bf4ca4993b09a127bfb1eb,76G 03100,"Racetrack Creek nr Racetrack, MT",Water Temp,Apr-24 07:30,0.29,degC,1.0,30.0,True
+95d92e535bfb4995b48608d3480c8019,SR 004,Duck Creek above Simms Ashuelot Rd Bridge,Stage,0,0.0,ft,0.4,1.2,True

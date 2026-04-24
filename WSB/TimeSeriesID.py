@@ -9,7 +9,8 @@ from email import encoders
 from email.mime.text import MIMEText
 
 
-SERVER_NAME = 'dnrhln6386.state.mt.ads'
+# SERVER_NAME = 'dnrhln6386.state.mt.ads'
+SERVER_NAME = 'dnrc-mt-prod.aquaticinformatics.net'
 USER_NAME = 'DNRC'
 PASSWORD = 'DNRC'
 
@@ -24,7 +25,7 @@ t_now_format = dt.datetime.now()
 t_now_format = t_now_format.strftime(f"%b %d, %Y")
 
 # Gets times series id's for everything transmitted during last day, when adding new site search by loc id # #
-location_id_list = ['42I 09000']
+location_id_list = ['39FJ 09000', '39E 09000', '42C 08190', '42A 10000', '41D 09000']
 
 df_columns = ['UniqueId', 'LocationIdentifier', 'SiteName', 'Parameter', 'Timestamp', 'Value', 'Unit', 'Publish']
 out_df = pd.DataFrame(columns=df_columns)
@@ -37,6 +38,7 @@ for gid in location_id_list:
     )
     response.raise_for_status()
     time_data = response.json()
+    print(time_data)
     time_data = time_data["TimeSeriesUniqueIds"]
     print(json.dumps(time_data, indent=4))
     time_id = [key["UniqueId"] for key in time_data]

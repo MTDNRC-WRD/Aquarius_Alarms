@@ -33,7 +33,7 @@ arcpy.env.overwriteOutput = True
 # AGOL Login Info
 portal        = "https://mtdnrc.maps.arcgis.com"
 user          = "CND367"
-password      = "Goblin-King905"
+password      = 
 
 # Item Details
 tokenURL   = portal + "/sharing/rest/generateToken"
