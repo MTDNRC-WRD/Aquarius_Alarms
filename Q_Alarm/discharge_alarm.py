@@ -40,6 +40,7 @@ Notes
 
 import datetime as dt
 import smtplib
+import traceback
 from email import encoders
 from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
@@ -66,7 +67,9 @@ OUTPUT_ALARMS = DIRECTORY / 'Instant_Discharge_Alarms.csv'
 
 SMTP_HOST   = 'mail.mt.gov'
 SMTP_PORT   = 25
-EMAIL_FROM  = 'StAGE_Alarm@dnrc.mt.gov'
+EMAIL_FROM = 'StAGE_Alarm@dnrc.mt.gov'
+FAILURE_EMAIL_FROM = 'StAGE_Alarm_Failure@dnrc.mt.gov'
+
 RECIPIENTS  = [
     'David.Saba@mt.gov',
     'MNorberg@mt.gov',
@@ -77,19 +80,17 @@ RECIPIENTS  = [
     'luke.lutz2@mt.gov',
     'raeya.gordon@mt.gov',
 ]
-# RECIPIENTS  = ['David.Saba@mt.gov']
 
-# AQUARIUS time window: 1680 min = 28 hours (covers 24-hr lookback + buffer)
+FAILURE_RECIPIENTS = ['David.Saba@mt.gov']
+# RECIPIENTS = ['David.Saba@mt.gov']
+
 LOOKBACK_MINUTES = 1680
 REQUEST_TIMEOUT  = 60
 
-# Point indices from end of returned series (15-min data):
-#   -1  → most recent reading
-#   -4  → ~1 hour ago
-#   -96 → ~24 hours ago
 IDX_NOW  = -1
 IDX_1HR  = -4
 IDX_DAY  = -96
+
 
 # =============================================================================
 # HELPERS
@@ -113,9 +114,6 @@ def format_timestamp(ts: str) -> str:
     """
     Convert an AQUARIUS ISO-8601 timestamp string to 'Mon-DD HH:MM' in
     Mountain Time. Returns 'null' if the input is 'null'.
-
-    AQUARIUS returns timestamps with UTC offsets; we subtract additional hours
-    to account for offset ambiguity between MST (UTC-7) and MDT (UTC-6).
     """
     if ts == 'null':
         return 'null'
@@ -123,7 +121,6 @@ def format_timestamp(ts: str) -> str:
         fmt = dt.datetime.strptime(ts, "%Y-%m-%dT%H:%M:%S.%f0%z")
         return (fmt - dt.timedelta(hours=6)).strftime("%b-%d %H:%M")
     except ValueError:
-        # Handle edge-case where minute digit causes parse failure
         ts_fixed = ts[:12] + '3' + ts[13:]
         fmt = dt.datetime.strptime(ts_fixed, "%Y-%m-%dT%H:%M:%S.%f0%z")
         return (fmt - dt.timedelta(hours=5)).strftime("%b-%d %H:%M")
@@ -168,38 +165,28 @@ def fetch_site_data(session: requests.Session, ts_uid: str, site_meta: pd.Series
     points = payload.get('Points', [])
 
     return {
-        'UniqueId':          payload['UniqueId'],
-        'LocationIdentifier': payload['LocationIdentifier'],
-        'SiteName':          site_meta['SiteName'],
-        'Parameter':         payload['Parameter'],
-        'Unit':              payload['Unit'],
-        'Timestamp':         safe_timestamp(points, IDX_NOW),
-        'Value':             safe_value(points, IDX_NOW),
-        'Timestamp_1hr':     safe_timestamp(points, IDX_1HR),
-        'Value_1hr':         safe_value(points, IDX_1HR),
-        'Timestamp_day':     safe_timestamp(points, IDX_DAY),
-        'Value_day':         safe_value(points, IDX_DAY),
-        'Delta_Day':         '',
-        'Alarm_Type':        '',
-        'LowAlarm':          site_meta['LowAlarm'],
-        'HighAlarm':         site_meta['HighAlarm'],
-        'DeltaAlarm':        site_meta['Delta'],
-        'Publish':           site_meta['Publish'],
+        'UniqueId':            payload['UniqueId'],
+        'LocationIdentifier':  payload['LocationIdentifier'],
+        'SiteName':            site_meta['SiteName'],
+        'Parameter':           payload['Parameter'],
+        'Unit':                payload['Unit'],
+        'Timestamp':           safe_timestamp(points, IDX_NOW),
+        'Value':               safe_value(points, IDX_NOW),
+        'Timestamp_1hr':       safe_timestamp(points, IDX_1HR),
+        'Value_1hr':           safe_value(points, IDX_1HR),
+        'Timestamp_day':       safe_timestamp(points, IDX_DAY),
+        'Value_day':           safe_value(points, IDX_DAY),
+        'Delta_Day':           '',
+        'Alarm_Type':          '',
+        'LowAlarm':            site_meta['LowAlarm'],
+        'HighAlarm':           site_meta['HighAlarm'],
+        'DeltaAlarm':          site_meta['Delta'],
+        'Publish':             site_meta['Publish'],
     }
 
 
 def format_alarm_lines(alarm_list: list) -> str:
-    """
-    Format a list of alarm dicts into readable email lines.
-
-    Each dict contains:
-        location_id – Station ID
-        site_name   – Station name
-        value       – Current discharge (cfs)
-        unit        – Unit string from AQUARIUS
-
-    Returns '  None' if the list is empty.
-    """
+    """Format a list of alarm dicts into readable email lines."""
     if not alarm_list:
         return '  None'
     lines = []
@@ -210,26 +197,81 @@ def format_alarm_lines(alarm_list: list) -> str:
     return '\n'.join(lines)
 
 
+def send_email(subject,
+               body,
+               recipients,
+               from_addr,
+               attachment_path=None):
+    """
+    Send an email using the configured SMTP server.
+    """
+    msg = MIMEMultipart()
+    msg['Subject'] = subject
+    msg['From'] = from_addr
+    msg['To'] = ', '.join(recipients)
+    msg.attach(MIMEText(body, 'plain'))
+
+    if attachment_path and attachment_path.exists():
+        attachment = MIMEBase('application', 'octet-stream')
+        attachment.set_payload(attachment_path.read_bytes())
+        encoders.encode_base64(attachment)
+        attachment.add_header(
+            'Content-Disposition',
+            'attachment',
+            filename=attachment_path.name
+        )
+        msg.attach(attachment)
+
+    with smtplib.SMTP(SMTP_HOST, SMTP_PORT) as server:
+        server.ehlo()
+        server.starttls()
+        server.ehlo()
+        server.send_message(msg)
+
+
+def send_failure_email() -> None:
+    """
+    Send a failure notification email with the full traceback.
+    """
+    timestamp = dt.datetime.now().strftime('%b %d, %Y %H:%M')
+    error_text = traceback.format_exc()
+
+    subject = f'StAGE Discharge Alarm FAILED — {timestamp}'
+    body = (
+        'The StAGE Discharge Alarm script failed to execute.\n\n'
+        f'Time: {timestamp}\n'
+        f'Server: {SERVER_NAME}\n'
+        f'Site list: {SITE_LIST}\n\n'
+        'Traceback:\n'
+        f'{"=" * 80}\n'
+        f'{error_text}'
+    )
+
+    send_email(subject=subject, body=body, recipients=FAILURE_RECIPIENTS, from_addr=FAILURE_EMAIL_FROM)
+
 # =============================================================================
 # MAIN
 # =============================================================================
 def main():
-    # Time window
-    utc_now  = dt.datetime.utcnow()
+    utc_now = dt.datetime.utcnow()
     query_to = utc_now.strftime('%Y-%m-%dT%H:%M:%SZ')
     query_from = (utc_now - dt.timedelta(minutes=LOOKBACK_MINUTES)).strftime('%Y-%m-%dT%H:%M:%SZ')
     date_label = dt.datetime.now().strftime('%b %d, %Y')
 
-    # Load site list
     sl_df = pd.read_csv(SITE_LIST, index_col=0, skip_blank_lines=True)
     session = build_session()
 
-    # Query AQUARIUS
     print('Acquiring discharge data...')
     records = []
     for ts_uid in tqdm(sl_df.index, desc="Sites", unit="site"):
         try:
-            record = fetch_site_data(session, str(ts_uid).strip(), sl_df.loc[ts_uid], query_from, query_to)
+            record = fetch_site_data(
+                session,
+                str(ts_uid).strip(),
+                sl_df.loc[ts_uid],
+                query_from,
+                query_to
+            )
             records.append(record)
         except Exception as exc:
             tqdm.write(f"  [SKIP] {ts_uid}: {exc}")
@@ -237,12 +279,11 @@ def main():
     today_df = pd.DataFrame(records)
     today_df.to_csv(OUTPUT_ALL, index=False)
 
-    # Evaluate alarms
-    no_data_alarms  = []   # null timestamp or zero value
-    high_flow_alarms = []  # exceeds HighAlarm threshold
-    delta_alarms    = []   # 24-hr increase exceeds DeltaAlarm threshold
-
+    no_data_alarms = []
+    high_flow_alarms = []
+    delta_alarms = []
     alarm_rows = []
+
     for _, row in today_df.iterrows():
         if not row['Publish']:
             continue
@@ -252,9 +293,9 @@ def main():
 
         entry = {
             'location_id': row['LocationIdentifier'],
-            'site_name':   row['SiteName'],
-            'value':       row['Value'],
-            'unit':        'cfs',
+            'site_name': row['SiteName'],
+            'value': row['Value'],
+            'unit': 'cfs',
         }
 
         if row['Timestamp'] == 'null' or row['Value'] == 0:
@@ -267,16 +308,14 @@ def main():
             high_flow_alarms.append(entry)
             alarm_rows.append(row)
 
-        elif row["Delta_Day"] > row["DeltaAlarm"]:
-            row["Alarm_Type"] = "DeltaAlarm"
-            delta_alarms.append(
-                {
-                    "location_id": row["LocationIdentifier"],
-                    "site_name": row["SiteName"],
-                    "value": row["Delta_Day"],  # show the delta, not the current reading
-                    "unit": "cfs increase",
-                }
-            )
+        elif row['Delta_Day'] > row['DeltaAlarm']:
+            row['Alarm_Type'] = 'DeltaAlarm'
+            delta_alarms.append({
+                'location_id': row['LocationIdentifier'],
+                'site_name': row['SiteName'],
+                'value': row['Delta_Day'],
+                'unit': 'cfs increase',
+            })
             alarm_rows.append(row)
 
     error_df = pd.DataFrame(alarm_rows)
@@ -286,7 +325,6 @@ def main():
     print(f'  {len(delta_alarms)} site(s) reporting significant 24-hr increase')
     print(f'  {len(no_data_alarms)} site(s) missing data')
 
-    # Build email
     body_text = (
         f'Discharge Alarm — {date_label}\n'
         f'{"=" * 50}\n\n'
@@ -296,30 +334,26 @@ def main():
         f'{format_alarm_lines(high_flow_alarms)}\n\n'
         f'Significant 24-hr Increase:\n'
         f'{format_alarm_lines(delta_alarms)}\n\n'
-        f'See attached CSV for full details.\n'
+        'See attached CSV for full details.\n'
     )
 
-    msg = MIMEMultipart()
-    msg['Subject'] = f'StAGE Discharge Alarm — {date_label}'
-    msg['From']    = EMAIL_FROM
-    msg['To']      = ', '.join(RECIPIENTS)
-    msg.attach(MIMEText(body_text))
-
-    attachment = MIMEBase('application', 'octet-stream')
-    attachment.set_payload(OUTPUT_ALARMS.read_bytes())
-    encoders.encode_base64(attachment)
-    attachment.add_header('Content-Disposition', 'attachment',
-                          filename=OUTPUT_ALARMS.name)
-    msg.attach(attachment)
-
-    with smtplib.SMTP(SMTP_HOST, SMTP_PORT) as server:
-        server.ehlo()
-        server.starttls()
-        server.ehlo()
-        server.send_message(msg)
+    send_email(
+        subject=f'StAGE Discharge Alarm — {date_label}',
+        body=body_text,
+        recipients=RECIPIENTS,
+        from_addr=EMAIL_FROM,
+        attachment_path=OUTPUT_ALARMS
+    )
 
     print('Email sent.')
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception:
+        try:
+            send_failure_email()
+        except Exception:
+            pass
+        raise

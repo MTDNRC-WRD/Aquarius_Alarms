@@ -23,7 +23,7 @@
 
 
 
-import arcpy
+# import arcpy
 import os, sys
 import urllib, requests, json
 from arcgis.gis import GIS

@@ -1,7 +1,14 @@
 UniqueId,LocationIdentifier,SiteName,Parameter,Unit,Timestamp,Value,Timestamp_1hr,Value_1hr,Timestamp_day,Value_day,Delta_Day,Alarm_Type,LowAlarm,HighAlarm,DeltaAlarm,Publish
-35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,ft^3/s,Apr-24 07:15,0,Apr-23 13:45,0,null,null,0,NoData,0.05,50,3,True
-dc80d464e281436c99c2616e7e567763,41O 02000,Teton River at Bynum Diversion nr Choteau MT,Discharge,ft^3/s,Apr-24 01:00,170,Apr-24 00:15,170,null,null,0,HighAlarm,0.05,160,20,True
-3c9913572d71435b8fcfd39d86f42e96,41Q 06000,"Belt Creek nr Belt, MT",Discharge,ft^3/s,Apr-24 07:30,186,Apr-24 06:45,186,Apr-23 07:45,82,104,DeltaAlarm,0.05,10000,100,True
-2a6d5853f1c14342a766414cbcfc61da,76E 05000,"Rock Creek nr Philipsburg, MT",Discharge,ft^3/s,Apr-24 07:45,954,Apr-24 07:00,942,Apr-23 08:00,1124,-170,HighAlarm,65.0,750,100,True
-dd978f882d364cfc9e490652ba357133,76F 02900,"Nevada Cr nr Helmville, MT",Discharge,ft^3/s,Apr-24 07:45,267,Apr-24 07:00,265,Apr-23 08:00,219,48,HighAlarm,0.05,180,25,True
-05aeabe35a554edb824f42ae1bca3621,76F 05300,"Blackfoot River nr Clearwater Junction, MT",Discharge,ft^3/s,Apr-24 07:30,3318,Apr-24 06:45,3332,Apr-23 07:45,3404,-86,HighAlarm,250.0,2500,100,True
+35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,0.05,50,3,True
+601a1837a186496488d091c51eab44c2,41C 08000,Ruby River at Harrington Bridge,Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,30.0,600,100,True
+977102eda5fe4c0794f59bc236480d56,41D 07900,Wise River nr mouth,Discharge,ft^3/s,May-11 10:15,528,May-11 09:30,520,May-10 10:30,470,58,DeltaAlarm,4.0,1700,50,True
+dc80d464e281436c99c2616e7e567763,41O 02000,Teton River at Bynum Diversion nr Choteau MT,Discharge,ft^3/s,May-11 11:00,347,May-11 10:15,347,May-10 11:15,321,26,HighAlarm,0.05,160,20,True
+d6fb90e9d1bd4c559ad1337b0977b265,43BJ 03800,Boulder River below Natural bridge,Discharge,ft^3/s,May-11 10:45,599,May-11 10:00,620,May-10 11:00,445,154,DeltaAlarm,75.0,600,100,True
+2a6d5853f1c14342a766414cbcfc61da,76E 05000,"Rock Creek nr Philipsburg, MT",Discharge,ft^3/s,May-11 10:45,1413,May-11 10:00,1432,May-10 11:00,1277,136,HighAlarm,65.0,750,100,True
+dd978f882d364cfc9e490652ba357133,76F 02900,"Nevada Cr nr Helmville, MT",Discharge,ft^3/s,May-11 10:45,188,May-11 10:00,186,May-10 11:00,175,13,HighAlarm,0.05,180,25,True
+5aa425c8876c409e9be687133929d63d,76F 03500,North Fork Blackfoot at Ryan Bridge,Discharge,ft^3/s,May-11 10:15,1667,May-11 09:30,1679,May-10 10:30,1582,85,DeltaAlarm,3.0,1800,50,True
+6f894ab99fa94acb9e2e5f8eea23535a,76F 04900,"Monture Creek nr Ovando, MT",Discharge,ft^3/s,May-11 10:30,1093,May-11 09:45,1093,May-10 10:45,1041,52,HighAlarm,25.0,1000,100,True
+05aeabe35a554edb824f42ae1bca3621,76F 05300,"Blackfoot River nr Clearwater Junction, MT",Discharge,ft^3/s,May-11 10:30,4095,May-11 09:45,4110,May-10 10:45,3940,155,HighAlarm,250.0,2500,100,True
+3e7b63cddd2443fea62d9d941ce08fe7,76H 01100,Lost Horse Creek abv Lost Horse Ditch,Discharge,ft^3/s,May-11 10:45,827,May-11 10:00,812,May-10 11:00,708,119,DeltaAlarm,8.0,1000,75,True
+07281036fcc3416fa57b60bb2cbb898d,76HA 06100,"Burnt Fork Creek nr Stevensville, MT",Discharge,ft^3/s,May-11 10:30,169,May-11 09:45,169,May-10 10:45,159,10,HighAlarm,10.0,125,30,True
+792018186bd54e658f93b901dd418fa7,76HE 09000,"East Fork Bitterroot River nr Connor, MT",Discharge,ft^3/s,May-11 10:00,1164,May-11 09:15,1164,May-10 10:15,1112,52,HighAlarm,50.0,1000,100,True

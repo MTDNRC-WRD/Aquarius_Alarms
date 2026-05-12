@@ -10,9 +10,13 @@ are met:
   - Any other parameter is outside its configured low/high alarm band
 
 Two emails may be sent per run:
-  1. General alarm email  → all RECIPIENTS
-  2. Paradise Valley email → PARADISE_RECIPIENTS, sent only if one or more
+  1. General alarm email   -> all RECIPIENTS
+  2. Paradise Valley email -> PARADISE_RECIPIENTS, sent only if one or more
      Paradise Valley sites appear in the alarm list
+
+Failure email:
+  - If the script crashes for any reason, a failure email is sent to
+    FAILURE_RECIPIENTS using FAILURE_EMAIL_FROM, with the full traceback.
 
 Inputs
 ------
@@ -45,12 +49,12 @@ Notes
 import datetime as dt
 import random
 import smtplib
+import traceback
 from email import encoders
 from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
-from typing import Union
 
 import pandas as pd
 import requests
@@ -73,7 +77,9 @@ OUTPUT_ALARMS = DIRECTORY / 'STAGE_Alarms.csv'
 
 SMTP_HOST = 'mail.mt.gov'
 SMTP_PORT = 25
-EMAIL_FROM = 'StAGE_Alarm@dnrc.mt.gov'
+
+EMAIL_FROM         = 'StAGE_Alarm@dnrc.mt.gov'
+FAILURE_EMAIL_FROM = 'StAGE_Alarm_Failure@dnrc.mt.gov'
 
 RECIPIENTS = [
     'MNorberg@mt.gov',
@@ -91,6 +97,8 @@ PARADISE_RECIPIENTS = [
     'Madeline.McKeefry@mt.gov',
     'David.Saba@mt.gov',
 ]
+
+FAILURE_RECIPIENTS = ['David.Saba@mt.gov']
 
 # Sites that trigger a secondary Paradise Valley email if in alarm
 PARADISE_SITES = {'43B 05990', '43B 10000', '43B 05000', '43B 04000', '76G 05850'}
@@ -120,7 +128,7 @@ PLEASANTRIES = [
 ]
 
 
-def random_valediction() -> str:
+def random_valediction():
     """Return a randomized closing like 'Have a delightful day!'"""
     adj = random.choice(PLEASANTRIES)
     article = 'an' if adj[0].lower() in 'aeiou' else 'a'
@@ -130,7 +138,7 @@ def random_valediction() -> str:
 # =============================================================================
 # HELPERS
 # =============================================================================
-def build_session() -> requests.Session:
+def build_session():
     """HTTP session with automatic retry on transient server errors."""
     retry = Retry(
         total=5,
@@ -145,7 +153,7 @@ def build_session() -> requests.Session:
     return session
 
 
-def format_timestamp(ts) -> Union[str, int]:
+def format_timestamp(ts):
     """
     Convert an AQUARIUS ISO-8601 timestamp to 'Mon-DD HH:MM' Mountain Time.
     Returns 0 if input is 0 (no data sentinel).
@@ -161,9 +169,7 @@ def format_timestamp(ts) -> Union[str, int]:
         return (fmt - dt.timedelta(hours=5)).strftime("%b-%d %H:%M")
 
 
-def fetch_site_record(session: requests.Session, ts_uid: str,
-                      site_meta: pd.Series, query_from: str,
-                      query_to: str) -> dict:
+def fetch_site_record(session, ts_uid, site_meta, query_from, query_to):
     """
     Query AQUARIUS for the most recent corrected reading at one time series.
     Returns a dict with site metadata, current value, and alarm thresholds.
@@ -179,10 +185,10 @@ def fetch_site_record(session: requests.Session, ts_uid: str,
 
     try:
         timestamp = format_timestamp(points[-1]['Timestamp'])
-        value     = points[-1]['Value']['Numeric']
+        value = points[-1]['Value']['Numeric']
     except (IndexError, KeyError):
         timestamp = 0
-        value     = 0
+        value = 0
 
     return {
         'UniqueId':           payload['UniqueId'],
@@ -198,7 +204,7 @@ def fetch_site_record(session: requests.Session, ts_uid: str,
     }
 
 
-def format_alarm_lines(alarm_list: list) -> str:
+def format_alarm_lines(alarm_list):
     """
     Format a list of alarm dicts into readable email lines.
 
@@ -215,26 +221,31 @@ def format_alarm_lines(alarm_list: list) -> str:
     return '\n'.join(lines)
 
 
-def build_email(subject: str, recipients: list, body_text: str,
-                attachment_path: Path) -> MIMEMultipart:
-    """Construct a MIME email with a plain-text body and a CSV attachment."""
+def send_email(subject,
+               body,
+               recipients,
+               from_addr,
+               attachment_path=None):
+    """
+    Send an email using the configured SMTP server.
+    """
     msg = MIMEMultipart()
     msg['Subject'] = subject
-    msg['From']    = EMAIL_FROM
-    msg['To']      = ', '.join(recipients)
-    msg.attach(MIMEText(body_text))
+    msg['From'] = from_addr
+    msg['To'] = ', '.join(recipients)
+    msg.attach(MIMEText(body, 'plain'))
 
-    part = MIMEBase('application', 'octet-stream')
-    part.set_payload(attachment_path.read_bytes())
-    encoders.encode_base64(part)
-    part.add_header('Content-Disposition', 'attachment',
-                    filename=attachment_path.name)
-    msg.attach(part)
-    return msg
+    if attachment_path and attachment_path.exists():
+        part = MIMEBase('application', 'octet-stream')
+        part.set_payload(attachment_path.read_bytes())
+        encoders.encode_base64(part)
+        part.add_header(
+            'Content-Disposition',
+            'attachment',
+            filename=attachment_path.name
+        )
+        msg.attach(part)
 
-
-def send_email(msg: MIMEMultipart) -> None:
-    """Send a pre-built MIME message via SMTP."""
     with smtplib.SMTP(SMTP_HOST, SMTP_PORT) as server:
         server.ehlo()
         server.starttls()
@@ -242,16 +253,44 @@ def send_email(msg: MIMEMultipart) -> None:
         server.send_message(msg)
 
 
+def send_failure_email():
+    """
+    Send a failure notification email with the full traceback.
+    """
+    timestamp = dt.datetime.now().strftime('%b %d, %Y %H:%M')
+    error_text = traceback.format_exc()
+
+    subject = f'StAGE Sensor Alarm FAILED — {timestamp}'
+    body = (
+        'The StAGE Sensor Alarm script failed to execute.\n\n'
+        f'Time: {timestamp}\n'
+        f'Server: {SERVER_NAME}\n'
+        f'Site list: {SITE_LIST}\n'
+        f'Output all: {OUTPUT_ALL}\n'
+        f'Output alarms: {OUTPUT_ALARMS}\n\n'
+        'Traceback:\n'
+        f'{"=" * 80}\n'
+        f'{error_text}'
+    )
+
+    send_email(
+        subject=subject,
+        body=body,
+        recipients=FAILURE_RECIPIENTS,
+        from_addr=FAILURE_EMAIL_FROM
+    )
+
+
 # =============================================================================
 # MAIN
 # =============================================================================
 def main():
-    utc_now    = dt.datetime.utcnow()
-    query_to   = utc_now.strftime('%Y-%m-%dT%H:%M:%SZ')
+    utc_now = dt.datetime.utcnow()
+    query_to = utc_now.strftime('%Y-%m-%dT%H:%M:%SZ')
     query_from = (utc_now - dt.timedelta(minutes=LOOKBACK_MINUTES)).strftime('%Y-%m-%dT%H:%M:%SZ')
     date_label = dt.datetime.now().strftime('%b %d, %Y')
 
-    sl_df   = pd.read_csv(SITE_LIST, index_col=0, skip_blank_lines=True)
+    sl_df = pd.read_csv(SITE_LIST, index_col=0, skip_blank_lines=True)
     session = build_session()
 
     # Query AQUARIUS
@@ -270,13 +309,13 @@ def main():
     today_df.to_csv(OUTPUT_ALL, index=False)
 
     # Evaluate alarms
-    no_report_alarms = []   # no data in window
-    voltage_alarms   = []   # battery voltage out of range
-    data_alarms      = []   # other parameter out of range
+    no_report_alarms = []
+    voltage_alarms = []
+    data_alarms = []
 
     seen_no_report = set()
-    seen_voltage   = set()
-    seen_data      = set()
+    seen_voltage = set()
+    seen_data = set()
 
     alarm_rows = []
     for _, row in today_df.iterrows():
@@ -286,9 +325,9 @@ def main():
         loc = row['LocationIdentifier']
         entry = {
             'location_id': loc,
-            'site_name':   row['SiteName'],
-            'value':       row['Value'],
-            'unit':        row['Unit'],
+            'site_name': row['SiteName'],
+            'value': row['Value'],
+            'unit': row['Unit'],
         }
 
         if row['Timestamp'] == 0:
@@ -331,17 +370,34 @@ def main():
     subject = f'StAGE Alarms — {date_label}'
 
     # Send general email
-    msg = build_email(subject, RECIPIENTS, body_text, OUTPUT_ALARMS)
-    send_email(msg)
+    send_email(
+        subject=subject,
+        body=body_text,
+        recipients=RECIPIENTS,
+        from_addr=EMAIL_FROM,
+        attachment_path=OUTPUT_ALARMS
+    )
     print('General alarm email sent.')
 
     # Send Paradise Valley email if any Paradise sites are in alarm
-    alarmed_locations = {r['LocationIdentifier'] for r in alarm_rows}
+    alarmed_locations = set(error_df['LocationIdentifier']) if not error_df.empty else set()
     if PARADISE_SITES & alarmed_locations:
-        paradise_msg = build_email(subject, PARADISE_RECIPIENTS, body_text, OUTPUT_ALARMS)
-        send_email(paradise_msg)
+        send_email(
+            subject=subject,
+            body=body_text,
+            recipients=PARADISE_RECIPIENTS,
+            from_addr=EMAIL_FROM,
+            attachment_path=OUTPUT_ALARMS
+        )
         print('Paradise Valley alarm email sent.')
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception:
+        try:
+            send_failure_email()
+        except Exception:
+            pass
+        raise
