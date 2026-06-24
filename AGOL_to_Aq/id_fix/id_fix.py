@@ -227,58 +227,183 @@ gage_read_dict = {'A14': 'gage_rea_1',
                   'T21': 'recordin_6'
                   }
 
+long_to_short = {
+    "globalid": "globalid",
+    "CreationDate": "CreationDa",
+    "Creator": "Creator",
+    "EditDate": "EditDate",
+    "Editor": "Editor",
+    "hydro_name": "hydro_name",
+    "date_time": "date_time",
+    "weather": "weather",
+    "air_temperature_f": "air_temper",
+    "wind_speed_mph": "wind_speed",
+    "wind_direction": "wind_direc",
+    "how_familiar_are_you_with_this_": "how_famili",
+    "rt_gage_site": "rt_gage_si",
+    "gage_site_id": "gage_site_",
+    "gage_reading": "gage_readi",
+    "battery_reading": "battery_re",
+    "maintenance_gage_operational": "maintenanc",
+    "maintenance_data_downloaded": "maintena_1",
+    "maintenance_desiccant_changed": "maintena_2",
+    "maintenance_orifice_purged": "maintena_3",
+    "site_name": "site_name",
+    "staff_gage_or_wire_weight": "staff_gage",
+    "staff_gage_height_ft": "staff_ga_1",
+    "gageweight_shifted": "gageweight",
+    "shift_amount_ft": "shift_amou",
+    "location_notes": "location_n",
+    "initial_discharge_guess_cfs": "initial_di",
+    "channel_type": "channel_ty",
+    "water_clarity": "water_clar",
+    "surface_ice": "surface_ic",
+    "vegetation_in_channel": "vegetation",
+    "bank_vegetation": "bank_veget",
+    "bed_material": "bed_materi",
+    "cross_section_morphology": "cross_sect",
+    "left_bank": "left_bank",
+    "right_bank": "right_bank",
+    "cross_sectional_width_ft": "cross_se_1",
+    "width_measurement_method": "width_meas",
+    "average_depth_ft": "average_de",
+    "depth_measurement_method": "depth_meas",
+    "approximate_surface_velocity_ft": "approximat",
+    "velocity_measurement_method": "velocity_m",
+    "educated_discharge_guess": "educated_d",
+    "measurement_type": "measuremen",
+    "measurement_type_other": "measurem_1",
+    "sounding_weight_lbs": "sounding_w",
+    "water_temperature_f": "water_temp",
+    "cross_section_width": "cross_se_2",
+    "number_of_measurements": "number_of_",
+    "measurement_error": "measurem_2",
+    "Measured_Discharge": "Measured_D",
+    "adcp_boat": "adcp_boat",
+    "adcp_other": "adcp_other",
+    "gps_used": "gps_used",
+    "acdp_depth": "acdp_depth",
+    "number_of_transects": "number_of1",
+    "flume_type": "flume_type",
+    "flume_ty_other": "flume_ty_o",
+    "flow_type": "flow_type",
+    "throat_width_ft": "throat_wid",
+    "primary_stage_ft": "primary_st",
+    "secondary_stage_ft": "secondary_",
+    "weir_type": "weir_type",
+    "structure_condition": "structure_",
+    "crest_type": "crest_type",
+    "rectangular_weir_type": "rectangula",
+    "total_angle_deg": "total_angl",
+    "side_slope_lh": "side_slope",
+    "total_crest_length_ft": "total_cres",
+    "water_depth_ft": "water_dept",
+    "upper_weir_type": "upper_weir",
+    "lower_weir_type": "lower_weir",
+    "upper_crest_length_ft": "upper_cres",
+    "upper_side_slope_lh": "upper_side",
+    "upper_water_depth_ft": "upper_wate",
+    "lower_crest_length_ft": "lower_cres",
+    "lower_side_slope_lh": "lower_side",
+    "lower_total_angle_deg": "lower_tota",
+    "lower_water_depth_ft": "lower_wate",
+    "measurement_notes": "measurem_3",
+    "ave_velocity_measured": "ave_veloci",
+    "flow_regime_": "flow_regim",
+    "sensor_temp_reading": "sensor_tem",
+    "measurement_date": "measurem_4",
+    "visitation_time": "visitation",
+    "party_initials": "party_init",
+    "measured_temperature_f": "measured_t",
+    "gage_height_correction_ft": "gage_heigh",
+    "checkbar_changed_to_ft": "checkbar_c",
+    "errors": "errors",
+    "_control": "_control",
+    "untitled_question_113_other": "untitled_q",
+    "gage_reading_time_1": "gage_rea_1",
+    "recording_gage_1": "recording_",
+    "gage_reading_time_2": "gage_rea_2",
+    "recording_gage_2": "recording1",
+    "gage_reading_time_3": "gage_rea_3",
+    "recording_gage_3": "recordin_1",
+    "gage_reading_time_4": "gage_rea_4",
+    "recording_gage_4": "recordin_2",
+    "gage_reading_time_5": "gage_rea_5",
+    "recording_gage_5": "recordin_3",
+    "gage_reading_time_6": "gage_rea_6",
+    "recording_gage_6": "recordin_4",
+    "gage_reading_time_7": "gage_rea_7",
+    "recording_gage_7": "recordin_5",
+    "gage_reading_time_8": "gage_rea_8",
+    "recording_gage_8": "recordin_6",
+    "field_106": "field_106",
+    "staff_gage_reading_ft": "staff_ga_2",
+    "surface_ice_": "surface__1",
+    "time_of_discharge_measurement": "time_of_di",
+    "cross_section_area": "cross_se_3",
+    "ave_depth": "ave_depth",
+    "gage_site_other": "gage_site1",
+    "photos_notes": "photos_not",
+    "reference_gage_type": "reference_",
+    "refrence_gage_type_other": "refrence_g",
+    "measurement_id_number": "measurem_5",
+    "reference_gage_1": "reference1",
+    "field_180": "field_180",
+    "reference_gage_2": "referenc_1",
+    "field_181": "field_181",
+    "reference_gage_3": "referenc_2",
+    "field_182": "field_182",
+    "reference_gage_4": "referenc_3",
+    "field_183": "field_183",
+    "reference_gage_5": "referenc_4",
+    "field_184": "field_184",
+    "reference_gage_6": "referenc_5",
+    "field_185": "field_185",
+    "reference_gage_7": "referenc_6",
+    "field_186": "field_186",
+    "reference_gage_8": "referenc_7",
+    "refined_width_method": "refined_wi",
+    "refined_depth_method": "refined_de",
+    "refined_velocity_method": "refined_ve",
+    "error": "error",
+    "wind_est": "wind_est",
+    "rate_num": "rate_num",
+    "shift_ft": "shift_ft"
+}
 
 
 
+# -------------------------------------------------------------------
+# 3) Build reverse mapping: short_name -> long_name
+# -------------------------------------------------------------------
+short_to_long = {short: long for long, short in long_to_short.items()}
 
-# name_list = []
-# for value in excel_dict.values():
-#     name_list.append(value)
-#
-# df = pd.read_csv('form_data.csv')
-# csv_col_list = df.columns.to_list()
+# -------------------------------------------------------------------
+# 4) Function to replace values in a dict using short_to_long
+# -------------------------------------------------------------------
+def remap_values(d, lookup):
+    """
+    Replace each value v in dict d with lookup[v] where possible.
+    If v is empty or not found, leave as-is.
+    """
+    out = {}
+    for k, v in d.items():
+        if v and v in lookup:
+            out[k] = lookup[v]
+        else:
+            out[k] = v
+    return out
 
+new_ict_dict = remap_values(dict_dict, short_to_long)
+new_other_dict_dict = remap_values(other_dict_dict, short_to_long)
 
+print("new_ict_dict =")
+for k, v in new_ict_dict.items():
+    print(f"    {k!r}: {v!r},")
 
-
-
-# df_n = pd.read_csv('name_shortname.csv')
-# print(df_n)
-# site_name_dict = {}
-# for idx, row in df_n.iterrows():
-#     site_name_dict[row['unique_name']] = row['name']
-#
-# df_sh_n = pd.read_csv('name_table.csv')
-# print(df_sh_n)
-# shp_name_dict = {}
-# for idx, row in df_sh_n.iterrows():
-#     shp_name_dict[row['long_name']] = row['shp_n']
-#
-# new_excel_dict = excel_dict
-# name_sequence = []
-# for key, value in excel_dict.items():
-#     try:
-#         lng_name = site_name_dict[value]
-#         shp_name = shp_name_dict[lng_name]
-#         new_excel_dict[key] = shp_name
-#     except KeyError:
-#         pass
-#
-#
-# print(new_excel_dict)
-
-
-
-# df_ref = pd.read_csv('refs.csv')
-# ref_dict = {}
-# for idx, row in df_ref.iterrows():
-#     ref_dict[row['long']] = row['short']
-#
-# print(ref_dict)
-#
-
-
-
+print("\nnew_other_dict_dict =")
+for k, v in new_other_dict_dict.items():
+    print(f"    {k!r}: {v!r},")
 
 
 
