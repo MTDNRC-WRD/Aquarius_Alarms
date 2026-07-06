@@ -4,8 +4,13 @@ This script reads discharge measurement records from a file geodatabase,
 maps record fields into an Excel template, exports PDFs, and logs each
 successfully processed record to a SQLite tracking database.
 
-The script intentionally ignores all source rows before START_ROW_INDEX.
+Processed-record uniqueness is based on:
+- measurement_date
+- visitation_time
+- gage_site_id
 """
+
+from __future__ import annotations
 
 import datetime as dt
 import os
@@ -16,6 +21,7 @@ from datetime import datetime
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
+from typing import Any
 
 import aspose.cells
 import geopandas as gpd
@@ -38,9 +44,9 @@ TRACKING_DB_PATH = BASE_DIRECTORY / 'uploaded_data.sqlite'
 TRACKING_TABLE_NAME = 'processed_records'
 GAGE_LIST_PATH = BASE_DIRECTORY / 'gage_list.csv'
 TEMPLATE_XLSX_PATH = BASE_DIRECTORY / 'DNRC_Qm_Form_live.xlsx'
-TEMP_XLSX_PATH = BASE_DIRECTORY / 'DNRC-Qm_Form_temp.xlsx'
+TEMP_XLSX_PATH = BASE_DIRECTORY / 'temp_form.xlsx'
 EMAIL_RECIPIENTS = 'David.Saba@mt.gov'
-START_ROW_INDEX = 1090
+START_ROW_INDEX = 0
 WORKSHEET_NAME = 'Table 1'
 
 CELL_FIELD_MAP = {
@@ -144,15 +150,8 @@ FALLBACK_FIELD_MAP = {
 GAGE_READING_CELLS = ['T14', 'T15', 'T16', 'T17', 'T18', 'T19', 'T20', 'T21']
 
 
-def clean_excel_value(value):
-    """Convert values into Excel-safe types.
-
-    Args:
-        value: Any source value from the GeoDataFrame row.
-
-    Returns:
-        A value safe to write with openpyxl.
-    """
+def clean_excel_value(value: Any) -> Any:
+    """Convert a source value into an Excel-safe value."""
     if value is None:
         return ''
 
@@ -175,15 +174,8 @@ def clean_excel_value(value):
     return value
 
 
-def format_output_date(raw_date):
-    """Convert a date-like value into YYYYMMDD text.
-
-    Args:
-        raw_date: A string, datetime, or pandas Timestamp.
-
-    Returns:
-        A YYYYMMDD string, or an empty string if parsing fails.
-    """
+def format_output_date(raw_date: Any) -> str:
+    """Convert a date-like value into YYYYMMDD text."""
     if raw_date in [0, '', None]:
         return ''
 
@@ -197,16 +189,8 @@ def format_output_date(raw_date):
     return parsed.strftime('%Y%m%d')
 
 
-def round_if_numeric(value, digits=2):
-    """Round a numeric value if possible.
-
-    Args:
-        value: Any value.
-        digits: Number of decimal places.
-
-    Returns:
-        Rounded float if numeric, otherwise original value.
-    """
+def round_if_numeric(value: Any, digits: int = 2) -> Any:
+    """Round a numeric value if possible, otherwise return the original value."""
     try:
         if value in ['', None]:
             return value
@@ -215,63 +199,105 @@ def round_if_numeric(value, digits=2):
         return value
 
 
-def load_site_name_map(csv_path):
-    """Load site IDs to site names from CSV.
+def normalize_text(value: Any) -> str:
+    """Convert a value to stripped text, returning an empty string for null-like values."""
+    if value is None:
+        return ''
 
-    Args:
-        csv_path: Path to gage_list.csv.
+    try:
+        if pd.isna(value):
+            return ''
+    except TypeError:
+        pass
 
-    Returns:
-        A dictionary mapping site ID to site name.
-    """
+    return str(value).strip()
+
+
+def normalize_measurement_date(raw_value: Any) -> str:
+    """Normalize measurement_date to YYYY-MM-DD text."""
+    parsed = pd.to_datetime(raw_value, errors='coerce')
+    if pd.isna(parsed):
+        return ''
+
+    if getattr(parsed, 'tzinfo', None) is not None:
+        parsed = parsed.tz_localize(None)
+
+    return parsed.strftime('%Y-%m-%d')
+
+
+def normalize_visitation_time(raw_value: Any) -> str:
+    """Normalize visitation_time to HH:MM:SS text when possible."""
+    if raw_value in [None, '']:
+        return ''
+
+    parsed = pd.to_datetime(raw_value, errors='coerce')
+    if not pd.isna(parsed):
+        if getattr(parsed, 'tzinfo', None) is not None:
+            parsed = parsed.tz_localize(None)
+        return parsed.strftime('%H:%M:%S')
+
+    return normalize_text(raw_value)
+
+
+def build_processed_at_key(measurement_date: Any, visitation_time: Any) -> str:
+    """Build the SQLite timestamp key from measurement_date and visitation_time."""
+    normalized_date = normalize_measurement_date(measurement_date)
+    normalized_time = normalize_visitation_time(visitation_time)
+
+    if not normalized_date or not normalized_time:
+        return ''
+
+    return f'{normalized_date}T{normalized_time}'
+
+
+def build_record_key(row: pd.Series) -> tuple[str, str]:
+    """Build the SQLite composite key for one source row."""
+    processed_at = build_processed_at_key(
+        row.get('measurement_date', ''),
+        row.get('visitation_time', ''),
+    )
+    gage_site_id = normalize_text(row.get('gage_site_id', ''))
+    return processed_at, gage_site_id
+
+
+def load_site_name_map(csv_path: Path) -> dict[str, str]:
+    """Load site IDs to site names from a CSV file."""
     site_df = pd.read_csv(csv_path)
-    return dict(zip(site_df['id'], site_df['name']))
+    return dict(zip(site_df['id'].astype(str), site_df['name'].astype(str)))
 
 
-def initialize_tracking_db(db_path):
-    """Create the SQLite tracking database and table if needed.
-
-    Args:
-        db_path: Path to the SQLite database file.
-    """
+def initialize_tracking_db(db_path: Path) -> None:
+    """Create the SQLite tracking table if it does not already exist."""
     with sqlite3.connect(db_path) as conn:
         conn.execute(
             f"""
             CREATE TABLE IF NOT EXISTS {TRACKING_TABLE_NAME} (
-                globalid TEXT PRIMARY KEY,
                 processed_at TEXT NOT NULL,
-                gage_site_id TEXT,
-                output_pdf TEXT
+                gage_site_id TEXT NOT NULL,
+                output_pdf TEXT,
+                PRIMARY KEY (processed_at, gage_site_id)
             )
             """
         )
 
 
-def fetch_processed_ids(db_path):
-    """Fetch processed global IDs from the tracking database.
-
-    Args:
-        db_path: Path to the SQLite database file.
-
-    Returns:
-        A set of processed globalid values.
-    """
+def fetch_processed_keys(db_path: Path) -> set[tuple[str, str]]:
+    """Fetch processed (processed_at, gage_site_id) key pairs from SQLite."""
     with sqlite3.connect(db_path) as conn:
         rows = conn.execute(
-            f"SELECT globalid FROM {TRACKING_TABLE_NAME}"
+            f"SELECT processed_at, gage_site_id FROM {TRACKING_TABLE_NAME}"
         ).fetchall()
 
-    return {str(row[0]) for row in rows}
+    return {(str(row[0]), str(row[1])) for row in rows}
 
 
-def insert_processed_record(db_path, global_id, gage_site_id, output_pdf):
-    """Insert one processed record into the tracking database.
-
-    Args:
-        db_path: Path to the SQLite database file.
-        global_id: Record globalid.
-        gage_site_id: Gage site identifier.
-        output_pdf: Output PDF path.
+def insert_processed_record(
+    db_path: Path,
+    processed_at: str,
+    gage_site_id: str,
+    output_pdf: Path,
+) -> bool:
+    """Insert one processed record into SQLite.
 
     Returns:
         True if a new row was inserted, otherwise False.
@@ -280,62 +306,58 @@ def insert_processed_record(db_path, global_id, gage_site_id, output_pdf):
         cursor = conn.execute(
             f"""
             INSERT OR IGNORE INTO {TRACKING_TABLE_NAME} (
-                globalid,
                 processed_at,
                 gage_site_id,
                 output_pdf
             )
-            VALUES (?, ?, ?, ?)
+            VALUES (?, ?, ?)
             """,
             (
-                str(global_id),
-                dt.datetime.now().isoformat(),
-                str(gage_site_id),
+                processed_at,
+                gage_site_id,
                 str(output_pdf),
             ),
         )
-        return cursor.rowcount == 1
+    return cursor.rowcount == 1
 
 
-def load_source_records():
-    """Load source records from the geodatabase and apply row filtering.
-
-    Returns:
-        A filtered GeoDataFrame containing only rows at or after START_ROW_INDEX.
-    """
+def load_source_records() -> gpd.GeoDataFrame:
+    """Load source records from the geodatabase and apply the start-row filter."""
     print('Loading feature class...')
     source_gdf = gpd.read_file(GDB_PATH, layer=FEATURE_CLASS_NAME)
     source_gdf = source_gdf.iloc[START_ROW_INDEX:].copy()
+    print(f'Loaded source rows: {len(source_gdf)}')
     return source_gdf
 
 
-def select_records_to_process(source_gdf, processed_ids):
-    """Select source records eligible for processing.
-
-    Args:
-        source_gdf: Full filtered source GeoDataFrame.
-        processed_ids: Set of already processed global IDs.
-
-    Returns:
-        GeoDataFrame with only new rt_gage_site == 'Yes' records.
-    """
-    return source_gdf[
-        (source_gdf['rt_gage_site'] == 'Yes') &
-        (~source_gdf['globalid'].astype(str).isin(processed_ids))
+def select_records_to_process(
+    source_gdf: gpd.GeoDataFrame,
+    processed_keys: set[tuple[str, str]],
+) -> gpd.GeoDataFrame:
+    """Return unprocessed records where rt_gage_site == 'Yes'."""
+    eligible = source_gdf[
+        source_gdf['rt_gage_site'].astype(str).str.strip() == 'Yes'
     ].copy()
+    print(f"Eligible rows (rt_gage_site == 'Yes'): {len(eligible)}")
+    print(f'Processed DB keys: {len(processed_keys)}')
+
+    def _is_new(row: pd.Series) -> bool:
+        key = build_record_key(row)
+        return all(key) and key not in processed_keys
+
+    mask = eligible.apply(_is_new, axis=1)
+    result = eligible[mask].copy()
+    print(f'Rows remaining after DB filter: {len(result)}')
+
+    return result
 
 
-def build_excel_value_map(row, site_name_map):
-    """Build the Excel cell/value dictionary for a single record.
-
-    Args:
-        row: A pandas Series containing one source record.
-        site_name_map: Dictionary mapping gage IDs to site names.
-
-    Returns:
-        Dictionary keyed by Excel cell reference.
-    """
-    excel_values = {}
+def build_excel_value_map(
+    row: pd.Series,
+    site_name_map: dict[str, str],
+) -> dict[str, Any]:
+    """Build the Excel cell-to-value mapping for one source row."""
+    excel_values: dict[str, Any] = {}
 
     for cell_ref, field_name in CELL_FIELD_MAP.items():
         if field_name == '':
@@ -343,14 +365,14 @@ def build_excel_value_map(row, site_name_map):
         else:
             excel_values[cell_ref] = row.get(field_name, '')
 
-    site_id = excel_values.get('A2', '')
+    site_id = normalize_text(excel_values.get('A2', ''))
     excel_values['F4'] = site_name_map.get(site_id, '')
 
     for cell_ref, fallback_field in FALLBACK_FIELD_MAP.items():
         if excel_values.get(cell_ref, '') in ['other', '']:
             excel_values[cell_ref] = row.get(fallback_field, '') if fallback_field else ''
 
-    gage_values = []
+    gage_values: list[float] = []
     for cell_ref in GAGE_READING_CELLS:
         value = excel_values.get(cell_ref, '')
         try:
@@ -360,26 +382,18 @@ def build_excel_value_map(row, site_name_map):
         except (TypeError, ValueError):
             continue
 
-    if gage_values:
-        excel_values['T7'] = round(sum(gage_values) / len(gage_values), 2)
-    else:
-        excel_values['T7'] = ''
-
+    excel_values['T7'] = round(sum(gage_values) / len(gage_values), 2) if gage_values else ''
     excel_values['AH7'] = round_if_numeric(excel_values.get('AH7', ''), digits=2)
 
-    for cell_ref, value in excel_values.items():
+    for cell_ref, value in list(excel_values.items()):
         if value == 0.0:
             excel_values[cell_ref] = ''
 
     return excel_values
 
 
-def write_excel_template(cell_values):
-    """Populate the Excel template with mapped values.
-
-    Args:
-        cell_values: Dictionary keyed by Excel cell reference.
-    """
+def write_excel_template(cell_values: dict[str, Any]) -> None:
+    """Populate the Excel template workbook with mapped cell values."""
     if os.path.exists(TEMP_XLSX_PATH):
         os.remove(TEMP_XLSX_PATH)
 
@@ -394,16 +408,8 @@ def write_excel_template(cell_values):
     workbook.close()
 
 
-def export_pdf(output_date, output_id):
-    """Export the current temp workbook to a PDF.
-
-    Args:
-        output_date: Date string used in the output filename.
-        output_id: Site or form identifier used in the output filename.
-
-    Returns:
-        Path to the saved PDF.
-    """
+def export_pdf(output_date: str, output_id: str) -> Path:
+    """Export the populated temp workbook to a uniquely named PDF."""
     workbook = aspose.cells.Workbook(str(TEMP_XLSX_PATH))
     pdf_name = f'{output_id}_{output_date}.pdf'
     pdf_path = os.path.join(OUTPUT_DIRECTORY, pdf_name)
@@ -424,13 +430,8 @@ def export_pdf(output_date, output_id):
     raise FileExistsError(f'Could not create unique PDF name for {output_id} {output_date}.')
 
 
-def send_summary_email(recipient_list, save_count):
-    """Send an email summary for the current run.
-
-    Args:
-        recipient_list: Email recipient string.
-        save_count: Number of successfully saved files.
-    """
+def send_summary_email(recipient_list: str, save_count: int) -> None:
+    """Send a summary email for the current run."""
     current_date = dt.datetime.now().strftime('%b %d, %Y')
     message = MIMEMultipart()
     message['Subject'] = f'E-Field Forms {current_date}'
@@ -445,22 +446,22 @@ def send_summary_email(recipient_list, save_count):
         server.send_message(message)
 
 
-def push_data_to_aq():
+def push_data_to_aq() -> None:
     """Push processed data into Aquarius.
 
-    This is a placeholder for the Aquarius integration step.
+    This is currently a placeholder.
     """
     pass
 
 
-def main():
+def main() -> None:
     """Run the discharge form export workflow."""
     initialize_tracking_db(TRACKING_DB_PATH)
 
     site_name_map = load_site_name_map(GAGE_LIST_PATH)
     source_gdf = load_source_records()
-    processed_ids = fetch_processed_ids(TRACKING_DB_PATH)
-    records_to_process = select_records_to_process(source_gdf, processed_ids)
+    processed_keys = fetch_processed_keys(TRACKING_DB_PATH)
+    records_to_process = select_records_to_process(source_gdf, processed_keys)
 
     print(records_to_process)
 
@@ -475,20 +476,24 @@ def main():
         measurement_date = excel_values.get('F5', '')
         output_date = format_output_date(measurement_date)
 
-        site_id = str(excel_values.get('A2', '')).strip().replace(' ', '')
-        if not site_id:
-            site_id = str(excel_values.get('F4', '')).strip().replace(' ', '')
+        record_processed_at, record_gage_site_id = build_record_key(row)
 
-        pdf_path = export_pdf(output_date, site_id)
+        pdf_site_id = record_gage_site_id.replace(' ', '')
+        if not pdf_site_id:
+            pdf_site_id = normalize_text(excel_values.get('F4', '')).replace(' ', '')
+
+        pdf_path = export_pdf(output_date, pdf_site_id)
         push_data_to_aq()
 
-        insert_processed_record(
+        inserted = insert_processed_record(
             TRACKING_DB_PATH,
-            global_id=row.get('globalid', ''),
-            gage_site_id=site_id,
+            processed_at=record_processed_at,
+            gage_site_id=record_gage_site_id,
             output_pdf=pdf_path,
         )
-        saved_file_count += 1
+
+        if inserted:
+            saved_file_count += 1
 
     print(f'{saved_file_count} files saved')
     send_summary_email(EMAIL_RECIPIENTS, saved_file_count)

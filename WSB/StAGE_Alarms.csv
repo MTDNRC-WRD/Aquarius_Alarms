@@ -1,16 +1,19 @@
 UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Unit,LowAlarm,HighAlarm,Publish
-e100da75a998463e8286950d399fc8a9,40B 07000,"Petrolia Reservoir nr Winnett, MT",Lake res elevation,Jun-23 22:15,28.95,ft,2880.0,2902.1,True
+92172b8860ff403ea80b135d9b9688d5,39E 09000,"Box Elder Cr nr Ekalaka, MT",Stage,Jul-05 21:45,3.64,ft,3.65,4.8,True
+e100da75a998463e8286950d399fc8a9,40B 07000,"Petrolia Reservoir nr Winnett, MT",Lake res elevation,Jul-05 22:15,27.738,ft,2880.0,2902.1,True
 9a91d19701bb4c2eb63fcb7728f71538,40G 10000,Sage Creek Nr Box Elder,Stage,0,0.0,ft,2.0,3.0,True
-46fb37a3b75d47319077bec21a036a09,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Voltage,Jun-23 21:30,6.0,V,11.5,15.0,True
-d9b04c187bef41989c789be020bdeb75,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Voltage,Jun-23 22:30,6.0,V,11.5,15.0,True
+c70cd139c53b46c5b6f518a20bac0e07,40J 08900,"Beaver Creek abv Reservoir nr Havre, MT",Voltage,Jul-05 22:00,11.302,V,11.5,15.0,True
+46fb37a3b75d47319077bec21a036a09,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Voltage,Jul-05 21:30,7.0,V,11.5,15.0,True
+d9b04c187bef41989c789be020bdeb75,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Voltage,Jul-05 22:30,7.0,V,11.5,15.0,True
 771524d915114f8a8d4d9b398a0b4c8d,41D 09000,"Big Hole River nr Dewey, MT",Water Temp,0,0.0,degC,-60.0,100.0,True
-a8f4851dd8764c9ea3aff6fe8c8f8d0b,41G 09000,"Willow Creek nr Willow Creek, MT",Stage,Jun-23 21:30,2.47,ft,1.3,1.8,True
-8e8e53be266143f4a323af9b3f803c13,41H 08990,"Bozeman Creek at Bozeman, MT",Stage,Jun-23 22:15,4.06,ft,4.1,5.5,True
-c976ffe229dc47cd8aa9b7982cd2c1a4,41K 05100,Elk Creek nr Haystack Butte,Stage,Jun-23 21:45,3.08,ft,2.6,3.0,True
-3cf026e01fee4972af209f0164ce2789,41K 09900,Mill Coulee Ck nr Sun River,Stage,Jun-23 18:00,2.08625,ft,1.1,2.0,True
-1cedf233a2e347679540855095f996b9,41M 09990,"Dupuyer Creek nr Dupuyer, MT",Stage,Jun-23 21:45,2.17,ft,1.1,1.7,True
-b57c9ac181854132aaf125fd003e9fae,41O 07900,"Teton River nr Dutton, MT",Stage,Jun-23 21:45,2.11,ft,1.5,2.0,True
-8e182acf4635469ca880839ad8918554,42I 09000,"Little Powder River nr Broadus, MT",Stage,Jun-23 22:15,3.49,ft,3.65,4.25,True
-2316cd649139480c9ddd30f4670ed395,43E 09000,Pryor Cr at Huntley,Stage,Jun-23 22:00,2.96,ft,3.25,5.0,True
-64fedaeba0bf4ca4993b09a127bfb1eb,76G 03100,"Racetrack Creek nr Racetrack, MT",Water Temp,Jun-23 21:30,0.89,degC,1.0,30.0,True
-0aab906058a3416fb030b5c828b7d6b5,76LJ 07500,Mill Creek below Creston Hatchery,Stage,Jun-23 22:15,1.37,ft,0.9,1.2,True
+a8f4851dd8764c9ea3aff6fe8c8f8d0b,41G 09000,"Willow Creek nr Willow Creek, MT",Stage,Jul-05 21:30,1.88,ft,1.3,1.8,True
+c976ffe229dc47cd8aa9b7982cd2c1a4,41K 05100,Elk Creek nr Haystack Butte,Stage,Jul-05 21:45,3.11,ft,2.6,3.0,True
+1cedf233a2e347679540855095f996b9,41M 09990,"Dupuyer Creek nr Dupuyer, MT",Stage,Jul-05 21:45,2.47,ft,1.1,1.7,True
+152b38a05081471da3bd8c5acd05cb1d,41O 05000,Teton River above Hwy 221 bridge,Stage,Jul-05 22:00,2.25,ft,1.8,2.1,True
+b57c9ac181854132aaf125fd003e9fae,41O 07900,"Teton River nr Dutton, MT",Stage,Jul-05 21:45,2.42,ft,1.5,2.0,True
+40c51d944904414a9841e4d2d43b4323,41O 09000,Teton River below Buck Bridge,Stage,Jul-05 18:00,3.6410416666666667,ft,2.7,3.5,True
+9be97f170f44470c8845080568f3a25a,41Q 08000,"Highwood Creek nr Highwood, MT",Stage,Jul-05 21:30,4.02,ft,2.8,3.75,True
+11e0dd05e36e4246ac40faa1ee3b937f,43BV 02000,Sweet Grass Creek at Tronrud Bridge,Stage,Jul-05 21:00,1.97,ft,0.9,1.8,True
+2316cd649139480c9ddd30f4670ed395,43E 09000,Pryor Cr at Huntley,Stage,Jul-05 22:00,2.94,ft,3.25,5.0,True
+0aab906058a3416fb030b5c828b7d6b5,76LJ 07500,Mill Creek below Creston Hatchery,Stage,Jul-05 22:15,1.45,ft,0.9,1.2,True
+95d92e535bfb4995b48608d3480c8019,SR 004,Duck Creek above Simms Ashuelot Rd Bridge,Stage,Jul-05 18:00,1.30421875,ft,0.4,1.2,True

@@ -1,6 +1,7 @@
 UniqueId,LocationIdentifier,SiteName,Parameter,Unit,Timestamp,Value,Timestamp_1hr,Value_1hr,Timestamp_day,Value_day,Delta_Day,Alarm_Type,LowAlarm,HighAlarm,DeltaAlarm,Publish
 35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,0.05,50,3,True
-dc80d464e281436c99c2616e7e567763,41O 02000,Teton River at Bynum Diversion nr Choteau MT,Discharge,ft^3/s,Jun-23 22:00,179,Jun-23 21:15,179,Jun-22 22:15,188,-9,HighAlarm,0.05,160,20,True
-d6fb90e9d1bd4c559ad1337b0977b265,43BJ 03800,Boulder River below Natural bridge,Discharge,ft^3/s,Jun-23 21:45,1172,Jun-23 21:00,1182,Jun-22 22:00,1212,-40,HighAlarm,75.0,600,100,True
-1bc60a18f2de40caa8de0d042b6f0227,43C 04600,"East Rosebud Cr nr Roscoe, MT",Discharge,ft^3/s,Jun-23 21:30,653,Jun-23 20:45,658,Jun-22 21:45,695,-42,HighAlarm,35.0,350,100,True
-c5e3175a726e4d648889f62e0f466f6c,76LJ 07500,Mill Creek below Creston Hatchery,Discharge,ft^3/s,Jun-23 22:15,34,Jun-23 21:30,35,Jun-22 22:30,34,0,HighAlarm,20.0,30,10,True
+dc80d464e281436c99c2616e7e567763,41O 02000,Teton River at Bynum Diversion nr Choteau MT,Discharge,ft^3/s,Jul-05 22:00,284,Jul-05 21:15,284,Jul-04 22:15,161,123,HighAlarm,0.05,160,20,True
+a81b273b22fa4de0bd0954a39dd2ada4,41O 03000,Teton River above Springhill,Discharge,ft^3/s,Jul-05 22:15,49,Jul-05 21:30,47,Jul-04 22:30,19,30,DeltaAlarm,10.0,50,20,True
+d6fb90e9d1bd4c559ad1337b0977b265,43BJ 03800,Boulder River below Natural bridge,Discharge,ft^3/s,Jul-05 21:45,724,Jul-05 21:00,724,Jul-04 22:00,732,-8,HighAlarm,75.0,600,100,True
+1bc60a18f2de40caa8de0d042b6f0227,43C 04600,"East Rosebud Cr nr Roscoe, MT",Discharge,ft^3/s,Jul-05 21:30,517,Jul-05 20:45,517,Jul-04 21:45,457,60,HighAlarm,35.0,350,100,True
+c5e3175a726e4d648889f62e0f466f6c,76LJ 07500,Mill Creek below Creston Hatchery,Discharge,ft^3/s,Jul-05 22:15,44,Jul-05 21:30,44,Jul-04 22:30,44,0,HighAlarm,20.0,30,10,True
