@@ -66,6 +66,7 @@ from urllib3.util.retry import Retry
 # CONFIG
 # =============================================================================
 # SERVER_NAME = 'dnrhln6386.state.mt.ads'
+# SERVER_NAME = 'ENTDNR0101.state.mt.ads'
 SERVER_NAME = 'dnrc-mt-prod.aquaticinformatics.net'
 USER_NAME   = 'DNRC'
 PASSWORD    = 'DNRC'
@@ -88,6 +89,7 @@ RECIPIENTS = [
     'Christopher.Basden@mt.gov',
     'b.grigsby@mt.gov',
     'David.Saba@mt.gov',
+    'Jack.Poole@mt.gov'
 ]
 # RECIPIENTS = ['David.Saba@mt.gov']
 

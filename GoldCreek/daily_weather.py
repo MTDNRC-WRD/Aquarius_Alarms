@@ -13,6 +13,7 @@ from email.mime.text import MIMEText
 
 
 # SERVER_NAME = 'dnrhln6386.state.mt.ads'
+# SERVER_NAME = 'ENTDNR0101'
 SERVER_NAME = 'dnrc-mt-prod.aquaticinformatics.net'
 USER_NAME = 'DNRC'
 PASSWORD = 'DNRC'
@@ -367,7 +368,8 @@ if daily_precip >= 1:
 attachment = str(Path.joinpath(DIRECTORY, 'STAGE_Alarms.csv'))
 msg = MIMEMultipart()
 msg['Subject'] = f"Daily Weather Summary {t_now_format}"
-msg['From'] = 'GoldCreekWeatherStation@dnrc.mt.gov'
+# msg['From'] = 'GoldCreekWeatherStation@dnrc.mt.gov'
+msg['From'] = 'WeatherStation@dnrc.mt.gov'
 msg['To'] = RECIPIENTS
 
 body = MIMEText(f"Morning Conditions ({today_format}):\n\n"              

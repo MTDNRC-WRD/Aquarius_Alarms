@@ -1,7 +1,8 @@
 UniqueId,LocationIdentifier,SiteName,Parameter,Unit,Timestamp,Value,Timestamp_1hr,Value_1hr,Timestamp_day,Value_day,Delta_Day,Alarm_Type,LowAlarm,HighAlarm,DeltaAlarm,Publish
-35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,0.05,50,3,True
-dc80d464e281436c99c2616e7e567763,41O 02000,Teton River at Bynum Diversion nr Choteau MT,Discharge,ft^3/s,Jul-05 22:00,284,Jul-05 21:15,284,Jul-04 22:15,161,123,HighAlarm,0.05,160,20,True
-a81b273b22fa4de0bd0954a39dd2ada4,41O 03000,Teton River above Springhill,Discharge,ft^3/s,Jul-05 22:15,49,Jul-05 21:30,47,Jul-04 22:30,19,30,DeltaAlarm,10.0,50,20,True
-d6fb90e9d1bd4c559ad1337b0977b265,43BJ 03800,Boulder River below Natural bridge,Discharge,ft^3/s,Jul-05 21:45,724,Jul-05 21:00,724,Jul-04 22:00,732,-8,HighAlarm,75.0,600,100,True
-1bc60a18f2de40caa8de0d042b6f0227,43C 04600,"East Rosebud Cr nr Roscoe, MT",Discharge,ft^3/s,Jul-05 21:30,517,Jul-05 20:45,517,Jul-04 21:45,457,60,HighAlarm,35.0,350,100,True
-c5e3175a726e4d648889f62e0f466f6c,76LJ 07500,Mill Creek below Creston Hatchery,Discharge,ft^3/s,Jul-05 22:15,44,Jul-05 21:30,44,Jul-04 22:30,44,0,HighAlarm,20.0,30,10,True
+35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,ft^3/s,Nov-03 23:30,0,Nov-03 22:45,0,Nov-02 23:45,0,0,NoData,0.05,50,3,True
+d1bddfaf51db4dd2a7e7db5fbfacfcee,41D 01000,"Big Hole River abv Jackson, MT",Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,10.0,200,100,True
+a585edb7d40948febbfb1cba55475aa8,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,20.0,150,100,True
+612ec6eb18af48c4920fcd549fa91bae,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,30.0,400,100,True
+b5c8687b095a4efd9836043dbe2503c8,41D 07150,North Fork Big Hole River at Battlefield,Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,7.0,550,100,True
+dd006b09768d45a8a6932dde13bd3e34,41D 07700,"Deep Creek nr Wise River, MT",Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,25.0,150,30,True
+e93eefb7d71647adb4c1fdc10a243927,42C 08190,"Pumpkin Creek nr Miles City, MT",Discharge,ft^3/s,Nov-03 22:45,0,Nov-03 22:00,0,Nov-02 23:00,0,0,NoData,0.0,20,100,True
