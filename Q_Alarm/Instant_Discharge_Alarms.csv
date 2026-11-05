@@ -1,9 +1,0 @@
-UniqueId,LocationIdentifier,SiteName,Parameter,Unit,Timestamp,Value,Timestamp_1hr,Value_1hr,Timestamp_day,Value_day,Delta_Day,Alarm_Type,LowAlarm,HighAlarm,DeltaAlarm,Publish
-35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,ft^3/s,Nov-04 23:30,0,Nov-04 22:45,0,Nov-03 23:45,0,0,NoData,0.05,50,3,True
-d1bddfaf51db4dd2a7e7db5fbfacfcee,41D 01000,"Big Hole River abv Jackson, MT",Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,10.0,200,100,True
-a585edb7d40948febbfb1cba55475aa8,41D 02000,"Big Hole River abv Spring Cr nr Jackson, MT",Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,20.0,150,100,True
-612ec6eb18af48c4920fcd549fa91bae,41D 05000,"Big Hole River at Miner Creek nr Jackson, MT",Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,30.0,400,100,True
-b5c8687b095a4efd9836043dbe2503c8,41D 07150,North Fork Big Hole River at Battlefield,Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,7.0,550,100,True
-dd006b09768d45a8a6932dde13bd3e34,41D 07700,"Deep Creek nr Wise River, MT",Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,25.0,150,30,True
-977102eda5fe4c0794f59bc236480d56,41D 07900,Wise River nr mouth,Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,4.0,1700,50,True
-e93eefb7d71647adb4c1fdc10a243927,42C 08190,"Pumpkin Creek nr Miles City, MT",Discharge,ft^3/s,Nov-04 22:45,0,Nov-04 22:00,0,Nov-03 23:00,0,0,NoData,0.0,20,100,True
