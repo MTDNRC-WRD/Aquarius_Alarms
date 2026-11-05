@@ -75,7 +75,7 @@ from urllib3.util.retry import Retry
 # SERVER_NAME = 'dnrhln6386.state.mt.ads'
 # SERVER_NAME = 'ENTDNR0101.state.mt.ads'
 SERVER_NAME = 'dnrc-mt-prod.aquaticinformatics.net'
-CRED_FILE = Path(__file__).resolve().with_name('creds.txt')
+CRED_FILE = Path(r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\Aquarius_Alarms\creds.txt')
 
 DIRECTORY     = Path(r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\Aquarius_Alarms\Gage_Alarms\WSB')
 SITE_LIST   = DIRECTORY / 'SensorList.xlsx'

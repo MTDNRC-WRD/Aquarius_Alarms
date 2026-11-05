@@ -45,8 +45,7 @@ import requests
 # SERVER_NAME = 'ENTDNR0101'
 SERVER_NAME = 'dnrc-mt-prod.aquaticinformatics.net'
 
-SCRIPT_DIR = Path(__file__).resolve().parent
-CRED_FILE = SCRIPT_DIR / 'creds.txt'
+CRED_FILE = Path(r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\Aquarius_Alarms\creds.txt')
 
 DIRECTORY = Path(r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\Aquarius_Alarms\Gage_Alarms\GoldCreek')
 SITE_LIST = DIRECTORY / 'SensorList.xlsx'

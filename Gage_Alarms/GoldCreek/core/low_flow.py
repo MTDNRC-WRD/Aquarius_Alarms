@@ -41,8 +41,7 @@ from urllib3.util.retry import Retry
 # SERVER_NAME = 'dnrhln6386.state.mt.ads'
 SERVER_NAME = 'dnrc-mt-prod.aquaticinformatics.net'
 
-SCRIPT_DIR = Path(__file__).resolve().parent
-CRED_FILE = SCRIPT_DIR / 'creds.txt'
+CRED_FILE = Path(r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\Aquarius_Alarms\creds.txt')
 
 DIRECTORY = Path(r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\Aquarius_Alarms\Gage_Alarms\GoldCreek')
 STATE_FILE = DIRECTORY / 'core' / 'alarm_state.json'
