@@ -15,8 +15,8 @@ import json
 # =============================================================================
 # SERVER_NAME = 'dnrhln6386.state.mt.ads'
 SERVER_NAME  = 'dnrc-mt-prod.aquaticinformatics.net'
-USER_NAME    = 'DNRC'
-PASSWORD     = 'DNRC'
+USER_NAME    = ''
+PASSWORD     = ''
 
 DIRECTORY       = Path(r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\Aquarius_Alarms\Stage_Scripts\id_compiler')
 INPUT_CSV       = DIRECTORY / 'inputs' / 'daily_averages.csv'

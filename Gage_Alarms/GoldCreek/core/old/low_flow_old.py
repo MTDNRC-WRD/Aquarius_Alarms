@@ -9,8 +9,8 @@ import requests
 
 # SERVER_NAME = 'dnrhln6386.state.mt.ads'
 SERVER_NAME = 'dnrc-mt-prod.aquaticinformatics.net'
-USER_NAME = 'DNRC'
-PASSWORD = 'DNRC'
+USER_NAME = ''
+PASSWORD = ''
 DIRECTORY = Path(r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\Aquarius_Alarms\GoldCreek')
 RECIPIENTS = "bruce@thomasherefords.com, 4065441536@vtext.com, John.Lunzer@mt.gov, 4069169738@tmomail.net, David.Saba@mt.gov"
 # RECIPIENTS = "David.Saba@mt.gov"

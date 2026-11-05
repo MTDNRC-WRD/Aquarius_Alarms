@@ -29,7 +29,7 @@ import requests
 SERVER_NAME = 'dnrc-mt-prod.aquaticinformatics.net'
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-CRED_FILE = SCRIPT_DIR / 'creds.txt'
+CRED_FILE = Path(r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\Aquarius_Alarms\creds.txt')
 
 # --- Source of time series -------------------------------------------------
 # Edit this list to add or remove locations (search by location ID).

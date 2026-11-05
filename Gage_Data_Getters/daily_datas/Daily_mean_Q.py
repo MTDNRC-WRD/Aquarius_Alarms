@@ -9,8 +9,8 @@ import time
 
 # SERVER_NAME = 'dnrhln6386.state.mt.ads'
 SERVER_NAME = 'dnrc-mt-prod.aquaticinformatics.net'
-USER_NAME = 'DNRC'
-PASSWORD = 'DNRC'
+USER_NAME = ''
+PASSWORD = ''
 
 RETRY_TIMEOUT = 600
 RETRY_INTERVAL = 30
