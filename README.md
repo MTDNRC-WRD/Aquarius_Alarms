@@ -10,17 +10,18 @@ Scripts are designed to run unattended on a schedule (Windows Task Scheduler via
 
 ```
 Aquarius_Alarms/
-├── aq_env.yml              # Conda environment (Python 3.9)
-├── Discharge_Alarms/       # Daily discharge alarm (all monitored sites)
+├── aq_env.yml # Conda environment (Python 3.9)
+├── Discharge_Alarms/ # Daily discharge alarm (all monitored sites)
 ├── Gage_Alarms/
-│   ├── WSB/                # Daily sensor alarms (stage, battery voltage, etc.)
-│   ├── GoldCreek/          # Gold Creek low-flow alarm and daily weather
-│   └── SWPB/               # SWPB daily sensor alarm email
-├── Gage_Data_Getters/      # Utilities that pull data from AQUARIUS
-│   ├── daily_datas/        # Daily means, medians, visualizations
-│   └── timeseries_ids/     # TimeSeriesUniqueId lookup
-└── Gage_Form_Filler/       # AGOL discharge-measurement form -> PDF pipeline
+│ ├── WSB/ # Daily sensor alarms (stage, battery voltage, etc.)
+│ ├── GoldCreek/ # Gold Creek low-flow alarm and daily weather
+│ └── SWPB/ # SWPB daily sensor alarm email
+├── Gage_Data_Getters/ # Utilities that pull data from AQUARIUS
+│ ├── daily_datas/ # Daily means, medians, visualizations
+│ └── timeseries_ids/ # TimeSeriesUniqueId lookup
+└── Gage_Form_Filler/ # AGOL discharge-measurement form -> PDF pipeline
 ```
+
 
 Most projects follow the same sub-structure:
 
@@ -42,7 +43,7 @@ Most projects follow the same sub-structure:
 - exceeds its high-flow threshold
 - has a 24-hour increase above its delta threshold
 
-Values are compared at the latest point, about 1 hour ago and about 24 hours ago (15-minute data). The email lists the alarmed sites and attaches `Instant_Discharge_Alarms.csv`. Full results go to `outputs/Instant_Discharge.csv`. The low-flow column exists in `Qlist.xlsx` but is not evaluated.
+Values are compared at the latest point, about 1 hour ago and about 24 hours ago (15-minute data). The email is HTML with a plain-text fallback (see [Alarm email format](#alarm-email-format)). It lists the alarmed sites and attaches `Instant_Discharge_Alarms.csv`. Full results go to `outputs/Instant_Discharge.csv`. The low-flow column exists in `Qlist.xlsx` but is not evaluated.
 
 ### Gage_Alarms/WSB
 `core/sensor_alarms.py` checks the latest reading for every sensor in `SensorList.xlsx` and emails a daily summary of:
@@ -51,7 +52,7 @@ Values are compared at the latest point, about 1 hour ago and about 24 hours ago
 - battery voltage outside its band
 - other parameters outside their low/high alarm band
 
-A second email goes to the Paradise Valley list when one of the Paradise Valley sites is in alarm. If the script crashes, a separate failure email with the traceback goes to the failure recipients. Outputs are `outputs/todays_data.csv` and `outputs/STAGE_Alarms.csv`.
+The email is HTML with a plain-text fallback (see [Alarm email format](#alarm-email-format)). It has one table per alarm type, shows each value with its unit, and ends with a randomly chosen pleasantry. A second email with the same content goes to the Paradise Valley list when one of the Paradise Valley sites is in alarm. If the script crashes, a separate plain-text failure email with the traceback goes to the failure recipients. Outputs are `outputs/todays_data.csv` and `outputs/STAGE_Alarms.csv`.
 
 ### Gage_Alarms/GoldCreek
 - `core/low_flow.py` is the Gold Creek low/high flow alarm. It emails the pump crew when flow crosses a threshold. It also sends a data-problem ("broken") email when data is stale or missing.
@@ -107,9 +108,34 @@ Other conventions:
 - **Timezones:** AQUARIUS returns UTC. The scripts convert to Mountain time by subtracting 6 or 7 hours.
 - **Failure emails:** scheduled alarm scripts email the failure list with a traceback if they crash.
 
+## Alarm email format
+
+The discharge and sensor alarm emails are multipart: an HTML body with a plain-text fallback, plus the alarm CSV as an attachment. Both scripts use the same HTML helpers (`build_alarm_table()` and `build_html_body()`), which produce:
+
+- one table per alarm type, with ID, Site Name and value columns
+- a colored header per section showing the section name and count; empty sections show **None**
+- alternating light-tinted rows and a thin line under every row and under the header
+- a fixed layout capped at 640 px wide; long site names are cut off with an ellipsis
+
+Look and feel is controlled by constants near the top of each script:
+
+| Constant | Effect |
+|---|---|
+| `HTML_MAX_WIDTH` | Maximum table width in px |
+| `HTML_ID_COL_PX`, `HTML_VALUE_COL_PX` | Fixed widths of the ID and value columns; Site Name takes the rest |
+| `HTML_TINT` | How light the alternating row color is (0 = full header color, 1 = white) |
+| `SECTION_STYLES` | Header color for each section |
+
+Notes:
+
+- Styles are inline and the layout uses tables so the email renders in mail clients. Desktop Outlook may ignore `max-width` and show the table wider than 640 px.
+- `send_email()` takes an optional `html_body`. If it is left out, recipients get the plain-text version.
+- Failure and site-list-warning emails stay plain text.
+
 ## Running
 
 Run a script directly:
+
 
 ```
 conda activate aquarius
