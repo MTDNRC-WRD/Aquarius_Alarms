@@ -418,9 +418,6 @@ def main():
             high_flow_alarms.append(entry)
             alarm_rows.append(row)
 
-        elif row["Delta_Day"] > row["DeltaAlarm"]:
-            ...  # unchanged
-
         elif row['Delta_Day'] > row['DeltaAlarm']:
             row['Alarm_Type'] = 'DeltaAlarm'
             delta_alarms.append({
@@ -442,14 +439,14 @@ def main():
     body_text = (
         f"Discharge Alarm — {date_label}\n"
         f'{"=" * 50}\n\n'
-        f"Missing / No Data:\n"
-        f"{format_alarm_lines(no_data_alarms)}\n\n"
-        f"Low Discharge:\n"
-        f"{format_alarm_lines(low_flow_alarms)}\n\n"
         f"High Discharge:\n"
-        f"{format_alarm_lines(high_flow_alarms)}\n\n"
+        f"{format_alarm_lines(high_flow_alarms)}\n\n"        
         f"Significant 24-hr Increase:\n"
-        f"{format_alarm_lines(delta_alarms)}\n\n"
+        f"{format_alarm_lines(delta_alarms)}\n\n"        
+        f"Low Discharge:\n"
+        f"{format_alarm_lines(low_flow_alarms)}\n\n"        
+        f"Missing / No Data:\n"
+        f"{format_alarm_lines(no_data_alarms)}\n\n"  
         "See attached CSV for full details.\n"
     )
 
