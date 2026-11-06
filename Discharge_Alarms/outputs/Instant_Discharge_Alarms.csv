@@ -1,9 +1,10 @@
 UniqueId,LocationIdentifier,SiteName,Parameter,Unit,Timestamp,Value,Timestamp_1hr,Value_1hr,Timestamp_day,Value_day,Delta_Day,Alarm_Type,LowAlarm,HighAlarm,DeltaAlarm,Publish
-35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,ft^3/s,Nov-06 02:30,0,Nov-06 01:45,0,Nov-05 02:45,0,0,NoData,0.05,50,3,True
-21041bb563b44788a78c95a72086d48c,40J 09100,"Beaver Cr blw Reservoir nr Havre, MT",Discharge,ft^3/s,Nov-06 03:15,1,Nov-06 02:30,1,Nov-05 03:30,1,0,LowAlarm,5.0,130,50,True
-3a93a8a70dbc4ed8962b817a9c1a472b,41F 05000,"Blaine Spring Creek nr Varney, MT",Discharge,ft^3/s,Nov-06 03:00,30,Nov-06 02:15,29,Nov-05 03:15,30,0,LowAlarm,70.0,350,100,True
-dc80d464e281436c99c2616e7e567763,41O 02000,Teton River at Bynum Diversion nr Choteau MT,Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,0.05,160,20,True
+35401d776dd141a1b42e97ecf5c6cf75,40G 10000,Sage Creek Nr Box Elder,Discharge,ft^3/s,Nov-06 06:30,0,Nov-06 05:45,0,Nov-05 06:45,0,0,NoData,0.05,50,3,True
+21041bb563b44788a78c95a72086d48c,40J 09100,"Beaver Cr blw Reservoir nr Havre, MT",Discharge,ft^3/s,Nov-06 06:15,1,Nov-06 05:30,1,Nov-05 06:30,1,0,LowAlarm,5.0,130,50,True
+3a93a8a70dbc4ed8962b817a9c1a472b,41F 05000,"Blaine Spring Creek nr Varney, MT",Discharge,ft^3/s,Nov-06 06:00,28,Nov-06 05:15,28,Nov-05 06:15,28,0,LowAlarm,70.0,350,100,True
 a81b273b22fa4de0bd0954a39dd2ada4,41O 03000,Teton River above Springhill,Discharge,ft^3/s,Nov-05 15:15,1,Nov-05 14:30,1,null,null,0,LowAlarm,10.0,50,20,True
-e93eefb7d71647adb4c1fdc10a243927,42C 08190,"Pumpkin Creek nr Miles City, MT",Discharge,ft^3/s,Nov-06 02:45,0,Nov-06 02:00,0,Nov-05 03:00,0,0,NoData,0.0,20,100,True
-d6fb90e9d1bd4c559ad1337b0977b265,43BJ 03800,Boulder River below Natural bridge,Discharge,ft^3/s,Nov-06 02:45,71,Nov-06 02:00,71,Nov-05 03:00,69,2,LowAlarm,75.0,600,100,True
+e93eefb7d71647adb4c1fdc10a243927,42C 08190,"Pumpkin Creek nr Miles City, MT",Discharge,ft^3/s,Nov-06 06:45,0,Nov-06 06:00,0,Nov-05 07:00,0,0,NoData,0.0,20,100,True
+d6fb90e9d1bd4c559ad1337b0977b265,43BJ 03800,Boulder River below Natural bridge,Discharge,ft^3/s,Nov-06 06:45,71,Nov-06 06:00,72,Nov-05 07:00,71,0,LowAlarm,75.0,600,100,True
+e70d4e0078304c4bb69021905da1c0e4,76D 04500,"Libby Creek nr Libby, MT",Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,0.5,10000,500,True
+49179f6ddd9148f784d918a7cc1bc325,76D 05500,"Flower Creek nr Libby, MT",Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,0.5,10000,500,True
 59c948db413146439674f1d56217d019,76GJ 07100,North Fork Flint Creek nr Mouth,Discharge,ft^3/s,null,null,null,null,null,null,0,NoData,1.0,40,25,True

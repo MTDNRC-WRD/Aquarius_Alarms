@@ -92,7 +92,7 @@ RECIPIENTS  = [
 ]
 
 FAILURE_RECIPIENTS = ['David.Saba@mt.gov', 'Jack.Poole@mt.gov']
-RECIPIENTS = ['David.Saba@mt.gov']
+# RECIPIENTS = ['David.Saba@mt.gov']
 
 LOOKBACK_MINUTES = 1680
 REQUEST_TIMEOUT  = 60

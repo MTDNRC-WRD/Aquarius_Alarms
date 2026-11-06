@@ -39,9 +39,9 @@ LOCATION_IDS: list[str] = [
 ]
 
 # Set True to use a CSV of time series IDs instead of LOCATION_IDS.
-USE_TSID_CSV = False
-TSID_CSV = SCRIPT_DIR / 'sensor_list.csv'   # needs a 'UniqueId' column
-TSID_COLUMN = 'UniqueId'
+USE_TSID_CSV = True
+TSID_CSV = SCRIPT_DIR / 'all_ids.csv'   # needs a 'UniqueId' column
+TSID_COLUMN = 'ID'
 
 # --- Options ---------------------------------------------------------------
 LOOKBACK_MINUTES = 1500
@@ -102,6 +102,7 @@ def get_json(session: requests.Session, endpoint: str, params: dict) -> dict:
         Decoded JSON response.
     """
     resp = session.get(f'{BASE_URL}/{endpoint}', params=params, timeout=REQUEST_TIMEOUT)
+    # print(f"GET {resp.url}  ->  {resp.status_code}")
     resp.raise_for_status()
     return resp.json()
 
@@ -118,41 +119,38 @@ def get_tsids_for_location(session: requests.Session, location_id: str) -> list[
     return [item['UniqueId'] for item in data.get('TimeSeriesUniqueIds', [])]
 
 
-def read_tsid_csv(path: Path, column: str = TSID_COLUMN) -> pd.DataFrame:
-    """Read time series IDs (and optional SiteName) from a CSV.
-
-    Args:
-        path: CSV file path.
-        column: Name of the column holding the time series unique IDs.
-
-    Returns:
-        DataFrame with a 'UniqueId' column and a 'SiteName' column.
-    """
-    df = pd.read_csv(path, skip_blank_lines=True)
+def read_gage_csv(path: Path, column: str = TSID_COLUMN) -> pd.DataFrame:
+    """Read gage (location) IDs and optional SiteName from a CSV."""
+    df = pd.read_csv(path, skip_blank_lines=True, encoding='utf-8-sig', dtype=str)
+    df.columns = df.columns.str.strip()
     if column not in df.columns:
-        raise ValueError(f"'{column}' column not found in {path}")
-    df = df.rename(columns={column: 'UniqueId'})
-    df['UniqueId'] = df['UniqueId'].astype(str).str.strip()
+        raise ValueError(f"'{column}' column not found in {path}. Columns: {list(df.columns)}")
+    df = df.rename(columns={column: 'LocationIdentifier'})
+    df = df.dropna(subset=['LocationIdentifier'])
+    df['LocationIdentifier'] = df['LocationIdentifier'].str.strip()
+    df = df[df['LocationIdentifier'] != '']
     if 'SiteName' not in df.columns:
         df['SiteName'] = ''
-    return df[['UniqueId', 'SiteName']].drop_duplicates('UniqueId')
+    return df[['LocationIdentifier', 'SiteName']].drop_duplicates('LocationIdentifier')
 
 
 def collect_tsids(session: requests.Session) -> pd.DataFrame:
-    """Build the table of time series to query, from the CSV or location list.
-
-    Returns:
-        DataFrame with 'UniqueId' and 'SiteName' columns.
-    """
+    """Look up every time series UniqueId for each gage ID (CSV or LOCATION_IDS)."""
     if USE_TSID_CSV:
-        return read_tsid_csv(TSID_CSV)
+        gages = read_gage_csv(TSID_CSV)
+    else:
+        gages = pd.DataFrame({'LocationIdentifier': LOCATION_IDS, 'SiteName': ''})
 
     rows = []
-    for loc_id in LOCATION_IDS:
-        tsids = get_tsids_for_location(session, loc_id)
-        print(f'{loc_id}: {len(tsids)} time series')
-        rows.extend({'UniqueId': t, 'SiteName': ''} for t in tsids)
-    return pd.DataFrame(rows, columns=['UniqueId', 'SiteName'])
+    for gage in gages.itertuples(index=False):
+        try:
+            tsids = get_tsids_for_location(session, gage.LocationIdentifier)
+        except requests.RequestException as exc:
+            print(f'  [SKIP] {gage.LocationIdentifier}: {exc}')
+            continue
+        print(f'{gage.LocationIdentifier}: {len(tsids)} time series')
+        rows.extend({'UniqueId': t, 'SiteName': gage.SiteName} for t in tsids)
+    return pd.DataFrame(rows, columns=['UniqueId', 'SiteName']).drop_duplicates('UniqueId')
 
 
 def fetch_latest_point(session: requests.Session, tsid: str, site_name: str,
@@ -239,6 +237,3 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-
-
-

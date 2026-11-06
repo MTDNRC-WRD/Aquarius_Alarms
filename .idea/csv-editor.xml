@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Gage_Data_Getters\timeseries_ids\all_ids.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Gage_Data_Getters\timeseries_ids\output_tsid.csv">
           <value>
             <Attribute>
