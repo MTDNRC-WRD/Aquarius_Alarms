@@ -1,14 +1,14 @@
 UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Unit,LowAlarm,HighAlarm,Publish
-08ce82df47cc4219be9ca7155bdf87c3,41D 07150,North Fork Big Hole River at Battlefield,Stage,0,0.0,ft,2.0,5.5,True
-771524d915114f8a8d4d9b398a0b4c8d,41D 09000,"Big Hole River nr Dewey, MT",Water Temp,0,0.0,degC,-60.0,100.0,True
-38a790a6548d4fabaccc774ba38624a2,41J 02000,"Sheep Creek nr Adams Creek Road, MT",Stage,Nov-05 07:30,1.19,ft,1.2,1.8,True
-1cedf233a2e347679540855095f996b9,41M 09990,"Dupuyer Creek nr Dupuyer, MT",Stage,Nov-05 07:45,1.73,ft,1.1,1.7,True
-496aab34bacf49a49d246fb90e87b8f2,41O 03000,Teton River above Springhill,Stage,Nov-05 07:15,3.47,ft,3.5,4.0,True
-152b38a05081471da3bd8c5acd05cb1d,41O 05000,Teton River above Hwy 221 bridge,Stage,Nov-05 07:00,2.21,ft,1.8,2.1,True
-b57c9ac181854132aaf125fd003e9fae,41O 07900,"Teton River nr Dutton, MT",Stage,Nov-05 07:45,2.26,ft,1.5,2.0,True
-40c51d944904414a9841e4d2d43b4323,41O 09000,Teton River below Buck Bridge,Stage,Nov-04 18:00,3.5147395833333333,ft,2.7,3.5,True
-2f4719da98d14a09b8758af58ec968e5,76GJ 07100,North Fork Flint Creek nr Mouth,Water Temp,Nov-05 07:00,-0.02,degC,0.0,30.0,True
-b4b884b83c544845a9acc791a104aa47,76HB 09500,Lolo Creek abv Sleeman Creek,Stage,Nov-05 07:15,3306.2290000000003,ft,3.9,6.4,True
-ab2a7a4d36e44db181b4336b015d867d,76HB 09600,Lolo Creek below Highway 93,Stage,Nov-05 07:00,3175.639,ft,1.0,4.25,True
-0aab906058a3416fb030b5c828b7d6b5,76LJ 07500,Mill Creek below Creston Hatchery,Stage,Nov-05 07:15,1.4,ft,0.9,1.2,True
-bdc9d29ac44043e9aa169c0d7e855590,76HE 09700,"Tin Cup Creek nr Darby, MT",Stage,Nov-05 07:15,2.98,ft,3.1,3.7,True
+c70cd139c53b46c5b6f518a20bac0e07,40J 08900,"Beaver Creek abv Reservoir nr Havre, MT",Voltage,Nov-06 02:00,11.3,V,11.5,15.0,True
+38a790a6548d4fabaccc774ba38624a2,41J 02000,"Sheep Creek nr Adams Creek Road, MT",Stage,Nov-06 02:30,1.18,ft,1.2,1.8,True
+bc8707aa56d54486bd4f89936c6d1063,41J 04900,"Moose Creek nr White Sulphur Springs, MT",Stage,Nov-06 02:30,1.19,ft,1.2,2.3,True
+1cedf233a2e347679540855095f996b9,41M 09990,"Dupuyer Creek nr Dupuyer, MT",Stage,Nov-06 02:45,1.72,ft,1.1,1.7,True
+2c8357b6898f4bc4a4caf712dd2332f2,41O 03000,Teton River above Springhill,Stage,Nov-05 18:00,3.48,ft,3.5,4.0,True
+152b38a05081471da3bd8c5acd05cb1d,41O 05000,Teton River above Hwy 221 bridge,Stage,Nov-06 02:00,2.18,ft,1.8,2.1,True
+b57c9ac181854132aaf125fd003e9fae,41O 07900,"Teton River nr Dutton, MT",Stage,Nov-06 02:45,2.25,ft,1.5,2.0,True
+40c51d944904414a9841e4d2d43b4323,41O 09000,Teton River below Buck Bridge,Stage,Nov-05 18:00,3.51,ft,2.7,3.5,True
+2f4719da98d14a09b8758af58ec968e5,76GJ 07100,North Fork Flint Creek nr Mouth,Water Temp,Nov-06 02:00,-0.11,degC,0.0,30.0,True
+b4b884b83c544845a9acc791a104aa47,76HB 09500,Lolo Creek abv Sleeman Creek,Stage,Nov-06 02:15,3306.22,ft,3.9,6.4,True
+ab2a7a4d36e44db181b4336b015d867d,76HB 09600,Lolo Creek below Highway 93,Stage,Nov-06 03:00,3175.63,ft,1.0,4.25,True
+0aab906058a3416fb030b5c828b7d6b5,76LJ 07500,Mill Creek below Creston Hatchery,Stage,Nov-06 02:15,1.4,ft,0.9,1.2,True
+bdc9d29ac44043e9aa169c0d7e855590,76HE 09700,"Tin Cup Creek nr Darby, MT",Stage,Nov-06 02:15,2.98,ft,3.1,3.7,True

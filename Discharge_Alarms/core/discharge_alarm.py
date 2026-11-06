@@ -5,6 +5,7 @@ Queries AQUARIUS for instantaneous discharge at monitored gages and sends a
 daily email alert when any of the following conditions are met:
 
   - No data reported (timestamp is null or value is zero)
+  - Current discharge falls below a configured low-flow threshold
   - Current discharge exceeds a configured high-flow threshold
   - 24-hour discharge increase exceeds a configured delta threshold
 
@@ -17,7 +18,7 @@ creds.txt: Aquarius login credentials
 Qlist.xlsx : Site list with columns:
     index     – AQUARIUS TimeSeriesUniqueId
     SiteName  – Human-readable station name
-    LowAlarm  – Low-flow alarm threshold (cfs) [not currently evaluated]
+    LowAlarm  – Low-flow alarm threshold (cfs)
     HighAlarm – High-flow alarm threshold (cfs)
     DeltaAlarm– 24-hour delta alarm threshold (cfs)
     Publish   – Boolean; True = include in alarm evaluation
@@ -52,9 +53,11 @@ from email.mime.text import MIMEText
 from pathlib import Path
 from tqdm import tqdm
 import pandas as pd
+import shutil
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from typing import Optional
 
 # =============================================================================
 # CONFIG
@@ -89,7 +92,7 @@ RECIPIENTS  = [
 ]
 
 FAILURE_RECIPIENTS = ['David.Saba@mt.gov', 'Jack.Poole@mt.gov']
-# RECIPIENTS = ['David.Saba@mt.gov']
+RECIPIENTS = ['David.Saba@mt.gov']
 
 LOOKBACK_MINUTES = 1680
 REQUEST_TIMEOUT  = 60
@@ -98,7 +101,41 @@ IDX_NOW  = -1
 IDX_1HR  = -4
 IDX_DAY  = -96
 
-REQUIRED_COLS = ['SiteName', 'LowAlarm', 'HighAlarm', 'Delta', 'Publish']
+REQUIRED_COLS = ['SiteName', 'LowAlarm', 'HighAlarm', 'DeltaAlarm', 'Publish']
+
+
+def get_site_list_copy(source: Path, cache_dir: Path) -> tuple[Path, Optional[str]]:
+    """
+    Copy the site list into cache_dir and return the path to read from.
+
+    If the copy fails (e.g. the workbook is open and locked), fall back to
+    the copy from the last successful run. Raises only if no cached copy
+    exists.
+
+    Returns:
+        (path to read, warning message or None)
+    """
+    if not source.exists():
+        raise FileNotFoundError(f'Site list not found: {source}')
+
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    cached = cache_dir / source.name
+
+    try:
+        shutil.copy2(source, cached)
+        return cached, None
+    except (PermissionError, OSError) as exc:
+        if cached.exists():
+            age_hours = (dt.datetime.now().timestamp() - cached.stat().st_mtime) / 3600
+            warning = (
+                f'Could not copy {source.name} ({exc}); using cached copy '
+                f'last updated {age_hours:.1f} hours ago. The file may be open in Excel.'
+            )
+            print(f'  [WARN] {warning}')
+            return cached, warning
+        raise PermissionError(
+            f'Could not copy {source.name} and no cached copy exists: {exc}'
+        ) from exc
 
 
 def load_site_list(path: Path, sheet: str) -> tuple[pd.DataFrame, list[str]]:
@@ -112,18 +149,19 @@ def load_site_list(path: Path, sheet: str) -> tuple[pd.DataFrame, list[str]]:
     Returns:
         (site DataFrame indexed by UniqueId, list of warning messages)
     """
-    if not path.exists():
-        raise FileNotFoundError(f'Site list not found: {path}')
+    warnings: list[str] = []
 
-    df = pd.read_excel(path, sheet_name=sheet, index_col=0, engine='openpyxl')
-    df = df.dropna(how='all')
+    read_path, copy_warning = get_site_list_copy(path, path.parent / "cache")
+    if copy_warning:
+        warnings.append(copy_warning)
+
+    df = pd.read_excel(read_path, sheet_name=sheet, index_col=0, engine="openpyxl")
+    df = df.dropna(how="all")
     df.index = df.index.astype(str).str.strip()
 
     missing = [c for c in REQUIRED_COLS if c not in df.columns]
     if missing:
-        raise ValueError(f'Site list is missing columns: {missing}')
-
-    warnings: list[str] = []
+        raise ValueError(f"Site list is missing columns: {missing}")
 
     df['Publish'] = df['Publish'].fillna(False).astype(bool)
 
@@ -132,18 +170,14 @@ def load_site_list(path: Path, sheet: str) -> tuple[pd.DataFrame, list[str]]:
         warnings.append(f'Duplicate UniqueIds (first row kept): {sorted(set(dupes))}')
         df = df[~df.index.duplicated(keep='first')]
 
-    for col in ['HighAlarm', 'Delta']:
+    for col in ["LowAlarm", "HighAlarm", "DeltaAlarm"]:
         raw = df[col]
-        df[col] = pd.to_numeric(raw, errors='coerce')
-        bad = df[df['Publish'] & df[col].isna()]
+        df[col] = pd.to_numeric(raw, errors="coerce")
+        bad = df[df["Publish"] & df[col].isna()]
         for uid, row in bad.iterrows():
             warnings.append(
-                f"{row['SiteName']} ({uid}): {col} is blank or not a number "
-                f"({raw[uid]!r}); {col} check skipped"
+                f"{row['SiteName']} ({uid}): {col} is blank or not a number " f"({raw[uid]!r}); {col} check skipped"
             )
-
-    # LowAlarm is not evaluated yet, but keep it numeric for the output CSV
-    df['LowAlarm'] = pd.to_numeric(df['LowAlarm'], errors='coerce')
 
     return df, warnings
 
@@ -249,7 +283,7 @@ def fetch_site_data(session: requests.Session, ts_uid: str, site_meta: pd.Series
         'Alarm_Type':          '',
         'LowAlarm':            site_meta['LowAlarm'],
         'HighAlarm':           site_meta['HighAlarm'],
-        'DeltaAlarm':          site_meta['Delta'],
+        'DeltaAlarm':          site_meta['DeltaAlarm'],
         'Publish':             site_meta['Publish'],
     }
 
@@ -350,6 +384,7 @@ def main():
     today_df.to_csv(OUTPUT_ALL, index=False)
 
     no_data_alarms = []
+    low_flow_alarms = []
     high_flow_alarms = []
     delta_alarms = []
     alarm_rows = []
@@ -368,15 +403,23 @@ def main():
             'unit': 'cfs',
         }
 
-        if row['Timestamp'] == 'null' or row['Value'] == 0:
-            row['Alarm_Type'] = 'NoData'
+        if row["Timestamp"] == "null" or row["Value"] == 0:
+            row["Alarm_Type"] = "NoData"
             no_data_alarms.append(entry)
             alarm_rows.append(row)
 
-        elif row['Value'] > row['HighAlarm']:
-            row['Alarm_Type'] = 'HighAlarm'
+        elif row["Value"] < row["LowAlarm"]:
+            row["Alarm_Type"] = "LowAlarm"
+            low_flow_alarms.append(entry)
+            alarm_rows.append(row)
+
+        elif row["Value"] > row["HighAlarm"]:
+            row["Alarm_Type"] = "HighAlarm"
             high_flow_alarms.append(entry)
             alarm_rows.append(row)
+
+        elif row["Delta_Day"] > row["DeltaAlarm"]:
+            ...  # unchanged
 
         elif row['Delta_Day'] > row['DeltaAlarm']:
             row['Alarm_Type'] = 'DeltaAlarm'
@@ -391,20 +434,23 @@ def main():
     error_df = pd.DataFrame(alarm_rows)
     error_df.to_csv(OUTPUT_ALARMS, index=False)
 
-    print(f'  {len(high_flow_alarms)} site(s) reporting high flow')
+    print(f"  {len(low_flow_alarms)} site(s) reporting low flow")
+    print(f"  {len(high_flow_alarms)} site(s) reporting high flow")
     print(f'  {len(delta_alarms)} site(s) reporting significant 24-hr increase')
     print(f'  {len(no_data_alarms)} site(s) missing data')
 
     body_text = (
-        f'Discharge Alarm — {date_label}\n'
+        f"Discharge Alarm — {date_label}\n"
         f'{"=" * 50}\n\n'
-        f'Missing / No Data:\n'
-        f'{format_alarm_lines(no_data_alarms)}\n\n'
-        f'High Discharge:\n'
-        f'{format_alarm_lines(high_flow_alarms)}\n\n'
-        f'Significant 24-hr Increase:\n'
-        f'{format_alarm_lines(delta_alarms)}\n\n'
-        'See attached CSV for full details.\n'
+        f"Missing / No Data:\n"
+        f"{format_alarm_lines(no_data_alarms)}\n\n"
+        f"Low Discharge:\n"
+        f"{format_alarm_lines(low_flow_alarms)}\n\n"
+        f"High Discharge:\n"
+        f"{format_alarm_lines(high_flow_alarms)}\n\n"
+        f"Significant 24-hr Increase:\n"
+        f"{format_alarm_lines(delta_alarms)}\n\n"
+        "See attached CSV for full details.\n"
     )
 
     send_email(

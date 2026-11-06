@@ -34,7 +34,8 @@ CRED_FILE = Path(r'\\entbackenc.mt.gov\DNRC_AquariusArchive\AQMetadata\Aquarius_
 # --- Source of time series -------------------------------------------------
 # Edit this list to add or remove locations (search by location ID).
 LOCATION_IDS: list[str] = [
-    '76F 03100',
+    '76HB 09500',
+    '76HB 09600'
 ]
 
 # Set True to use a CSV of time series IDs instead of LOCATION_IDS.

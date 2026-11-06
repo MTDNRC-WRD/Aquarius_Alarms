@@ -62,12 +62,13 @@ from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
-
+import shutil
 import pandas as pd
 import requests
 from requests.adapters import HTTPAdapter
 from tqdm import tqdm
 from urllib3.util.retry import Retry
+from typing import Optional
 
 # =============================================================================
 # CONFIG
@@ -148,6 +149,40 @@ REQUIRED_COLS = ['LocationIdentifier', 'SiteName', 'Parameter', 'Unit',
                  'LowAlarm', 'HighAlarm', 'Publish']
 
 
+def get_site_list_copy(source: Path, cache_dir: Path) -> tuple[Path, Optional[str]]:
+    """
+    Copy the site list into cache_dir and return the path to read from.
+
+    If the copy fails (e.g. the workbook is open and locked), fall back to
+    the copy from the last successful run. Raises only if no cached copy
+    exists.
+
+    Returns:
+        (path to read, warning message or None)
+    """
+    if not source.exists():
+        raise FileNotFoundError(f'Site list not found: {source}')
+
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    cached = cache_dir / source.name
+
+    try:
+        shutil.copy2(source, cached)
+        return cached, None
+    except (PermissionError, OSError) as exc:
+        if cached.exists():
+            age_hours = (dt.datetime.now().timestamp() - cached.stat().st_mtime) / 3600
+            warning = (
+                f'Could not copy {source.name} ({exc}); using cached copy '
+                f'last updated {age_hours:.1f} hours ago. The file may be open in Excel.'
+            )
+            print(f'  [WARN] {warning}')
+            return cached, warning
+        raise PermissionError(
+            f'Could not copy {source.name} and no cached copy exists: {exc}'
+        ) from exc
+
+
 def load_site_list(path: Path, sheet: str) -> tuple[pd.DataFrame, list[str]]:
     """
     Read the sensor alarm site list from Excel.
@@ -160,18 +195,19 @@ def load_site_list(path: Path, sheet: str) -> tuple[pd.DataFrame, list[str]]:
     Returns:
         (site DataFrame indexed by UniqueId, list of warning messages)
     """
-    if not path.exists():
-        raise FileNotFoundError(f'Site list not found: {path}')
+    warnings: list[str] = []
 
-    df = pd.read_excel(path, sheet_name=sheet, index_col=0, engine='openpyxl')
-    df = df.dropna(how='all')
+    read_path, copy_warning = get_site_list_copy(path, path.parent / "cache")
+    if copy_warning:
+        warnings.append(copy_warning)
+
+    df = pd.read_excel(read_path, sheet_name=sheet, index_col=0, engine="openpyxl")
+    df = df.dropna(how="all")
     df.index = df.index.astype(str).str.strip()
 
     missing = [c for c in REQUIRED_COLS if c not in df.columns]
     if missing:
-        raise ValueError(f'Site list is missing columns: {missing}')
-
-    warnings: list[str] = []
+        raise ValueError(f"Site list is missing columns: {missing}")
 
     # Blank Publish cells would read as NaN, which Python treats as True
     df['Publish'] = df['Publish'].fillna(False).astype(bool)
