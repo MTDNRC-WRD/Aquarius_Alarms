@@ -1,6 +1,6 @@
 # Aquarius_Alarms
 
-Scripts that monitor DNRC/WRD gages in AQUARIUS and the AGOL (Survey123) field-form pipeline. They send email alarms, pull data for analysis, and turn field-form records into PDFs.
+Scripts that monitor DNRC/WRD gages in AQUARIUS and the AGOL (Survey123) field-form pipeline. They send email alarms, pull data for analysis, and turn field-form records into PDFs. Aquarius API may be found at https://panama.aquaticinformatics.net/AQUARIUS/Acquisition/v2/docs/reference.html
 
 Scripts are designed to run unattended on a schedule (Windows Task Scheduler via the `.bat` files) and read/write to the shared network drive:
 

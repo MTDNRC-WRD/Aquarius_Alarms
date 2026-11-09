@@ -1,7 +1,9 @@
 UniqueId,LocationIdentifier,SiteName,Parameter,Timestamp,Value,Unit,LowAlarm,HighAlarm,Publish
-dbbeec04e28d46459b357b0bba95defa,41M 09990,"Dupuyer Creek nr Dupuyer, MT",Stage,Nov-06 07:45,1.72,ft,1.1,1.7,True
-496aab34bacf49a49d246fb90e87b8f2,41O 03000,Teton River above Springhill,Stage,Nov-06 08:15,3.43,ft,3.5,4.0,True
-bbf4c95f97aa4814a716081fb38f2da5,41O 05000,Teton River above Hwy 221 bridge,Stage,Nov-06 08:00,2.17,ft,1.8,2.1,True
-96058ffb6bb14415909e4f89f023339f,41O 07900,"Teton River nr Dutton, MT",Stage,Nov-06 07:45,2.24,ft,1.5,2.0,True
-618dc19d7ff74c879e6c6e3e1020f8f0,76LJ 07500,Mill Creek below Creston Hatchery,Stage,Nov-06 08:15,1.39,ft,0.9,1.2,True
-ae646ca55a3943ee959e18694c5bf972,76HE 09700,"Tin Cup Creek nr Darby, MT",Stage,Nov-06 08:15,2.95,ft,3.1,3.7,True
+c70cd139c53b46c5b6f518a20bac0e07,40J 08900,"Beaver Creek abv Reservoir nr Havre, MT",Voltage,Nov-08 23:00,11.3,V,11.5,15.0,True
+38a790a6548d4fabaccc774ba38624a2,41J 02000,"Sheep Creek nr Adams Creek Road, MT",Stage,Nov-08 22:30,1.17,ft,1.2,1.8,True
+bc8707aa56d54486bd4f89936c6d1063,41J 04900,"Moose Creek nr White Sulphur Springs, MT",Stage,Nov-08 22:30,1.17,ft,1.2,2.3,True
+496aab34bacf49a49d246fb90e87b8f2,41O 03000,Teton River above Springhill,Stage,Nov-08 23:15,3.46,ft,3.5,4.0,True
+bbf4c95f97aa4814a716081fb38f2da5,41O 05000,Teton River above Hwy 221 bridge,Stage,Nov-08 23:00,2.16,ft,1.8,2.1,True
+96058ffb6bb14415909e4f89f023339f,41O 07900,"Teton River nr Dutton, MT",Stage,Nov-08 22:45,2.15,ft,1.5,2.0,True
+618dc19d7ff74c879e6c6e3e1020f8f0,76LJ 07500,Mill Creek below Creston Hatchery,Stage,Nov-08 23:15,1.37,ft,0.9,1.2,True
+ae646ca55a3943ee959e18694c5bf972,76HE 09700,"Tin Cup Creek nr Darby, MT",Stage,Nov-08 23:15,2.97,ft,3.1,3.7,True
