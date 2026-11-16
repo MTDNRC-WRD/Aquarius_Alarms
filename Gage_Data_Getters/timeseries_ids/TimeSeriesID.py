@@ -39,7 +39,7 @@ LOCATION_IDS: list[str] = [
 ]
 
 # Set True to use a CSV of time series IDs instead of LOCATION_IDS.
-USE_TSID_CSV = True
+USE_TSID_CSV = False
 TSID_CSV = SCRIPT_DIR / 'all_ids.csv'   # needs a 'UniqueId' column
 TSID_COLUMN = 'ID'
 
